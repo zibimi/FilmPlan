@@ -1,0 +1,27 @@
+.DS_Store
+._*
+*.swp
+
+# Local logs and generated verification artifacts.
+logs/
+*.log
+
+# Downloaded or bundled binaries.
+tools/
+downloads/
+bin/
+
+# Large or temporary media outputs.
+*.mkv
+*.mp4
+*.avi
+*.muxing.*
+*.abandoned*
+
+# Historical queue/script backups kept locally during experimentation.
+*.backup-*
+*.before-*
+
+# Python/cache noise.
+__pycache__/
+*.pyc

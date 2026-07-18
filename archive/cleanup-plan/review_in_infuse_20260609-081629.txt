@@ -1,0 +1,240 @@
+/Volumes/分类/动画片/当风吹起的时候
+  movie: /Volumes/分类/动画片/当风吹起的时候/当风吹起的时候.When.the.Wind.Blows.1986.DVDRip.XviD.MP3-tonetti.mkv
+  note: track=2 lang=chi/zh default=1 codec=SubRip/SRT cjk=0 bad=0 lines=0
+
+/Volumes/分类/黑色电影/再见吾爱
+  movie: /Volumes/分类/黑色电影/再见吾爱/再见吾爱Farewell.My.Lovely.1975.DVDRip.XviD-FiNaLe.mkv
+  note: 
+
+/Volumes/分类/黑色电影/合约杀手
+  movie: /Volumes/分类/黑色电影/合约杀手/合约杀手This_Gun_For_Hire_(1946).mkv
+  note: 
+
+/Volumes/分类/黑色电影/哭泣的城市
+  movie: /Volumes/分类/黑色电影/哭泣的城市/哭泣的城市1948.Cry_Of_The_City.DVDRip.mkv
+  note: 
+
+/Volumes/分类/黑色电影/大钟
+  movie: /Volumes/分类/黑色电影/大钟/大钟The_Big_Clock1948.mkv
+  note: track=2 lang=chi/zh default=1 codec=SubRip/SRT cjk=4 bad=0 lines=7244
+
+/Volumes/分类/黑色电影/无冕霸王
+  movie: /Volumes/分类/黑色电影/无冕霸王/无冕霸王The_Harder_They_Fall.mkv
+  note: 
+
+/Volumes/分类/黑色电影/无名街道
+  movie: /Volumes/分类/黑色电影/无名街道/无名街道The_Street_With_No_Name(1948).mkv
+  note: 
+
+/Volumes/分类/黑色电影/死吻
+  movie: /Volumes/分类/黑色电影/死吻/死吻.Kiss.of.Death.1947.mkv
+  note: 
+
+/Volumes/分类/黑色电影/海角之魂
+  movie: /Volumes/分类/黑色电影/海角之魂/海角之魂.Act.of.Violence.1948.mkv
+  note: 
+
+/Volumes/分类/黑色电影/狂恋
+  movie: /Volumes/分类/黑色电影/狂恋/狂恋Leave_Her_To_Heaven1945.mkv
+  note: 
+
+/Volumes/分类/黑色电影/狙击手
+  movie: /Volumes/分类/黑色电影/狙击手/狙击手The_Sniper_(1962).mkv
+  note: 
+
+/Volumes/分类/黑色电影/追踪
+  movie: /Volumes/分类/黑色电影/追踪/追踪Pursued_(1947).mkv
+  note: 
+
+/Volumes/分类/黑色电影/阵容
+  movie: /Volumes/分类/黑色电影/阵容/阵容The_Lineup_(1958).mkv
+  note: 
+
+/Volumes/分类/黑色电影/满洲候选人
+  movie: /Volumes/分类/黑色电影/满洲候选人/满洲候选人.The.Manchurian.Candidate.1962.CC.BDRip.X264.iNT-TLF.mkv
+  note: track=2 lang=chi/zh default=1 codec=SubRip/SRT cjk=149 bad=19980 lines=6523
+
+/Volumes/分类/恐怖/恐怖女子高校
+  movie: /Volumes/分类/恐怖/恐怖女子高校/恐怖女子高校.mkv
+  note: track=2 lang=chi/zh default=1 codec=SubRip/SRT cjk=0 bad=0 lines=0
+
+/Volumes/分类/音乐/贫民嘻哈王
+  movie: /Volumes/分类/音乐/贫民嘻哈王/Favela.Rising.2005.DVDRip.XviD-Pedr1nho.mkv
+  note: track=2 lang=chi/zh default=1 codec=SubRip/SRT cjk=72 bad=17389 lines=4071
+
+/Volumes/分类/爱情/爱情灵药
+  movie: /Volumes/分类/爱情/爱情灵药/爱情灵药.Better.Than.Sex.2002.DVDRip.D.mkv
+  note: 
+
+/Volumes/分类/纪录/家园
+  movie: /Volumes/分类/纪录/家园/家园.Home.2009.Bluray.480p.AC3.x264-CHD.mkv
+  note: 
+
+/Volumes/分类/纪录/愚昧年代
+  movie: /Volumes/分类/纪录/愚昧年代/愚昧年代.The.Age.of.Stupid.2009.LiMiTED.DVDRip.XviD-LPD.mkv
+  note: track=2 lang=chi/zh default=1 codec=SubRip/SRT cjk=58 bad=17447 lines=4086
+
+/Volumes/分类/科幻·奇幻/下妻物语
+  movie: /Volumes/分类/科幻·奇幻/下妻物语/下妻物语.mkv
+  note: track=2 lang=chi/zh default=1 codec=SubStationAlpha cjk=127 bad=16009 lines=1410
+
+/Volumes/分类/科幻·奇幻/巧克力情人
+  movie: /Volumes/分类/科幻·奇幻/巧克力情人/巧克力情人.Como.Agua.para.Chocolate.1992.Spanish.DVDRip.DivX.mkv
+  note: track=2 lang=chi/zh default=1 codec=SubRip/SRT cjk=3777 bad=3626 lines=4186
+
+/Volumes/分类/科幻·奇幻/月孩
+  movie: /Volumes/分类/科幻·奇幻/月孩/月孩.mkv
+  note: 
+
+/Volumes/分类/科幻·奇幻/空气之魂，云之精灵
+  movie: /Volumes/分类/科幻·奇幻/空气之魂，云之精灵/Spirits Of The Air Gremlins Of The Clouds.mkv
+  note: 
+
+/Volumes/分类/短篇集/古尔德的32个短片
+  movie: /Volumes/分类/短篇集/古尔德的32个短片/Thirty Two Short Films About Glenn Gould.mkv
+  note: 
+
+/Volumes/分类/短篇集/囚鸟
+  movie: /Volumes/分类/短篇集/囚鸟/Lajos.Lázár.-.Rabmadár.1929.TVRip.DivX-SzBalazs.mkv
+  note: 
+
+/Volumes/分类/短篇集/机器人嘉年华
+  movie: /Volumes/分类/短篇集/机器人嘉年华/[机器人嘉年华].[elite-manga][Robot.Carnival]-[x264.HeAAC2.5.1][JAP.FR.Sub.FR].mkv
+  note: 
+
+/Volumes/分类/短篇集/深渊
+  movie: /Volumes/分类/短篇集/深渊/The_Abyss.mkv
+  note: 
+
+/Volumes/分类/短篇集/火车到站
+  movie: /Volumes/分类/短篇集/火车到站/Trofim (Aleksei Balabanov) 1995.mkv
+  note: 
+
+/Volumes/分类/短篇集/美好的一天
+  movie: /Volumes/分类/短篇集/美好的一天/Jan Jakub Kolski - Ladny Dzien [1988].mkv
+  note: track=2 lang=chi/zh default=1 codec=SubRip/SRT cjk=1 bad=935 lines=286
+
+/Volumes/分类/短篇集/蜥蜴的变换
+  movie: /Volumes/分类/短篇集/蜥蜴的变换/Paul Verhoeven - Een Hagedis teveel (1960).mkv
+  note: track=2 lang=chi/zh default=1 codec=SubRip/SRT cjk=0 bad=0 lines=0
+
+/Volumes/分类/短篇集/银行事件
+  movie: /Volumes/分类/短篇集/银行事件/银行事件.mkv
+  note: 
+
+/Volumes/分类/合集/要分类/勇往直前
+  movie: /Volumes/分类/合集/要分类/勇往直前/The.lonious.Monk-Straight.No.Chaser.Divx.mkv
+  note: 
+
+/Volumes/分类/名著改编/卡夫卡电影作品集/城堡
+  movie: /Volumes/分类/名著改编/卡夫卡电影作品集/城堡/Das+Schloss+(1968).Tv-Rip+3Sat.20.10.2004+[NO+SUB].mkv
+  note: 
+
+/Volumes/分类/喜剧/我生命中最美好的夜晚
+  movie: /Volumes/分类/喜剧/我生命中最美好的夜晚/我生命中最美好的夜晚 La Piu   Bella Serata Della Mia Vita.mkv
+  note: 
+
+/Volumes/分类/喜剧/橡树
+  movie: /Volumes/分类/喜剧/橡树/Balanta.1992.Pintilie.(The.Oak).(Le.Chene).DVDivx5.mkv
+  note: 
+
+/Volumes/分类/喜剧/简单西蒙
+  movie: /Volumes/分类/喜剧/简单西蒙/I.Rymden.Finns.Inga.K_nslor.2010.SWEDISH.DVDRip.XviD-Pride86.mkv
+  note: 
+
+/Volumes/分类/喜剧/蓬车队(英字)
+  movie: /Volumes/分类/喜剧/蓬车队(英字)/The_Band_Wagon_(1953).mkv
+  note: 
+
+/Volumes/分类/喜剧/隔壁的八重
+  movie: /Volumes/分类/喜剧/隔壁的八重/Our_Neighbor,_Miss_Yae.mkv
+  note: 
+
+/Volumes/分类/怪兽/绿液惊魂
+  movie: /Volumes/分类/怪兽/绿液惊魂/Cold.Storage.2026.2160p.AMZN.WEB.DL.DDP5.1.H.265.BYNDR.mkv
+  note: 
+
+/Volumes/分类/惊悚·犯罪·动作/后院
+  movie: /Volumes/分类/惊悚·犯罪·动作/后院/后院.Backyard.2009.DVDRip.XviD-VoMiT.mkv
+  note: track=2 lang=chi/zh default=1 codec=SubRip/SRT cjk=0 bad=0 lines=0
+
+/Volumes/分类/惊悚·犯罪·动作/无水之池
+  movie: /Volumes/分类/惊悚·犯罪·动作/无水之池/Koji_Wakamatsu_-_A_pool_without_water_-_evil_XviD.mkv
+  note: 
+
+/Volumes/分类/青春·儿童/不害臊的姑娘
+  movie: /Volumes/分类/青春·儿童/不害臊的姑娘/不害臊的姑娘.L.Effrontée.1985.mkv
+  note: track=2 lang=chi/zh default=1 codec=SubRip/SRT cjk=0 bad=0 lines=0
+
+/Volumes/分类/青春·儿童/出生证明
+  movie: /Volumes/分类/青春·儿童/出生证明/出生证明Birth.Certificate.1961.DVDRip.XviD-WRD.mkv
+  note: 
+
+/Volumes/分类/青春·儿童/污泥
+  movie: /Volumes/分类/青春·儿童/污泥/美国-Jeff.Nichols-2012-污泥Mud.720p.WEB-DL.H264-PublicHD.mkv
+  note: 
+
+/Volumes/分类/青春·儿童/爱上凯斯
+  movie: /Volumes/分类/青春·儿童/爱上凯斯/爱上凯斯.Keith.2008.LiMiTED.DVDRip.XviD-XanaX.mkv
+  note: track=2 lang=chi/zh default=1 codec=SubRip/SRT cjk=157 bad=13087 lines=4361
+
+/Volumes/导演们/斯特劳布于勒夫妇/弗尔蒂尼和卡尼
+  movie: /Volumes/导演们/斯特劳布于勒夫妇/弗尔蒂尼和卡尼/弗尔蒂尼和卡尼.Fortini.Cani.1976.mkv
+  note: 
+
+/Volumes/导演们/安东尼·曼/边城喋血记
+  movie: /Volumes/导演们/安东尼·曼/边城喋血记/边城喋血记.Border.Incident.1949.mkv
+  note: 
+
+/Volumes/导演们/曼·雷伊/Mystères du château de Dé, Les
+  movie: /Volumes/导演们/曼·雷伊/Mystères du château de Dé, Les/Les.Mysteres.du.Chateau.du.De.1929.mkv
+  note: 
+
+/Volumes/导演们/克林特·伊斯特伍德/天涯父子情
+  movie: /Volumes/导演们/克林特·伊斯特伍德/天涯父子情/天涯父子情.Honkytonk.Man.1982.BIVX.FR.US.Alucard69-teste.DivXovore.com.mkv
+  note: 
+
+/Volumes/导演们/克林特·伊斯特伍德/迷雾追魂
+  movie: /Volumes/导演们/克林特·伊斯特伍德/迷雾追魂/迷雾追魂.Play.Misty.for.Me.1971.DVDRip.mkv
+  note: 
+
+/Volumes/导演们/卡洛斯·绍拉/布努埃尔与圆桌骑士
+  movie: /Volumes/导演们/卡洛斯·绍拉/布努埃尔与圆桌骑士/布努埃尔与圆桌骑士.Bunuel.Y.La.Mesa.Del.Rey.Salomon.2001.mkv
+  note: 
+
+/Volumes/导演们/卡洛斯·绍拉/被蒙上的双眼
+  movie: /Volumes/导演们/卡洛斯·绍拉/被蒙上的双眼/被蒙上的双眼.Los.Ojos.Vendados.Carlos.Saura.1978.Eng.mkv
+  note: 
+
+/Volumes/导演们/威廉·惠勒/危急时刻
+  movie: /Volumes/导演们/威廉·惠勒/危急时刻/危急时刻.The.Desperate.Hours.1955.DVDRip.mkv
+  note: 
+
+/Volumes/导演们/托尼·理查德森/艺人
+  movie: /Volumes/导演们/托尼·理查德森/艺人/艺人.The.Entertainer.1960.mkv
+  note: 
+
+/Volumes/导演们/托尼·理查德森/苦恋
+  movie: /Volumes/导演们/托尼·理查德森/苦恋/苦恋.The.Loved.One.1965.mkv
+  note: 
+
+/Volumes/导演们/亚历斯·冯·华麦丹/小东尼
+  movie: /Volumes/导演们/亚历斯·冯·华麦丹/小东尼/小东尼.Little.Tony.1998.Alex.van.Warmerdam.mkv
+  note: 
+
+/Volumes/导演们/亚历斯·冯·华麦丹/阿宝
+  movie: /Volumes/导演们/亚历斯·冯·华麦丹/阿宝/阿宝.Abel-Alex-Van-Warmerdam.1986.Tuxfart.mkv
+  note: track=2 lang=chi/zh default=1 codec=SubRip/SRT cjk=2639 bad=2958 lines=2746
+
+/Volumes/导演们/伊利亚·卡赞/作法自毙
+  movie: /Volumes/导演们/伊利亚·卡赞/作法自毙/作法自毙.Boomerang.1947.mkv
+  note: track=2 lang=chi/zh default=1 codec=SubRip/SRT cjk=0 bad=0 lines=0
+
+/Volumes/导演们/亚历克斯·加兰/湮灭
+  movie: /Volumes/导演们/亚历克斯·加兰/湮灭/湮灭.Annihilation.2018.BDRip.X264.iNT-TLF.mkv
+  note: 
+
+/Volumes/导演们/布鲁诺·杜蒙/撒旦之外
+  movie: /Volumes/导演们/布鲁诺·杜蒙/撒旦之外/撒旦之外.Hors.Satan.2011.1080p.mkv
+  note: 
+

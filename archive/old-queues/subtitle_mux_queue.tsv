@@ -1,0 +1,421 @@
+# subtitle mux queue
+# generated_at	2026-06-08 10:00:06
+# scan_roots	/Volumes/看	/Volumes/导演们	/Volumes/分类
+# columns: status<TAB>folder_path<TAB>message
+# status: PENDING, DONE, FAILED
+DONE	/Volumes/分类/CULT·实验/主席的话	completed 2026-06-08 10:21:49
+DONE	/Volumes/分类/CULT·实验/多萝西娅的复仇	completed with mkvmerge warnings 2026-06-08 10:31
+DONE	/Volumes/分类/CULT·实验/死亡勇士	completed 2026-06-08 10:38:53
+DONE	/Volumes/分类/传记·一段历史/凯萨与克丽奥佩	completed 2026-06-08 15:24:05
+DONE	/Volumes/分类/传记·一段历史/席琳	completed 2026-06-08 10:45:08
+DONE	/Volumes/分类/传记·一段历史/独奏	completed 2026-06-08 10:45:18
+DONE	/Volumes/分类/传记·一段历史/瓦克拉夫	completed 2026-06-08 10:46:18
+DONE	/Volumes/分类/传记·一段历史/謝爾蓋·愛森斯坦自傳	completed 2026-06-08 10:46:49
+DONE	/Volumes/分类/公路/一周	completed 2026-06-08 10:47:27
+DONE	/Volumes/分类/动画片/当风吹起的时候	completed 2026-06-08 10:48:27
+DONE	/Volumes/分类/动画片/我感觉到了我脑后	completed 2026-06-08 10:48:45
+DONE	/Volumes/分类/动画片/舞姫	completed 2026-06-08 10:49:19
+DONE	/Volumes/分类/动画片/赤色挽歌	completed 2026-06-08 10:49:53
+DONE	/Volumes/分类/动画片/鬼妈妈	completed 2026-06-08 10:50:52
+DONE	/Volumes/分类/动画片/麦兜/麦兜故事	completed 2026-06-08 10:51:52
+DONE	/Volumes/分类/华语世界/东南亚/陈哲艺/热带雨	completed 2026-06-08 10:53:51
+DONE	/Volumes/分类/华语世界/中国大陆/导演们/娄烨/梦的背后	completed 2026-06-08 10:55:58
+DONE	/Volumes/分类/华语世界/中国大陆/导演们/贾樟柯/汾阳小子贾樟柯	completed 2026-06-08 10:58:11
+DONE	/Volumes/分类/华语世界/台湾/张作骥/蝴蝶	completed 2026-06-08 10:59:31
+DONE	/Volumes/分类/华语世界/禁/独生子女国度	completed 2026-06-08 11:02:18
+DONE	/Volumes/分类/合集/AFI百年百部经典/【飞屋】AFI's.100.Years.100.Movies-Part1	completed 2026-06-08 11:02:40
+DONE	/Volumes/分类/合集/AFI百年百部经典/【飞屋】AFI's.100.Years.100.Movies-Part10	completed 2026-06-08 11:03:01
+DONE	/Volumes/分类/合集/AFI百年百部经典/【飞屋】AFI's.100.Years.100.Movies-Part2	completed 2026-06-08 11:03:20
+DONE	/Volumes/分类/合集/AFI百年百部经典/【飞屋】AFI's.100.Years.100.Movies-Part3	completed 2026-06-08 11:03:41
+DONE	/Volumes/分类/合集/AFI百年百部经典/【飞屋】AFI's.100.Years.100.Movies-Part4	completed 2026-06-08 11:04:02
+DONE	/Volumes/分类/合集/AFI百年百部经典/【飞屋】AFI's.100.Years.100.Movies-Part6	completed 2026-06-08 11:04:22
+FAILED	/Volumes/分类/合集/AFI百年百部经典/【飞屋】AFI's.100.Years.100.Movies-Part7	verification failed: expected at least 1 subtitle tracks, found 0 in /Volumes/分类/合集/AFI百年百部经典/【飞屋】AFI's.100.Years.100.Movies-Part7/.Part7.爱的迷惘.Wilder.Shores.of.Love.DVDRip.x264-AeroHut.mkv.muxing.mkv
+FAILED	/Volumes/分类/合集/AFI百年百部经典/【飞屋】AFI's.100.Years.100.Movies-Part8	verification failed: expected at least 1 subtitle tracks, found 0 in /Volumes/分类/合集/AFI百年百部经典/【飞屋】AFI's.100.Years.100.Movies-Part8/.Part8.另类英雄.Anti.Heroes.DVDRip.x264-AeroHut.mkv.muxing.mkv
+DONE	/Volumes/分类/合集/AFI百年百部经典/【飞屋】AFI's.100.Years.100.Movies-Part9	completed 2026-06-08 11:07:20
+DONE	/Volumes/分类/合集/要分类/45th.1988.[圣洁酒徒的传奇].The Legend of the Holy Drinker	completed 2026-06-08 11:07:35
+DONE	/Volumes/分类/合集/要分类/勇往直前	completed 2026-06-08 11:08:02
+DONE	/Volumes/分类/名著改编/卡夫卡电影作品集/城堡	completed 2026-06-08 11:08:22
+DONE	/Volumes/分类/喜剧/四只狮子	completed 2026-06-08 15:35:46
+FAILED	/Volumes/分类/喜剧/图潘	subtitle encoding is not supported: /Volumes/分类/喜剧/图潘/[图潘].Tulpan.2008.DVDRip.XviD-CoWRY.srt
+DONE	/Volumes/分类/喜剧/大市民	completed 2026-06-08 11:16:26
+DONE	/Volumes/分类/喜剧/家族遗愿	completed 2026-06-08 11:16:46
+DONE	/Volumes/分类/喜剧/我最好的朋友	completed 2026-06-08 11:17:14
+DONE	/Volumes/分类/喜剧/我生命中最美好的夜晚	completed 2026-06-08 11:17:50
+DONE	/Volumes/分类/喜剧/普朗克博士	completed 2026-06-08 11:18:10
+DONE	/Volumes/分类/喜剧/橡树	completed 2026-06-08 11:18:32
+DONE	/Volumes/分类/喜剧/海之外	completed 2026-06-08 11:18:57
+DONE	/Volumes/分类/喜剧/灵魂歌手	completed 2026-06-08 15:36:21
+DONE	/Volumes/分类/喜剧/爱上冰山的女人	completed 2026-06-08 11:20:57
+DONE	/Volumes/分类/喜剧/爱我就让我快乐	completed 2026-06-08 11:21:27
+DONE	/Volumes/分类/喜剧/简单西蒙	completed 2026-06-08 11:21:46
+DONE	/Volumes/分类/喜剧/网名之战	completed 2026-06-08 15:36:47
+DONE	/Volumes/分类/喜剧/罗宾逊我的英国祖父	completed 2026-06-08 11:23:46
+DONE	/Volumes/分类/喜剧/莫扎特区	completed 2026-06-08 11:24:14
+DONE	/Volumes/分类/喜剧/蓬车队(英字)	completed 2026-06-08 11:24:47
+DONE	/Volumes/分类/喜剧/迟到的婚礼	completed 2026-06-08 11:25:14
+DONE	/Volumes/分类/喜剧/阿尔菲	completed 2026-06-08 15:37:19
+DONE	/Volumes/分类/喜剧/隔壁的八重	completed 2026-06-08 11:25:39
+DONE	/Volumes/分类/怪兽/绿液惊魂	completed 2026-06-08 11:35:01
+DONE	/Volumes/分类/恐怖/恐怖女子高校	completed 2026-06-08 11:35:20
+DONE	/Volumes/分类/惊悚·犯罪·动作/11：14	completed 2026-06-08 11:36:33
+DONE	/Volumes/分类/惊悚·犯罪·动作/你从未在此	completed 2026-06-08 11:37:46
+DONE	/Volumes/分类/惊悚·犯罪·动作/后院	completed 2026-06-08 11:38:20
+DONE	/Volumes/分类/惊悚·犯罪·动作/告密者	completed 2026-06-08 11:38:43
+DONE	/Volumes/分类/惊悚·犯罪·动作/审问	completed 2026-06-08 11:39:08
+DONE	/Volumes/分类/惊悚·犯罪·动作/无水之池	completed 2026-06-08 11:39:29
+DONE	/Volumes/分类/惊悚·犯罪·动作/来自玛茹西亚的信	completed 2026-06-08 11:39:53
+DONE	/Volumes/分类/惊悚·犯罪·动作/真相至上	completed 2026-06-08 11:40:19
+DONE	/Volumes/分类/惊悚·犯罪·动作/被窃油画的假设	completed 2026-06-08 11:40:35
+DONE	/Volumes/分类/战争/光之屋	completed 2026-06-08 15:38:11
+DONE	/Volumes/分类/战争/最后的列车	completed 2026-06-08 11:41:26
+DONE	/Volumes/分类/歌舞/是的	completed 2026-06-08 11:48:58
+DONE	/Volumes/分类/爱情/情定日落桥	completed 2026-06-08 11:50:10
+DONE	/Volumes/分类/爱情/我一直深爱着你	completed 2026-06-08 11:51:20
+DONE	/Volumes/分类/爱情/爱情灵药	completed 2026-06-08 11:52:41
+DONE	/Volumes/分类/爱情/爱的回忆	completed 2026-06-08 11:53:56
+DONE	/Volumes/分类/短篇集/七月	completed 2026-06-08 11:54:24
+DONE	/Volumes/分类/短篇集/二十岁之恋	completed 2026-06-08 15:38:42
+DONE	/Volumes/分类/短篇集/亚尔斯	completed 2026-06-08 11:54:57
+DONE	/Volumes/分类/短篇集/人权故事（短篇集）	completed 2026-06-08 11:56:07
+DONE	/Volumes/分类/短篇集/全州电影节三人三色/About Love	completed 2026-06-08 11:56:49
+DONE	/Volumes/分类/短篇集/全州电影节三人三色/No Day Off	completed 2026-06-08 11:57:10
+DONE	/Volumes/分类/短篇集/全州电影节三人三色/Twelve Twenty	completed 2026-06-08 11:57:34
+DONE	/Volumes/分类/短篇集/列车	completed 2026-06-08 11:57:48
+DONE	/Volumes/分类/短篇集/受监护人	completed 2026-06-08 15:38:54
+DONE	/Volumes/分类/短篇集/古尔德的32个短片	completed 2026-06-08 12:05:15
+DONE	/Volumes/分类/短篇集/囚鸟	completed 2026-06-08 12:06:10
+DONE	/Volumes/分类/短篇集/堤	completed 2026-06-08 12:06:51
+DONE	/Volumes/分类/短篇集/大多数人生活在中国	completed 2026-06-08 12:07:25
+DONE	/Volumes/分类/短篇集/安德里耶什	completed 2026-06-08 12:08:05
+DONE	/Volumes/分类/短篇集/拉丽莎	completed 2026-06-08 12:08:29
+DONE	/Volumes/分类/短篇集/新房客	completed 2026-06-08 12:08:43
+DONE	/Volumes/分类/短篇集/朦胧的赫拉克利特	completed 2026-06-08 12:09:00
+DONE	/Volumes/分类/短篇集/机器人嘉年华	completed 2026-06-08 12:11:09
+DONE	/Volumes/分类/短篇集/梦精	completed 2026-06-08 12:12:22
+DONE	/Volumes/分类/短篇集/深渊	completed 2026-06-08 12:13:04
+DONE	/Volumes/分类/短篇集/游泳的好日子	completed 2026-06-08 15:38:58
+DONE	/Volumes/分类/短篇集/火车到站	completed 2026-06-08 12:15:27
+DONE	/Volumes/分类/短篇集/电影人的假期	completed 2026-06-08 12:16:02
+DONE	/Volumes/分类/短篇集/看雨	completed 2026-06-08 15:39:05
+DONE	/Volumes/分类/短篇集/纪念日快乐！	completed 2026-06-08 12:18:02
+DONE	/Volumes/分类/短篇集/维尔纽斯童话	completed 2026-06-08 12:18:23
+DONE	/Volumes/分类/短篇集/美好的一天	completed 2026-06-08 12:18:38
+DONE	/Volumes/分类/短篇集/蜥蜴的变换	completed 2026-06-08 12:19:02
+DONE	/Volumes/分类/短篇集/银行事件	completed 2026-06-08 12:19:19
+DONE	/Volumes/分类/短篇集/闩	completed 2026-06-08 12:19:39
+DONE	/Volumes/分类/短篇集/非关欲望	completed 2026-06-08 12:21:20
+DONE	/Volumes/分类/短篇集/马车夫	completed 2026-06-08 12:21:40
+DONE	/Volumes/分类/短篇集/骚红	completed 2026-06-08 12:24:23
+DONE	/Volumes/分类/科幻·奇幻/下妻物语	completed 2026-06-08 12:25:35
+DONE	/Volumes/分类/科幻·奇幻/公寓少女	completed 2026-06-08 12:26:05
+DONE	/Volumes/分类/科幻·奇幻/化身博士	completed 2026-06-08 12:26:56
+DONE	/Volumes/分类/科幻·奇幻/小木人	completed 2026-06-08 12:27:35
+DONE	/Volumes/分类/科幻·奇幻/巧克力情人	completed 2026-06-08 12:29:09
+DONE	/Volumes/分类/科幻·奇幻/恐怖游轮	completed 2026-06-08 12:33:01
+FAILED	/Volumes/分类/科幻·奇幻/挽救计划	no subtitle files found in /Volumes/分类/科幻·奇幻/挽救计划
+DONE	/Volumes/分类/科幻·奇幻/月孩	completed 2026-06-08 12:40:00
+DONE	/Volumes/分类/科幻·奇幻/百事一代	completed 2026-06-08 12:44:21
+DONE	/Volumes/分类/科幻·奇幻/睡衣男異次元空間	completed 2026-06-08 12:45:44
+DONE	/Volumes/分类/科幻·奇幻/空气之魂，云之精灵	completed 2026-06-08 12:47:18
+DONE	/Volumes/分类/科幻·奇幻/蝇王	completed 2026-06-08 12:48:14
+DONE	/Volumes/分类/纪录/一米四	completed 2026-06-08 12:48:22
+DONE	/Volumes/分类/纪录/今日达尔富尔	completed 2026-06-08 12:49:39
+DONE	/Volumes/分类/纪录/佩索阿遇上卡瓦菲斯的那个夜晚	completed 2026-06-08 12:50:23
+DONE	/Volumes/分类/纪录/冢本图鉴	completed 2026-06-08 12:50:45
+DONE	/Volumes/分类/纪录/夏日纪事	completed 2026-06-08 12:56:14
+DONE	/Volumes/分类/纪录/天地玄黄	completed 2026-06-08 13:00:14
+DONE	/Volumes/分类/纪录/天明屋尚：新·武士藝術	completed 2026-06-08 13:01:50
+DONE	/Volumes/分类/纪录/威尼斯和她的情人们	completed 2026-06-08 13:02:00
+DONE	/Volumes/分类/纪录/宛若索鸟	completed 2026-06-08 13:02:53
+DONE	/Volumes/分类/纪录/家园	completed 2026-06-08 13:06:02
+DONE	/Volumes/分类/纪录/愚昧年代	completed 2026-06-08 13:06:23
+DONE	/Volumes/分类/纪录/房屋是黑的	completed 2026-06-08 13:06:29
+DONE	/Volumes/分类/纪录/會田誠 無氣力大陸	completed 2026-06-08 13:10:48
+DONE	/Volumes/分类/纪录/月之阴影	completed 2026-06-08 13:12:38
+DONE	/Volumes/分类/纪录/柏林愛樂和第三帝國	completed 2026-06-08 13:12:49
+DONE	/Volumes/分类/纪录/石头记录的历史——托卡伊山麓篇	completed 2026-06-08 13:13:02
+DONE	/Volumes/分类/纪录/舟越桂：低語呢喃的凝視	completed 2026-06-08 13:13:24
+FAILED	/Volumes/分类/纪录/街拍皇帝	mkvmerge failed for /Volumes/分类/纪录/街拍皇帝 with exit code 2
+DONE	/Volumes/分类/纪录/设计面面观	completed 2026-06-08 13:17:11
+DONE	/Volumes/分类/纪录/贝洛夫兄妹	completed 2026-06-08 13:17:26
+DONE	/Volumes/分类/纪录/车站	completed 2026-06-08 13:17:40
+DONE	/Volumes/分类/纪录/阿沃·帕特：24个序幕	completed 2026-06-08 13:18:05
+DONE	/Volumes/分类/青春·儿童/不害臊的姑娘	completed 2026-06-08 13:18:28
+DONE	/Volumes/分类/青春·儿童/保罗街小子们	completed 2026-06-08 13:18:57
+DONE	/Volumes/分类/青春·儿童/出生证明	completed 2026-06-08 13:19:18
+DONE	/Volumes/分类/青春·儿童/和谐课程	completed 2026-06-08 13:21:01
+DONE	/Volumes/分类/青春·儿童/我是一只鹳	completed 2026-06-08 13:21:20
+DONE	/Volumes/分类/青春·儿童/污泥	completed 2026-06-08 13:24:49
+DONE	/Volumes/分类/青春·儿童/爱上凯斯	completed 2026-06-08 13:25:09
+DONE	/Volumes/分类/音乐/午夜旋律	completed 2026-06-08 13:26:29
+DONE	/Volumes/分类/音乐/贫民嘻哈王	completed 2026-06-08 13:26:48
+DONE	/Volumes/分类/黑色电影/再见吾爱	completed 2026-06-08 13:27:17
+DONE	/Volumes/分类/黑色电影/合约杀手	completed 2026-06-08 13:27:36
+DONE	/Volumes/分类/黑色电影/哭泣的城市	completed 2026-06-08 13:27:59
+DONE	/Volumes/分类/黑色电影/大钟	completed 2026-06-08 13:28:23
+DONE	/Volumes/分类/黑色电影/无冕霸王	completed 2026-06-08 13:28:48
+DONE	/Volumes/分类/黑色电影/无名街道	completed 2026-06-08 13:29:13
+DONE	/Volumes/分类/黑色电影/死吻	completed 2026-06-08 13:29:36
+DONE	/Volumes/分类/黑色电影/海角之魂	completed 2026-06-08 13:29:57
+DONE	/Volumes/分类/黑色电影/满洲候选人	completed 2026-06-08 13:32:41
+DONE	/Volumes/分类/黑色电影/狂恋	completed 2026-06-08 13:33:07
+DONE	/Volumes/分类/黑色电影/狙击手	completed 2026-06-08 13:33:24
+FAILED	/Volumes/分类/黑色电影/痛苦的报酬	no subtitle files found in /Volumes/分类/黑色电影/痛苦的报酬
+FAILED	/Volumes/分类/黑色电影/罗拉秘史	no subtitle files found in /Volumes/分类/黑色电影/罗拉秘史
+DONE	/Volumes/分类/黑色电影/追踪	completed 2026-06-08 14:11:42
+DONE	/Volumes/分类/黑色电影/阵容	completed 2026-06-08 14:13:24
+DONE	/Volumes/导演们/三池崇史/中国鸟人	completed 2026-06-08 14:14:41
+DONE	/Volumes/导演们/三池崇史/布鲁斯口琴	completed 2026-06-08 14:15:58
+DONE	/Volumes/导演们/三池崇史/拜访者Q	completed 2026-06-08 14:16:50
+DONE	/Volumes/导演们/三池崇史/牛头	completed 2026-06-08 14:17:30
+DONE	/Volumes/导演们/丹尼斯·维伦纽瓦/边境杀手	completed 2026-06-08 14:24:34
+DONE	/Volumes/导演们/乔拉·赫兹/焚尸人	completed 2026-06-08 14:25:11
+DONE	/Volumes/导演们/乔拉·赫兹/美女与野兽	completed 2026-06-08 14:26:21
+DONE	/Volumes/导演们/亚历克斯·加兰/湮灭	completed 2026-06-08 14:29:13
+DONE	/Volumes/导演们/亚历山大·索科洛夫/孤独人类之声	completed 2026-06-08 14:29:40
+DONE	/Volumes/导演们/亚历斯·冯·华麦丹/北方小镇奇谈	completed 2026-06-08 14:30:16
+DONE	/Volumes/导演们/亚历斯·冯·华麦丹/小东尼	completed 2026-06-08 14:30:59
+DONE	/Volumes/导演们/亚历斯·冯·华麦丹/艾玛布兰克的最后一天	completed 2026-06-08 14:31:23
+DONE	/Volumes/导演们/亚历斯·冯·华麦丹/阿宝	completed 2026-06-08 14:31:53
+DONE	/Volumes/导演们/伊利亚·卡赞/伊甸园之东	completed 2026-06-08 14:34:05
+DONE	/Volumes/导演们/伊利亚·卡赞/作法自毙	completed 2026-06-08 14:35:13
+DONE	/Volumes/导演们/保罗·托马斯·安德森/木兰花	completed 2026-06-08 16:13:23
+DONE	/Volumes/导演们/保罗·索伦蒂诺/为父寻仇	completed 2026-06-08 16:20:14
+DONE	/Volumes/导演们/保罗·索伦蒂诺/同名的人	completed 2026-06-08 16:21:38
+DONE	/Volumes/导演们/克日什托夫·基耶斯洛夫斯基/关于基耶斯洛夫斯的纪录片/基耶斯洛夫斯如是说	completed 2026-06-08 16:21:52
+FAILED	/Volumes/导演们/克日什托夫·基耶斯洛夫斯基/短片/愿望音乐会	subtitle encoding is not supported: /Volumes/导演们/克日什托夫·基耶斯洛夫斯基/短片/愿望音乐会/愿望音乐会.Concert.of.Wishes.1967.chs.srt
+DONE	/Volumes/导演们/克林特·伊斯特伍德/天涯父子情	completed 2026-06-08 16:22:20
+DONE	/Volumes/导演们/克林特·伊斯特伍德/春花秋月未了情	completed 2026-06-08 16:22:45
+DONE	/Volumes/导演们/克林特·伊斯特伍德/迷雾追魂	completed 2026-06-08 16:23:10
+FAILED	/Volumes/导演们/冈本喜八/替人报仇的助六	subtitle encoding is not supported: /Volumes/导演们/冈本喜八/替人报仇的助六/替人报仇的助六.Vengeance.For.Sale.2001.DVDRip.XviD-UBiK.srt
+FAILED	/Volumes/导演们/冈本喜八/江分利満氏	subtitle encoding is not supported: /Volumes/导演们/冈本喜八/江分利満氏/江分利満氏の優雅な生活The.Elegant.Life.of.Mr.Everyman.1963.DVDRip.AC3.XviD-MDCOrient.srt
+DONE	/Volumes/导演们/刘别谦/默片/从柏林来的迈耶	completed 2026-06-08 16:23:28
+DONE	/Volumes/导演们/刘别谦/默片/在我死后	completed 2026-06-08 16:23:44
+DONE	/Volumes/导演们/刘别谦/默片/欢乐监狱	completed 2026-06-08 16:24:12
+DONE	/Volumes/导演们/努里·比格·锡兰/小镇	completed 2026-06-08 16:24:53
+FAILED	/Volumes/导演们/南尼·莫莱蒂/凯门鳄	subtitle encoding is not supported: /Volumes/导演们/南尼·莫莱蒂/凯门鳄/凯门鳄.The.Caiman.2006.576p.WEB-DL.H264-FW.srt
+DONE	/Volumes/导演们/卡尔·西奥多·德莱叶/短片/丹麦小村教堂	completed 2026-06-08 16:25:06
+DONE	/Volumes/导演们/卡尔·西奥多·德莱叶/短片/克罗根与卡隆堡	completed 2026-06-08 16:25:11
+DONE	/Volumes/导演们/卡尔·西奥多·德莱叶/短片/土地来的水	completed 2026-06-08 16:25:17
+DONE	/Volumes/导演们/卡尔·西奥多·德莱叶/短片/抗癌	completed 2026-06-08 16:25:21
+DONE	/Volumes/导演们/卡尔·西奥多·德莱叶/短片/斯托斯特姆桥	completed 2026-06-08 16:25:24
+DONE	/Volumes/导演们/卡尔·西奥多·德莱叶/索伦森	completed 2026-06-08 16:25:29
+DONE	/Volumes/导演们/卡尔·西奥多·德莱叶/词语	completed 2026-06-08 16:27:52
+DONE	/Volumes/导演们/卡尔·西奥多·德莱叶/赶船	completed 2026-06-08 16:27:57
+DONE	/Volumes/导演们/卡尔·西奥多·德莱叶/铁轨	completed 2026-06-08 16:28:14
+DONE	/Volumes/导演们/卡洛斯·绍拉/一代名画家戈雅在波尔多	completed 2026-06-08 16:28:44
+DONE	/Volumes/导演们/卡洛斯·绍拉/圣力三重奏	completed 2026-06-08 16:29:09
+FAILED	/Volumes/导演们/卡洛斯·绍拉/妈妈一百岁	subtitle encoding is not supported: /Volumes/导演们/卡洛斯·绍拉/妈妈一百岁/妈妈一百岁.mama.cumple.cien.anos.1979.srt
+DONE	/Volumes/导演们/卡洛斯·绍拉/安娜与狼	completed 2026-06-08 16:29:36
+DONE	/Volumes/导演们/卡洛斯·绍拉/布努埃尔与圆桌骑士	completed 2026-06-08 16:30:06
+FAILED	/Volumes/导演们/卡洛斯·绍拉/薄荷刨冰	subtitle encoding is not supported: /Volumes/导演们/卡洛斯·绍拉/薄荷刨冰/薄荷刨冰.srt
+DONE	/Volumes/导演们/卡洛斯·绍拉/被蒙上的双眼	completed 2026-06-08 16:30:37
+FAILED	/Volumes/导演们/卢基诺·维斯康蒂/纳粹狂魔	subtitle encoding is not supported: /Volumes/导演们/卢基诺·维斯康蒂/纳粹狂魔/纳粹狂魔.La.Caduta.Degli.Dei.1969.DVDRip.DivX.chs.srt
+DONE	/Volumes/导演们/吉洛·彭泰科沃/阿尔及尔之战	completed 2026-06-08 16:33:45
+DONE	/Volumes/导演们/大卫·林奇/我心狂野	completed 2026-06-08 16:35:18
+DONE	/Volumes/导演们/奥利佛·斯通/天生杀人狂	completed 2026-06-08 16:37:34
+FAILED	/Volumes/导演们/奥逊·威尔斯/午夜钟声(英字)	subtitle encoding is not supported: /Volumes/导演们/奥逊·威尔斯/午夜钟声(英字)/午夜钟声.Welles.Orson.-.1965.-.Campanadas.a.medianoche.srt
+DONE	/Volumes/导演们/威廉·惠勒/危急时刻	completed 2026-06-08 16:38:06
+DONE	/Volumes/导演们/威廉·惠勒/大侦探故事	completed 2026-06-08 16:38:35
+DONE	/Volumes/导演们/安东尼·曼/边城喋血记	completed 2026-06-08 16:39:00
+DONE	/Volumes/导演们/安东尼奥尼/奇遇	completed 2026-06-08 16:42:05
+DONE	/Volumes/导演们/安东尼奥尼/放大	completed 2026-06-08 16:44:50
+DONE	/Volumes/导演们/安德烈·塔尔科夫斯基/牺牲	completed 2026-06-08 16:49:16
+DONE	/Volumes/导演们/寺山修司/死者田园祭	completed 2026-06-08 16:50:06
+FAILED	/Volumes/导演们/小林正树/在我冒险的日	subtitle encoding is not supported: /Volumes/导演们/小林正树/在我冒险的日/在我冒险的日.Inn.of.Evil.(1971.Masaki.Kobayashi).DVDrip.Jose.El.Luzu.srt
+DONE	/Volumes/导演们/巴斯特·基顿/大学	completed 2026-06-08 16:50:29
+FAILED	/Volumes/导演们/布莱恩·德·帕尔玛/危情羔羊	subtitle encoding is not supported: /Volumes/导演们/布莱恩·德·帕尔玛/危情羔羊/危情羔羊.Raising.Cain.1992.DVDRiP.XviD-Grand.chs.srt
+FAILED	/Volumes/导演们/布莱恩·德·帕尔玛/嗨，妈妈	subtitle encoding is not supported: /Volumes/导演们/布莱恩·德·帕尔玛/嗨，妈妈/嗨，妈妈.Hi.Mom.1970.WS.DVDRip.XviD-FRAGMENT.srt
+DONE	/Volumes/导演们/布莱恩·德·帕尔玛/节选修订	completed 2026-06-08 16:50:54
+FAILED	/Volumes/导演们/布莱恩·德·帕尔玛/迷情记	subtitle encoding is not supported: /Volumes/导演们/布莱恩·德·帕尔玛/迷情记/迷情记.Obsession.1976.DVDRip.x264.DD5.1-OP.srt
+DONE	/Volumes/导演们/布莱恩·德·帕尔玛/铁面无私	completed 2026-06-08 16:52:18
+DONE	/Volumes/导演们/布鲁诺·杜蒙/人之子	completed 2026-06-08 16:56:06
+DONE	/Volumes/导演们/布鲁诺·杜蒙/人啊人	completed 2026-06-08 17:01:49
+DONE	/Volumes/导演们/布鲁诺·杜蒙/哈德维希	completed 2026-06-08 17:08:19
+DONE	/Volumes/导演们/布鲁诺·杜蒙/撒旦之外	completed 2026-06-08 17:21:19
+DONE	/Volumes/导演们/帕索里尼/12月12日	completed 2026-06-08 17:21:32
+DONE	/Volumes/导演们/帕索里尼/萨那的城墙	completed 2026-06-08 17:21:37
+FAILED	/Volumes/导演们/弗里茨·朗/夜澜人未静	subtitle encoding is not supported: /Volumes/导演们/弗里茨·朗/夜澜人未静/夜澜人未静.While.The.City.Sleeps.1956.srt
+FAILED	/Volumes/导演们/弗里茨·朗/恶人牧场	subtitle encoding is not supported: /Volumes/导演们/弗里茨·朗/恶人牧场/恶人牧场.Rancho.Notorious.1952.DVDRip.XviD-iMMORTALs.srt
+DONE	/Volumes/导演们/成濑巳喜男/女人中的陌生人	completed 2026-06-08 17:22:11
+FAILED	/Volumes/导演们/成濑巳喜男/幸福生活	subtitle encoding is not supported: /Volumes/导演们/成濑巳喜男/幸福生活/幸福生活.Tanoshiki.kana.jinsei.This.Happy.Life.1944.Mikio.Naruse.srt
+DONE	/Volumes/导演们/成濑巳喜男/愿妻如蔷薇	completed 2026-06-08 17:22:39
+DONE	/Volumes/导演们/成濑巳喜男/晚菊	completed 2026-06-08 17:23:07
+DONE	/Volumes/导演们/托尼·理查德森/艺人	completed 2026-06-08 17:23:33
+DONE	/Volumes/导演们/托尼·理查德森/苦恋	completed 2026-06-08 17:24:00
+DONE	/Volumes/导演们/拉杜·裘德/倒霉性爱.发狂黄片	completed 2026-06-08 17:25:44
+FAILED	/Volumes/导演们/拉杜·裘德/喝彩	subtitle encoding is not supported: /Volumes/导演们/拉杜·裘德/喝彩/Aferim!.2015.BDRip.X264.iNT-TLF.chs.srt
+DONE	/Volumes/导演们/斯坦利·库布里克/2001太空漫游/2001：创造神话	completed 2026-06-08 17:26:06
+DONE	/Volumes/导演们/斯坦利·库布里克/2001太空漫游/看见未来的视野：2001的预言	completed 2026-06-08 17:26:18
+DONE	/Volumes/导演们/斯坦利·库布里克/2001太空漫游/站在库布里克的肩上：2001的馈赠	completed 2026-06-08 17:26:29
+DONE	/Volumes/导演们/斯坦利·库布里克/斯坦利·库布里克的视角	completed 2026-06-08 17:26:39
+DONE	/Volumes/导演们/斯坦利·库布里克/杀手之吻	completed 2026-06-08 17:28:12
+DONE	/Volumes/导演们/斯坦利·库布里克/闪灵/遗忘的风景：雕塑“闪灵”	completed 2026-06-08 17:28:44
+DONE	/Volumes/导演们/斯特劳布于勒夫妇/弗尔蒂尼和卡尼	completed 2026-06-08 17:29:20
+FAILED	/Volumes/导演们/斯特劳布于勒夫妇/洛林	subtitle encoding is not supported: /Volumes/导演们/斯特劳布于勒夫妇/洛林/洛林.Danièle.Huillet.&.Jean-Marie.Straub.-.Lothringen!.1994.srt
+FAILED	/Volumes/导演们/斯特劳布于勒夫妇/索福克勒斯的安提戈涅	mkvmerge failed for /Volumes/导演们/斯特劳布于勒夫妇/索福克勒斯的安提戈涅 with exit code 2
+DONE	/Volumes/导演们/斯蒂芬·乌赫尔/三个女儿	completed 2026-06-08 18:04:53
+DONE	/Volumes/导演们/曼·雷伊/Mystères du château de Dé, Les	completed 2026-06-08 18:05:13
+DONE	/Volumes/导演们/曼努埃尔·德·奥利维拉/安吉里卡奇遇	completed 2026-06-08 18:07:41
+PENDING	/Volumes/导演们/朱尔斯·达辛/男人的斗争	
+PENDING	/Volumes/导演们/朱拉·亚库比斯克/诺娜和埃斯特	
+PENDING	/Volumes/导演们/朴赞郁/我要复仇	
+PENDING	/Volumes/导演们/朴赞郁/斯托克	
+PENDING	/Volumes/导演们/杰兹·斯科利莫夫斯基/情色	
+PENDING	/Volumes/导演们/杰兹·斯科利莫夫斯基/栅栏	
+PENDING	/Volumes/导演们/杰兹·斯科利莫夫斯基/要钱还是要命	
+PENDING	/Volumes/导演们/杰兹·斯科利莫夫斯基/轻取	
+PENDING	/Volumes/导演们/柯内流·波蓝波宇/布加勒斯特东12点8分	
+PENDING	/Volumes/导演们/柯内流·波蓝波宇/警察.形容词	
+PENDING	/Volumes/导演们/梅尔维尔/可怕的孩子们	
+PENDING	/Volumes/导演们/比尔·普莱姆顿 & 罗伯特·克鲁伯/变种外星人	
+PENDING	/Volumes/导演们/沃纳·赫尔佐格/在世界尽头相遇	
+PENDING	/Volumes/导演们/沃纳·赫尔佐格/沃采克	
+PENDING	/Volumes/导演们/沃纳·赫尔佐格/灰熊人	
+PENDING	/Volumes/导演们/沃纳·赫尔佐格/玻璃精灵	
+PENDING	/Volumes/导演们/沃纳·赫尔佐格/赫尔佐格短片集/最后的话	
+PENDING	/Volumes/导演们/沃纳·赫尔佐格/赫尔佐格短片集/没人愿意跟我玩	
+PENDING	/Volumes/导演们/沃纳·赫尔佐格/赫尔佐格短片集/荷索的自画像	
+PENDING	/Volumes/导演们/沃纳·赫尔佐格/阿基尔，上帝的愤怒	
+PENDING	/Volumes/导演们/沃纳·赫尔佐格/黑暗之课	
+PENDING	/Volumes/导演们/沟口建二/名刀美女丸	
+PENDING	/Volumes/导演们/沟口建二/女優須磨子の恋	
+PENDING	/Volumes/导演们/沟口建二/折纸鹤的阿千	
+PENDING	/Volumes/导演们/沟口建二/武蔵野夫人	
+PENDING	/Volumes/导演们/沟口建二/谣言的女人	
+PENDING	/Volumes/导演们/河濑直美/万华镜	
+PENDING	/Volumes/导演们/河濑直美/太阳西斜	
+PENDING	/Volumes/导演们/法斯宾德/卡斯特婆婆升天记	
+PENDING	/Volumes/导演们/波·维德伯格/今生今世	
+PENDING	/Volumes/导演们/波·维德伯格/满城风雨	
+PENDING	/Volumes/导演们/熊切和嘉/天线	
+PENDING	/Volumes/导演们/特伦斯·戴维斯/漫长的一天结束了	
+PENDING	/Volumes/导演们/筱田正浩/暗杀	
+PENDING	/Volumes/导演们/米哈依尔·卡拉托佐夫/未寄出的信	
+PENDING	/Volumes/导演们/米洛斯·福尔曼/黑彼得	
+PENDING	/Volumes/导演们/约瑟夫·罗西/M	
+PENDING	/Volumes/导演们/约瑟夫·罗西/刺杀托洛茨基	
+PENDING	/Volumes/导演们/约瑟夫·罗西/博命	
+PENDING	/Volumes/导演们/约瑟夫·罗西/景中人	
+PENDING	/Volumes/导演们/约瑟夫·罗西/沧海孤女恨	
+PENDING	/Volumes/导演们/约瑟夫·罗西/涛海春晓	
+PENDING	/Volumes/导演们/约瑟夫·罗西/绿发男孩	
+PENDING	/Volumes/导演们/约翰.休斯顿/夜阑人未静	
+PENDING	/Volumes/导演们/约翰·卡萨维茨/明妮与莫斯科威兹	
+PENDING	/Volumes/导演们/罗伊·安德森/羁旅情愫	
+PENDING	/Volumes/导演们/罗伯特·奥尔特曼/凡高与提奥	
+PENDING	/Volumes/导演们/罗伯特·奥尔特曼/花村	
+PENDING	/Volumes/导演们/罗伯特·布列松/梦想者四夜	
+PENDING	/Volumes/导演们/肯·洛奇/寻找埃里克	
+PENDING	/Volumes/导演们/肯·洛奇/小孩与鹰	
+PENDING	/Volumes/导演们/肯·洛奇/底层生活	
+PENDING	/Volumes/导演们/肯·洛奇/折翼母亲	
+PENDING	/Volumes/导演们/肯·洛奇/最危险的路	
+PENDING	/Volumes/导演们/肯·洛奇/自由世界	
+PENDING	/Volumes/导演们/肯·洛奇/致命档案	
+PENDING	/Volumes/导演们/艾伦·帕克/午夜快车	
+PENDING	/Volumes/导演们/艾伦·帕克/贝隆夫人	
+PENDING	/Volumes/导演们/英格玛·伯格曼/刺激	
+PENDING	/Volumes/导演们/英格玛·伯格曼/映画创造者	
+PENDING	/Volumes/导演们/英格玛·伯格曼/面对面	
+PENDING	/Volumes/导演们/莱奥·卡拉克斯/忧郁的扼杀	
+PENDING	/Volumes/导演们/莱奥·卡拉克斯/神圣车行	
+PENDING	/Volumes/导演们/菲利普·加瑞尔/处女的床	
+PENDING	/Volumes/导演们/菲利普·加瑞尔/我再也听不见吉他声	
+PENDING	/Volumes/导演们/西德尼·吕美特/大审判	
+PENDING	/Volumes/导演们/西德尼·吕美特/奇幻核子战	
+PENDING	/Volumes/导演们/西德尼·吕美特/恋马狂	
+PENDING	/Volumes/导演们/西德尼·吕美特/死亡计中计	
+PENDING	/Volumes/导演们/西德尼·吕美特/突击者	
+PENDING	/Volumes/导演们/让·吕克.戈达尔/东风	
+PENDING	/Volumes/导演们/让·吕克.戈达尔/当戈达尔遇到伍迪艾伦	
+PENDING	/Volumes/导演们/让·吕克.戈达尔/德国玖零	
+PENDING	/Volumes/导演们/让·尤斯塔奇/下流故事	
+PENDING	/Volumes/导演们/让·尤斯塔奇/甜蜜坏朋友	
+PENDING	/Volumes/导演们/让·尤斯塔奇/蓝眼睛的圣诞老人	
+PENDING	/Volumes/导演们/让·尤斯塔奇/阿历克斯的照片	
+PENDING	/Volumes/导演们/让·雷诺阿/风中双骑	
+PENDING	/Volumes/导演们/谢尔盖·爱森斯坦/石头上的花	
+PENDING	/Volumes/导演们/费德里科·费里尼/卖艺春秋	
+PENDING	/Volumes/导演们/路易斯·布努埃尔/白日美人	
+PENDING	/Volumes/导演们/达伦·阿伦诺夫斯基/没时间	
+PENDING	/Volumes/导演们/达内兄弟/他人之子	
+PENDING	/Volumes/导演们/达内兄弟/孩子	
+PENDING	/Volumes/导演们/达内兄弟/年轻的阿迈德	
+PENDING	/Volumes/导演们/达米彦·奥图/死前戏	
+PENDING	/Volumes/导演们/达米彦·奥图/理查德·奥的历史	
+PENDING	/Volumes/导演们/达米彦·奥图/致命的过错	
+PENDING	/Volumes/导演们/达米恩·查泽雷/登月第一人	
+PENDING	/Volumes/导演们/迈克尔·鲍威尔/沙滩上的夏娃	
+PENDING	/Volumes/导演们/阿伦·雷乃/严禁嘴对嘴	
+PENDING	/Volumes/导演们/阿伦·雷乃/史塔维斯基	
+PENDING	/Volumes/导演们/阿伦·雷乃/天意	
+PENDING	/Volumes/导演们/阿伦·雷乃/生命是部小说	
+PENDING	/Volumes/导演们/阿伦·雷乃/雕像也会死亡(英字)	
+PENDING	/Volumes/导演们/阿兰·卡瓦利埃/Le Filmeur	
+PENDING	/Volumes/导演们/阿兰·卡瓦利埃/小岛上的决斗	
+PENDING	/Volumes/导演们/阿兰·卡瓦利埃/狂乱	
+PENDING	/Volumes/导演们/阿历克塞·巴拉巴诺夫/战俘计划	
+PENDING	/Volumes/导演们/阿历克塞·巴拉巴诺夫/河流	
+PENDING	/Volumes/导演们/阿历克塞·巴拉巴诺夫/锅炉工	
+PENDING	/Volumes/导演们/阿历克塞·巴拉巴诺夫/黑色海洛因	
+PENDING	/Volumes/导演们/阿基·考里斯马基/列宁格勒牛仔遇见摩西	
+PENDING	/Volumes/导演们/阿基·考里斯马基/尤哈	
+PENDING	/Volumes/导演们/阿彼察邦·韦拉斯哈古/祝福	
+PENDING	/Volumes/导演们/阿涅斯·瓦尔达/(2002)艾格妮捡风景：两年后 Les glaneurs et la glaneuse... deux ans après	
+PENDING	/Volumes/导演们/阿涅斯·瓦尔达/(2003)飞逝的狮子 Le lion volatil	
+PENDING	/Volumes/导演们/阿涅斯·瓦尔达/三颗纽扣	
+PENDING	/Volumes/导演们/阿涅斯·瓦尔达/创造物	
+PENDING	/Volumes/导演们/阿莫多瓦/空乘情人	
+PENDING	/Volumes/导演们/阿莱克斯·德拉·伊格来希亚/伤心小号曲	
+PENDING	/Volumes/导演们/阿莱克斯·德拉·伊格来希亚/公共财产	
+PENDING	/Volumes/导演们/阿莱克斯·德拉·伊格来希亚/婴儿房	
+PENDING	/Volumes/导演们/阿莱克斯·德拉·伊格来希亚/完美犯罪	
+PENDING	/Volumes/导演们/阿莱克斯·德拉·伊格来希亚/牛津杀手	
+PENDING	/Volumes/导演们/阿莱克斯·德拉·伊格来希亚/美年达杀人狂	
+PENDING	/Volumes/导演们/阿莱克斯·德拉·伊格来希亚/野兽之日	
+PENDING	/Volumes/导演们/阿里·艾斯特/爱丁顿	
+PENDING	/Volumes/导演们/雷德利·斯科特/古驰家族	
+PENDING	/Volumes/导演们/雷德利·斯科特/银翼杀手	
+PENDING	/Volumes/导演们/马丁·斯科塞斯/冷血霹雳火	
+PENDING	/Volumes/导演们/马克斯·奥菲尔斯/Komedie om geld	
+PENDING	/Volumes/导演们/马克斯·奥菲尔斯/大笑的继承人	
+PENDING	/Volumes/导演们/马克斯·奥菲尔斯/没有明天	
+PENDING	/Volumes/导演们/马克斯·奥菲尔斯/温柔的敌人	
+PENDING	/Volumes/导演们/马克斯·奥菲尔斯/维特	
+PENDING	/Volumes/看/一种关注/破败工厂	
+PENDING	/Volumes/看/一种关注/神枪手之死	
+PENDING	/Volumes/看/一种关注/神的介入	
+PENDING	/Volumes/看/一种关注/阿喀琉斯	
+PENDING	/Volumes/看/剧/唐顿庄园/唐顿庄园3.盛大结局	
+PENDING	/Volumes/看/反派影评/戛纳/五佳导演/克里斯蒂安·蒙吉/山之外	
+PENDING	/Volumes/看/反派影评/戛纳/五佳导演/努里·比格·锡兰/小镇	
+PENDING	/Volumes/看/反派影评/戛纳/五佳导演/努里·比格·锡兰/适合分手的季节	
+PENDING	/Volumes/看/反派影评/戛纳/五佳导演/尼古拉斯·温丁·雷弗恩/日出英烈祠	
+PENDING	/Volumes/看/反派影评/戛纳/五佳导演/谢尔盖·洛兹尼察/中央广场	
+PENDING	/Volumes/看/反派影评/戛纳/五佳导演/谢尔盖·洛兹尼察/温柔女子	
+PENDING	/Volumes/看/反派影评/戛纳/五佳导演/谢尔盖·洛兹尼察/萨拉热窝的桥	
+PENDING	/Volumes/看/反派影评/戛纳/五佳导演/迈克尔·哈内克/反叛	
+PENDING	/Volumes/看/反派影评/戛纳/五佳导演/迈克尔·哈内克/城堡	
+PENDING	/Volumes/看/反派影评/戛纳/五佳导演/迈克尔·哈内克/爱	
+PENDING	/Volumes/看/反派影评/戛纳/五佳导演/阿莉切·罗尔瓦赫尔/圣体	
+PENDING	/Volumes/看/反派影评/戛纳/五佳导演/阿莉切·罗尔瓦赫尔/奇迹	
+PENDING	/Volumes/看/反派影评/戛纳/十佳/破败工厂	
+PENDING	/Volumes/看/反派影评/戛纳/十佳/西比勒	
+PENDING	/Volumes/看/反派影评/戛纳/十佳/追捕聂鲁达	
+PENDING	/Volumes/看/反派影评/柏林威尼斯/十佳/沉默之像	
+PENDING	/Volumes/看/反派影评/柏林威尼斯/十佳/法庭	
+PENDING	/Volumes/看/反派影评/柏林威尼斯/十佳/浮士德	
+PENDING	/Volumes/看/反派影评/柏林威尼斯/十佳/疯马歌舞秀	
+PENDING	/Volumes/看/反派影评/柏林威尼斯/十佳/都灵之马	
+PENDING	/Volumes/看/反派影评/柏林威尼斯/红色天空	
+# appended_from_cleanup_audit	2026-06-09 08:18:21
+PENDING	/Volumes/分类/爱情/如何被爱	added from cleanup audit 20260609-081821
+PENDING	/Volumes/分类/科幻·奇幻/新外星人	added from cleanup audit 20260609-081821
+PENDING	/Volumes/导演们/刘别谦/有声片/街角的商店	added from cleanup audit 20260609-081821
+PENDING	/Volumes/导演们/沃纳·赫尔佐格/乌代布尔王公的古怪私人院	added from cleanup audit 20260609-081821
+PENDING	/Volumes/导演们/沃纳·赫尔佐格/来自深处的钟声	added from cleanup audit 20260609-081821
+PENDING	/Volumes/导演们/沃纳·赫尔佐格/赫尔佐格短片集/士兵的歌谣	added from cleanup audit 20260609-081821
+PENDING	/Volumes/导演们/沃纳·赫尔佐格/赫尔佐格短片集/德意志要塞无防范之抵御	added from cleanup audit 20260609-081821
+PENDING	/Volumes/导演们/沃纳·赫尔佐格/赫尔佐格短片集/残疾人的未来	added from cleanup audit 20260609-081821
+PENDING	/Volumes/导演们/贝拉·塔尔/麦莱锡福利旅店	added from cleanup audit 20260609-081821

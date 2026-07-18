@@ -1,0 +1,68 @@
+/Volumes/分类/华语世界/禁/独生子女国度
+  movie: /Volumes/分类/华语世界/禁/独生子女国度/One.Child.Nation.2019.REPACK.720p.AMZN.WEB-DL.DDP5.1.H.264-KAMIKAZE.mkv
+  note: track=19 lang=chi/zh default=0 codec=SubRip/SRT cjk=11978 bad=0 lines=4717
+
+/Volumes/分类/传记·一段历史/独奏
+  movie: /Volumes/分类/传记·一段历史/独奏/solo.mkv
+  note: track=3 lang=chi/zh default=1 codec=SubRip/SRT cjk=771 bad=1 lines=298
+
+/Volumes/分类/传记·一段历史/謝爾蓋·愛森斯坦自傳
+  movie: /Volumes/分类/传记·一段历史/謝爾蓋·愛森斯坦自傳/Сергей_Эйзенштейн._Автобиография.mkv
+  note: track=2 lang=chi/zh default=1 codec=SubRip/SRT cjk=2024 bad=1 lines=481
+
+/Volumes/分类/动画片/鬼妈妈
+  movie: /Volumes/分类/动画片/鬼妈妈/[鬼妈妈].Coraline.DVDRip.XviD-ARROW.mkv
+  note: track=2 lang=chi/zh default=1 codec=SubRip/SRT cjk=8206 bad=1 lines=4147
+
+/Volumes/分类/战争/最后的列车
+  movie: /Volumes/分类/战争/最后的列车/Posl.Poezd.mkv
+  note: track=2 lang=chi/zh default=1 codec=SubRip/SRT cjk=4145 bad=1 lines=1696
+
+/Volumes/分类/纪录/冢本图鉴
+  movie: /Volumes/分类/纪录/冢本图鉴/Basic_Tsukamoto.mkv
+  note: track=2 lang=chi/zh default=1 codec=SubRip/SRT cjk=8561 bad=1 lines=2617
+
+/Volumes/分类/纪录/天明屋尚：新·武士藝術
+  movie: /Volumes/分类/纪录/天明屋尚：新·武士藝術/Near.Equal.Tenmyouya.Hisashi.2006.DVDRip.XviD-MOC.mkv
+  note: track=2 lang=chi/zh default=1 codec=SubRip/SRT cjk=7894 bad=1 lines=2759
+
+/Volumes/分类/纪录/會田誠 無氣力大陸
+  movie: /Volumes/分类/纪录/會田誠 無氣力大陸/Near.Equal.Aida.Makoto.2004.DVDRip.XviD-MOC.mkv
+  note: track=3 lang=chi/zh default=1 codec=SubRip/SRT cjk=10230 bad=1 lines=3888
+
+/Volumes/分类/纪录/舟越桂：低語呢喃的凝視
+  movie: /Volumes/分类/纪录/舟越桂：低語呢喃的凝視/Near.Equal.Funakoshi.Katsura.2004.DVDRip.XviD-MOC.mkv
+  note: track=2 lang=chi/zh default=1 codec=SubRip/SRT cjk=10919 bad=1 lines=3926
+
+/Volumes/分类/纪录/贝洛夫兄妹
+  movie: /Volumes/分类/纪录/贝洛夫兄妹/俄罗斯-Viktor.Kosakovsky-1993-贝洛夫兄妹-the.belovs'.mkv
+  note: track=2 lang=chi/zh default=1 codec=SubRip/SRT cjk=6197 bad=1 lines=1907
+
+/Volumes/分类/纪录/阿沃·帕特：24个序幕
+  movie: /Volumes/分类/纪录/阿沃·帕特：24个序幕/阿沃·帕特：24个序幕.mkv
+  note: track=5 lang=chi/zh default=0 codec=SubRip/SRT cjk=6420 bad=1 lines=2497
+
+/Volumes/分类/短篇集/人权故事（短篇集）
+  movie: /Volumes/分类/短篇集/人权故事（短篇集）/sohr_cut3.mkv
+  note: track=2 lang=chi/zh default=0 codec=SubRip/SRT cjk=2355 bad=1 lines=953
+
+/Volumes/分类/短篇集/拉丽莎
+  movie: /Volumes/分类/短篇集/拉丽莎/Larisa-1980-Elem.Klimov.mkv
+  note: track=3 lang=chi/zh default=1 codec=SubRip/SRT cjk=2375 bad=1 lines=832
+
+/Volumes/分类/短篇集/维尔纽斯童话
+  movie: /Volumes/分类/短篇集/维尔纽斯童话/Vilniaus_pasaka_[lt-sub_en].mkv
+  note: track=2 lang=chi/zh default=1 codec=SubRip/SRT cjk=1154 bad=1 lines=656
+
+/Volumes/分类/喜剧/罗宾逊我的英国祖父
+  movie: /Volumes/分类/喜剧/罗宾逊我的英国祖父/罗宾逊我的英国祖父robinzoniada.ili.moj.anglijskij.dedushka-muxed.mkv
+  note: track=2 lang=chi/zh default=0 codec=SubRip/SRT cjk=4970 bad=1 lines=1976
+
+/Volumes/导演们/卡尔·西奥多·德莱叶/短片/斯托斯特姆桥
+  movie: /Volumes/导演们/卡尔·西奥多·德莱叶/短片/斯托斯特姆桥/斯托斯特姆桥.Storstrømsbroen.1950.mkv
+  note: track=2 lang=chi/zh default=1 codec=SubRip/SRT cjk=64 bad=0 lines=23
+
+/Volumes/导演们/亚历斯·冯·华麦丹/艾玛布兰克的最后一天
+  movie: /Volumes/导演们/亚历斯·冯·华麦丹/艾玛布兰克的最后一天/艾玛布兰克的最后一天.De.laatste.dagen.van.Emma.Blank.2009.mkv
+  note: track=2 lang=chi/zh default=1 codec=SubRip/SRT cjk=5671 bad=1 lines=2498
+
