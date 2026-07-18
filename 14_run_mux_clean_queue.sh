@@ -11,6 +11,7 @@ KNOWN_TOOL_DIR="/Users/milou/Documents/电影整理计划/tools/MKVToolNix.app/C
 LOCAL_TOOL_DIR="$WORKDIR/tools/MKVToolNix.app/Contents/MacOS"
 MKVMERGE="${MKVMERGE:-}"
 MKVEXTRACT="${MKVEXTRACT:-}"
+FFMPEG="${FFMPEG:-}"
 
 DRY_RUN="${DRY_RUN:-1}"
 RUN_LIMIT="${RUN_LIMIT:-0}"
@@ -137,6 +138,18 @@ resolve_tool() {
   fi
 }
 
+resolve_optional_tool() {
+  local current="$1"
+  local tool_name="$2"
+  if [[ -n "$current" && -x "$current" ]]; then
+    printf '%s\n' "$current"
+  elif command -v "$tool_name" >/dev/null 2>&1; then
+    command -v "$tool_name"
+  else
+    return 1
+  fi
+}
+
 subtitle_lang_hint() {
   local lower
   lower="$(basename "$1" | tr '[:upper:]' '[:lower:]')"
@@ -169,6 +182,84 @@ disc_marker() {
   if [[ "$lower" =~ cd[[:space:]._-]*([0-9]+) ]]; then
     printf 'cd%s' "${BASH_REMATCH[1]}"
   fi
+}
+
+subtitle_name_match_status() {
+  local movie="$1"
+  local subtitle="$2"
+  python3 - "$movie" "$subtitle" <<'PY'
+from pathlib import Path
+import re
+import sys
+import unicodedata
+
+movie = Path(sys.argv[1])
+subtitle = Path(sys.argv[2])
+
+stop = {
+    "aac", "ac3", "avi", "baofeng", "bdrip", "bluray", "cd", "cn", "colorized",
+    "divx", "docu", "dvdrip", "dvd", "eng", "english", "fr", "french", "gb",
+    "german", "hdrip", "h264", "internal", "limited", "mkv", "mp3", "mp4",
+    "proper", "rip", "srt", "sub", "subs", "subtitle", "subtitles", "title",
+    "vobsub", "web", "webdl", "x264", "xvid",
+}
+generic_patterns = [
+    r"^vts[ _.-]*\d+",
+    r"^sub(title)?s?$",
+    r"^(chs|cht|chi|zh|cn|eng|en|english)$",
+    r"^(cd|disc|disk|part)[ _.-]*\d+$",
+    r"^[a-z]{2,5}-[a-z0-9]{2,8}$",
+]
+
+def normalize(value: str) -> str:
+    value = unicodedata.normalize("NFKD", value).encode("ascii", "ignore").decode("ascii")
+    return value.lower()
+
+def tokens(path: Path) -> list[str]:
+    stem = normalize(path.stem)
+    raw = re.findall(r"[a-z0-9]+", stem)
+    out = []
+    for token in raw:
+        if token in stop:
+            continue
+        if re.fullmatch(r"(19|20)\d{2}", token):
+            continue
+        if re.fullmatch(r"\d+", token):
+            continue
+        if len(token) < 3:
+            continue
+        out.append(token)
+    return out
+
+sub_stem = normalize(subtitle.stem)
+if any(re.match(pattern, sub_stem) for pattern in generic_patterns):
+    print("OK\tgeneric subtitle name")
+    raise SystemExit(0)
+
+movie_tokens = tokens(movie)
+subtitle_tokens = tokens(subtitle)
+
+if not movie_tokens or len(subtitle_tokens) < 3:
+    print("OK\tinsufficient title tokens to compare")
+    raise SystemExit(0)
+
+def similar(a: str, b: str) -> bool:
+    if a == b:
+        return True
+    if min(len(a), len(b)) >= 4 and (a.startswith(b[:4]) or b.startswith(a[:4])):
+        return True
+    return False
+
+matches = sorted({s for s in subtitle_tokens for m in movie_tokens if similar(s, m)})
+if matches:
+    print("OK\tshared subtitle/movie token(s): " + ",".join(matches[:5]))
+else:
+    print(
+        "ERROR\tpossible subtitle/movie mismatch: "
+        f"movie_tokens={','.join(movie_tokens[:8])}; subtitle_tokens={','.join(subtitle_tokens[:8])}"
+    )
+    raise SystemExit(1)
+PY
 }
 
 detect_subtitle() {
@@ -661,7 +752,16 @@ process_folder() {
     done
   fi
 
+  local match_status
+  for subtitle in "${subtitles[@]}"; do
+    match_status="$(subtitle_name_match_status "$movie" "$subtitle")" || {
+      fail_current "subtitle/movie name mismatch: $subtitle :: $match_status"
+      return 1
+    }
+  done
+
   local -a cmd=("$MKVMERGE" "--output" "$tmp_output" "$movie")
+  local -a mux_subtitle_args=()
   local subtitle hint detect_status charset lang cjk repl score mojibake name default_flag has_default_chi=0 expect_default_chi=0
   local normalized_subtitle subtitle_index=0
   local -a subtitle_files=()
@@ -698,6 +798,11 @@ process_folder() {
         fail_current "subtitle decode produced replacement characters: $subtitle"
         return 1
       fi
+      if [[ "$lang" != "chi" && "${mojibake:-0}" -ge 80 ]]; then
+        review_required=1
+        review_message="text subtitle has high mojibake score (${mojibake}) and needs manual review before deleting source"
+        log "REVIEW REQUIRED: $review_message | file: $subtitle"
+      fi
       if [[ "$DRY_RUN" == "1" ]]; then
         normalized_subtitle="$NORMALIZED_DIR/$safe_stem/subtitle_${subtitle_index}_${lang}.${subtitle##*.}"
         log "DRY-RUN: would normalize subtitle to UTF-8: $normalized_subtitle"
@@ -729,6 +834,7 @@ process_folder() {
     elif [[ "${#subtitles[@]}" -eq 1 && "$lang" == "und" ]]; then
       default_flag="yes"
     fi
+    mux_subtitle_args+=("--language" "0:$lang" "--track-name" "0:$name" "--default-track-flag" "0:$default_flag" "$normalized_subtitle")
     cmd+=("--language" "0:$lang" "--track-name" "0:$name" "--default-track-flag" "0:$default_flag" "$normalized_subtitle")
     subtitle_files+=("$subtitle")
     appended_subtitle_count=$((appended_subtitle_count + 1))
@@ -771,9 +877,50 @@ process_folder() {
     if [[ "$mkvmerge_status" -eq 1 ]]; then
       log "mkvmerge completed with warnings; continuing to verification"
     elif [[ "$mkvmerge_status" -ne 0 ]]; then
-      [[ -e "$tmp_output" ]] && mv "$tmp_output" "$tmp_output.failed.$(date '+%Y%m%d-%H%M%S')" || true
-      fail_current "mkvmerge failed with exit code $mkvmerge_status"
-      return 1
+      if tail -n +"$mkvmerge_log_start" "$RUN_LOG" | grep -Eiq 'Unknown/unsupported audio format' && [[ "$(printf '%s' "$movie" | tr '[:upper:]' '[:lower:]')" == *.avi ]] && [[ -n "$FFMPEG" ]]; then
+        local remuxed_movie ffmpeg_status fallback_status fallback_log_start
+        remuxed_movie="$folder/.$stem.ffmpeg-remux.mkv"
+        [[ -e "$tmp_output" ]] && mv "$tmp_output" "$tmp_output.failed.$(date '+%Y%m%d-%H%M%S')" || true
+        log "mkvmerge could not read an AVI audio track; trying ffmpeg stream-copy remux fallback: $remuxed_movie"
+        set +e
+        "$FFMPEG" -y -fflags +genpts -i "$movie" -map 0 -c copy -avoid_negative_ts make_zero "$remuxed_movie" >> "$RUN_LOG" 2>&1
+        ffmpeg_status=$?
+        set -e
+        if [[ "$ffmpeg_status" -ne 0 ]]; then
+          [[ -e "$remuxed_movie" ]] && mv "$remuxed_movie" "$remuxed_movie.failed.$(date '+%Y%m%d-%H%M%S')" || true
+          fail_current "ffmpeg stream-copy remux fallback failed with exit code $ffmpeg_status"
+          return 1
+        fi
+        ignored+=("$remuxed_movie")
+        local -a fallback_cmd=("$MKVMERGE" "--output" "$tmp_output" "$remuxed_movie" "${mux_subtitle_args[@]}")
+        fallback_log_start="$(wc -l < "$RUN_LOG" | tr -d ' ')"
+        set +e
+        "${fallback_cmd[@]}" >> "$RUN_LOG" 2>&1 &
+        mkvmerge_pid=$!
+        monitor_temp_output_growth "$tmp_output" "$mkvmerge_pid" "$input_size" &
+        monitor_pid=$!
+        wait "$mkvmerge_pid"
+        fallback_status=$?
+        kill "$monitor_pid" >/dev/null 2>&1 || true
+        wait "$monitor_pid" >/dev/null 2>&1 || true
+        set -e
+        if [[ "$fallback_status" -eq 1 ]]; then
+          log "fallback mkvmerge completed with warnings; continuing to verification"
+        elif [[ "$fallback_status" -ne 0 ]]; then
+          [[ -e "$tmp_output" ]] && mv "$tmp_output" "$tmp_output.failed.$(date '+%Y%m%d-%H%M%S')" || true
+          fail_current "fallback mkvmerge failed with exit code $fallback_status"
+          return 1
+        fi
+        if tail -n +"$fallback_log_start" "$RUN_LOG" | grep -Eiq 'audio/video synchronization may have been lost|invalid data which were skipped'; then
+          review_required=1
+          review_message="fallback mkvmerge warned about skipped invalid media data; review audio/video sync before deleting source"
+          log "REVIEW REQUIRED: $review_message"
+        fi
+      else
+        [[ -e "$tmp_output" ]] && mv "$tmp_output" "$tmp_output.failed.$(date '+%Y%m%d-%H%M%S')" || true
+        fail_current "mkvmerge failed with exit code $mkvmerge_status"
+        return 1
+      fi
     fi
     if tail -n +"$mkvmerge_log_start" "$RUN_LOG" | grep -Eiq 'audio/video synchronization may have been lost|invalid data which were skipped'; then
       review_required=1
@@ -827,8 +974,14 @@ main() {
   [[ -f "$QUEUE_FILE" ]] || { log "ERROR: queue file does not exist: $QUEUE_FILE"; exit 1; }
   MKVMERGE="$(resolve_tool "$MKVMERGE" "$LOCAL_TOOL_DIR/mkvmerge" "mkvmerge" "$KNOWN_TOOL_DIR/mkvmerge")" || { log "ERROR: mkvmerge not found"; exit 1; }
   MKVEXTRACT="$(resolve_tool "$MKVEXTRACT" "$LOCAL_TOOL_DIR/mkvextract" "mkvextract" "$KNOWN_TOOL_DIR/mkvextract")" || { log "ERROR: mkvextract not found"; exit 1; }
+  FFMPEG="$(resolve_optional_tool "$FFMPEG" "ffmpeg" || true)"
   log "Using mkvmerge: $MKVMERGE"
   log "Using mkvextract: $MKVEXTRACT"
+  if [[ -n "$FFMPEG" ]]; then
+    log "Using ffmpeg fallback: $FFMPEG"
+  else
+    log "ffmpeg fallback not available; unsupported AVI audio will be marked FAILED"
+  fi
   if [[ "$DRY_RUN" == "1" ]]; then
     log "DRY-RUN mode: no media files, queue rows, or names will be changed"
   else
