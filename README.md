@@ -1,83 +1,305 @@
-# Film Subtitle Plan
+# FilmPlan
 
-本项目是一套在 Mac 上运行的本地脚本，用来整理 NAS 里的电影文件夹，把外挂字幕软封进 MKV，并在验证通过后清理原始散文件。
+FilmPlan is a small command-line workflow for standardizing a movie library on a
+Mac with movies stored on a NAS. It scans movie folders, finds external
+subtitles, muxes them into MKV files as soft subtitles, verifies the result, and
+only then cleans up the old loose files.
 
-目标目录主要是：
+The project was built for this library layout:
 
 - `/Volumes/导演们`
 - `/Volumes/分类`
 
-处理原则：
+The scripts are plain Bash/Python and are designed to run locally on macOS. No
+GUI workflow is required.
 
-- 不重新编码视频。
-- 使用 `mkvmerge` remux / mux 字幕。
-- 文本字幕会先做编码判断并转成 UTF-8。
-- 新 MKV 生成后会抽取刚添加的文本字幕做乱码检查。
-- `.idx` + 同名 `.sub` 会作为 VobSub 图片软字幕处理。
-- `.sup`、`.vtt`、`.smi`、单独 `.sub` 不自动处理。
+## What It Does
 
-## 当前文件
+- Finds single-movie folders with external subtitles.
+- Moves subtitle-only subfolder contents next to the movie file.
+- Muxes subtitles into MKV with `mkvmerge`.
+- Remuxes MP4/AVI/MKV without re-encoding video or audio.
+- Detects text subtitle encoding before muxing.
+- Converts text subtitles to UTF-8 for safer muxing.
+- Verifies newly added text subtitle tracks by extracting them from the output.
+- Handles VobSub subtitles as `.idx` plus matching `.sub`.
+- Logs every run locally.
+- Keeps risky cases out of the automatic cleanup path.
 
-- `14_run_mux_clean_queue.sh`: 执行队列，生成 MKV、验证字幕、清理已验证源文件。
-- `15_rescan_remaining_subtitles.py`: 重新扫描剩余字幕，生成审计报告。
-- `16_prepare_remaining_mux_queue.py`: 移动纯字幕子文件夹里的字幕，并生成剩余处理队列。
-- `remaining_mux_clean_queue.tsv`: 当前剩余处理队列。
-- `rescan-plan/`: 最新扫描结果。
-- `docs/`: 阶段性说明和历史状态。
-- `archive/`: 旧脚本、旧队列、旧报告，仅作留档。
-- `logs/`: 本地运行日志，不提交到 GitHub。
-- `tools/`: 本地工具，不提交到 GitHub。
+## Safety Model
 
-## 快速使用
+FilmPlan is intentionally conservative.
 
-进入项目目录：
+- It does not hardcode subtitle burn-in.
+- It does not re-encode video.
+- It does not delete source files until the new MKV passes verification.
+- It does not auto-process unmatched `.sub`, `.sup`, `.vtt`, or `.smi` files.
+- It marks risky media warnings as `DONE_REVIEW` and keeps source files.
+- It keeps generated logs and local tools out of Git.
+
+Text subtitles are checked twice:
+
+1. Before muxing, the script guesses the safest encoding and normalizes to UTF-8.
+2. After muxing, the script extracts newly added text tracks and checks for
+   replacement characters and obvious mojibake.
+
+VobSub subtitles are image subtitles, so the script can verify track presence but
+cannot OCR-check the rendered text.
+
+## Requirements
+
+### System
+
+- macOS
+- Python 3
+- Bash
+- NAS mounted under `/Volumes`
+- Enough free NAS space for temporary remux output
+
+### Media Tools
+
+Required:
+
+- `mkvmerge`
+- `mkvextract`
+
+Recommended:
+
+- `mediainfo`
+- `ffmpeg`
+
+The runner looks for MKVToolNix in these places:
+
+- `MKVMERGE` / `MKVEXTRACT` environment variables
+- tools available in `PATH`
+- `tools/MKVToolNix.app/Contents/MacOS`
+- `/Users/milou/Documents/电影整理计划/tools/MKVToolNix.app/Contents/MacOS`
+
+## Repository Layout
+
+```text
+.
+├── 14_run_mux_clean_queue.sh          # Runs the mux/verify/cleanup queue
+├── 15_rescan_remaining_subtitles.py   # Scans the library and writes audit files
+├── 16_prepare_remaining_mux_queue.py  # Moves subtitle-only subfolders and builds queue
+├── README.md
+├── RUNBOOK_MUX_CLEAN.md
+├── remaining_mux_clean_queue.tsv      # Current queue
+├── rescan-plan/                       # Latest audit result
+├── docs/                              # Project notes and status snapshots
+└── archive/                           # Older scripts, queues, and reports
+```
+
+Ignored local-only paths:
+
+- `logs/`
+- `tools/`
+- `downloads/`
+- temporary MKV/media output
+
+## Quick Start
+
+Clone the repository:
+
+```bash
+git clone https://github.com/zibimi/FilmPlan.git
+cd FilmPlan
+```
+
+Or enter the existing local project directory:
 
 ```bash
 cd /Users/milou/Movies/FilmSubTitlePlan
 ```
 
-重新扫描，先只生成报告，不改 NAS：
+Make sure your NAS roots are mounted:
+
+```bash
+ls /Volumes/导演们 /Volumes/分类
+```
+
+Check that MKVToolNix is available:
+
+```bash
+./14_run_mux_clean_queue.sh
+```
+
+With the default `DRY_RUN=1`, this command should only print what it would do.
+
+If MKVToolNix is not in `PATH`, either place `MKVToolNix.app` under:
+
+```text
+tools/MKVToolNix.app
+```
+
+or pass explicit tool paths:
+
+```bash
+MKVMERGE=/path/to/mkvmerge \
+MKVEXTRACT=/path/to/mkvextract \
+./14_run_mux_clean_queue.sh
+```
+
+## Configuration
+
+The scanner defaults to:
+
+```text
+/Volumes/导演们
+/Volumes/分类
+```
+
+Override roots with a newline-separated `ROOTS` value:
+
+```bash
+ROOTS=$'/Volumes/导演们\n/Volumes/分类' DRY_RUN=1 ./15_rescan_remaining_subtitles.py
+```
+
+The runner defaults to:
+
+```text
+remaining_mux_clean_queue.tsv
+```
+
+Override it with `QUEUE_FILE`:
+
+```bash
+QUEUE_FILE=/path/to/queue.tsv ./14_run_mux_clean_queue.sh
+```
+
+## Full Workflow
+
+### 1. Scan Without Changing NAS Files
 
 ```bash
 DRY_RUN=1 ./15_rescan_remaining_subtitles.py
 ```
 
-预览字幕移动和队列生成：
+This creates audit files under `rescan-plan/`, including:
+
+- `remaining_subtitle_audit_summary_*.md`
+- `remaining_mux_candidates_*.tsv`
+- `remaining_complex_cases_*.tsv`
+- `remaining_subtitle_moves_*.tsv`
+
+### 2. Preview Queue Preparation
 
 ```bash
 DRY_RUN=1 ./16_prepare_remaining_mux_queue.py
 ```
 
-确认后真实移动纯字幕子文件夹里的字幕，并重建队列：
+This shows which subtitle-only subfolder files would be moved and builds a fresh
+queue preview.
+
+### 3. Move Subtitle-Only Subfolder Files
 
 ```bash
 DRY_RUN=0 ./16_prepare_remaining_mux_queue.py
 ```
 
-先 dry-run 第一条队列：
+This only moves files from subtitle-only subfolders into the corresponding movie
+folder. It also rebuilds:
 
-```bash
-QUEUE_FILE=/Users/milou/Movies/FilmSubTitlePlan/remaining_mux_clean_queue.tsv RUN_LIMIT=1 ./14_run_mux_clean_queue.sh
+```text
+remaining_mux_clean_queue.tsv
 ```
 
-真实跑小批量：
+### 4. Dry-Run the First Queue Item
 
 ```bash
-DRY_RUN=0 QUEUE_FILE=/Users/milou/Movies/FilmSubTitlePlan/remaining_mux_clean_queue.tsv RUN_LIMIT=5 PROGRESS_INTERVAL=60 ./14_run_mux_clean_queue.sh
+QUEUE_FILE=/Users/milou/Movies/FilmSubTitlePlan/remaining_mux_clean_queue.tsv \
+RUN_LIMIT=1 \
+./14_run_mux_clean_queue.sh
 ```
 
-继续跑更大批量：
+This does not modify media files. It confirms that the next folder can be parsed
+and shows the exact `mkvmerge` command shape.
+
+### 5. Run a Small Real Batch
 
 ```bash
-DRY_RUN=0 QUEUE_FILE=/Users/milou/Movies/FilmSubTitlePlan/remaining_mux_clean_queue.tsv RUN_LIMIT=20 PROGRESS_INTERVAL=60 ./14_run_mux_clean_queue.sh
+DRY_RUN=0 \
+QUEUE_FILE=/Users/milou/Movies/FilmSubTitlePlan/remaining_mux_clean_queue.tsv \
+RUN_LIMIT=5 \
+PROGRESS_INTERVAL=60 \
+./14_run_mux_clean_queue.sh
 ```
 
-查看队列状态：
+### 6. Continue Larger Batches
+
+```bash
+DRY_RUN=0 \
+QUEUE_FILE=/Users/milou/Movies/FilmSubTitlePlan/remaining_mux_clean_queue.tsv \
+RUN_LIMIT=20 \
+PROGRESS_INTERVAL=60 \
+./14_run_mux_clean_queue.sh
+```
+
+Set `RUN_LIMIT=0` or omit it to keep processing until no `PENDING` rows remain.
+
+## Queue Status
 
 ```bash
 awk -F '\t' 'NR>1{c[$1]++} END{for(k in c) print k, c[k]}' remaining_mux_clean_queue.tsv
 ```
 
-## 安全边界
+Common statuses:
 
-脚本只会在验证通过后清理源文件。遇到字幕乱码、工具警告、音画同步风险、无法判断的 `.sub`/`.sup` 等情况，会标记为 `FAILED` 或 `DONE_REVIEW`，不会强行删除源文件。
+- `PENDING`: ready to process
+- `DONE`: output verified and cleanup completed
+- `DONE_REVIEW`: output created, but source files were kept for manual review
+- `FAILED`: skipped or failed; source files were kept
+
+## Supported Subtitle Inputs
+
+Automatic queue:
+
+- `.srt`
+- `.ass`
+- `.ssa`
+- `.idx` with matching `.sub`
+
+Manual review:
+
+- `.sup`
+- `.vtt`
+- `.smi`
+- unmatched `.sub`
+- mixed multi-movie folders
+- multi-CD layouts
+- folders with target MKV already present
+- folders with extras or ambiguous side files
+
+## Network And Storage Notes
+
+The workflow reads the source movie from NAS and writes a new MKV back to NAS.
+Expect SMB traffic to be roughly the source size plus output size, with extra
+protocol overhead. Large files can look slow if another upload/download is using
+the same NAS connection.
+
+The runner prints progress every `PROGRESS_INTERVAL` seconds:
+
+```text
+PROGRESS: temp output size=...; delta=...
+```
+
+## Recovery
+
+If a run is interrupted:
+
+1. Re-run the same command.
+2. The script will inspect existing temporary `.muxing.mkv` files.
+3. Valid temporary files may be reused.
+4. Invalid or stale temporary files are moved aside and rebuilt.
+
+No source movie should be deleted before output verification succeeds.
+
+## More Detail
+
+See [RUNBOOK_MUX_CLEAN.md](RUNBOOK_MUX_CLEAN.md) for the operational runbook and
+encoding details.
+
+## License
+
+No open-source license has been selected yet. Treat this repository as personal
+automation code unless a license file is added.
