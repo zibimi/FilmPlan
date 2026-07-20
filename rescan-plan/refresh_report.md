@@ -1,0 +1,765 @@
+# Refresh subtitle work report
+
+Generated: 2026-07-20 13:21:11
+
+## Summary
+
+- Mux tasks: 156
+- Cleanup-only actions: 12
+- Review items: 60
+- cd: 108
+- multi: 25
+- vobsub: 23
+
+## Mux Tasks
+
+- refresh-0001 [cd] /Volumes/导演们/三池崇史/以藏
+  - movie: Izo.2004.DVDRip.XviD-iMBT-CD1.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/三池崇史/Izo.2004.DVDRip.XviD-iMBT-CD1.mkv
+- refresh-0002 [cd] /Volumes/导演们/三池崇史/以藏
+  - movie: Izo.2004.DVDRip.XviD-iMBT-CD2.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/三池崇史/Izo.2004.DVDRip.XviD-iMBT-CD2.mkv
+- refresh-0003 [cd] /Volumes/导演们/三池崇史/搞鬼小筑
+  - movie: 搞鬼小筑.Happiness.Of.The.Katakuris.2001.DVDivx-sky-CD1.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/三池崇史/搞鬼小筑.Happiness.Of.The.Katakuris.2001.DVDivx-sky-CD1.mkv
+- refresh-0004 [cd] /Volumes/导演们/三池崇史/搞鬼小筑
+  - movie: 搞鬼小筑.Happiness.Of.The.Katakuris.2001.DVDivx-sky-CD2.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/三池崇史/搞鬼小筑.Happiness.Of.The.Katakuris.2001.DVDivx-sky-CD2.mkv
+- refresh-0005 [vobsub] /Volumes/导演们/今村昌平/人间蒸发
+  - movie: Imamura Shohei - Ningen Johatsu - A Man Vanishes.avi
+  - subtitles: 1
+  - target: /Volumes/导演们/今村昌平/Imamura Shohei - Ningen Johatsu - A Man Vanishes.mkv
+- refresh-0006 [cd] /Volumes/导演们/今村昌平/酋山节考
+  - movie: Narayama.Bushiko.1982.Dvdrip.Xvid-Imbt-Cd1.mp4
+  - subtitles: 1
+  - target: /Volumes/导演们/今村昌平/Narayama.Bushiko.1982.Dvdrip.Xvid-Imbt-Cd1.mkv
+- refresh-0007 [cd] /Volumes/导演们/今村昌平/酋山节考
+  - movie: Narayama.Bushiko.1982.Dvdrip.Xvid-Imbt-Cd2.mp4
+  - subtitles: 1
+  - target: /Volumes/导演们/今村昌平/Narayama.Bushiko.1982.Dvdrip.Xvid-Imbt-Cd2.mkv
+- refresh-0008 [cd] /Volumes/导演们/伊日·门泽尔/甜蜜家园
+  - movie: 甜蜜家园.Jirí.Menzel-Vesnicko.má.stredisková.(.My.Sweet.Little.Village.).(1985)-CD1.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/伊日·门泽尔/甜蜜家园.Jirí.Menzel-Vesnicko.má.stredisková.(.My.Sweet.Little.Village.).(1985)-CD1.mkv
+- refresh-0009 [cd] /Volumes/导演们/伊日·门泽尔/甜蜜家园
+  - movie: 甜蜜家园.Jirí.Menzel-Vesnicko.má.stredisková.(.My.Sweet.Little.Village.).(1985)-CD2.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/伊日·门泽尔/甜蜜家园.Jirí.Menzel-Vesnicko.má.stredisková.(.My.Sweet.Little.Village.).(1985)-CD2.mkv
+- refresh-0010 [vobsub] /Volumes/导演们/佩德罗·科斯塔/何处安放你藏起的笑容
+  - movie: 何处安放你藏起的笑容.Ou.git.votre.sourire.enfoui.2001.DVDRip.XviD-rb.avi
+  - subtitles: 1
+  - target: /Volumes/导演们/佩德罗·科斯塔/何处安放你藏起的笑容.Ou.git.votre.sourire.enfoui.2001.DVDRip.XviD-rb.mkv
+- refresh-0011 [cd] /Volumes/导演们/冈本喜八/肉弹
+  - movie: Nikudan.The.Human.Bullet.Kihachi.Okamoto.1968.SMoR.CD1.mp4
+  - subtitles: 1
+  - target: /Volumes/导演们/冈本喜八/Nikudan.The.Human.Bullet.Kihachi.Okamoto.1968.SMoR.CD1.mkv
+- refresh-0012 [cd] /Volumes/导演们/冈本喜八/肉弹
+  - movie: Nikudan.The.Human.Bullet.Kihachi.Okamoto.1968.SMoR.CD2.mp4
+  - subtitles: 1
+  - target: /Volumes/导演们/冈本喜八/Nikudan.The.Human.Bullet.Kihachi.Okamoto.1968.SMoR.CD2.mkv
+- refresh-0013 [cd] /Volumes/导演们/卡洛斯·绍拉/歌剧浪子
+  - movie: 我.唐乔万尼Io.Don.Giovanni.2009.iTALiAN.AC3.DVDRip.XviD-GBM.CD1.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/卡洛斯·绍拉/我.唐乔万尼Io.Don.Giovanni.2009.iTALiAN.AC3.DVDRip.XviD-GBM.CD1.mkv
+- refresh-0014 [cd] /Volumes/导演们/卡洛斯·绍拉/歌剧浪子
+  - movie: 我.唐乔万尼Io.Don.Giovanni.2009.iTALiAN.AC3.DVDRip.XviD-GBM.CD2.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/卡洛斯·绍拉/我.唐乔万尼Io.Don.Giovanni.2009.iTALiAN.AC3.DVDRip.XviD-GBM.CD2.mkv
+- refresh-0016 [vobsub] /Volumes/导演们/奥塔·埃索里亚尼/威尼斯早晨
+  - movie: 威尼斯早晨.Lundi.matin.2002.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/奥塔·埃索里亚尼/威尼斯早晨.Lundi.matin.2002.mkv
+- refresh-0017 [vobsub] /Volumes/导演们/奥塔·埃索里亚尼/月神的宠儿
+  - movie: 月神的宠儿.Les.favoris.de.la.lune.1984.avi
+  - subtitles: 1
+  - target: /Volumes/导演们/奥塔·埃索里亚尼/月神的宠儿.Les.favoris.de.la.lune.1984.mkv
+- refresh-0018 [vobsub] /Volumes/导演们/奥塔·埃索里亚尼/田园牧歌
+  - movie: 田园牧歌.Otar.Iosseliani-Pastorali.1975.mp4
+  - subtitles: 3
+  - target: /Volumes/导演们/奥塔·埃索里亚尼/田园牧歌.Otar.Iosseliani-Pastorali.1975.mkv
+- refresh-0019 [cd] /Volumes/导演们/安东尼奥尼/失败者
+  - movie: 失败者.Vinti.I.1953.DVDRip.XviD.CD1.mp4
+  - subtitles: 2
+  - target: /Volumes/导演们/安东尼奥尼/失败者.Vinti.I.1953.DVDRip.XviD.CD1.mkv
+- refresh-0020 [cd] /Volumes/导演们/安东尼奥尼/失败者
+  - movie: 失败者.Vinti.I.1953.DVDRip.XviD.CD2.mp4
+  - subtitles: 2
+  - target: /Volumes/导演们/安东尼奥尼/失败者.Vinti.I.1953.DVDRip.XviD.CD2.mkv
+- refresh-0021 [cd] /Volumes/导演们/安哲罗普洛斯/亚历山大大帝
+  - movie: 亚历山大大帝.Alexander.The.Great.1980.DVDRip.Xvid.CD1.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/安哲罗普洛斯/亚历山大大帝.Alexander.The.Great.1980.DVDRip.Xvid.CD1.mkv
+- refresh-0022 [cd] /Volumes/导演们/安哲罗普洛斯/亚历山大大帝
+  - movie: 亚历山大大帝.Alexander.The.Great.1980.DVDRip.Xvid.CD2.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/安哲罗普洛斯/亚历山大大帝.Alexander.The.Great.1980.DVDRip.Xvid.CD2.mkv
+- refresh-0023 [cd] /Volumes/导演们/安哲罗普洛斯/尤利西斯生命之旅
+  - movie: 尤利西斯生命之旅-A.Ulysses.Gaze.(To.Vlemma.Tou.Odyssea).(Director-Theo.Angelopoulos).CD1.DVDivX-Schizo.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/安哲罗普洛斯/尤利西斯生命之旅-A.Ulysses.Gaze.(To.Vlemma.Tou.Odyssea).(Director-Theo.Angelopoulos).CD1.DVDivX-Schizo.mkv
+- refresh-0024 [cd] /Volumes/导演们/安哲罗普洛斯/尤利西斯生命之旅
+  - movie: 尤利西斯生命之旅-B.Ulysses.Gaze.(To.Vlemma.Tou.Odyssea).(Director-Theo.Angelopoulos).CD2.DVDivX-Schizo.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/安哲罗普洛斯/尤利西斯生命之旅-B.Ulysses.Gaze.(To.Vlemma.Tou.Odyssea).(Director-Theo.Angelopoulos).CD2.DVDivX-Schizo.mkv
+- refresh-0026 [multi] /Volumes/导演们/安德烈·塔尔科夫斯基/安德烈·卢布廖夫
+  - movie: 安德烈·卢布廖夫.Andrei.Rublyov.Part1.1966.BDRip.X264.iNT-TLF.chs.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/安德烈·塔尔科夫斯基/安德烈·卢布廖夫.Andrei.Rublyov.Part1.1966.BDRip.X264.iNT-TLF.chs.mkv
+- refresh-0027 [multi] /Volumes/导演们/安德烈·塔尔科夫斯基/安德烈·卢布廖夫
+  - movie: 安德烈·卢布廖夫.Andrei.Rublyov.Part2.1966.BDRip.X264.iNT-TLF.chs.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/安德烈·塔尔科夫斯基/安德烈·卢布廖夫.Andrei.Rublyov.Part2.1966.BDRip.X264.iNT-TLF.chs.mkv
+- refresh-0028 [cd] /Volumes/导演们/安杰伊·瓦依达/婚礼
+  - movie: Andrzej.Wajda.1973.Wesele.cd1.mp4
+  - subtitles: 2
+  - target: /Volumes/导演们/安杰伊·瓦依达/Andrzej.Wajda.1973.Wesele.cd1.mkv
+- refresh-0029 [cd] /Volumes/导演们/安杰伊·瓦依达/婚礼
+  - movie: Andrzej.Wajda.1973.Wesele.cd2.mp4
+  - subtitles: 3
+  - target: /Volumes/导演们/安杰伊·瓦依达/Andrzej.Wajda.1973.Wesele.cd2.mkv
+- refresh-0030 [cd] /Volumes/导演们/寺山修司/抛掉书本上街去
+  - movie: Throw.Away.Your.Books.Rally.in.the.Streets.(1971).Shuji.Terayama.CD1.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/寺山修司/Throw.Away.Your.Books.Rally.in.the.Streets.(1971).Shuji.Terayama.CD1.mkv
+- refresh-0031 [cd] /Volumes/导演们/寺山修司/抛掉书本上街去
+  - movie: Throw.Away.Your.Books.Rally.in.the.Streets.(1971).Shuji.Terayama.CD2.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/寺山修司/Throw.Away.Your.Books.Rally.in.the.Streets.(1971).Shuji.Terayama.CD2.mkv
+- refresh-0032 [cd] /Volumes/导演们/市川昆/1964年东京奥林匹克运动会
+  - movie: 1964年东京奥林匹克运动会.aka.Tokyo.Olympiad.1965.CRiTERiON.DVDRip.XviD.CD1-iMBT.mp4
+  - subtitles: 2
+  - target: /Volumes/导演们/市川昆/1964年东京奥林匹克运动会.aka.Tokyo.Olympiad.1965.CRiTERiON.DVDRip.XviD.CD1-iMBT.mkv
+- refresh-0033 [cd] /Volumes/导演们/市川昆/1964年东京奥林匹克运动会
+  - movie: 1964年东京奥林匹克运动会.aka.Tokyo.Olympiad.1965.CRiTERiON.DVDRip.XviD.CD2-iMBT.mp4
+  - subtitles: 2
+  - target: /Volumes/导演们/市川昆/1964年东京奥林匹克运动会.aka.Tokyo.Olympiad.1965.CRiTERiON.DVDRip.XviD.CD2-iMBT.mkv
+- refresh-0034 [vobsub] /Volumes/导演们/弗里茨·朗/万里追踪
+  - movie: 万里追踪.Man.Hunt.1941.rmvb
+  - subtitles: 1
+  - target: /Volumes/导演们/弗里茨·朗/万里追踪.Man.Hunt.1941.mkv
+  - keep_source: yes
+- refresh-0035 [vobsub] /Volumes/导演们/弗里茨·朗/大内幕
+  - movie: 大内幕.The.Big.Heat.1953.rmvb
+  - subtitles: 1
+  - target: /Volumes/导演们/弗里茨·朗/大内幕.The.Big.Heat.1953.mkv
+  - keep_source: yes
+- refresh-0036 [vobsub] /Volumes/导演们/弗里茨·朗/狂怒
+  - movie: 狂怒.Fury.1936.rmvb
+  - subtitles: 1
+  - target: /Volumes/导演们/弗里茨·朗/狂怒.Fury.1936.mkv
+  - keep_source: yes
+- refresh-0037 [vobsub] /Volumes/导演们/弗里茨·朗/绿窗艳影
+  - movie: 绿窗艳影.The.Woman.in.the.Window.1944.rmvb
+  - subtitles: 1
+  - target: /Volumes/导演们/弗里茨·朗/绿窗艳影.The.Woman.in.the.Window.1944.mkv
+  - keep_source: yes
+- refresh-0038 [cd] /Volumes/导演们/拉斯·冯·特里尔/曼德勒
+  - movie: 曼德勒.Manderlay.2005.LiMiTED.DVDSCR.XVID.babies.cd1.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/拉斯·冯·特里尔/曼德勒.Manderlay.2005.LiMiTED.DVDSCR.XVID.babies.cd1.mkv
+- refresh-0039 [cd] /Volumes/导演们/拉斯·冯·特里尔/曼德勒
+  - movie: 曼德勒.Manderlay.2005.LiMiTED.DVDSCR.XVID.babies.cd2.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/拉斯·冯·特里尔/曼德勒.Manderlay.2005.LiMiTED.DVDSCR.XVID.babies.cd2.mkv
+- refresh-0040 [cd] /Volumes/导演们/施隆多夫/推销员之死
+  - movie: 推销员之死.De.D2-WAF.mp4
+  - subtitles: 1
+  - target: /Volumes/导演们/施隆多夫/推销员之死.De.D2-WAF.mkv
+- refresh-0041 [cd] /Volumes/导演们/施隆多夫/推销员之死
+  - movie: 推销员之死.De.D3-WAF.mp4
+  - subtitles: 1
+  - target: /Volumes/导演们/施隆多夫/推销员之死.De.D3-WAF.mkv
+- refresh-0042 [cd] /Volumes/导演们/施隆多夫/推销员之死
+  - movie: 推销员之死.Death.Of.A.Salesman.1985.XviD.AC3.CD1-WAF.mp4
+  - subtitles: 1
+  - target: /Volumes/导演们/施隆多夫/推销员之死.Death.Of.A.Salesman.1985.XviD.AC3.CD1-WAF.mkv
+- refresh-0043 [cd] /Volumes/导演们/是枝裕和/距离
+  - movie: (Distance.2001).dvdrip.xvid.ac3.cd1.mp4
+  - subtitles: 1
+  - target: /Volumes/导演们/是枝裕和/(Distance.2001).dvdrip.xvid.ac3.cd1.mkv
+- refresh-0044 [cd] /Volumes/导演们/是枝裕和/距离
+  - movie: (Distance.2001).dvdrip.xvid.ac3.cd2.mp4
+  - subtitles: 1
+  - target: /Volumes/导演们/是枝裕和/(Distance.2001).dvdrip.xvid.ac3.cd2.mkv
+- refresh-0045 [cd] /Volumes/导演们/木下惠介/卡门归乡
+  - movie: 卡门归乡.Carmen.Comes.Home.1951.DVDRip.XviD-AsiSter.cd1.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/木下惠介/卡门归乡.Carmen.Comes.Home.1951.DVDRip.XviD-AsiSter.cd1.mkv
+- refresh-0046 [cd] /Volumes/导演们/木下惠介/卡门归乡
+  - movie: 卡门归乡.Carmen.Comes.Home.1951.DVDRip.XviD-AsiSter.cd2.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/木下惠介/卡门归乡.Carmen.Comes.Home.1951.DVDRip.XviD-AsiSter.cd2.mkv
+- refresh-0047 [cd] /Volumes/导演们/朱拉·亚库比斯克/背信者与流浪汉
+  - movie: Zbehovia.A.Putnici.(Juraj.Jakubisko.-.1968).CD1.avi
+  - subtitles: 2
+  - target: /Volumes/导演们/朱拉·亚库比斯克/Zbehovia.A.Putnici.(Juraj.Jakubisko.-.1968).CD1.mkv
+- refresh-0048 [cd] /Volumes/导演们/朱拉·亚库比斯克/背信者与流浪汉
+  - movie: Zbehovia.A.Putnici.(Juraj.Jakubisko.-.1968).CD2.mp4
+  - subtitles: 2
+  - target: /Volumes/导演们/朱拉·亚库比斯克/Zbehovia.A.Putnici.(Juraj.Jakubisko.-.1968).CD2.mkv
+- refresh-0049 [multi] /Volumes/导演们/林赛·安德森/幸运儿
+  - movie: 幸运儿O.Lucky.Man.1973.Disc.1.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/林赛·安德森/幸运儿O.Lucky.Man.1973.Disc.1.mkv
+- refresh-0050 [multi] /Volumes/导演们/林赛·安德森/幸运儿
+  - movie: 幸运儿O.Lucky.Man.1973.Disc.2.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/林赛·安德森/幸运儿O.Lucky.Man.1973.Disc.2.mkv
+- refresh-0051 [cd] /Volumes/导演们/沃纳·赫尔佐格/史楚锡流浪记
+  - movie: 史楚锡流浪记.Stroszek.1977.DVDrip.XviD.AC3.iNT-Alaundo-cd1.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/沃纳·赫尔佐格/史楚锡流浪记.Stroszek.1977.DVDrip.XviD.AC3.iNT-Alaundo-cd1.mkv
+- refresh-0052 [cd] /Volumes/导演们/沃纳·赫尔佐格/史楚锡流浪记
+  - movie: 史楚锡流浪记.Stroszek.1977.DVDrip.XviD.AC3.iNT-Alaundo-cd2.mkv
+  - subtitles: 3
+  - target: /Volumes/导演们/沃纳·赫尔佐格/史楚锡流浪记.Stroszek.1977.DVDrip.XviD.AC3.iNT-Alaundo-cd2.mkv
+- refresh-0053 [vobsub] /Volumes/导演们/沃纳·赫尔佐格/小小迪特想要飞
+  - movie: 小小迪特想要飞.Little.Dieter.Needs.To.Fly.1997.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/沃纳·赫尔佐格/小小迪特想要飞.Little.Dieter.Needs.To.Fly.1997.mkv
+- refresh-0054 [vobsub] /Volumes/导演们/沃纳·赫尔佐格/石头的呐喊
+  - movie: 石头的呐喊.Scream.of.Stone.1991.avi
+  - subtitles: 1
+  - target: /Volumes/导演们/沃纳·赫尔佐格/石头的呐喊.Scream.of.Stone.1991.mkv
+- refresh-0055 [vobsub] /Volumes/导演们/沃纳·赫尔佐格/蓝星人怀乡曲
+  - movie: 蓝星人怀乡曲.The.Wild.Blue.Yonder.2005.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/沃纳·赫尔佐格/蓝星人怀乡曲.The.Wild.Blue.Yonder.2005.mkv
+- refresh-0056 [cd] /Volumes/导演们/法兰提塞·维拉席/(1967)乱世英豪 Marketa Lazarová (1967)
+  - movie: 乱世英豪.Marketa.Lazarova.1967.DVDRip.XviD-MESS-cd1.avi
+  - subtitles: 1
+  - target: /Volumes/导演们/法兰提塞·维拉席/乱世英豪.Marketa.Lazarova.1967.DVDRip.XviD-MESS-cd1.mkv
+- refresh-0057 [cd] /Volumes/导演们/法兰提塞·维拉席/(1967)乱世英豪 Marketa Lazarová (1967)
+  - movie: 乱世英豪.Marketa.Lazarova.1967.DVDRip.XviD-MESS-cd2.avi
+  - subtitles: 1
+  - target: /Volumes/导演们/法兰提塞·维拉席/乱世英豪.Marketa.Lazarova.1967.DVDRip.XviD-MESS-cd2.mkv
+- refresh-0058 [cd] /Volumes/导演们/深作欣二/华之乱
+  - movie: 华之乱.Hana.no.ran.1988.aka.A.Chaos.of.Flowers.DVDrip.cd1.mp4
+  - subtitles: 1
+  - target: /Volumes/导演们/深作欣二/华之乱.Hana.no.ran.1988.aka.A.Chaos.of.Flowers.DVDrip.cd1.mkv
+- refresh-0059 [cd] /Volumes/导演们/深作欣二/华之乱
+  - movie: 华之乱.Hana.no.ran.1988.aka.A.Chaos.of.Flowers.DVDrip.cd2.mp4
+  - subtitles: 1
+  - target: /Volumes/导演们/深作欣二/华之乱.Hana.no.ran.1988.aka.A.Chaos.of.Flowers.DVDrip.cd2.mkv
+- refresh-0060 [cd] /Volumes/导演们/熊切和嘉/复仇之法
+  - movie: Freesia.Icy.Tears.2007.DVDRip.XviD.CD1-CHuMo.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/熊切和嘉/Freesia.Icy.Tears.2007.DVDRip.XviD.CD1-CHuMo.mkv
+- refresh-0061 [cd] /Volumes/导演们/熊切和嘉/复仇之法
+  - movie: Freesia.Icy.Tears.2007.DVDRip.XviD.CD2-CHuMo.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/熊切和嘉/Freesia.Icy.Tears.2007.DVDRip.XviD.CD2-CHuMo.mkv
+- refresh-0062 [cd] /Volumes/导演们/熊切和嘉/空之穴
+  - movie: Hole.In.The.Sky.2001.CD1.DVDRip.XviD-LiiO.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/熊切和嘉/Hole.In.The.Sky.2001.CD1.DVDRip.XviD-LiiO.mkv
+- refresh-0063 [cd] /Volumes/导演们/熊切和嘉/空之穴
+  - movie: Hole.In.The.Sky.2001.CD2.DVDRip.XviD-LiiO.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/熊切和嘉/Hole.In.The.Sky.2001.CD2.DVDRip.XviD-LiiO.mkv
+- refresh-0064 [vobsub] /Volumes/导演们/熊切和嘉/青春击球棒
+  - movie: 青春击球棒.Green.Mind.Metal.Bats.2006.DVDRip.XviD-WRD.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/熊切和嘉/青春击球棒.Green.Mind.Metal.Bats.2006.DVDRip.XviD-WRD.mkv
+- refresh-0065 [cd] /Volumes/导演们/约瑟夫·罗西/伽利略
+  - movie: 伽利略.Galileo+(Joseph+Losey%2C+1975)+DVDRip+Xvid+Ac3+Dual+En-Spa+CD1.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/约瑟夫·罗西/伽利略.Galileo+(Joseph+Losey%2C+1975)+DVDRip+Xvid+Ac3+Dual+En-Spa+CD1.mkv
+- refresh-0066 [cd] /Volumes/导演们/约瑟夫·罗西/伽利略
+  - movie: 伽利略.Galileo+(Joseph+Losey%2C+1975)+DVDRip+Xvid+Ac3+Dual+En-Spa+CD2.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/约瑟夫·罗西/伽利略.Galileo+(Joseph+Losey%2C+1975)+DVDRip+Xvid+Ac3+Dual+En-Spa+CD2.mkv
+- refresh-0067 [cd] /Volumes/导演们/约瑟夫·罗西/唐祖凡尼
+  - movie: Don.Giovanni.1979.iTALiAN.BDRip.XviD-TRL.CD1.avi
+  - subtitles: 1
+  - target: /Volumes/导演们/约瑟夫·罗西/Don.Giovanni.1979.iTALiAN.BDRip.XviD-TRL.CD1.mkv
+- refresh-0068 [cd] /Volumes/导演们/约瑟夫·罗西/唐祖凡尼
+  - movie: Don.Giovanni.1979.iTALiAN.BDRip.XviD-TRL.CD2.avi
+  - subtitles: 1
+  - target: /Volumes/导演们/约瑟夫·罗西/Don.Giovanni.1979.iTALiAN.BDRip.XviD-TRL.CD2.mkv
+- refresh-0069 [cd] /Volumes/导演们/约翰·卡萨维茨/权势下的女人
+  - movie: 权势下的女人A.Woman.Under.the.Influence.1974.DVDRip.XviD.iNT-YYddr.cd1.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/约翰·卡萨维茨/权势下的女人A.Woman.Under.the.Influence.1974.DVDRip.XviD.iNT-YYddr.cd1.mkv
+- refresh-0070 [cd] /Volumes/导演们/约翰·卡萨维茨/权势下的女人
+  - movie: 权势下的女人A.Woman.Under.the.Influence.1974.DVDRip.XviD.iNT-YYddr.cd2.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/约翰·卡萨维茨/权势下的女人A.Woman.Under.the.Influence.1974.DVDRip.XviD.iNT-YYddr.cd2.mkv
+- refresh-0071 [cd] /Volumes/导演们/约翰·卡萨维茨/爱的激流
+  - movie: 爱的激流.Love.Streams.cd1.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/约翰·卡萨维茨/爱的激流.Love.Streams.cd1.mkv
+- refresh-0072 [cd] /Volumes/导演们/约翰·卡萨维茨/爱的激流
+  - movie: 爱的激流.Love.Streams.cd2.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/约翰·卡萨维茨/爱的激流.Love.Streams.cd2.mkv
+- refresh-0073 [cd] /Volumes/导演们/约翰·卡萨维茨/首演之夜
+  - movie: 首演之夜.Opening.Night.CD1.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/约翰·卡萨维茨/首演之夜.Opening.Night.CD1.mkv
+- refresh-0074 [cd] /Volumes/导演们/约翰·卡萨维茨/首演之夜
+  - movie: 首演之夜.Opening.Night.CD2.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/约翰·卡萨维茨/首演之夜.Opening.Night.CD2.mkv
+- refresh-0075 [cd] /Volumes/导演们/约翰·福特/安邦定国志
+  - movie: Cheyenne.Autumn.CD1.avi
+  - subtitles: 1
+  - target: /Volumes/导演们/约翰·福特/Cheyenne.Autumn.CD1.mkv
+- refresh-0076 [cd] /Volumes/导演们/约翰·福特/安邦定国志
+  - movie: Cheyenne.Autumn.CD2.avi
+  - subtitles: 1
+  - target: /Volumes/导演们/约翰·福特/Cheyenne.Autumn.CD2.mkv
+- refresh-0077 [vobsub] /Volumes/导演们/罗伯特·奥尔特曼/漫长的告别
+  - movie: 漫长的告别.The.Long.Goodbye.1973.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/罗伯特·奥尔特曼/漫长的告别.The.Long.Goodbye.1973.mkv
+- refresh-0078 [cd] /Volumes/导演们/耶尔齐·霍夫曼/伏洛窦耶夫斯基先生
+  - movie: 伏洛窦耶夫斯基先生.CD1.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/耶尔齐·霍夫曼/伏洛窦耶夫斯基先生.CD1.mkv
+- refresh-0079 [cd] /Volumes/导演们/耶尔齐·霍夫曼/伏洛窦耶夫斯基先生
+  - movie: 伏洛窦耶夫斯基先生.CD2.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/耶尔齐·霍夫曼/伏洛窦耶夫斯基先生.CD2.mkv
+- refresh-0080 [vobsub] /Volumes/导演们/莫里斯·皮亚拉/警察
+  - movie: 警察.Police.-.1985.-.Maurice.Pialat.-.MoC.77.-.tt0089821.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/莫里斯·皮亚拉/警察.Police.-.1985.-.Maurice.Pialat.-.MoC.77.-.tt0089821.mkv
+- refresh-0081 [cd] /Volumes/导演们/莱奥·卡拉克斯/坏血
+  - movie: 坏血.Bad.Blood.1986.INTERNAL.DVDRip.XviD-RiZZ.CN-cd1.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/莱奥·卡拉克斯/坏血.Bad.Blood.1986.INTERNAL.DVDRip.XviD-RiZZ.CN-cd1.mkv
+- refresh-0082 [cd] /Volumes/导演们/莱奥·卡拉克斯/坏血
+  - movie: 坏血.Bad.Blood.1986.INTERNAL.DVDRip.XviD-RiZZ.CN-cd2.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/莱奥·卡拉克斯/坏血.Bad.Blood.1986.INTERNAL.DVDRip.XviD-RiZZ.CN-cd2.mkv
+- refresh-0083 [vobsub] /Volumes/导演们/迈克尔·柯蒂斯/欲海情魔
+  - movie: 欲海情魔.Mildred.Pierce.1945.rmvb
+  - subtitles: 1
+  - target: /Volumes/导演们/迈克尔·柯蒂斯/欲海情魔.Mildred.Pierce.1945.mkv
+  - keep_source: yes
+- refresh-0084 [cd] /Volumes/导演们/阿方索·卡隆/远大前程 Great Expectations (1998)
+  - movie: Great.Expectations.1998.HDRip.X264-TLF-CD1.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/阿方索·卡隆/Great.Expectations.1998.HDRip.X264-TLF-CD1.mkv
+- refresh-0085 [cd] /Volumes/导演们/阿方索·卡隆/远大前程 Great Expectations (1998)
+  - movie: Great.Expectations.1998.HDRip.X264-TLF-CD2.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/阿方索·卡隆/Great.Expectations.1998.HDRip.X264-TLF-CD2.mkv
+- refresh-0086 [vobsub] /Volumes/导演们/阿涅斯·瓦尔达/一个唱,一个不唱
+  - movie: 一个唱.一个不唱.L.une.chante.l.autre.pas.1977.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/阿涅斯·瓦尔达/一个唱.一个不唱.L.une.chante.l.autre.pas.1977.mkv
+- refresh-0087 [multi] /Volumes/导演们/阿涅斯·瓦尔达/阿涅斯·瓦尔达在这里和那里
+  - movie: Agnès.de.ci.de.là.Varda.(2011).1-5.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/阿涅斯·瓦尔达/Agnès.de.ci.de.là.Varda.(2011).1-5.mkv
+- refresh-0088 [multi] /Volumes/导演们/阿涅斯·瓦尔达/阿涅斯·瓦尔达在这里和那里
+  - movie: Agnès.de.ci.de.là.Varda.(2011).2-5.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/阿涅斯·瓦尔达/Agnès.de.ci.de.là.Varda.(2011).2-5.mkv
+- refresh-0089 [multi] /Volumes/导演们/阿涅斯·瓦尔达/阿涅斯·瓦尔达在这里和那里
+  - movie: Agnès.de.ci.de.là.Varda.(2011).3-5.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/阿涅斯·瓦尔达/Agnès.de.ci.de.là.Varda.(2011).3-5.mkv
+- refresh-0090 [multi] /Volumes/导演们/阿涅斯·瓦尔达/阿涅斯·瓦尔达在这里和那里
+  - movie: Agnès.de.ci.de.là.Varda.(2011).4-5.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/阿涅斯·瓦尔达/Agnès.de.ci.de.là.Varda.(2011).4-5.mkv
+- refresh-0091 [multi] /Volumes/导演们/阿涅斯·瓦尔达/阿涅斯·瓦尔达在这里和那里
+  - movie: Agnès.de.ci.de.là.Varda.(2011).5-5.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/阿涅斯·瓦尔达/Agnès.de.ci.de.là.Varda.(2011).5-5.mkv
+- refresh-0092 [vobsub] /Volumes/导演们/香特尔·阿克曼/安娜的旅程
+  - movie: 安娜的旅程.annas.meetings.1978.dvdrip.xvid.fragment.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/香特尔·阿克曼/安娜的旅程.annas.meetings.1978.dvdrip.xvid.fragment.mkv
+- refresh-0093 [multi] /Volumes/导演们/马丁·斯科塞斯/美国电影之旅
+  - movie: 美国电影巡礼.A.Personal.Journey.With.Martin.Scorsese.Through.American.Movies.1995.Part2.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/马丁·斯科塞斯/美国电影巡礼.A.Personal.Journey.With.Martin.Scorsese.Through.American.Movies.1995.Part2.mkv
+- refresh-0094 [multi] /Volumes/导演们/马丁·斯科塞斯/美国电影之旅
+  - movie: 美国电影巡礼.A.Personal.Journey.with.Martin.Scorsese.through.American.Movies.Part.1.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/马丁·斯科塞斯/美国电影巡礼.A.Personal.Journey.with.Martin.Scorsese.through.American.Movies.Part.1.mkv
+- refresh-0095 [multi] /Volumes/导演们/马丁·斯科塞斯/美国电影之旅
+  - movie: 美国电影巡礼.A.Personal.Journey.with.Martin.Scorsese.through.American.Movies.Part.3.mkv
+  - subtitles: 1
+  - target: /Volumes/导演们/马丁·斯科塞斯/美国电影巡礼.A.Personal.Journey.with.Martin.Scorsese.through.American.Movies.Part.3.mkv
+- refresh-0096 [cd] /Volumes/分类/CULT·实验/杀妻总动员
+  - movie: [杀妻总动员].Survive.Style.5.Plus.2004.DVDRip.XviD-iMBT-CD1.mp4
+  - subtitles: 1
+  - target: /Volumes/分类/CULT·实验/[杀妻总动员].Survive.Style.5.Plus.2004.DVDRip.XviD-iMBT-CD1.mkv
+- refresh-0097 [cd] /Volumes/分类/CULT·实验/杀妻总动员
+  - movie: [杀妻总动员].Survive.Style.5.Plus.2004.DVDRip.XviD-iMBT-CD2.mp4
+  - subtitles: 1
+  - target: /Volumes/分类/CULT·实验/[杀妻总动员].Survive.Style.5.Plus.2004.DVDRip.XviD-iMBT-CD2.mkv
+- refresh-0098 [vobsub] /Volumes/分类/CULT·实验/百合潮湿的欲望
+  - movie: 百合潮湿的欲望.mp4
+  - subtitles: 1
+  - target: /Volumes/分类/CULT·实验/百合潮湿的欲望.mkv
+- refresh-0099 [cd] /Volumes/分类/CULT·实验/逆喷射家族
+  - movie: 逆喷射家族The_Crazy_Family_CD1.mp4
+  - subtitles: 1
+  - target: /Volumes/分类/CULT·实验/逆喷射家族The_Crazy_Family_CD1.mkv
+- refresh-0100 [cd] /Volumes/分类/CULT·实验/逆喷射家族
+  - movie: 逆喷射家族The_Crazy_Family_CD2.mp4
+  - subtitles: 1
+  - target: /Volumes/分类/CULT·实验/逆喷射家族The_Crazy_Family_CD2.mkv
+- refresh-0101 [cd] /Volumes/分类/传记·一段历史/堕落街
+  - movie: Christiane.F.Wir.Kinder.vom.Bahnhof.Zoo.1981.DVDRip.AC3.XviD.CD1-cRuShoR.mkv
+  - subtitles: 2
+  - target: /Volumes/分类/传记·一段历史/Christiane.F.Wir.Kinder.vom.Bahnhof.Zoo.1981.DVDRip.AC3.XviD.CD1-cRuShoR.mkv
+- refresh-0102 [cd] /Volumes/分类/传记·一段历史/堕落街
+  - movie: Christiane.F.Wir.Kinder.vom.Bahnhof.Zoo.1981.DVDRip.AC3.XviD.CD2-cRuShoR.mkv
+  - subtitles: 2
+  - target: /Volumes/分类/传记·一段历史/Christiane.F.Wir.Kinder.vom.Bahnhof.Zoo.1981.DVDRip.AC3.XviD.CD2-cRuShoR.mkv
+- refresh-0103 [cd] /Volumes/分类/华语世界/台湾/张作骥/爸.你好吗
+  - movie: [爸.你好吗].How.Are.You.Dad.2009.DVDRip.XviD-GAYGAY.cd1.mkv
+  - subtitles: 1
+  - target: /Volumes/分类/华语世界/台湾/张作骥/[爸.你好吗].How.Are.You.Dad.2009.DVDRip.XviD-GAYGAY.cd1.mkv
+- refresh-0104 [cd] /Volumes/分类/华语世界/台湾/张作骥/爸.你好吗
+  - movie: [爸.你好吗].How.Are.You.Dad.2009.DVDRip.XviD-GAYGAY.cd2.mkv
+  - subtitles: 1
+  - target: /Volumes/分类/华语世界/台湾/张作骥/[爸.你好吗].How.Are.You.Dad.2009.DVDRip.XviD-GAYGAY.cd2.mkv
+- refresh-0105 [vobsub] /Volumes/分类/合集/要分类/十字军骑士
+  - movie: Knights.of.the.Black.Cross.1960.dvdrip.avi
+  - subtitles: 1
+  - target: /Volumes/分类/合集/要分类/Knights.of.the.Black.Cross.1960.dvdrip.mkv
+- refresh-0106 [vobsub] /Volumes/分类/合集/要分类/可洛登战役
+  - movie: Peter.Watkins.Culloden.1964.TV.Xvid.avi
+  - subtitles: 1
+  - target: /Volumes/分类/合集/要分类/Peter.Watkins.Culloden.1964.TV.Xvid.mkv
+- refresh-0107 [vobsub] /Volumes/分类/合集/要分类/战争游戏
+  - movie: the_war_game.avi
+  - subtitles: 1
+  - target: /Volumes/分类/合集/要分类/the_war_game.mkv
+- refresh-0108 [cd] /Volumes/分类/喜剧/一切善良的市民们
+  - movie: CESKY FILM - Vsichni dobri rodaci - CD 1 - 56.50 cas skvela kvalita - VLC.mp4
+  - subtitles: 2
+  - target: /Volumes/分类/喜剧/CESKY FILM - Vsichni dobri rodaci - CD 1 - 56.50 cas skvela kvalita - VLC.mkv
+- refresh-0109 [cd] /Volumes/分类/喜剧/一切善良的市民们
+  - movie: Cesky Flim - Vsichni Dobri Rodaci - Cd 2 - 57.59 Cas Skvela Kvalita - Vlc.mp4
+  - subtitles: 2
+  - target: /Volumes/分类/喜剧/Cesky Flim - Vsichni Dobri Rodaci - Cd 2 - 57.59 Cas Skvela Kvalita - Vlc.mkv
+- refresh-0110 [multi] /Volumes/分类/喜剧/奥勃洛莫夫一生中的几天
+  - movie: blomov1(1).mkv
+  - subtitles: 1
+  - target: /Volumes/分类/喜剧/blomov1(1).mkv
+- refresh-0111 [multi] /Volumes/分类/喜剧/奥勃洛莫夫一生中的几天
+  - movie: blomov2.mkv
+  - subtitles: 1
+  - target: /Volumes/分类/喜剧/blomov2.mkv
+- refresh-0112 [cd] /Volumes/分类/喜剧/相约星期二
+  - movie: 相约星期二.Tuesdays.with.Morrie.1999.XviD.AC3.CD1-WAF.mkv
+  - subtitles: 1
+  - target: /Volumes/分类/喜剧/相约星期二.Tuesdays.with.Morrie.1999.XviD.AC3.CD1-WAF.mkv
+- refresh-0113 [cd] /Volumes/分类/喜剧/相约星期二
+  - movie: 相约星期二.Tuesdays.with.Morrie.1999.XviD.AC3.CD2-WAF.mkv
+  - subtitles: 1
+  - target: /Volumes/分类/喜剧/相约星期二.Tuesdays.with.Morrie.1999.XviD.AC3.CD2-WAF.mkv
+- refresh-0114 [cd] /Volumes/分类/惊悚·犯罪·动作/失踪宝贝
+  - movie: [失踪的宝贝].Gone.Baby.Gone.2007.BDRip.X264-TLF-CD1.mkv
+  - subtitles: 1
+  - target: /Volumes/分类/惊悚·犯罪·动作/[失踪的宝贝].Gone.Baby.Gone.2007.BDRip.X264-TLF-CD1.mkv
+- refresh-0115 [cd] /Volumes/分类/惊悚·犯罪·动作/失踪宝贝
+  - movie: [失踪的宝贝].Gone.Baby.Gone.2007.BDRip.X264-TLF-CD2.mkv
+  - subtitles: 1
+  - target: /Volumes/分类/惊悚·犯罪·动作/[失踪的宝贝].Gone.Baby.Gone.2007.BDRip.X264-TLF-CD2.mkv
+- refresh-0116 [multi] /Volumes/分类/惊悚·犯罪·动作/蝗虫之日
+  - movie: 蝗虫之日TheDayOfTheLocusts1_dK.mkv
+  - subtitles: 1
+  - target: /Volumes/分类/惊悚·犯罪·动作/蝗虫之日TheDayOfTheLocusts1_dK.mkv
+- refresh-0117 [multi] /Volumes/分类/惊悚·犯罪·动作/蝗虫之日
+  - movie: 蝗虫之日TheDayOfTheLocusts2_dK.mkv
+  - subtitles: 1
+  - target: /Volumes/分类/惊悚·犯罪·动作/蝗虫之日TheDayOfTheLocusts2_dK.mkv
+- refresh-0118 [cd] /Volumes/分类/战争/卡比莉亚
+  - movie: Cabiria.1914.DVDRip.XviD-SAPHiRE.CD1.avi
+  - subtitles: 1
+  - target: /Volumes/分类/战争/Cabiria.1914.DVDRip.XviD-SAPHiRE.CD1.mkv
+- refresh-0119 [cd] /Volumes/分类/战争/卡比莉亚
+  - movie: Cabiria.1914.DVDRip.XviD-SAPHiRE.CD2.avi
+  - subtitles: 1
+  - target: /Volumes/分类/战争/Cabiria.1914.DVDRip.XviD-SAPHiRE.CD2.mkv
+- refresh-0120 [cd] /Volumes/分类/战争/斯大林格勒战役
+  - movie: [斯大林格勒战役]CD1.avi
+  - subtitles: 1
+  - target: /Volumes/分类/战争/[斯大林格勒战役]CD1.mkv
+- refresh-0121 [cd] /Volumes/分类/战争/斯大林格勒战役
+  - movie: [斯大林格勒战役]CD2.avi
+  - subtitles: 1
+  - target: /Volumes/分类/战争/[斯大林格勒战役]CD2.mkv
+- refresh-0123 [multi] /Volumes/分类/科幻·奇幻/外星奇遇
+  - movie: Kin_Dza_Dza_GLs1.avi
+  - subtitles: 1
+  - target: /Volumes/分类/科幻·奇幻/Kin_Dza_Dza_GLs1.mkv
+- refresh-0124 [multi] /Volumes/分类/科幻·奇幻/外星奇遇
+  - movie: 外星奇遇.Kin-dza-dza.1986.e1.BD.MiniSD-TLF.mkv
+  - subtitles: 1
+  - target: /Volumes/分类/科幻·奇幻/外星奇遇.Kin-dza-dza.1986.e1.BD.MiniSD-TLF.mkv
+- refresh-0125 [multi] /Volumes/分类/科幻·奇幻/外星奇遇
+  - movie: 外星奇遇.Kin-dza-dza.1986.e2.BD.MiniSD-TLF.mkv
+  - subtitles: 1
+  - target: /Volumes/分类/科幻·奇幻/外星奇遇.Kin-dza-dza.1986.e2.BD.MiniSD-TLF.mkv
+- refresh-0126 [cd] /Volumes/分类/科幻·奇幻/幻灵夹克
+  - movie: [灵幻夹克].The.Jacket.2005.HDRip.XviD-TLF.cd1.mkv
+  - subtitles: 1
+  - target: /Volumes/分类/科幻·奇幻/[灵幻夹克].The.Jacket.2005.HDRip.XviD-TLF.cd1.mkv
+- refresh-0127 [cd] /Volumes/分类/科幻·奇幻/幻灵夹克
+  - movie: [灵幻夹克].The.Jacket.2005.HDRip.XviD-TLF.cd2.mkv
+  - subtitles: 1
+  - target: /Volumes/分类/科幻·奇幻/[灵幻夹克].The.Jacket.2005.HDRip.XviD-TLF.cd2.mkv
+- refresh-0128 [cd] /Volumes/分类/科幻·奇幻/明朗的天空
+  - movie: Liquid_Sky_(1982)_DVDRip_(SiRiUs_sHaRe)_CD1.mkv
+  - subtitles: 1
+  - target: /Volumes/分类/科幻·奇幻/Liquid_Sky_(1982)_DVDRip_(SiRiUs_sHaRe)_CD1.mkv
+- refresh-0129 [cd] /Volumes/分类/科幻·奇幻/明朗的天空
+  - movie: Liquid_Sky_(1982)_DVDRip_(SiRiUs_sHaRe)_CD2.mkv
+  - subtitles: 1
+  - target: /Volumes/分类/科幻·奇幻/Liquid_Sky_(1982)_DVDRip_(SiRiUs_sHaRe)_CD2.mkv
+- refresh-0130 [multi] /Volumes/分类/科幻·奇幻/苏菲的世界
+  - movie: Sophies.World.1999.PART1.DVDRip.XviD-PROMiSE.mp4
+  - subtitles: 1
+  - target: /Volumes/分类/科幻·奇幻/Sophies.World.1999.PART1.DVDRip.XviD-PROMiSE.mkv
+- refresh-0131 [multi] /Volumes/分类/科幻·奇幻/苏菲的世界
+  - movie: Sophies.World.1999.PART2.DVDRip.XviD-PROMiSE.mp4
+  - subtitles: 1
+  - target: /Volumes/分类/科幻·奇幻/Sophies.World.1999.PART2.DVDRip.XviD-PROMiSE.mkv
+- refresh-0132 [vobsub] /Volumes/分类/科幻·奇幻/蝴蝶春梦
+  - movie: the.collector.1965.dvdrip.xvid.particle.mkv
+  - subtitles: 1
+  - target: /Volumes/分类/科幻·奇幻/the.collector.1965.dvdrip.xvid.particle.mkv
+- refresh-0133 [cd] /Volumes/分类/纪录/早期电影——初创及先锋
+  - movie: 早期电影——初创及先锋CD1.mkv
+  - subtitles: 1
+  - target: /Volumes/分类/纪录/早期电影——初创及先锋CD1.mkv
+- refresh-0134 [cd] /Volumes/分类/纪录/早期电影——初创及先锋
+  - movie: 早期电影——初创及先锋CD2.avi
+  - subtitles: 1
+  - target: /Volumes/分类/纪录/早期电影——初创及先锋CD2.mkv
+- refresh-0135 [cd] /Volumes/分类/纪录/早期电影——初创及先锋
+  - movie: 早期电影——初创及先锋CD3.mkv
+  - subtitles: 1
+  - target: /Volumes/分类/纪录/早期电影——初创及先锋CD3.mkv
+- refresh-0136 [cd] /Volumes/分类/纪录/舞吧·卓别林
+  - movie: Dancing.Chaplin.2011.CD1.DVDRip.XviD-LiiO.mkv
+  - subtitles: 1
+  - target: /Volumes/分类/纪录/Dancing.Chaplin.2011.CD1.DVDRip.XviD-LiiO.mkv
+- refresh-0137 [cd] /Volumes/分类/纪录/舞吧·卓别林
+  - movie: Dancing.Chaplin.2011.CD2.DVDRip.XviD-LiiO.mkv
+  - subtitles: 1
+  - target: /Volumes/分类/纪录/Dancing.Chaplin.2011.CD2.DVDRip.XviD-LiiO.mkv
+- refresh-0138 [cd] /Volumes/分类/纪录/草间弥生之最爱
+  - movie: cowry-ykilm-cd1.mkv
+  - subtitles: 1
+  - target: /Volumes/分类/纪录/cowry-ykilm-cd1.mkv
+- refresh-0139 [cd] /Volumes/分类/纪录/草间弥生之最爱
+  - movie: cowry-ykilm-cd2.mkv
+  - subtitles: 1
+  - target: /Volumes/分类/纪录/cowry-ykilm-cd2.mkv
+- refresh-0140 [cd] /Volumes/分类/纪录/解构企业
+  - movie: [解构企业].The.Corporation.LiMiTED.DVDRip.XViD-ALLiANCE-cd1.mkv
+  - subtitles: 1
+  - target: /Volumes/分类/纪录/[解构企业].The.Corporation.LiMiTED.DVDRip.XViD-ALLiANCE-cd1.mkv
+- refresh-0141 [cd] /Volumes/分类/纪录/解构企业
+  - movie: [解构企业].The.Corporation.LiMiTED.DVDRip.XViD-ALLiANCE-cd2.mkv
+  - subtitles: 1
+  - target: /Volumes/分类/纪录/[解构企业].The.Corporation.LiMiTED.DVDRip.XViD-ALLiANCE-cd2.mkv
+- refresh-0142 [multi] /Volumes/分类/纪录/资本主义人民共和国
+  - movie: [资本主义人民共和国].HDTV.Discovery.The.Peoples.Republic.of.Capitalism.1of4.Joined.at.the.Hip.720p.x264.AAC.MVGroup.org.(ED2000.COM).mkv
+  - subtitles: 1
+  - target: /Volumes/分类/纪录/[资本主义人民共和国].HDTV.Discovery.The.Peoples.Republic.of.Capitalism.1of4.Joined.at.the.Hip.720p.x264.AAC.MVGroup.org.(ED2000.COM).mkv
+- refresh-0143 [multi] /Volumes/分类/纪录/资本主义人民共和国
+  - movie: [资本主义人民共和国].HDTV.Discovery.The.Peoples.Republic.of.Capitalism.2of4.From.MAOism.to.MEism.720p.x264.AAC.MVGroup.org.(ED2000.COM).mkv
+  - subtitles: 1
+  - target: /Volumes/分类/纪录/[资本主义人民共和国].HDTV.Discovery.The.Peoples.Republic.of.Capitalism.2of4.From.MAOism.to.MEism.720p.x264.AAC.MVGroup.org.(ED2000.COM).mkv
+- refresh-0144 [multi] /Volumes/分类/纪录/资本主义人民共和国
+  - movie: [资本主义人民共和国].HDTV.Discovery.The.Peoples.Republic.of.Capitalism.3of4.The.Fast.Lane.720p.x264.AAC.MVGroup.org.(ED2000.COM).mkv
+  - subtitles: 1
+  - target: /Volumes/分类/纪录/[资本主义人民共和国].HDTV.Discovery.The.Peoples.Republic.of.Capitalism.3of4.The.Fast.Lane.720p.x264.AAC.MVGroup.org.(ED2000.COM).mkv
+- refresh-0145 [multi] /Volumes/分类/纪录/资本主义人民共和国
+  - movie: [资本主义人民共和国].HDTV.Discovery.The.Peoples.Republic.of.Capitalism.4of4.Its.the.Economy.Stupid.720p.x264.AAC.MVGroup.org.(ED2000.COM).mkv
+  - subtitles: 1
+  - target: /Volumes/分类/纪录/[资本主义人民共和国].HDTV.Discovery.The.Peoples.Republic.of.Capitalism.4of4.Its.the.Economy.Stupid.720p.x264.AAC.MVGroup.org.(ED2000.COM).mkv
+- refresh-0146 [cd] /Volumes/分类/青春·儿童/丑八怪
+  - movie: [丑八怪].Chuchelo.1983.CD1.XVID.MP3.Psycho-Share.mkv
+  - subtitles: 1
+  - target: /Volumes/分类/青春·儿童/[丑八怪].Chuchelo.1983.CD1.XVID.MP3.Psycho-Share.mkv
+- refresh-0147 [cd] /Volumes/分类/青春·儿童/丑八怪
+  - movie: [丑八怪].Chuchelo.1983.CD2.XVID.MP3.Psycho-Share.mkv
+  - subtitles: 1
+  - target: /Volumes/分类/青春·儿童/[丑八怪].Chuchelo.1983.CD2.XVID.MP3.Psycho-Share.mkv
+- refresh-0148 [cd] /Volumes/分类/青春·儿童/希特勒的男孩
+  - movie: [希特勒的男孩].napola.2004.DVDrip.Ac3.tml-cd1.mp4
+  - subtitles: 1
+  - target: /Volumes/分类/青春·儿童/[希特勒的男孩].napola.2004.DVDrip.Ac3.tml-cd1.mkv
+- refresh-0149 [cd] /Volumes/分类/青春·儿童/希特勒的男孩
+  - movie: [希特勒的男孩].napola.2004.DVDrip.Ac3.tml-cd2.mp4
+  - subtitles: 1
+  - target: /Volumes/分类/青春·儿童/[希特勒的男孩].napola.2004.DVDrip.Ac3.tml-cd2.mkv
+- refresh-0150 [cd] /Volumes/分类/青春·儿童/往事如烟
+  - movie: [往事如烟].Things.We.Lost.In.The.Fire.2007.BDRip.X264-TLF-cd1.mkv
+  - subtitles: 1
+  - target: /Volumes/分类/青春·儿童/[往事如烟].Things.We.Lost.In.The.Fire.2007.BDRip.X264-TLF-cd1.mkv
+- refresh-0151 [cd] /Volumes/分类/青春·儿童/往事如烟
+  - movie: [往事如烟].Things.We.Lost.In.The.Fire.2007.BDRip.X264-TLF-cd2.mkv
+  - subtitles: 1
+  - target: /Volumes/分类/青春·儿童/[往事如烟].Things.We.Lost.In.The.Fire.2007.BDRip.X264-TLF-cd2.mkv
+- refresh-0152 [cd] /Volumes/分类/青春·儿童/想飞的钢琴少年
+  - movie: [想飞的钢琴少年].Vitus.2006.DVDRip.XviD-AsiSter-cd1.mkv
+  - subtitles: 1
+  - target: /Volumes/分类/青春·儿童/[想飞的钢琴少年].Vitus.2006.DVDRip.XviD-AsiSter-cd1.mkv
+- refresh-0153 [cd] /Volumes/分类/青春·儿童/想飞的钢琴少年
+  - movie: [想飞的钢琴少年].Vitus.2006.DVDRip.XviD-AsiSter-cd2.mkv
+  - subtitles: 1
+  - target: /Volumes/分类/青春·儿童/[想飞的钢琴少年].Vitus.2006.DVDRip.XviD-AsiSter-cd2.mkv
+- refresh-0154 [cd] /Volumes/分类/青春·儿童/末路狂奔
+  - movie: Die_innere_Sicherheit.CD1.DVDRip.XviD-AEN.avi
+  - subtitles: 1
+  - target: /Volumes/分类/青春·儿童/Die_innere_Sicherheit.CD1.DVDRip.XviD-AEN.mkv
+- refresh-0155 [cd] /Volumes/分类/青春·儿童/末路狂奔
+  - movie: Die_innere_Sicherheit.CD2.DVDRip.XviD-AEN.avi
+  - subtitles: 1
+  - target: /Volumes/分类/青春·儿童/Die_innere_Sicherheit.CD2.DVDRip.XviD-AEN.mkv
+- refresh-0156 [cd] /Volumes/分类/音乐/The Fabulous Baker Boys
+  - movie: [一曲相思情未了].The.Fabulous.Baker.Boys.1989.XviD.AC3.CD1-WAF.avi
+  - subtitles: 2
+  - target: /Volumes/分类/音乐/[一曲相思情未了].The.Fabulous.Baker.Boys.1989.XviD.AC3.CD1-WAF.mkv
+- refresh-0157 [cd] /Volumes/分类/音乐/The Fabulous Baker Boys
+  - movie: [一曲相思情未了].The.Fabulous.Baker.Boys.1989.XviD.AC3.CD2-WAF.avi
+  - subtitles: 2
+  - target: /Volumes/分类/音乐/[一曲相思情未了].The.Fabulous.Baker.Boys.1989.XviD.AC3.CD2-WAF.mkv
+- refresh-0158 [cd] /Volumes/分类/音乐/曼波歌王
+  - movie: 曼波歌王.The.Mambo.Kings.1992.CD1-WAF.mp4
+  - subtitles: 1
+  - target: /Volumes/分类/音乐/曼波歌王.The.Mambo.Kings.1992.CD1-WAF.mkv
+- refresh-0159 [cd] /Volumes/分类/音乐/曼波歌王
+  - movie: 曼波歌王.The.Mambo.Kings.1992.CD2-WAF.mp4
+  - subtitles: 1
+  - target: /Volumes/分类/音乐/曼波歌王.The.Mambo.Kings.1992.CD2-WAF.mkv
+
+## Cleanup Actions
+
+- cleanup-0001 /Volumes/导演们/克林特·伊斯特伍德/勇闯雷霆峰(英字)
+  - movie: 勇闯雷霆峰.The.Eiger.Sanction.1975.Clint.Eastwood.mkv
+  - delete: Clint.Eastwood.-.The.Eiger.Sanction.eng.sub
+  - target: /Volumes/导演们/克林特·伊斯特伍德/勇闯雷霆峰.The.Eiger.Sanction.1975.Clint.Eastwood.mkv
+- cleanup-0002 /Volumes/导演们/奥德里奇·利普斯基/(1952)Haskovy povidky ze stareho mocnarstvi
+  - movie: Haskovy.povidky.ze.stareho.mocnarstvi.1952.DVD-Rip.Capperfield.avi
+  - delete: Haskovy povidky ze stareho mocnarstvi.sub
+  - target: /Volumes/导演们/奥德里奇·利普斯基/Haskovy.povidky.ze.stareho.mocnarstvi.1952.DVD-Rip.Capperfield.avi
+- cleanup-0003 /Volumes/导演们/奥德里奇·利普斯基/(1972)Sest medvedu s Cibulkou
+  - movie: Sest.medvedu.s.Cibulkou.1972.avi
+  - delete: 6 medvedu s cibulkou.sub
+  - target: /Volumes/导演们/奥德里奇·利普斯基/Sest.medvedu.s.Cibulkou.1972.avi
+- cleanup-0004 /Volumes/导演们/朱拉·亚库比斯克/羽毛精灵
+  - movie: 羽毛精灵.Perinbaba.1985.avi
+  - delete: 羽毛精灵.Perinbaba.1985.sub
+  - target: /Volumes/导演们/朱拉·亚库比斯克/羽毛精灵.Perinbaba.1985.avi
+- cleanup-0005 /Volumes/导演们/玛琳·黛德丽[演员]/Pittsburgh匹兹堡
+  - movie: 匹兹堡.Marlene.Dietrich.-.1942.-.Pittsburgh.avi
+  - delete: Pittsburgh.sub
+  - target: /Volumes/导演们/玛琳·黛德丽[演员]/匹兹堡.Marlene.Dietrich.-.1942.-.Pittsburgh.avi
+- cleanup-0006 /Volumes/导演们/维拉·希蒂洛娃/不幸的事
+  - movie: 不幸的事.Kalamita.1982.avi
+  - delete: 不幸的事.Kalamita.1982.sub
+  - target: /Volumes/导演们/维拉·希蒂洛娃/不幸的事.Kalamita.1982.avi
+- cleanup-0007 /Volumes/导演们/费尔南多·索拉纳斯/探戈,加德尔的放逐
+  - movie: 探戈.加德尔的放逐.Tangos.el.exilio.de.Gardel.1985.avi
+  - delete: 探戈,加德尔的放逐.TANGOS, EL EXILIO DE GARDEL.eng.idx
+  - target: /Volumes/导演们/费尔南多·索拉纳斯/探戈.加德尔的放逐.Tangos.el.exilio.de.Gardel.1985.avi
+- cleanup-0008 /Volumes/导演们/阿莱克斯·德拉·伊格来希亚/800颗子弹
+  - movie: 800颗子弹.800.Balas.2002.DVDRip.DivX5-Gr4M.mkv
+  - delete: 800.Balas.2002.DVDRip.DivX5-Gr4M.Eng.sub
+  - target: /Volumes/导演们/阿莱克斯·德拉·伊格来希亚/800颗子弹.800.Balas.2002.DVDRip.DivX5-Gr4M.mkv
+- cleanup-0009 /Volumes/分类/合集/要分类/(1970)巫师的铁锤 Kladivo na carodejnice
+  - movie: Kladivo.na.carodejnice.1970.DVDRip.XviD.avi
+  - delete: Kladivo na 膷arod臎jnice.sub
+  - target: /Volumes/分类/合集/要分类/Kladivo.na.carodejnice.1970.DVDRip.XviD.avi
+- cleanup-0010 /Volumes/分类/合集/要分类/(1996)耳语 Septej
+  - movie: Septej.avi
+  - delete: Septej.sub
+  - target: /Volumes/分类/合集/要分类/Septej.avi
+- cleanup-0011 /Volumes/分类/纪录/战地摄影师
+  - movie: 战地摄影师.War.Photographer.2001.DVDRip.XviD-TxxZ.mkv
+  - delete: [战地摄影师].War.Photographer.2001.DVDRip.XviD-TxxZ.baofeng.idx
+  - target: /Volumes/分类/纪录/战地摄影师.War.Photographer.2001.DVDRip.XviD-TxxZ.mkv
+- cleanup-0012 /Volumes/分类/纪录/萧沆启示录
+  - movie: RomaniaCinemaApocalipsaDupa.mkv
+  - delete: RomaniaCinemaApocalipsaDupa.avi.sub
+  - target: /Volumes/分类/纪录/RomaniaCinemaApocalipsaDupa.mkv
+
+## Review Items
+
+- single_text_subtitle_skipped: /Volumes/导演们/克日什托夫·基耶斯洛夫斯基/短片/愿望音乐会
+- single_text_subtitle_skipped: /Volumes/导演们/努里·比格·锡兰/五月碧云天
+- single_text_subtitle_skipped: /Volumes/导演们/努里·比格·锡兰/五月碧云天
+- multi_partial_match_skipped: /Volumes/导演们/埃利达尔·梁赞诺夫/命运的捉弄
+- single_text_subtitle_skipped: /Volumes/导演们/塞缪尔·富勒/刑警大队
+- multi_partial_match_skipped: /Volumes/导演们/安哲罗普洛斯/重建
+- single_text_subtitle_skipped: /Volumes/导演们/成濑巳喜男/幸福生活
+- multi_without_clear_tokens_skipped: /Volumes/导演们/比利·怀尔德/满城风雨
+- multi_without_clear_tokens_skipped: /Volumes/导演们/比利·怀尔德/满城风雨
+- single_text_subtitle_skipped: /Volumes/导演们/特伦斯·戴维斯/特伦斯·戴维斯三部曲
+- single_text_subtitle_skipped: /Volumes/导演们/特伦斯·戴维斯/特伦斯·戴维斯三部曲
+- single_text_subtitle_skipped: /Volumes/导演们/特伦斯·戴维斯/特伦斯·戴维斯三部曲
+- single_text_subtitle_skipped: /Volumes/导演们/约翰·福特/麦凯警长
+- single_text_subtitle_skipped: /Volumes/导演们/耶尔齐·霍夫曼/火与剑
+- orphan_idx_sub_not_cleaned: /Volumes/导演们/耶尔齐·霍夫曼/火与剑
+  - orphan: 火与剑.chs.2.sub, 火与剑.chs.sub, 火与剑.eng.2.sub, 火与剑.eng.sub
+- multi_without_clear_tokens_skipped: /Volumes/导演们/肯·洛奇/煤的价格
+- single_text_subtitle_skipped: /Volumes/导演们/让-克劳德·布里索/残酷的游戏
+- single_text_subtitle_skipped: /Volumes/导演们/让-克劳德·布里索/黑天使
+- single_text_subtitle_skipped: /Volumes/导演们/贝拉·塔尔/麦莱锡福利旅店
+- single_text_subtitle_skipped: /Volumes/导演们/贝拉·塔尔/麦莱锡福利旅店
+- single_text_subtitle_skipped: /Volumes/导演们/阿兰·卡瓦利埃/狂乱
+- single_text_subtitle_skipped: /Volumes/导演们/阿历克塞·巴拉巴诺夫/吗啡
+- single_text_subtitle_skipped: /Volumes/导演们/阿莫多瓦/食男人肉的女议员
+- orphan_idx_sub_not_cleaned: /Volumes/导演们/马丁·斯科塞斯/纯真年代
+  - orphan: the.age.of.innocence.cd1.1993.dvdrip.xvid.particle.idx, the.age.of.innocence.cd2.1993.dvdrip.xvid.particle.idx, 1.sub, 2.sub
+- orphan_idx_sub_not_cleaned: /Volumes/分类/CULT·实验/月亮上的人
+  - orphan: [月亮上的人].Man.On.The.Moon.DVDRip.XviD.AC3.CD1-iMC.idx, [月亮上的人].Man.On.The.Moon.DVDRip.XviD.AC3.CD2-iMC.idx, [月亮上的人].Man.On.The.Moon.1999.DVDRip.XviD.AC3.iNTERNAL.U-ART-CD1.sub, [月亮上的人].Man.On.The.Moon.1999.DVDRip.XviD.AC3.iNTERNAL.U-ART-CD2.sub
+- single_text_subtitle_skipped: /Volumes/分类/传记·一段历史/海伦凯勒
+- single_text_subtitle_skipped: /Volumes/分类/传记·一段历史/海伦凯勒
+- single_text_subtitle_skipped: /Volumes/分类/动画片/卢茨·丹姆贝克作品集(1975-1986)
+- single_text_subtitle_skipped: /Volumes/分类/动画片/卢茨·丹姆贝克作品集(1975-1986)
+- single_text_subtitle_skipped: /Volumes/分类/动画片/卢茨·丹姆贝克作品集(1975-1986)
+- single_text_subtitle_skipped: /Volumes/分类/动画片/卢茨·丹姆贝克作品集(1975-1986)
+- single_text_subtitle_skipped: /Volumes/分类/动画片/卢茨·丹姆贝克作品集(1975-1986)
+- orphan_idx_sub_not_cleaned: /Volumes/分类/动画片/贪吃树
+  - orphan: [贪吃树].Little.Otik.2000.DVDRip.LYMDG-CD1.idx, [贪吃树].Little.Otik.2000.DVDRip.LYMDG-CD2.idx, lo-lymdg-cd1.sub, lo-lymdg-cd2.sub
+- multi_without_clear_tokens_skipped: /Volumes/分类/华语世界/台湾/杨德昌/恐怖分子
+- multi_without_clear_tokens_skipped: /Volumes/分类/华语世界/台湾/杨德昌/恐怖分子
+- single_text_subtitle_skipped: /Volumes/分类/华语世界/禁/地震
+- single_text_subtitle_skipped: /Volumes/分类/华语世界/禁/地震
+- single_text_subtitle_skipped: /Volumes/分类/华语世界/禁/地震
+- single_text_subtitle_skipped: /Volumes/分类/华语世界/香港/导演们/彭浩翔/出埃及记
+- target_exists_skipped: /Volumes/分类/短篇集/六个视线
+- multi_partial_match_skipped: /Volumes/分类/短篇集/大师们的第一部
+- orphan_idx_sub_not_cleaned: /Volumes/分类/短篇集/大师们的第一部
+  - orphan: [大师们的第一部].Their.First.Films.Xvid.Edge-CD1.idx, 大师们的第1部1946-1971.idx, VTS_01_0.sub, 大师们的第1部1946-1971CD2.sub
+- multi_without_clear_tokens_skipped: /Volumes/分类/短篇集/德国之秋
+- multi_without_clear_tokens_skipped: /Volumes/分类/短篇集/德国之秋
+- single_text_subtitle_skipped: /Volumes/分类/短篇集/穆府的歌剧
+- single_text_subtitle_skipped: /Volumes/分类/短篇集/艺术家夫妇U
+- orphan_idx_sub_not_cleaned: /Volumes/分类/科幻·奇幻/天使消失的年代
+  - orphan: Rok_dabla-DivXCZ+(eng).sub
+- multi_without_clear_tokens_skipped: /Volumes/分类/纪录/大熊猫的生活
+- multi_without_clear_tokens_skipped: /Volumes/分类/纪录/大熊猫的生活
+- multi_without_clear_tokens_skipped: /Volumes/分类/纪录/大熊猫的生活
+- single_text_subtitle_skipped: /Volumes/分类/纪录/寻找贝多芬
+- single_text_subtitle_skipped: /Volumes/分类/纪录/寻找贝多芬
+- single_text_subtitle_skipped: /Volumes/分类/纪录/森山大道
+- single_text_subtitle_skipped: /Volumes/分类/纪录/森山大道
+- orphan_idx_sub_not_cleaned: /Volumes/分类/纪录/诗歌的力量
+  - orphan: louder.than.a.bomb.limited.2010.dvdrip.xvid-lpd.idx
+- single_text_subtitle_skipped: /Volumes/分类/黑色电影/十字交锋
+- target_exists_skipped: /Volumes/分类/黑色电影/卡车斗士
+- single_text_subtitle_skipped: /Volumes/分类/黑色电影/堕落天使
+- single_text_subtitle_skipped: /Volumes/分类/黑色电影/夜逃鸳鸯
+- single_text_subtitle_skipped: /Volumes/分类/黑色电影/步步惊魂

@@ -13,8 +13,8 @@ from pathlib import Path
 
 WORKDIR = Path(__file__).resolve().parent
 LOG_DIR = WORKDIR / "logs"
-QUEUE = WORKDIR / "manual_approved_mux_queue.json"
-RUN_LOG = LOG_DIR / "manual-approved-mux.log"
+QUEUE = Path(os.environ.get("MUX_QUEUE", str(WORKDIR / "manual_approved_mux_queue.json")))
+RUN_LOG = Path(os.environ.get("MUX_RUN_LOG", str(LOG_DIR / "manual-approved-mux.log")))
 NORMALIZED_DIR = LOG_DIR / "manual-normalized-subtitles"
 VOBSUB_DIR = LOG_DIR / "manual-vobsub-pairs"
 
@@ -77,6 +77,7 @@ def text_metrics(text: str) -> dict[str, int]:
 def decode_text_subtitle(path: Path, forced_lang: str | None = None) -> tuple[str, str, dict[str, int]]:
     data = path.read_bytes()
     name = path.name.lower()
+    non_cjk_forced = forced_lang in {"eng", "spa", "ita", "deu", "fre", "fra", "rus"}
     candidates = []
     if data.startswith(b"\xff\xfe"):
         candidates.append("utf-16le")
@@ -84,7 +85,10 @@ def decode_text_subtitle(path: Path, forced_lang: str | None = None) -> tuple[st
         candidates.append("utf-16be")
     if data.startswith(b"\xef\xbb\xbf"):
         candidates.append("utf-8-sig")
-    candidates += ["utf-8", "utf-8-sig", "gb18030", "big5", "cp950", "utf-16le", "utf-16be", "cp1252", "cp1250", "cp1251", "iso-8859-1"]
+    if non_cjk_forced or any(x in name for x in ("eng", "english", "spa", "spanish", "en-spa")):
+        candidates += ["utf-8", "utf-8-sig", "cp1252", "iso-8859-1", "cp1250", "cp1251", "gb18030", "big5", "cp950", "utf-16le", "utf-16be"]
+    else:
+        candidates += ["utf-8", "utf-8-sig", "gb18030", "big5", "cp950", "utf-16le", "utf-16be", "cp1252", "cp1250", "cp1251", "iso-8859-1"]
 
     seen = []
     best = None
@@ -103,6 +107,8 @@ def decode_text_subtitle(path: Path, forced_lang: str | None = None) -> tuple[st
         score += metrics["arrows"] * 50000 + metrics["timestamps"] * 1000
         score += metrics["cjk"] * 150 + metrics["latin"]
         score -= metrics["replacement"] * 100000 + metrics["mojibake"] * 400
+        if non_cjk_forced:
+            score -= metrics["cjk"] * 5000
         if path.suffix.lower() == ".srt" and (metrics["arrows"] == 0 or metrics["timestamps"] < 2):
             score -= 1000000
         if best is None or score > best[0]:
@@ -112,6 +118,10 @@ def decode_text_subtitle(path: Path, forced_lang: str | None = None) -> tuple[st
     _, enc, text, metrics = best
     if metrics["replacement"]:
         raise RuntimeError(f"decoded subtitle contains replacement chars: {path}")
+    if non_cjk_forced and metrics["cjk"] > 20:
+        raise RuntimeError(f"decoded non-Chinese subtitle has suspicious CJK chars: encoding={enc} cjk={metrics['cjk']} file={path}")
+    if non_cjk_forced and metrics["mojibake"] > 20:
+        raise RuntimeError(f"decoded non-Chinese subtitle has suspicious mojibake chars: encoding={enc} mojibake={metrics['mojibake']} file={path}")
 
     lower = name
     if forced_lang:
@@ -236,11 +246,15 @@ def verify_output(output: Path, source_subs: int, appended: int, expect_chi: boo
         run([str(MKVEXTRACT), "tracks", str(output), f"{tid}:{out}"])
         text = out.read_text(encoding="utf-8", errors="replace")
         metrics = text_metrics(text)
-        log(f"Verification: extracted track={tid} lang={lang} cjk={metrics['cjk']} repl={metrics['replacement']}")
+        log(f"Verification: extracted track={tid} lang={lang} cjk={metrics['cjk']} repl={metrics['replacement']} mojibake={metrics['mojibake']}")
         if metrics["replacement"]:
             raise RuntimeError(f"verification failed: extracted track {tid} has replacement chars")
         if lang in ("chi", "zho") and metrics["cjk"] < 1:
             raise RuntimeError(f"verification failed: Chinese track {tid} has no CJK")
+        if lang in ("eng", "spa", "ita", "deu", "fre", "fra", "rus") and metrics["cjk"] > 20:
+            raise RuntimeError(f"verification failed: non-Chinese track {tid} has suspicious CJK chars")
+        if lang in ("eng", "spa", "ita", "deu", "fre", "fra", "rus") and metrics["mojibake"] > 20:
+            raise RuntimeError(f"verification failed: non-Chinese track {tid} has suspicious mojibake chars")
 
 
 def process_task(task: dict) -> None:

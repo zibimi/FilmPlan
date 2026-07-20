@@ -1,0 +1,146 @@
+[
+  {
+    "id": "cleanup-0001",
+    "status": "DONE",
+    "folder": "/Volumes/导演们/克林特·伊斯特伍德/勇闯雷霆峰(英字)",
+    "movie": "/Volumes/导演们/克林特·伊斯特伍德/勇闯雷霆峰(英字)/勇闯雷霆峰.The.Eiger.Sanction.1975.Clint.Eastwood.mkv",
+    "target": "/Volumes/导演们/克林特·伊斯特伍德/勇闯雷霆峰.The.Eiger.Sanction.1975.Clint.Eastwood.mkv",
+    "delete_files": [
+      "/Volumes/导演们/克林特·伊斯特伍德/勇闯雷霆峰(英字)/Clint.Eastwood.-.The.Eiger.Sanction.eng.sub"
+    ],
+    "reason": "orphan idx/sub files; folder will contain only one movie after deletion",
+    "message": "moved movie and removed folder; output=/Volumes/导演们/克林特·伊斯特伍德/勇闯雷霆峰.The.Eiger.Sanction.1975.Clint.Eastwood.mkv"
+  },
+  {
+    "id": "cleanup-0002",
+    "status": "DONE",
+    "folder": "/Volumes/导演们/奥德里奇·利普斯基/(1952)Haskovy povidky ze stareho mocnarstvi",
+    "movie": "/Volumes/导演们/奥德里奇·利普斯基/(1952)Haskovy povidky ze stareho mocnarstvi/Haskovy.povidky.ze.stareho.mocnarstvi.1952.DVD-Rip.Capperfield.avi",
+    "target": "/Volumes/导演们/奥德里奇·利普斯基/Haskovy.povidky.ze.stareho.mocnarstvi.1952.DVD-Rip.Capperfield.avi",
+    "delete_files": [
+      "/Volumes/导演们/奥德里奇·利普斯基/(1952)Haskovy povidky ze stareho mocnarstvi/Haskovy povidky ze stareho mocnarstvi.sub"
+    ],
+    "reason": "orphan idx/sub files; folder will contain only one movie after deletion",
+    "message": "moved movie and removed folder; output=/Volumes/导演们/奥德里奇·利普斯基/Haskovy.povidky.ze.stareho.mocnarstvi.1952.DVD-Rip.Capperfield.avi"
+  },
+  {
+    "id": "cleanup-0003",
+    "status": "DONE",
+    "folder": "/Volumes/导演们/奥德里奇·利普斯基/(1972)Sest medvedu s Cibulkou",
+    "movie": "/Volumes/导演们/奥德里奇·利普斯基/(1972)Sest medvedu s Cibulkou/Sest.medvedu.s.Cibulkou.1972.avi",
+    "target": "/Volumes/导演们/奥德里奇·利普斯基/Sest.medvedu.s.Cibulkou.1972.avi",
+    "delete_files": [
+      "/Volumes/导演们/奥德里奇·利普斯基/(1972)Sest medvedu s Cibulkou/6 medvedu s cibulkou.sub"
+    ],
+    "reason": "orphan idx/sub files; folder will contain only one movie after deletion",
+    "message": "moved movie and removed folder; output=/Volumes/导演们/奥德里奇·利普斯基/Sest.medvedu.s.Cibulkou.1972.avi"
+  },
+  {
+    "id": "cleanup-0004",
+    "status": "DONE",
+    "folder": "/Volumes/导演们/朱拉·亚库比斯克/羽毛精灵",
+    "movie": "/Volumes/导演们/朱拉·亚库比斯克/羽毛精灵/羽毛精灵.Perinbaba.1985.avi",
+    "target": "/Volumes/导演们/朱拉·亚库比斯克/羽毛精灵.Perinbaba.1985.avi",
+    "delete_files": [
+      "/Volumes/导演们/朱拉·亚库比斯克/羽毛精灵/羽毛精灵.Perinbaba.1985.sub"
+    ],
+    "reason": "orphan idx/sub files; folder will contain only one movie after deletion",
+    "message": "moved movie and removed folder; output=/Volumes/导演们/朱拉·亚库比斯克/羽毛精灵.Perinbaba.1985.avi"
+  },
+  {
+    "id": "cleanup-0005",
+    "status": "DONE",
+    "folder": "/Volumes/导演们/玛琳·黛德丽[演员]/Pittsburgh匹兹堡",
+    "movie": "/Volumes/导演们/玛琳·黛德丽[演员]/Pittsburgh匹兹堡/匹兹堡.Marlene.Dietrich.-.1942.-.Pittsburgh.avi",
+    "target": "/Volumes/导演们/玛琳·黛德丽[演员]/匹兹堡.Marlene.Dietrich.-.1942.-.Pittsburgh.avi",
+    "delete_files": [
+      "/Volumes/导演们/玛琳·黛德丽[演员]/Pittsburgh匹兹堡/Pittsburgh.sub"
+    ],
+    "reason": "orphan idx/sub files; folder will contain only one movie after deletion",
+    "message": "moved movie and removed folder; output=/Volumes/导演们/玛琳·黛德丽[演员]/匹兹堡.Marlene.Dietrich.-.1942.-.Pittsburgh.avi"
+  },
+  {
+    "id": "cleanup-0006",
+    "status": "DONE",
+    "folder": "/Volumes/导演们/维拉·希蒂洛娃/不幸的事",
+    "movie": "/Volumes/导演们/维拉·希蒂洛娃/不幸的事/不幸的事.Kalamita.1982.avi",
+    "target": "/Volumes/导演们/维拉·希蒂洛娃/不幸的事.Kalamita.1982.avi",
+    "delete_files": [
+      "/Volumes/导演们/维拉·希蒂洛娃/不幸的事/不幸的事.Kalamita.1982.sub"
+    ],
+    "reason": "orphan idx/sub files; folder will contain only one movie after deletion",
+    "message": "moved movie and removed folder; output=/Volumes/导演们/维拉·希蒂洛娃/不幸的事.Kalamita.1982.avi"
+  },
+  {
+    "id": "cleanup-0007",
+    "status": "DONE",
+    "folder": "/Volumes/导演们/费尔南多·索拉纳斯/探戈,加德尔的放逐",
+    "movie": "/Volumes/导演们/费尔南多·索拉纳斯/探戈,加德尔的放逐/探戈.加德尔的放逐.Tangos.el.exilio.de.Gardel.1985.avi",
+    "target": "/Volumes/导演们/费尔南多·索拉纳斯/探戈.加德尔的放逐.Tangos.el.exilio.de.Gardel.1985.avi",
+    "delete_files": [
+      "/Volumes/导演们/费尔南多·索拉纳斯/探戈,加德尔的放逐/探戈,加德尔的放逐.TANGOS, EL EXILIO DE GARDEL.eng.idx"
+    ],
+    "reason": "orphan idx/sub files; folder will contain only one movie after deletion",
+    "message": "moved movie and removed folder; output=/Volumes/导演们/费尔南多·索拉纳斯/探戈.加德尔的放逐.Tangos.el.exilio.de.Gardel.1985.avi"
+  },
+  {
+    "id": "cleanup-0008",
+    "status": "DONE",
+    "folder": "/Volumes/导演们/阿莱克斯·德拉·伊格来希亚/800颗子弹",
+    "movie": "/Volumes/导演们/阿莱克斯·德拉·伊格来希亚/800颗子弹/800颗子弹.800.Balas.2002.DVDRip.DivX5-Gr4M.mkv",
+    "target": "/Volumes/导演们/阿莱克斯·德拉·伊格来希亚/800颗子弹.800.Balas.2002.DVDRip.DivX5-Gr4M.mkv",
+    "delete_files": [
+      "/Volumes/导演们/阿莱克斯·德拉·伊格来希亚/800颗子弹/800.Balas.2002.DVDRip.DivX5-Gr4M.Eng.sub"
+    ],
+    "reason": "orphan idx/sub files; folder will contain only one movie after deletion",
+    "message": "moved movie and removed folder; output=/Volumes/导演们/阿莱克斯·德拉·伊格来希亚/800颗子弹.800.Balas.2002.DVDRip.DivX5-Gr4M.mkv"
+  },
+  {
+    "id": "cleanup-0009",
+    "status": "DONE",
+    "folder": "/Volumes/分类/合集/要分类/(1970)巫师的铁锤 Kladivo na carodejnice",
+    "movie": "/Volumes/分类/合集/要分类/(1970)巫师的铁锤 Kladivo na carodejnice/Kladivo.na.carodejnice.1970.DVDRip.XviD.avi",
+    "target": "/Volumes/分类/合集/要分类/Kladivo.na.carodejnice.1970.DVDRip.XviD.avi",
+    "delete_files": [
+      "/Volumes/分类/合集/要分类/(1970)巫师的铁锤 Kladivo na carodejnice/Kladivo na 膷arod臎jnice.sub"
+    ],
+    "reason": "orphan idx/sub files; folder will contain only one movie after deletion",
+    "message": "moved movie and removed folder; output=/Volumes/分类/合集/要分类/Kladivo.na.carodejnice.1970.DVDRip.XviD.avi"
+  },
+  {
+    "id": "cleanup-0010",
+    "status": "DONE",
+    "folder": "/Volumes/分类/合集/要分类/(1996)耳语 Septej",
+    "movie": "/Volumes/分类/合集/要分类/(1996)耳语 Septej/Septej.avi",
+    "target": "/Volumes/分类/合集/要分类/Septej.avi",
+    "delete_files": [
+      "/Volumes/分类/合集/要分类/(1996)耳语 Septej/Septej.sub"
+    ],
+    "reason": "orphan idx/sub files; folder will contain only one movie after deletion",
+    "message": "moved movie and removed folder; output=/Volumes/分类/合集/要分类/Septej.avi"
+  },
+  {
+    "id": "cleanup-0011",
+    "status": "DONE",
+    "folder": "/Volumes/分类/纪录/战地摄影师",
+    "movie": "/Volumes/分类/纪录/战地摄影师/战地摄影师.War.Photographer.2001.DVDRip.XviD-TxxZ.mkv",
+    "target": "/Volumes/分类/纪录/战地摄影师.War.Photographer.2001.DVDRip.XviD-TxxZ.mkv",
+    "delete_files": [
+      "/Volumes/分类/纪录/战地摄影师/[战地摄影师].War.Photographer.2001.DVDRip.XviD-TxxZ.baofeng.idx"
+    ],
+    "reason": "orphan idx/sub files; folder will contain only one movie after deletion",
+    "message": "moved movie and removed folder; output=/Volumes/分类/纪录/战地摄影师.War.Photographer.2001.DVDRip.XviD-TxxZ.mkv"
+  },
+  {
+    "id": "cleanup-0012",
+    "status": "DONE",
+    "folder": "/Volumes/分类/纪录/萧沆启示录",
+    "movie": "/Volumes/分类/纪录/萧沆启示录/RomaniaCinemaApocalipsaDupa.mkv",
+    "target": "/Volumes/分类/纪录/RomaniaCinemaApocalipsaDupa.mkv",
+    "delete_files": [
+      "/Volumes/分类/纪录/萧沆启示录/RomaniaCinemaApocalipsaDupa.avi.sub"
+    ],
+    "reason": "orphan idx/sub files; folder will contain only one movie after deletion",
+    "message": "moved movie and removed folder; output=/Volumes/分类/纪录/RomaniaCinemaApocalipsaDupa.mkv"
+  }
+]
