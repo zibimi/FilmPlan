@@ -1,0 +1,751 @@
+[
+  {
+    "id": "manual-001-garden-allah",
+    "status": "DONE",
+    "folder": "/Volumes/导演们/玛琳·黛德丽[演员]/The Garden of Allah阿拉的花园",
+    "movie": "/Volumes/导演们/玛琳·黛德丽[演员]/The Garden of Allah阿拉的花园/阿拉的花园.The.Garden.of.Allah.1936.Marlene.Dietricht.(.Eng-Span).avi",
+    "subtitles": [
+      {
+        "path": "/Volumes/导演们/玛琳·黛德丽[演员]/The Garden of Allah阿拉的花园/阿拉的花园.The.Garden.of.Allah.1936.Marlene.Dietricht.(.Eng-Span).srt",
+        "lang": "eng"
+      }
+    ],
+    "keep_source": false,
+    "delete_extra": [],
+    "ignore_leftovers": false,
+    "note": "",
+    "message": "completed; output=/Volumes/导演们/玛琳·黛德丽[演员]/阿拉的花园.The.Garden.of.Allah.1936.Marlene.Dietricht.(.Eng-Span).mkv"
+  },
+  {
+    "id": "manual-002-godard-woody",
+    "status": "DONE",
+    "folder": "/Volumes/导演们/让·吕克.戈达尔/当戈达尔遇到伍迪艾伦",
+    "movie": "/Volumes/导演们/让·吕克.戈达尔/当戈达尔遇到伍迪艾伦/当戈达尔遇到伍迪艾伦.Meeting.Woody.Allen.1986.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/导演们/让·吕克.戈达尔/当戈达尔遇到伍迪艾伦/当戈达尔遇到伍迪艾伦.Meeting.Woody.Allen.1986.chs.srt",
+        "lang": "eng"
+      }
+    ],
+    "keep_source": false,
+    "delete_extra": [],
+    "ignore_leftovers": false,
+    "note": "",
+    "message": "completed; output=/Volumes/导演们/让·吕克.戈达尔/当戈达尔遇到伍迪艾伦.Meeting.Woody.Allen.1986.mkv"
+  },
+  {
+    "id": "manual-003-bariera",
+    "status": "DONE",
+    "folder": "/Volumes/导演们/杰兹·斯科利莫夫斯基/栅栏",
+    "movie": "/Volumes/导演们/杰兹·斯科利莫夫斯基/栅栏/栅栏.Bariera.1966.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/导演们/杰兹·斯科利莫夫斯基/栅栏/栅栏.Bariera.1966.chs.srt",
+        "lang": "eng"
+      }
+    ],
+    "keep_source": false,
+    "delete_extra": [],
+    "ignore_leftovers": false,
+    "note": "",
+    "message": "completed; output=/Volumes/导演们/杰兹·斯科利莫夫斯基/栅栏.Bariera.1966.mkv"
+  },
+  {
+    "id": "manual-004-kochegar",
+    "status": "DONE",
+    "folder": "/Volumes/导演们/阿历克塞·巴拉巴诺夫/锅炉工",
+    "movie": "/Volumes/导演们/阿历克塞·巴拉巴诺夫/锅炉工/锅炉工.Kochegar.2010.XviD.DVDRip.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/导演们/阿历克塞·巴拉巴诺夫/锅炉工/锅炉工.Kochegar.2010.XviD.DVDRip.chs.2.srt"
+      },
+      {
+        "path": "/Volumes/导演们/阿历克塞·巴拉巴诺夫/锅炉工/锅炉工.Kochegar.2010.XviD.DVDRip.chs.3.srt"
+      },
+      {
+        "path": "/Volumes/导演们/阿历克塞·巴拉巴诺夫/锅炉工/锅炉工.Kochegar.2010.XviD.DVDRip.chs.srt"
+      },
+      {
+        "path": "/Volumes/导演们/阿历克塞·巴拉巴诺夫/锅炉工/锅炉工.Kochegar.2010.XviD.DVDRip.cht.srt"
+      }
+    ],
+    "keep_source": false,
+    "delete_extra": [],
+    "ignore_leftovers": false,
+    "note": "",
+    "message": "completed; output=/Volumes/导演们/阿历克塞·巴拉巴诺夫/锅炉工.Kochegar.2010.XviD.DVDRip.mkv"
+  },
+  {
+    "id": "manual-005-islands",
+    "status": "DONE",
+    "folder": "/Volumes/导演们/安德烈·塔尔科夫斯基/塔尔科夫斯基《岛》",
+    "movie": "/Volumes/导演们/安德烈·塔尔科夫斯基/塔尔科夫斯基《岛》/岛.Andrei.Tarkovsky.Sergei.Parajanov.-.Islands.chs.mp4",
+    "subtitles": [
+      {
+        "path": "/Volumes/导演们/安德烈·塔尔科夫斯基/塔尔科夫斯基《岛》/岛.Andrei.Tarkovsky.Sergei.Parajanov.-.Islands.chs.chs.srt"
+      },
+      {
+        "path": "/Volumes/导演们/安德烈·塔尔科夫斯基/塔尔科夫斯基《岛》/岛.Andrei.Tarkovsky.Sergei.Parajanov.-.Islands.chs.srt"
+      }
+    ],
+    "keep_source": false,
+    "delete_extra": [],
+    "ignore_leftovers": false,
+    "note": "",
+    "message": "completed; output=/Volumes/导演们/安德烈·塔尔科夫斯基/岛.Andrei.Tarkovsky.Sergei.Parajanov.-.Islands.chs.mkv"
+  },
+  {
+    "id": "manual-006-happy-life",
+    "status": "FAILED",
+    "folder": "/Volumes/导演们/成濑巳喜男/幸福生活",
+    "movie": "/Volumes/导演们/成濑巳喜男/幸福生活/幸福生活.Tanoshiki.kana.jinsei.This.Happy.Life.1944.Mikio.Naruse.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/导演们/成濑巳喜男/幸福生活/幸福生活.Tanoshiki.kana.jinsei.This.Happy.Life.1944.Mikio.Naruse.srt"
+      },
+      {
+        "path": "/Volumes/导演们/成濑巳喜男/幸福生活/幸福生活Tanoshiki.kana.jinsei.This.Happy.Life.1944.Mikio.Naruse.srt"
+      }
+    ],
+    "keep_source": false,
+    "delete_extra": [],
+    "ignore_leftovers": false,
+    "note": "",
+    "message": "SRT normalization found no valid cues"
+  },
+  {
+    "id": "manual-007-ossessione",
+    "status": "DONE",
+    "folder": "/Volumes/导演们/卢基诺·维斯康蒂/沉沦",
+    "movie": "/Volumes/导演们/卢基诺·维斯康蒂/沉沦/沉沦.Ossessione.1943.DVDRip.XviD.avi",
+    "subtitles": [
+      {
+        "path": "/Volumes/导演们/卢基诺·维斯康蒂/沉沦/沉沦.Ossessione.1943.DVDRip.XviD.chs.idx",
+        "lang": "chi",
+        "sidecar": "/Volumes/导演们/卢基诺·维斯康蒂/沉沦/沉沦.Ossessione.1943.DVDRip.XviD.chs.sub"
+      }
+    ],
+    "keep_source": false,
+    "delete_extra": [
+      "/Volumes/导演们/卢基诺·维斯康蒂/沉沦/沉沦.Ossessione.1943.DVDRip.XviD.chs.2.idx"
+    ],
+    "ignore_leftovers": false,
+    "note": "",
+    "message": "completed; output=/Volumes/导演们/卢基诺·维斯康蒂/沉沦.Ossessione.1943.DVDRip.XviD.mkv"
+  },
+  {
+    "id": "manual-008-caduta",
+    "status": "DONE",
+    "folder": "/Volumes/导演们/卢基诺·维斯康蒂/纳粹狂魔",
+    "movie": "/Volumes/导演们/卢基诺·维斯康蒂/纳粹狂魔/纳粹狂魔.La.Caduta.Degli.Dei.1969.DVDRip.DivX.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/导演们/卢基诺·维斯康蒂/纳粹狂魔/纳粹狂魔.La.Caduta.Degli.Dei.1969.DVDRip.DivX.chs.2.srt"
+      },
+      {
+        "path": "/Volumes/导演们/卢基诺·维斯康蒂/纳粹狂魔/纳粹狂魔.La.Caduta.Degli.Dei.1969.DVDRip.DivX.chs.srt"
+      }
+    ],
+    "keep_source": false,
+    "delete_extra": [],
+    "ignore_leftovers": false,
+    "note": "",
+    "message": "completed; output=/Volumes/导演们/卢基诺·维斯康蒂/纳粹狂魔.La.Caduta.Degli.Dei.1969.DVDRip.DivX.mkv"
+  },
+  {
+    "id": "manual-009-raising-cain",
+    "status": "DONE",
+    "folder": "/Volumes/导演们/布莱恩·德·帕尔玛/危情羔羊",
+    "movie": "/Volumes/导演们/布莱恩·德·帕尔玛/危情羔羊/危情羔羊.Raising.Cain.1992.DVDRiP.XviD-Grand.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/导演们/布莱恩·德·帕尔玛/危情羔羊/危情羔羊.Raising.Cain.1992.DVDRiP.XviD-Grand.chs.srt",
+        "lang": "eng"
+      }
+    ],
+    "keep_source": false,
+    "delete_extra": [],
+    "ignore_leftovers": false,
+    "note": "",
+    "message": "completed; output=/Volumes/导演们/布莱恩·德·帕尔玛/危情羔羊.Raising.Cain.1992.DVDRiP.XviD-Grand.mkv"
+  },
+  {
+    "id": "manual-010-fury",
+    "status": "DONE",
+    "folder": "/Volumes/导演们/布莱恩·德·帕尔玛/愤怒",
+    "movie": "/Volumes/导演们/布莱恩·德·帕尔玛/愤怒/魔血.The.Fury.1978.DVDRip.XviD-Smokey888.tehPARADOX.com.avi",
+    "subtitles": [
+      {
+        "path": "/Volumes/导演们/布莱恩·德·帕尔玛/愤怒/魔血.The.Fury.1978.DVDRip.XviD-Smokey888.tehPARADOX.com.chs.srt",
+        "lang": "eng"
+      }
+    ],
+    "keep_source": false,
+    "delete_extra": [],
+    "ignore_leftovers": false,
+    "note": "",
+    "message": "completed; output=/Volumes/导演们/布莱恩·德·帕尔玛/魔血.The.Fury.1978.DVDRip.XviD-Smokey888.tehPARADOX.com.mkv"
+  },
+  {
+    "id": "manual-011-femme-fatale-cd1",
+    "status": "DONE_REVIEW",
+    "folder": "/Volumes/导演们/布莱恩·德·帕尔玛/蛇蝎美人",
+    "movie": "/Volumes/导演们/布莱恩·德·帕尔玛/蛇蝎美人/蛇蝎美人.Femme.Fatale.2002.DVDrip.XviD.AC3.5.1CH.CD1-WAF.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/导演们/布莱恩·德·帕尔玛/蛇蝎美人/蛇蝎美人.Femme.Fatale.2002.DVDrip.XviD.AC3.5.1CH.CD1-WAF.chs.srt"
+      },
+      {
+        "path": "/Volumes/导演们/布莱恩·德·帕尔玛/蛇蝎美人/蛇蝎美人.Femme.Fatale.2002.DVDrip.XviD.AC3.5.1CH.CD1-WAF.eng.srt",
+        "lang": "eng"
+      }
+    ],
+    "keep_source": false,
+    "delete_extra": [],
+    "ignore_leftovers": false,
+    "note": "",
+    "message": "output completed, folder not empty; output=/Volumes/导演们/布莱恩·德·帕尔玛/蛇蝎美人.Femme.Fatale.2002.DVDrip.XviD.AC3.5.1CH.CD1-WAF.mkv"
+  },
+  {
+    "id": "manual-011-femme-fatale-cd2",
+    "status": "DONE",
+    "folder": "/Volumes/导演们/布莱恩·德·帕尔玛/蛇蝎美人",
+    "movie": "/Volumes/导演们/布莱恩·德·帕尔玛/蛇蝎美人/蛇蝎美人.Femme.Fatale.2002.DVDrip.XviD.AC3.5.1CH.CD2-WAF.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/导演们/布莱恩·德·帕尔玛/蛇蝎美人/蛇蝎美人.Femme.Fatale.2002.DVDrip.XviD.AC3.5.1CH.CD2-WAF.chs.srt"
+      },
+      {
+        "path": "/Volumes/导演们/布莱恩·德·帕尔玛/蛇蝎美人/蛇蝎美人.Femme.Fatale.2002.DVDrip.XviD.AC3.5.1CH.CD2-WAF.eng.srt",
+        "lang": "eng"
+      }
+    ],
+    "keep_source": false,
+    "delete_extra": [],
+    "ignore_leftovers": false,
+    "note": "",
+    "message": "completed; output=/Volumes/导演们/布莱恩·德·帕尔玛/蛇蝎美人.Femme.Fatale.2002.DVDrip.XviD.AC3.5.1CH.CD2-WAF.mkv"
+  },
+  {
+    "id": "manual-012-snake-eyes-cd1",
+    "status": "DONE_REVIEW",
+    "folder": "/Volumes/导演们/布莱恩·德·帕尔玛/蛇眼",
+    "movie": "/Volumes/导演们/布莱恩·德·帕尔玛/蛇眼/蛇眼.Snake.Eyes.1998.SPECiAL.COLLECTORS.EDiTiON.iNTERNAL.DVDRiP.X264-KiSS-cd1.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/导演们/布莱恩·德·帕尔玛/蛇眼/蛇眼.Snake.Eyes.1998.SPECiAL.COLLECTORS.EDiTiON.iNTERNAL.DVDRiP.X264-KiSS-cd1.srt"
+      }
+    ],
+    "keep_source": false,
+    "delete_extra": [],
+    "ignore_leftovers": false,
+    "note": "",
+    "message": "output completed, folder not empty; output=/Volumes/导演们/布莱恩·德·帕尔玛/蛇眼.Snake.Eyes.1998.SPECiAL.COLLECTORS.EDiTiON.iNTERNAL.DVDRiP.X264-KiSS-cd1.mkv"
+  },
+  {
+    "id": "manual-012-snake-eyes-cd2",
+    "status": "DONE",
+    "folder": "/Volumes/导演们/布莱恩·德·帕尔玛/蛇眼",
+    "movie": "/Volumes/导演们/布莱恩·德·帕尔玛/蛇眼/蛇眼.Snake.Eyes.1998.SPECiAL.COLLECTORS.EDiTiON.iNTERNAL.DVDRiP.X264-KiSS-cd2.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/导演们/布莱恩·德·帕尔玛/蛇眼/蛇眼.Snake.Eyes.1998.SPECiAL.COLLECTORS.EDiTiON.iNTERNAL.DVDRiP.X264-KiSS-cd2.srt"
+      }
+    ],
+    "keep_source": false,
+    "delete_extra": [],
+    "ignore_leftovers": false,
+    "note": "",
+    "message": "completed; output=/Volumes/导演们/布莱恩·德·帕尔玛/蛇眼.Snake.Eyes.1998.SPECiAL.COLLECTORS.EDiTiON.iNTERNAL.DVDRiP.X264-KiSS-cd2.mkv"
+  },
+  {
+    "id": "manual-013-viaje-cd1",
+    "status": "DONE_REVIEW",
+    "folder": "/Volumes/导演们/费尔南多·索拉纳斯/旅程",
+    "movie": "/Volumes/导演们/费尔南多·索拉纳斯/旅程/旅程.El.Viaje.1992.cd1.mp4",
+    "subtitles": [
+      {
+        "path": "/Volumes/导演们/费尔南多·索拉纳斯/旅程/旅程.El.Viaje.1992.cd1.srt"
+      }
+    ],
+    "keep_source": false,
+    "delete_extra": [],
+    "ignore_leftovers": false,
+    "note": "",
+    "message": "output completed, folder not empty; output=/Volumes/导演们/费尔南多·索拉纳斯/旅程.El.Viaje.1992.cd1.mkv"
+  },
+  {
+    "id": "manual-013-viaje-cd2",
+    "status": "DONE",
+    "folder": "/Volumes/导演们/费尔南多·索拉纳斯/旅程",
+    "movie": "/Volumes/导演们/费尔南多·索拉纳斯/旅程/旅程.El.Viaje.1992.cd2.mp4",
+    "subtitles": [
+      {
+        "path": "/Volumes/导演们/费尔南多·索拉纳斯/旅程/旅程.El.Viaje.1992.cd2.srt"
+      }
+    ],
+    "keep_source": false,
+    "delete_extra": [],
+    "ignore_leftovers": false,
+    "note": "",
+    "message": "completed; output=/Volumes/导演们/费尔南多·索拉纳斯/旅程.El.Viaje.1992.cd2.mkv"
+  },
+  {
+    "id": "manual-014-kubrick-life-cd1",
+    "status": "DONE_REVIEW",
+    "folder": "/Volumes/导演们/斯坦利·库布里克/斯坦利·库布里克.电影人生",
+    "movie": "/Volumes/导演们/斯坦利·库布里克/斯坦利·库布里克.电影人生/斯坦利·库布里克.电影人生.Stanley.Kubrick.A.Life.in.Pictures.2001.Happy.New.Year.iNTERNAL.DVDRiP.X264-KiSS-cd1.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/导演们/斯坦利·库布里克/斯坦利·库布里克.电影人生/kiss-skalip-cd1.idx",
+        "lang": "und",
+        "sidecar": "/Volumes/导演们/斯坦利·库布里克/斯坦利·库布里克.电影人生/kiss-skalip-cd1.sub"
+      }
+    ],
+    "keep_source": false,
+    "delete_extra": [],
+    "ignore_leftovers": false,
+    "note": "",
+    "message": "output completed, folder not empty; output=/Volumes/导演们/斯坦利·库布里克/斯坦利·库布里克.电影人生.Stanley.Kubrick.A.Life.in.Pictures.2001.Happy.New.Year.iNTERNAL.DVDRiP.X264-KiSS-cd1.mkv"
+  },
+  {
+    "id": "manual-014-kubrick-life-cd2",
+    "status": "DONE",
+    "folder": "/Volumes/导演们/斯坦利·库布里克/斯坦利·库布里克.电影人生",
+    "movie": "/Volumes/导演们/斯坦利·库布里克/斯坦利·库布里克.电影人生/斯坦利·库布里克.电影人生.Stanley.Kubrick.A.Life.in.Pictures.2001.Happy.New.Year.iNTERNAL.DVDRiP.X264-KiSS-cd2.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/导演们/斯坦利·库布里克/斯坦利·库布里克.电影人生/kiss-skalip-cd2.idx",
+        "lang": "und",
+        "sidecar": "/Volumes/导演们/斯坦利·库布里克/斯坦利·库布里克.电影人生/kiss-skalip-cd2.sub"
+      }
+    ],
+    "keep_source": false,
+    "delete_extra": [],
+    "ignore_leftovers": false,
+    "note": "",
+    "message": "completed; output=/Volumes/导演们/斯坦利·库布里克/斯坦利·库布里克.电影人生.Stanley.Kubrick.A.Life.in.Pictures.2001.Happy.New.Year.iNTERNAL.DVDRiP.X264-KiSS-cd2.mkv"
+  },
+  {
+    "id": "manual-015-postman-cd1",
+    "status": "DONE_REVIEW",
+    "folder": "/Volumes/分类/黑色电影/邮差总按两次铃",
+    "movie": "/Volumes/分类/黑色电影/邮差总按两次铃/The.Postman.Always.Rings.Twice.1946.CD1.DVDRip.XviD-FiNaLe.avi",
+    "subtitles": [
+      {
+        "path": "/Volumes/分类/黑色电影/邮差总按两次铃/The.Postman.Always.Rings.Twice.1946.CD1.DVDRip.XviD-FiNaLe.srt"
+      }
+    ],
+    "keep_source": false,
+    "delete_extra": [
+      "/Volumes/分类/黑色电影/邮差总按两次铃/.The.Postman.Always.Rings.Twice.1946.CD1.DVDRip.XviD-FiNaLe.muxing.mkv.abandoned.20260615-cd-mismatch-review"
+    ],
+    "ignore_leftovers": false,
+    "note": "",
+    "message": "output completed, folder not empty; output=/Volumes/分类/黑色电影/The.Postman.Always.Rings.Twice.1946.CD1.DVDRip.XviD-FiNaLe.mkv"
+  },
+  {
+    "id": "manual-015-postman-cd2",
+    "status": "DONE",
+    "folder": "/Volumes/分类/黑色电影/邮差总按两次铃",
+    "movie": "/Volumes/分类/黑色电影/邮差总按两次铃/The.Postman.Always.Rings.Twice.1946.CD2.DVDRip.XviD-FiNaLe.avi",
+    "subtitles": [
+      {
+        "path": "/Volumes/分类/黑色电影/邮差总按两次铃/The.Postman.Always.Rings.Twice.1946.CD2.DVDRip.XviD-FiNaLe.srt"
+      }
+    ],
+    "keep_source": false,
+    "delete_extra": [],
+    "ignore_leftovers": false,
+    "note": "",
+    "message": "completed; output=/Volumes/分类/黑色电影/The.Postman.Always.Rings.Twice.1946.CD2.DVDRip.XviD-FiNaLe.mkv"
+  },
+  {
+    "id": "manual-016-hornos-1",
+    "status": "DONE_REVIEW",
+    "folder": "/Volumes/导演们/费尔南多·索拉纳斯/燃火的时刻",
+    "movie": "/Volumes/导演们/费尔南多·索拉纳斯/燃火的时刻/La.Hora.de.los.Hornos.-.1.-.Neocolonialismo.y.violencia.mp4",
+    "subtitles": [
+      {
+        "path": "/Volumes/导演们/费尔南多·索拉纳斯/燃火的时刻/La.Hora.de.los.Hornos.-.1.-.Neocolonialismo.y.violencia.srt"
+      },
+      {
+        "path": "/Volumes/导演们/费尔南多·索拉纳斯/燃火的时刻/La.Hora.de.los.Hornos.-.1.-.Neocolonialismo.y.violencia.eng.srt",
+        "lang": "eng"
+      }
+    ],
+    "keep_source": false,
+    "delete_extra": [],
+    "ignore_leftovers": false,
+    "note": "",
+    "message": "output completed, folder not empty; output=/Volumes/导演们/费尔南多·索拉纳斯/La.Hora.de.los.Hornos.-.1.-.Neocolonialismo.y.violencia.mkv"
+  },
+  {
+    "id": "manual-016-hornos-2",
+    "status": "DONE_REVIEW",
+    "folder": "/Volumes/导演们/费尔南多·索拉纳斯/燃火的时刻",
+    "movie": "/Volumes/导演们/费尔南多·索拉纳斯/燃火的时刻/La.hora.de.los.Hornos.-.2.-.Acto.para.la.liberación.avi",
+    "subtitles": [
+      {
+        "path": "/Volumes/导演们/费尔南多·索拉纳斯/燃火的时刻/La.hora.de.los.Hornos.-.2.-.Acto.para.la.liberación.srt"
+      },
+      {
+        "path": "/Volumes/导演们/费尔南多·索拉纳斯/燃火的时刻/La.hora.de.los.Hornos.-.2.-.Acto.para.la.liberación.eng.srt",
+        "lang": "eng"
+      }
+    ],
+    "keep_source": false,
+    "delete_extra": [],
+    "ignore_leftovers": false,
+    "note": "",
+    "message": "output completed, folder not empty; output=/Volumes/导演们/费尔南多·索拉纳斯/La.hora.de.los.Hornos.-.2.-.Acto.para.la.liberación.mkv"
+  },
+  {
+    "id": "manual-016-hornos-3",
+    "status": "DONE",
+    "folder": "/Volumes/导演们/费尔南多·索拉纳斯/燃火的时刻",
+    "movie": "/Volumes/导演们/费尔南多·索拉纳斯/燃火的时刻/La.hora.de.los.Hornos.-.3.-.Violencia.y.liberación.mp4",
+    "subtitles": [
+      {
+        "path": "/Volumes/导演们/费尔南多·索拉纳斯/燃火的时刻/La.hora.de.los.Hornos.-.3.-.Violencia.y.liberación.srt"
+      },
+      {
+        "path": "/Volumes/导演们/费尔南多·索拉纳斯/燃火的时刻/La.hora.de.los.Hornos.-.3.-.Violencia.y.liberación.eng.srt",
+        "lang": "eng"
+      }
+    ],
+    "keep_source": false,
+    "delete_extra": [],
+    "ignore_leftovers": false,
+    "note": "",
+    "message": "completed; output=/Volumes/导演们/费尔南多·索拉纳斯/La.hora.de.los.Hornos.-.3.-.Violencia.y.liberación.mkv"
+  },
+  {
+    "id": "manual-017-maison-bois-ep1",
+    "status": "DONE_REVIEW",
+    "folder": "/Volumes/导演们/莫里斯·皮亚拉/森林的小屋",
+    "movie": "/Volumes/导演们/莫里斯·皮亚拉/森林的小屋/La.maison.des.bois(Pialat)ep1-xvid.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/导演们/莫里斯·皮亚拉/森林的小屋/森林里的小屋001.idx",
+        "lang": "und",
+        "sidecar": "/Volumes/导演们/莫里斯·皮亚拉/森林的小屋/森林里的小屋001.sub"
+      }
+    ],
+    "keep_source": false,
+    "delete_extra": [],
+    "ignore_leftovers": false,
+    "note": "",
+    "message": "output completed, folder not empty; output=/Volumes/导演们/莫里斯·皮亚拉/La.maison.des.bois(Pialat)ep1-xvid.mkv"
+  },
+  {
+    "id": "manual-017-maison-bois-ep2",
+    "status": "DONE_REVIEW",
+    "folder": "/Volumes/导演们/莫里斯·皮亚拉/森林的小屋",
+    "movie": "/Volumes/导演们/莫里斯·皮亚拉/森林的小屋/La.maison.des.bois(Pialat)ep2-xvid.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/导演们/莫里斯·皮亚拉/森林的小屋/森林里的小屋002.idx",
+        "lang": "und",
+        "sidecar": "/Volumes/导演们/莫里斯·皮亚拉/森林的小屋/森林里的小屋002.sub"
+      }
+    ],
+    "keep_source": false,
+    "delete_extra": [],
+    "ignore_leftovers": false,
+    "note": "",
+    "message": "output completed, folder not empty; output=/Volumes/导演们/莫里斯·皮亚拉/La.maison.des.bois(Pialat)ep2-xvid.mkv"
+  },
+  {
+    "id": "manual-017-maison-bois-ep3",
+    "status": "DONE_REVIEW",
+    "folder": "/Volumes/导演们/莫里斯·皮亚拉/森林的小屋",
+    "movie": "/Volumes/导演们/莫里斯·皮亚拉/森林的小屋/La.maison.des.bois(Pialat)ep3-xvid.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/导演们/莫里斯·皮亚拉/森林的小屋/森林里的小屋003.idx",
+        "lang": "und",
+        "sidecar": "/Volumes/导演们/莫里斯·皮亚拉/森林的小屋/森林里的小屋003.sub"
+      }
+    ],
+    "keep_source": false,
+    "delete_extra": [],
+    "ignore_leftovers": false,
+    "note": "",
+    "message": "output completed, folder not empty; output=/Volumes/导演们/莫里斯·皮亚拉/La.maison.des.bois(Pialat)ep3-xvid.mkv"
+  },
+  {
+    "id": "manual-017-maison-bois-ep4",
+    "status": "DONE_REVIEW",
+    "folder": "/Volumes/导演们/莫里斯·皮亚拉/森林的小屋",
+    "movie": "/Volumes/导演们/莫里斯·皮亚拉/森林的小屋/La.maison.des.bois(Pialat)ep4-xvid.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/导演们/莫里斯·皮亚拉/森林的小屋/森林里的小屋004.idx",
+        "lang": "und",
+        "sidecar": "/Volumes/导演们/莫里斯·皮亚拉/森林的小屋/森林里的小屋004.sub"
+      }
+    ],
+    "keep_source": false,
+    "delete_extra": [],
+    "ignore_leftovers": false,
+    "note": "",
+    "message": "output completed, folder not empty; output=/Volumes/导演们/莫里斯·皮亚拉/La.maison.des.bois(Pialat)ep4-xvid.mkv"
+  },
+  {
+    "id": "manual-017-maison-bois-ep5",
+    "status": "DONE_REVIEW",
+    "folder": "/Volumes/导演们/莫里斯·皮亚拉/森林的小屋",
+    "movie": "/Volumes/导演们/莫里斯·皮亚拉/森林的小屋/La.maison.des.bois(Pialat)ep5-xvid.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/导演们/莫里斯·皮亚拉/森林的小屋/森林里的小屋005.idx",
+        "lang": "und",
+        "sidecar": "/Volumes/导演们/莫里斯·皮亚拉/森林的小屋/森林里的小屋005.sub"
+      }
+    ],
+    "keep_source": false,
+    "delete_extra": [],
+    "ignore_leftovers": false,
+    "note": "",
+    "message": "output completed, folder not empty; output=/Volumes/导演们/莫里斯·皮亚拉/La.maison.des.bois(Pialat)ep5-xvid.mkv"
+  },
+  {
+    "id": "manual-017-maison-bois-ep6",
+    "status": "DONE_REVIEW",
+    "folder": "/Volumes/导演们/莫里斯·皮亚拉/森林的小屋",
+    "movie": "/Volumes/导演们/莫里斯·皮亚拉/森林的小屋/La.maison.des.bois(Pialat)ep6-xvid.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/导演们/莫里斯·皮亚拉/森林的小屋/森林里的小屋006.idx",
+        "lang": "und",
+        "sidecar": "/Volumes/导演们/莫里斯·皮亚拉/森林的小屋/森林里的小屋006.sub"
+      }
+    ],
+    "keep_source": false,
+    "delete_extra": [],
+    "ignore_leftovers": false,
+    "note": "",
+    "message": "output completed, folder not empty; output=/Volumes/导演们/莫里斯·皮亚拉/La.maison.des.bois(Pialat)ep6-xvid.mkv"
+  },
+  {
+    "id": "manual-017-maison-bois-ep7",
+    "status": "DONE",
+    "folder": "/Volumes/导演们/莫里斯·皮亚拉/森林的小屋",
+    "movie": "/Volumes/导演们/莫里斯·皮亚拉/森林的小屋/La.maison.des.bois(Pialat)ep7-xvid.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/导演们/莫里斯·皮亚拉/森林的小屋/森林里的小屋007.idx",
+        "lang": "und",
+        "sidecar": "/Volumes/导演们/莫里斯·皮亚拉/森林的小屋/森林里的小屋007.sub"
+      }
+    ],
+    "keep_source": false,
+    "delete_extra": [],
+    "ignore_leftovers": false,
+    "note": "",
+    "message": "completed; output=/Volumes/导演们/莫里斯·皮亚拉/La.maison.des.bois(Pialat)ep7-xvid.mkv"
+  },
+  {
+    "id": "manual-018-shop-around-corner",
+    "status": "DONE",
+    "folder": "/Volumes/导演们/刘别谦/有声片/街角的商店",
+    "movie": "/Volumes/导演们/刘别谦/有声片/街角的商店/街角的商店.The.Shop.Around.The.Corner.1940.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/导演们/刘别谦/有声片/街角的商店/The.Shop.Around.The.Corner.1940.Lubitsch.DVDRip-Vostfr.chs.srt"
+      }
+    ],
+    "keep_source": false,
+    "delete_extra": [],
+    "ignore_leftovers": false,
+    "note": "",
+    "message": "completed; output=/Volumes/导演们/刘别谦/有声片/街角的商店.The.Shop.Around.The.Corner.1940.mkv"
+  },
+  {
+    "id": "manual-019-blast-silence",
+    "status": "DONE_REVIEW",
+    "folder": "/Volumes/分类/黑色电影/沉默中爆发",
+    "movie": "/Volumes/分类/黑色电影/沉默中爆发/沉默中爆发.Blast.of.Silence.1961.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/分类/黑色电影/沉默中爆发/[沉默中爆发].Blast.of.silence.1961.DVDrip.XviD.AC3.iNT-alaundo.chs.srt"
+      },
+      {
+        "path": "/Volumes/分类/黑色电影/沉默中爆发/[沉默中爆发].Blast.of.silence.1961.DVDrip.XviD.AC3.iNT-alaundo.eng.srt",
+        "lang": "eng"
+      },
+      {
+        "path": "/Volumes/分类/黑色电影/沉默中爆发/沉默中爆发_Blast_of_Silence1961.chn.srt"
+      }
+    ],
+    "keep_source": false,
+    "delete_extra": [],
+    "ignore_leftovers": true,
+    "note": "",
+    "message": "completed in original folder; extras preserved; output=/Volumes/分类/黑色电影/沉默中爆发/沉默中爆发.Blast.of.Silence.1961.mkv",
+    "keep_folder": true
+  },
+  {
+    "id": "manual-020-how-high",
+    "status": "DONE",
+    "folder": "/Volumes/分类/纪录/山有多高",
+    "movie": "/Volumes/分类/纪录/山有多高/纪录观点之山有多高.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/分类/纪录/山有多高/纪录观点之山有多高.idx",
+        "lang": "und",
+        "sidecar": "/Volumes/分类/纪录/山有多高/纪录观点之山有多高.sub"
+      }
+    ],
+    "keep_source": false,
+    "delete_extra": [],
+    "ignore_leftovers": false,
+    "note": "",
+    "message": "completed; output=/Volumes/分类/纪录/纪录观点之山有多高.mkv"
+  },
+  {
+    "id": "manual-021-point-blank",
+    "status": "DONE_REVIEW",
+    "folder": "/Volumes/分类/黑色电影/步步惊魂",
+    "movie": "/Volumes/分类/黑色电影/步步惊魂/步步惊魂Point_Blank.rmvb",
+    "subtitles": [
+      {
+        "path": "/Volumes/分类/黑色电影/步步惊魂/Point.Blank.1967.DVDRip.XviD-SAPHiRE.chs.srt"
+      }
+    ],
+    "keep_source": true,
+    "delete_extra": [],
+    "ignore_leftovers": false,
+    "note": "RMVB remux trial; keep source for playback review",
+    "message": "output completed; source kept for review; output=/Volumes/分类/黑色电影/步步惊魂Point_Blank.mkv"
+  },
+  {
+    "id": "manual-022-fallen-angel",
+    "status": "DONE_REVIEW",
+    "folder": "/Volumes/分类/黑色电影/堕落天使",
+    "movie": "/Volumes/分类/黑色电影/堕落天使/堕落天使Fallen_Angel_(1945).rmvb",
+    "subtitles": [
+      {
+        "path": "/Volumes/分类/黑色电影/堕落天使/（英字）堕落天使Fallen_Angel.srt",
+        "lang": "eng"
+      }
+    ],
+    "keep_source": true,
+    "delete_extra": [],
+    "ignore_leftovers": false,
+    "note": "RMVB remux trial; keep source for playback review",
+    "message": "output completed; source kept for review; output=/Volumes/分类/黑色电影/堕落天使Fallen_Angel_(1945).mkv"
+  },
+  {
+    "id": "manual-023-drive-night",
+    "status": "DONE_REVIEW",
+    "folder": "/Volumes/分类/黑色电影/卡车斗士",
+    "movie": "/Volumes/分类/黑色电影/卡车斗士/They_Drive_by_Night_(1940).rmvb",
+    "subtitles": [
+      {
+        "path": "/Volumes/分类/黑色电影/卡车斗士/黑夜飞车.idx",
+        "lang": "und",
+        "sidecar": "/Volumes/分类/黑色电影/卡车斗士/黑夜飞车.sub"
+      }
+    ],
+    "keep_source": true,
+    "delete_extra": [],
+    "ignore_leftovers": false,
+    "note": "RMVB remux trial; keep source for playback review",
+    "message": "output completed; source kept for review; output=/Volumes/分类/黑色电影/They_Drive_by_Night_(1940).mkv"
+  },
+  {
+    "id": "manual-024-criss-cross",
+    "status": "DONE_REVIEW",
+    "folder": "/Volumes/分类/黑色电影/十字交锋",
+    "movie": "/Volumes/分类/黑色电影/十字交锋/十字交锋Cris_Cros_1949.rmvb",
+    "subtitles": [
+      {
+        "path": "/Volumes/分类/黑色电影/十字交锋/十字交锋Criss Cross.srt"
+      },
+      {
+        "path": "/Volumes/分类/黑色电影/十字交锋/十字交锋eng.srt",
+        "lang": "eng"
+      }
+    ],
+    "keep_source": true,
+    "delete_extra": [],
+    "ignore_leftovers": false,
+    "note": "RMVB remux trial; keep source for playback review",
+    "message": "output completed; source kept for review; output=/Volumes/分类/黑色电影/十字交锋Cris_Cros_1949.mkv"
+  },
+  {
+    "id": "manual-025-live-night",
+    "status": "DONE_REVIEW",
+    "folder": "/Volumes/分类/黑色电影/夜逃鸳鸯",
+    "movie": "/Volumes/分类/黑色电影/夜逃鸳鸯/夜逃鸳鸯They_Live_by_Night_(1948).rmvb",
+    "subtitles": [
+      {
+        "path": "/Volumes/分类/黑色电影/夜逃鸳鸯/（英字）夜逃鸳鸯They_Live_by_Night_DVDRip-ellroy.srt",
+        "lang": "eng"
+      }
+    ],
+    "keep_source": true,
+    "delete_extra": [],
+    "ignore_leftovers": false,
+    "note": "RMVB remux trial; keep source for playback review",
+    "message": "output completed; source kept for review; output=/Volumes/分类/黑色电影/夜逃鸳鸯They_Live_by_Night_(1948).mkv"
+  },
+  {
+    "id": "manual-026-gueule-ouverte",
+    "status": "DONE",
+    "folder": "/Volumes/导演们/莫里斯·皮亚拉/张口结舌",
+    "movie": "/Volumes/导演们/莫里斯·皮亚拉/张口结舌/张口结舌.La.Gueule.ouverte.-.1974.-.Maurice.Pialat.-.MoC.74.-.tt0071587.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/导演们/莫里斯·皮亚拉/张口结舌/La Gueule ouverte - 1974 - Maurice Pialat - MoC 74 - tt0071587.idx",
+        "lang": "und",
+        "sidecar": "/Volumes/导演们/莫里斯·皮亚拉/张口结舌/La Gueule ouverte - 1974 - Maurice Pialat - MoC 74 - tt0071587.sub"
+      }
+    ],
+    "keep_source": false,
+    "delete_extra": [],
+    "ignore_leftovers": true,
+    "note": "",
+    "message": "completed; output=/Volumes/导演们/莫里斯·皮亚拉/张口结舌.La.Gueule.ouverte.-.1974.-.Maurice.Pialat.-.MoC.74.-.tt0071587.mkv",
+    "keep_folder": true
+  },
+  {
+    "id": "manual-027-passe-bac",
+    "status": "DONE_REVIEW",
+    "folder": "/Volumes/导演们/莫里斯·皮亚拉/毕业生",
+    "movie": "/Volumes/导演们/莫里斯·皮亚拉/毕业生/毕业生.Passe.ton.bac.d'abord.-.1979.-.Maurice.Pialat.-.MoC.75.-.tt0079701.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/导演们/莫里斯·皮亚拉/毕业生/Passe ton bac d'abord - 1979 - Maurice Pialat - MoC 75 - tt0079701.idx",
+        "lang": "und",
+        "sidecar": "/Volumes/导演们/莫里斯·皮亚拉/毕业生/Passe ton bac d'abord - 1979 - Maurice Pialat - MoC 75 - tt0079701.sub"
+      }
+    ],
+    "keep_source": false,
+    "delete_extra": [],
+    "ignore_leftovers": true,
+    "note": "",
+    "keep_folder": true,
+    "message": "completed in original folder; leftovers preserved; output=/Volumes/导演们/莫里斯·皮亚拉/毕业生/毕业生.Passe.ton.bac.d'abord.-.1979.-.Maurice.Pialat.-.MoC.75.-.tt0079701.mkv"
+  },
+  {
+    "id": "manual-028-bellissima",
+    "status": "DONE",
+    "folder": "/Volumes/导演们/卢基诺·维斯康蒂/小美人",
+    "movie": "/Volumes/导演们/卢基诺·维斯康蒂/小美人/小美人.Bellissima.1951.avi",
+    "subtitles": [
+      {
+        "path": "/Volumes/导演们/卢基诺·维斯康蒂/小美人/小美人(意)1951.idx",
+        "lang": "und",
+        "sidecar": "/Volumes/导演们/卢基诺·维斯康蒂/小美人/VTS_02_0.sub"
+      }
+    ],
+    "keep_source": false,
+    "delete_extra": [],
+    "ignore_leftovers": false,
+    "note": "",
+    "message": "completed; output=/Volumes/导演们/卢基诺·维斯康蒂/小美人.Bellissima.1951.mkv"
+  }
+]
