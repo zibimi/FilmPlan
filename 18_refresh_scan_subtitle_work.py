@@ -282,8 +282,8 @@ def scan() -> tuple[list[dict], list[dict], list[dict]]:
                         "movie": str(movie),
                     })
                     continue
+                keep_folder = folder_has_real_subdir(folder) or category in {"cd", "multi"}
                 target = folder.parent / f"{movie.stem}.mkv"
-                keep_folder = folder_has_real_subdir(folder)
                 if keep_folder:
                     target = folder / f"{movie.stem}.mkv"
                 if target.exists() and target != movie:

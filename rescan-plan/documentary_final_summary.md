@@ -1,46 +1,29 @@
 # Documentary folder cleanup summary
 
 Generated: 2026-07-20
+Updated: 2026-07-21
 
 Scope: `/Volumes/分类/纪录`
 
-## Completed
+## Rule Correction
 
-- Subtitle mux tasks: 10
-  - `中国一个世纪的革命`: 3 VobSub pairs muxed into 3 MKV files.
-  - `大熊猫的生活`: CD1, CD2, and Extra text subtitles muxed.
-  - `寻找贝多芬`: 2 UTF-16LE English subtitles muxed.
-  - `森山大道`: simplified and traditional Chinese subtitles muxed for both movie files.
-- Single-movie folder flatten actions: 8
+- Single-movie-only folders may be flattened: move the finished movie to the parent folder and remove the now-empty movie folder.
+- Multi-movie folders, including CD1/CD2 and numbered-part folders, must stay as folders. After muxing, keep finished MKV files inside the original folder and clean only old no-subtitle movie files plus subtitle sidecars.
+- Folders with extras/subfolders should keep those extras/subfolders.
 
-## Final Scan
+## Completed / Confirmed
 
-- Remaining folders: 21
-- All remaining folders are multi-movie folders with no `.srt`, `.ass`, `.ssa`, `.idx`, or `.sub` subtitle leftovers.
-- No single-movie-only folders remain under `/Volumes/分类/纪录`.
+- `世纪中国`: 3 VobSub pairs confirmed in the original multi-file folder.
+- `大熊猫的生活`: CD1, CD2, and Extra confirmed in the original multi-file folder.
+- `森山大道`: 2 movie files restored into the original multi-file folder after the rule correction.
+- Single-movie folder flatten actions already completed: 8.
 
-## Left As Folders
+## Needs Manual Review
 
-These are multi-movie or collection folders and were intentionally left in place:
+- `寻找贝多芬`: one finished file was restored into the original folder; the expected `(1)` output was not found during the restore audit. Do not clean this folder automatically until it is checked.
 
-- `9号客人：纽约州州长斯皮策盛衰记`
-- `Pirate.For.The.Sea`
-- `一位母亲的勇气：对话自闭症`
-- `上海犹太人`
-- `共生心理分类学`
-- `寻找1949`
-- `寻求庇护`
-- `抽象.设计的艺术.Abs`
-- `时代精神2`
-- `格伦·古尔德：内心世界`
-- `格拉斯十二乐章`
-- `欧洲电影史`
-- `漫漫长路哈雷机车环球全记录`
-- `為什麼要民主`
-- `空王冠`
-- `笑傲江湖花絮`
-- `红在革命蔓延时`
-- `美国哈兰县`
-- `辛普森：美国制造`
-- `长路迢迢`
-- `面对面：一部德国电影史`
+## Final Rule For Future Runs
+
+- `category=cd` or `category=multi`: `keep_folder=true`; target output stays inside the original folder.
+- Single movie without real subfolders: target output may be placed in the parent folder as part of flattening.
+- Any missing expected output or ambiguous pair remains `MANUAL_REVIEW`.
