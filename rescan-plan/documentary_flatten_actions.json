@@ -1,0 +1,58 @@
+[
+  {
+    "folder": "/Volumes/分类/纪录/交际场：六十五岁以上的女士和先生",
+    "movie": "/Volumes/分类/纪录/交际场：六十五岁以上的女士和先生/Pina Bausch - Kontakthof.avi",
+    "target": "/Volumes/分类/纪录/Pina Bausch - Kontakthof.avi",
+    "status": "DONE",
+    "message": "moved to /Volumes/分类/纪录/Pina Bausch - Kontakthof.avi"
+  },
+  {
+    "folder": "/Volumes/分类/纪录/写真比尔",
+    "movie": "/Volumes/分类/纪录/写真比尔/Still.Bill.2009.DVDRip.XviD.SPRiNTER.mkv",
+    "target": "/Volumes/分类/纪录/Still.Bill.2009.DVDRip.XviD.SPRiNTER.mkv",
+    "status": "DONE",
+    "message": "moved to /Volumes/分类/纪录/Still.Bill.2009.DVDRip.XviD.SPRiNTER.mkv"
+  },
+  {
+    "folder": "/Volumes/分类/纪录/古尔德的俄罗斯之旅",
+    "movie": "/Volumes/分类/纪录/古尔德的俄罗斯之旅/Glenn Gould - The Russian Journey.avi",
+    "target": "/Volumes/分类/纪录/Glenn Gould - The Russian Journey.avi",
+    "status": "DONE",
+    "message": "moved to /Volumes/分类/纪录/Glenn Gould - The Russian Journey.avi"
+  },
+  {
+    "folder": "/Volumes/分类/纪录/天涯海角",
+    "movie": "/Volumes/分类/纪录/天涯海角/1929 Finis Terrae.mkv",
+    "target": "/Volumes/分类/纪录/1929 Finis Terrae.mkv",
+    "status": "DONE",
+    "message": "moved to /Volumes/分类/纪录/1929 Finis Terrae.mkv"
+  },
+  {
+    "folder": "/Volumes/分类/纪录/希特勒奏鸣曲",
+    "movie": "/Volumes/分类/纪录/希特勒奏鸣曲/Sokurov-Aleksandr_Sonata-dlya-Gitlera.mkv",
+    "target": "/Volumes/分类/纪录/Sokurov-Aleksandr_Sonata-dlya-Gitlera.mkv",
+    "status": "DONE",
+    "message": "moved to /Volumes/分类/纪录/Sokurov-Aleksandr_Sonata-dlya-Gitlera.mkv"
+  },
+  {
+    "folder": "/Volumes/分类/纪录/永远",
+    "movie": "/Volumes/分类/纪录/永远/Forever.mkv",
+    "target": "/Volumes/分类/纪录/Forever.mkv",
+    "status": "DONE",
+    "message": "moved to /Volumes/分类/纪录/Forever.mkv"
+  },
+  {
+    "folder": "/Volumes/分类/纪录/盐漠",
+    "movie": "/Volumes/分类/纪录/盐漠/Salt.2009.BDRip.XviD.aAF.mkv",
+    "target": "/Volumes/分类/纪录/Salt.2009.BDRip.XviD.aAF.mkv",
+    "status": "DONE",
+    "message": "moved to /Volumes/分类/纪录/Salt.2009.BDRip.XviD.aAF.mkv"
+  },
+  {
+    "folder": "/Volumes/分类/纪录/资本论",
+    "movie": "/Volumes/分类/纪录/资本论/资本论.mp4",
+    "target": "/Volumes/分类/纪录/资本论.mp4",
+    "status": "DONE",
+    "message": "moved to /Volumes/分类/纪录/资本论.mp4"
+  }
+]

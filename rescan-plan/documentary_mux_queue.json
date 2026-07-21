@@ -1,0 +1,191 @@
+[
+  {
+    "id": "doc-china-part1",
+    "status": "DONE_REVIEW",
+    "folder": "/Volumes/分类/纪录/中国一个世纪的革命",
+    "movie": "/Volumes/分类/纪录/中国一个世纪的革命/China.A.Century.of.Revolution.Part1.DVDrip.XviD.mkv",
+    "target": "/Volumes/分类/纪录/China.A.Century.of.Revolution.Part1.DVDrip.XviD.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/分类/纪录/中国一个世纪的革命/China.A.Century.of.Revolution.Part1.DVDrip.XviD.idx",
+        "sidecar": "/Volumes/分类/纪录/中国一个世纪的革命/China.A.Century.of.Revolution.Part1.DVDrip.XviD.sub",
+        "lang": "chi"
+      }
+    ],
+    "keep_source": false,
+    "keep_folder": false,
+    "ignore_leftovers": false,
+    "note": "documentary targeted cleanup/mux",
+    "message": "output completed, folder not empty; output=/Volumes/分类/纪录/China.A.Century.of.Revolution.Part1.DVDrip.XviD.mkv"
+  },
+  {
+    "id": "doc-china-part2",
+    "status": "DONE_REVIEW",
+    "folder": "/Volumes/分类/纪录/中国一个世纪的革命",
+    "movie": "/Volumes/分类/纪录/中国一个世纪的革命/China.A.Century.of.Revolution.Part2.DVDrip.XviD.mkv",
+    "target": "/Volumes/分类/纪录/China.A.Century.of.Revolution.Part2.DVDrip.XviD.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/分类/纪录/中国一个世纪的革命/China.A.Century.of.Revolution.Part2.DVDrip.XviD.idx",
+        "sidecar": "/Volumes/分类/纪录/中国一个世纪的革命/China.A.Century.of.Revolution.Part2.DVDrip.XviD.sub",
+        "lang": "chi"
+      }
+    ],
+    "keep_source": false,
+    "keep_folder": false,
+    "ignore_leftovers": false,
+    "note": "documentary targeted cleanup/mux",
+    "message": "output completed, folder not empty; output=/Volumes/分类/纪录/China.A.Century.of.Revolution.Part2.DVDrip.XviD.mkv"
+  },
+  {
+    "id": "doc-china-part3",
+    "status": "DONE_REVIEW",
+    "folder": "/Volumes/分类/纪录/中国一个世纪的革命",
+    "movie": "/Volumes/分类/纪录/中国一个世纪的革命/China.A.Century.of.Revolution.Part3.DVDrip.XviD.mkv",
+    "target": "/Volumes/分类/纪录/China.A.Century.of.Revolution.Part3.DVDrip.XviD.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/分类/纪录/中国一个世纪的革命/China.A.Century.of.Revolution.Part3.DVDrip.XviD.idx",
+        "sidecar": "/Volumes/分类/纪录/中国一个世纪的革命/China.A.Century.of.Revolution.Part3.DVDrip.XviD.sub",
+        "lang": "chi"
+      }
+    ],
+    "keep_source": false,
+    "keep_folder": false,
+    "ignore_leftovers": false,
+    "note": "documentary targeted cleanup/mux",
+    "message": "output completed, folder not empty; output=/Volumes/分类/纪录/China.A.Century.of.Revolution.Part3.DVDrip.XviD.mkv"
+  },
+  {
+    "id": "doc-panda-cd1",
+    "status": "DONE_REVIEW",
+    "folder": "/Volumes/分类/纪录/大熊猫的生活",
+    "movie": "/Volumes/分类/纪录/大熊猫的生活/[大熊猫的生活].Panda.Days.2008.DVDRip.H264.AAC.CD1.mkv",
+    "target": "/Volumes/分类/纪录/[大熊猫的生活].Panda.Days.2008.DVDRip.H264.AAC.CD1.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/分类/纪录/大熊猫的生活/[大熊猫的生活].Panda.Days.2008.DVDRip.H264.AAC.CD1.srt",
+        "lang": "chi"
+      }
+    ],
+    "keep_source": false,
+    "keep_folder": false,
+    "ignore_leftovers": false,
+    "note": "documentary targeted cleanup/mux",
+    "message": "output completed, folder not empty; output=/Volumes/分类/纪录/[大熊猫的生活].Panda.Days.2008.DVDRip.H264.AAC.CD1.mkv"
+  },
+  {
+    "id": "doc-panda-cd2",
+    "status": "DONE_REVIEW",
+    "folder": "/Volumes/分类/纪录/大熊猫的生活",
+    "movie": "/Volumes/分类/纪录/大熊猫的生活/[大熊猫的生活].Panda.Days.2008.DVDRip.H264.AAC.CD2.mkv",
+    "target": "/Volumes/分类/纪录/[大熊猫的生活].Panda.Days.2008.DVDRip.H264.AAC.CD2.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/分类/纪录/大熊猫的生活/[大熊猫的生活].Panda.Days.2008.DVDRip.H264.AAC.CD2.srt",
+        "lang": "chi"
+      }
+    ],
+    "keep_source": false,
+    "keep_folder": false,
+    "ignore_leftovers": false,
+    "note": "documentary targeted cleanup/mux",
+    "message": "output completed, folder not empty; output=/Volumes/分类/纪录/[大熊猫的生活].Panda.Days.2008.DVDRip.H264.AAC.CD2.mkv"
+  },
+  {
+    "id": "doc-panda-extra",
+    "status": "DONE",
+    "folder": "/Volumes/分类/纪录/大熊猫的生活",
+    "movie": "/Volumes/分类/纪录/大熊猫的生活/大熊猫的生活.Panda.Days.2008.DVDRip.H264.AAC.Extra.mkv",
+    "target": "/Volumes/分类/纪录/大熊猫的生活.Panda.Days.2008.DVDRip.H264.AAC.Extra.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/分类/纪录/大熊猫的生活/[大熊猫的生活].Panda.Days.2008.DVDRip.H264.AAC.Extra.srt",
+        "lang": "chi"
+      }
+    ],
+    "keep_source": false,
+    "keep_folder": false,
+    "ignore_leftovers": false,
+    "note": "documentary targeted cleanup/mux",
+    "message": "completed; output=/Volumes/分类/纪录/大熊猫的生活.Panda.Days.2008.DVDRip.H264.AAC.Extra.mkv"
+  },
+  {
+    "id": "doc-beethoven-1",
+    "status": "DONE_REVIEW",
+    "folder": "/Volumes/分类/纪录/寻找贝多芬",
+    "movie": "/Volumes/分类/纪录/寻找贝多芬/[寻找贝多芬].In.Search.of.Beethoven.LIMI...(1).mkv",
+    "target": "/Volumes/分类/纪录/[寻找贝多芬].In.Search.of.Beethoven.LIMI...(1).mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/分类/纪录/寻找贝多芬/[寻找贝多芬].In.Search.of.Beethoven.LIMI...(1).srt"
+      }
+    ],
+    "keep_source": false,
+    "keep_folder": false,
+    "ignore_leftovers": false,
+    "note": "documentary targeted cleanup/mux",
+    "message": "output completed, folder not empty; output=/Volumes/分类/纪录/[寻找贝多芬].In.Search.of.Beethoven.LIMI...(1).mkv"
+  },
+  {
+    "id": "doc-beethoven-2",
+    "status": "DONE",
+    "folder": "/Volumes/分类/纪录/寻找贝多芬",
+    "movie": "/Volumes/分类/纪录/寻找贝多芬/[寻找贝多芬].In.Search.of.Beethoven.LIMI....mkv",
+    "target": "/Volumes/分类/纪录/[寻找贝多芬].In.Search.of.Beethoven.LIMI....mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/分类/纪录/寻找贝多芬/[寻找贝多芬].In.Search.of.Beethoven.LIMI....srt"
+      }
+    ],
+    "keep_source": false,
+    "keep_folder": false,
+    "ignore_leftovers": false,
+    "note": "documentary targeted cleanup/mux",
+    "message": "completed; output=/Volumes/分类/纪录/[寻找贝多芬].In.Search.of.Beethoven.LIMI....mkv"
+  },
+  {
+    "id": "doc-moriyama-special",
+    "status": "DONE_REVIEW",
+    "folder": "/Volumes/分类/纪录/森山大道",
+    "movie": "/Volumes/分类/纪录/森山大道/Moriyama_Daido_Special.mkv",
+    "target": "/Volumes/分类/纪录/Moriyama_Daido_Special.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/分类/纪录/森山大道/簡體Moriyama_Daido_Special.srt",
+        "lang": "chi"
+      },
+      {
+        "path": "/Volumes/分类/纪录/森山大道/繁體Moriyama_Daido_Special.srt",
+        "lang": "chi"
+      }
+    ],
+    "keep_source": false,
+    "keep_folder": false,
+    "ignore_leftovers": false,
+    "note": "documentary targeted cleanup/mux",
+    "message": "output completed, folder not empty; output=/Volumes/分类/纪录/Moriyama_Daido_Special.mkv"
+  },
+  {
+    "id": "doc-moriyama-near-equal",
+    "status": "DONE",
+    "folder": "/Volumes/分类/纪录/森山大道",
+    "movie": "/Volumes/分类/纪录/森山大道/Near Equal Moriyama Daido.mkv",
+    "target": "/Volumes/分类/纪录/Near Equal Moriyama Daido.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/分类/纪录/森山大道/簡體Near Equal Moriyama Daido.srt",
+        "lang": "chi"
+      },
+      {
+        "path": "/Volumes/分类/纪录/森山大道/繁體Near Equal Moriyama Daido.srt",
+        "lang": "chi"
+      }
+    ],
+    "keep_source": false,
+    "keep_folder": false,
+    "ignore_leftovers": false,
+    "note": "documentary targeted cleanup/mux",
+    "message": "completed; output=/Volumes/分类/纪录/Near Equal Moriyama Daido.mkv"
+  }
+]
