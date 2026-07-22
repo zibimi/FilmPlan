@@ -1,0 +1,66 @@
+{
+  "generated": "2026-07-21 19:23:45",
+  "scope": "/Volumes/分类/短篇集",
+  "flatten_single_movie_folders": [
+    {
+      "folder": "/Volumes/分类/短篇集/Ahendu nde sapukai(Oigo tu grito)",
+      "movie": "/Volumes/分类/短篇集/Ahendu nde sapukai(Oigo tu grito)/Pablo_Lamar-Ahendu_nde_sapukai_(Oigo_tu_....mkv",
+      "target": "/Volumes/分类/短篇集/Pablo_Lamar-Ahendu_nde_sapukai_(Oigo_tu_....mkv"
+    },
+    {
+      "folder": "/Volumes/分类/短篇集/十日谈（波兰版）",
+      "movie": "/Volumes/分类/短篇集/十日谈（波兰版）/1971.Dekameron+40+czyli+cudowne+przytraf....mkv",
+      "target": "/Volumes/分类/短篇集/1971.Dekameron+40+czyli+cudowne+przytraf....mkv"
+    },
+    {
+      "folder": "/Volumes/分类/短篇集/夜曲-29年的黑暗",
+      "movie": "/Volumes/分类/短篇集/夜曲-29年的黑暗/Nocturno 29 (Pere Portabella, 1968).avi",
+      "target": "/Volumes/分类/短篇集/Nocturno 29 (Pere Portabella, 1968).avi"
+    },
+    {
+      "folder": "/Volumes/分类/短篇集/失位",
+      "movie": "/Volumes/分类/短篇集/失位/Rupture-1961.mkv",
+      "target": "/Volumes/分类/短篇集/Rupture-1961.mkv"
+    },
+    {
+      "folder": "/Volumes/分类/短篇集/小男孩，女人的世界是这样滴",
+      "movie": "/Volumes/分类/短篇集/小男孩，女人的世界是这样滴/小小男儿狼Lille_man[短片计划].avi",
+      "target": "/Volumes/分类/短篇集/小小男儿狼Lille_man[短片计划].avi"
+    },
+    {
+      "folder": "/Volumes/分类/短篇集/性愛禁區 (一刀未剪完整版) [中文字幕]",
+      "movie": "/Volumes/分类/短篇集/性愛禁區 (一刀未剪完整版) [中文字幕]/性愛禁區 (一刀未剪完整版) [中文字幕].avi",
+      "target": "/Volumes/分类/短篇集/性愛禁區 (一刀未剪完整版) [中文字幕].avi"
+    },
+    {
+      "folder": "/Volumes/分类/短篇集/最佳露营地",
+      "movie": "/Volumes/分类/短篇集/最佳露营地/En_pleine_forme-1965-71.mkv",
+      "target": "/Volumes/分类/短篇集/En_pleine_forme-1965-71.mkv"
+    },
+    {
+      "folder": "/Volumes/分类/短篇集/爱情的果实",
+      "movie": "/Volumes/分类/短篇集/爱情的果实/Aleksandr.Dovzhenko.-.Yagodka_lyubvi.(1926).DVDRIP-MKO.mp4",
+      "target": "/Volumes/分类/短篇集/Aleksandr.Dovzhenko.-.Yagodka_lyubvi.(1926).DVDRIP-MKO.mp4"
+    },
+    {
+      "folder": "/Volumes/分类/短篇集/痴情男孩",
+      "movie": "/Volumes/分类/短篇集/痴情男孩/Some_Boy____s_Don____t_Leave_on_Vimeo.mp4",
+      "target": "/Volumes/分类/短篇集/Some_Boy____s_Don____t_Leave_on_Vimeo.mp4"
+    },
+    {
+      "folder": "/Volumes/分类/短篇集/米哈伊尔·寇巴希泽九十分钟的一生",
+      "movie": "/Volumes/分类/短篇集/米哈伊尔·寇巴希泽九十分钟的一生/MK.XiongZaiXia.mp4",
+      "target": "/Volumes/分类/短篇集/MK.XiongZaiXia.mp4"
+    }
+  ],
+  "manual_review": [
+    {
+      "folder": "/Volumes/分类/短篇集/大师们的第一部",
+      "message": "ambiguous VobSub pairing: CD1 idx has no same-name sub; extra VTS/sub copies present"
+    },
+    {
+      "folder": "/Volumes/分类/短篇集/穆府的歌剧",
+      "message": "introduction subtitle is not queued because matching introduction video is absent"
+    }
+  ]
+}

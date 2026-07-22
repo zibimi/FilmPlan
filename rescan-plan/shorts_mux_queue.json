@@ -1,0 +1,107 @@
+[
+  {
+    "id": "short-if-you-were-me",
+    "status": "DONE",
+    "category": "duplicate_with_vobsub",
+    "folder": "/Volumes/分类/短篇集/六个视线",
+    "movie": "/Volumes/分类/短篇集/[六人视线].If.You.Were.Me.2003.DVDRip.x264.AC3-zKF.mkv",
+    "target": "/Volumes/分类/短篇集/[六人视线].If.You.Were.Me.2003.DVDRip.x264.AC3-zKF.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/分类/短篇集/六个视线/[六人视线].If.You.Were.Me.2003.DVDRip.x264.AC3-zKF.idx",
+        "sidecar": "/Volumes/分类/短篇集/六个视线/[六人视线].If.You.Were.Me.2003.DVDRip.x264.AC3-zKF.sub",
+        "lang": "kor"
+      }
+    ],
+    "delete_extra": [
+      "/Volumes/分类/短篇集/六个视线/[六人视线].If.You.Were.Me.2003.DVDRip.x264.AC3-zKF.mkv"
+    ],
+    "keep_source": false,
+    "keep_folder": false,
+    "ignore_leftovers": false,
+    "note": "root movie and folder movie have identical mkv track metadata/size; mux root copy and remove duplicate folder copy after verification",
+    "message": "completed; output=/Volumes/分类/短篇集/[六人视线].If.You.Were.Me.2003.DVDRip.x264.AC3-zKF.mkv"
+  },
+  {
+    "id": "short-germany-autumn-a",
+    "status": "DONE_REVIEW",
+    "category": "multi_vobsub",
+    "folder": "/Volumes/分类/短篇集/德国之秋",
+    "movie": "/Volumes/分类/短篇集/德国之秋/Germany_In_Autumn_[a].mp4",
+    "target": "/Volumes/分类/短篇集/德国之秋/Germany_In_Autumn_[a].mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/分类/短篇集/德国之秋/Germany In Autumn [a].idx",
+        "sidecar": "/Volumes/分类/短篇集/德国之秋/Germany In Autumn [a].sub",
+        "lang": "eng"
+      }
+    ],
+    "keep_source": false,
+    "keep_folder": true,
+    "ignore_leftovers": true,
+    "note": "keep multi-part folder in place",
+    "message": "completed in original folder; leftovers preserved; output=/Volumes/分类/短篇集/德国之秋/Germany_In_Autumn_[a].mkv"
+  },
+  {
+    "id": "short-germany-autumn-b",
+    "status": "DONE_REVIEW",
+    "category": "multi_vobsub",
+    "folder": "/Volumes/分类/短篇集/德国之秋",
+    "movie": "/Volumes/分类/短篇集/德国之秋/Germany_In_Autumn_[b].mp4",
+    "target": "/Volumes/分类/短篇集/德国之秋/Germany_In_Autumn_[b].mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/分类/短篇集/德国之秋/Germany In Autumn [b].idx",
+        "sidecar": "/Volumes/分类/短篇集/德国之秋/Germany In Autumn [b].sub",
+        "lang": "eng"
+      }
+    ],
+    "keep_source": false,
+    "keep_folder": true,
+    "ignore_leftovers": true,
+    "note": "keep multi-part folder in place",
+    "message": "completed in original folder; leftovers preserved; output=/Volumes/分类/短篇集/德国之秋/Germany_In_Autumn_[b].mkv"
+  },
+  {
+    "id": "short-opera-mouffe",
+    "status": "DONE_REVIEW",
+    "category": "single_text",
+    "folder": "/Volumes/分类/短篇集/穆府的歌剧",
+    "movie": "/Volumes/分类/短篇集/穆府的歌剧/Agnes_Varda_-_L__opéra-mouffe.rmvb",
+    "target": "/Volumes/分类/短篇集/Agnes_Varda_-_L__opéra-mouffe.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/分类/短篇集/穆府的歌剧/Agnes Varda - L'opéra-mouffe.srt",
+        "lang": "chi"
+      }
+    ],
+    "keep_source": false,
+    "keep_folder": false,
+    "ignore_leftovers": false,
+    "note": "main subtitle only; introduction subtitle left for manual review if still present",
+    "message": "output completed, folder not empty; output=/Volumes/分类/短篇集/Agnes_Varda_-_L__opéra-mouffe.mkv"
+  },
+  {
+    "id": "short-artistic-couple",
+    "status": "DONE",
+    "category": "single_text",
+    "folder": "/Volumes/分类/短篇集/艺术家夫妇U",
+    "movie": "/Volumes/分类/短篇集/艺术家夫妇U/艺术家夫妇Un.Couple.d.Artistes.1970.DVDrip.XViD.rm",
+    "target": "/Volumes/分类/短篇集/艺术家夫妇Un.Couple.d.Artistes.1970.DVDrip.XViD.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/分类/短篇集/艺术家夫妇U/Un.Couple.d.Artistes.1970.DVDrip.XViD.chs.srt",
+        "lang": "chi"
+      },
+      {
+        "path": "/Volumes/分类/短篇集/艺术家夫妇U/Un.Couple.d.Artistes.1970.DVDrip.XVi.srt",
+        "lang": "eng"
+      }
+    ],
+    "keep_source": false,
+    "keep_folder": false,
+    "ignore_leftovers": false,
+    "note": "rm remux to mkv with Chinese default and English off",
+    "message": "completed; output=/Volumes/分类/短篇集/艺术家夫妇Un.Couple.d.Artistes.1970.DVDrip.XViD.mkv"
+  }
+]
