@@ -1,0 +1,234 @@
+{
+  "generated": "2026-07-21 19:47:36",
+  "scope": "/Volumes/分类/喜剧",
+  "mux_tasks": [],
+  "cleanup_results": [
+    {
+      "action": "flatten_single_movie_folder",
+      "path": "/Volumes/分类/喜剧/下士等",
+      "status": "DONE",
+      "output": "/Volumes/分类/喜剧/A+tizedes+meg+a+tobbiek.mkv"
+    },
+    {
+      "action": "flatten_single_movie_folder",
+      "path": "/Volumes/分类/喜剧/丹下左膳之百万两之壶",
+      "status": "DONE",
+      "output": "/Volumes/分类/喜剧/丹下左膳之百万两之壶.Sazen.Tange.and.the.Pot.Worth.a.Million.Ryo.1935.DVDRip.By.Anotlee.mkv"
+    },
+    {
+      "action": "flatten_single_movie_folder",
+      "path": "/Volumes/分类/喜剧/反抗者",
+      "status": "DONE",
+      "output": "/Volumes/分类/喜剧/反抗者 Rebelove.mp4"
+    },
+    {
+      "action": "flatten_single_movie_folder",
+      "path": "/Volumes/分类/喜剧/在池中",
+      "status": "DONE",
+      "output": "/Volumes/分类/喜剧/In_the_Pool.avi"
+    },
+    {
+      "action": "flatten_single_movie_folder",
+      "path": "/Volumes/分类/喜剧/天使的孩子",
+      "status": "DONE",
+      "output": "/Volumes/分类/喜剧/ANGELAS_ASHES.mkv"
+    },
+    {
+      "action": "flatten_single_movie_folder",
+      "path": "/Volumes/分类/喜剧/恋人曲",
+      "status": "DONE",
+      "output": "/Volumes/分类/喜剧/Romanca.O.Zakochanych.1974.X264.mp4"
+    },
+    {
+      "action": "flatten_single_movie_folder",
+      "path": "/Volumes/分类/喜剧/我们的院子,失败的改名字为part1,part2解压缩",
+      "status": "DONE",
+      "output": "/Volumes/分类/喜剧/我们的院子 Chveni ezo.avi"
+    },
+    {
+      "action": "flatten_single_movie_folder",
+      "path": "/Volumes/分类/喜剧/我的二十世纪",
+      "status": "DONE",
+      "output": "/Volumes/分类/喜剧/My.20th.Century.avi"
+    },
+    {
+      "action": "flatten_single_movie_folder",
+      "path": "/Volumes/分类/喜剧/抢银行",
+      "status": "DONE",
+      "output": "/Volumes/分类/喜剧/Vabank.1981.mkv"
+    },
+    {
+      "action": "flatten_single_movie_folder",
+      "path": "/Volumes/分类/喜剧/拯救格雷斯",
+      "status": "DONE",
+      "output": "/Volumes/分类/喜剧/拯救格雷斯.Saving.Grace.2000.BDRip.X264-TLF.mkv"
+    },
+    {
+      "action": "flatten_single_movie_folder",
+      "path": "/Volumes/分类/喜剧/欢乐今宵",
+      "status": "DONE",
+      "output": "/Volumes/分类/喜剧/欢乐今宵.Bye.Bye.Birdie.1964.mkv"
+    },
+    {
+      "action": "flatten_single_movie_folder",
+      "path": "/Volumes/分类/喜剧/稚情",
+      "status": "DONE",
+      "output": "/Volumes/分类/喜剧/The.Miracle.Of.Marcelino.(Marcelino.Pan.Y.Vino).(1955).avi"
+    },
+    {
+      "action": "flatten_single_movie_folder",
+      "path": "/Volumes/分类/喜剧/谁在那儿歌唱？",
+      "status": "DONE",
+      "output": "/Volumes/分类/喜剧/Ko_To_Tamo_Peva_by_www.yubraca.net.mp4"
+    },
+    {
+      "action": "flatten_single_movie_folder",
+      "path": "/Volumes/分类/喜剧/随我婆娑",
+      "status": "DONE",
+      "output": "/Volumes/分类/喜剧/Shall.We.Dance.1937.DVDrip.by.Galmuchet.mkv"
+    },
+    {
+      "action": "flatten_single_movie_folder",
+      "path": "/Volumes/分类/喜剧/雌雄莫辩",
+      "status": "DONE",
+      "output": "/Volumes/分类/喜剧/雌雄莫辩.Victor_Victoria.mkv"
+    },
+    {
+      "action": "flatten_single_movie_folder",
+      "path": "/Volumes/分类/喜剧/高山上的世界杯",
+      "status": "DONE",
+      "output": "/Volumes/分类/喜剧/The.Cup.1999.DVDRip.DivX.mkv"
+    }
+  ],
+  "manual_review": [
+    {
+      "folder": "/Volumes/分类/喜剧/黑色池塘",
+      "message": "subtitle-only folder; matching movie not found by broad search; preserved"
+    }
+  ],
+  "kept_folders": [
+    {
+      "folder": "/Volumes/分类/喜剧/不惑之年",
+      "movie_count": 4,
+      "subtitle_count": 0,
+      "other_count": 0,
+      "subdirs": []
+    },
+    {
+      "folder": "/Volumes/分类/喜剧/天堂孤影",
+      "movie_count": 2,
+      "subtitle_count": 0,
+      "other_count": 0,
+      "subdirs": []
+    },
+    {
+      "folder": "/Volumes/分类/喜剧/布鲁姆兄弟",
+      "movie_count": 2,
+      "subtitle_count": 0,
+      "other_count": 0,
+      "subdirs": []
+    },
+    {
+      "folder": "/Volumes/分类/喜剧/情到深处",
+      "movie_count": 2,
+      "subtitle_count": 0,
+      "other_count": 0,
+      "subdirs": []
+    },
+    {
+      "folder": "/Volumes/分类/喜剧/感谢你抽烟",
+      "movie_count": 2,
+      "subtitle_count": 0,
+      "other_count": 0,
+      "subdirs": []
+    },
+    {
+      "folder": "/Volumes/分类/喜剧/无忧无虑",
+      "movie_count": 2,
+      "subtitle_count": 0,
+      "other_count": 0,
+      "subdirs": []
+    },
+    {
+      "folder": "/Volumes/分类/喜剧/智利狂想曲",
+      "movie_count": 0,
+      "subtitle_count": 0,
+      "other_count": 0,
+      "subdirs": [
+        "第一章",
+        "第三章",
+        "第二章",
+        "第四章"
+      ]
+    },
+    {
+      "folder": "/Volumes/分类/喜剧/秋天的马拉松",
+      "movie_count": 2,
+      "subtitle_count": 0,
+      "other_count": 0,
+      "subdirs": []
+    },
+    {
+      "folder": "/Volumes/分类/喜剧/笑之大学",
+      "movie_count": 2,
+      "subtitle_count": 0,
+      "other_count": 0,
+      "subdirs": []
+    },
+    {
+      "folder": "/Volumes/分类/喜剧/自杀门诊",
+      "movie_count": 4,
+      "subtitle_count": 0,
+      "other_count": 0,
+      "subdirs": []
+    },
+    {
+      "folder": "/Volumes/分类/喜剧/舞厅",
+      "movie_count": 0,
+      "subtitle_count": 0,
+      "other_count": 1,
+      "subdirs": []
+    },
+    {
+      "folder": "/Volumes/分类/喜剧/莎士比亚重现",
+      "movie_count": 4,
+      "subtitle_count": 0,
+      "other_count": 0,
+      "subdirs": []
+    },
+    {
+      "folder": "/Volumes/分类/喜剧/都市浪人",
+      "movie_count": 5,
+      "subtitle_count": 0,
+      "other_count": 0,
+      "subdirs": []
+    },
+    {
+      "folder": "/Volumes/分类/喜剧/飞行器中的好小伙",
+      "movie_count": 2,
+      "subtitle_count": 0,
+      "other_count": 0,
+      "subdirs": []
+    }
+  ],
+  "remaining_subtitle_files": [
+    "/Volumes/分类/喜剧/黑色池塘/黑色池塘.Black.Pond.2011.DVDRip.XviD-TASTE.chs.srt"
+  ],
+  "remaining_top_level_folders": [
+    "/Volumes/分类/喜剧/不惑之年",
+    "/Volumes/分类/喜剧/天堂孤影",
+    "/Volumes/分类/喜剧/布鲁姆兄弟",
+    "/Volumes/分类/喜剧/情到深处",
+    "/Volumes/分类/喜剧/感谢你抽烟",
+    "/Volumes/分类/喜剧/无忧无虑",
+    "/Volumes/分类/喜剧/智利狂想曲",
+    "/Volumes/分类/喜剧/秋天的马拉松",
+    "/Volumes/分类/喜剧/笑之大学",
+    "/Volumes/分类/喜剧/自杀门诊",
+    "/Volumes/分类/喜剧/舞厅",
+    "/Volumes/分类/喜剧/莎士比亚重现",
+    "/Volumes/分类/喜剧/都市浪人",
+    "/Volumes/分类/喜剧/飞行器中的好小伙",
+    "/Volumes/分类/喜剧/黑色池塘"
+  ]
+}
