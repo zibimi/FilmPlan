@@ -1,0 +1,94 @@
+[
+  {
+    "id": "scifi-angel-2002",
+    "status": "DONE_REVIEW",
+    "category": "single_text_with_extras",
+    "folder": "/Volumes/分类/科幻·奇幻/天使消失的年代",
+    "movie": "/Volumes/分类/科幻·奇幻/天使消失的年代/天使消失的年代2002.mkv",
+    "target": "/Volumes/分类/科幻·奇幻/天使消失的年代/天使消失的年代2002.mkv",
+    "subtitles": [
+      {
+        "path": "/Users/milou/Movies/FilmSubTitlePlan/logs/scifi-converted-subtitles/Rok_dabla-DivXCZ-eng.srt",
+        "lang": "eng"
+      }
+    ],
+    "keep_source": false,
+    "keep_folder": true,
+    "ignore_leftovers": true,
+    "note": "science fiction cleanup/mux; preserve soundtrack subfolder",
+    "message": "completed in original folder; leftovers preserved; output=/Volumes/分类/科幻·奇幻/天使消失的年代/天使消失的年代2002.mkv",
+    "delete_extra": [
+      "/Volumes/分类/科幻·奇幻/天使消失的年代/Rok_dabla-DivXCZ+(eng).sub"
+    ]
+  },
+  {
+    "id": "scifi-eternity-cd1",
+    "status": "DONE_REVIEW",
+    "category": "cd",
+    "folder": "/Volumes/分类/科幻·奇幻/永恒国度的终焉",
+    "movie": "/Volumes/分类/科幻·奇幻/永恒国度的终焉/Конец_вечности_CD1x2.mkv",
+    "target": "/Volumes/分类/科幻·奇幻/永恒国度的终焉/Конец_вечности_CD1x2.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/分类/科幻·奇幻/永恒国度的终焉/簡體中文/簡體中文CD1.srt",
+        "lang": "chi"
+      },
+      {
+        "path": "/Volumes/分类/科幻·奇幻/永恒国度的终焉/繁體中文/繁體中文CD1.srt",
+        "lang": "chi"
+      },
+      {
+        "path": "/Volumes/分类/科幻·奇幻/永恒国度的终焉/英簡/CD1英簡.srt",
+        "lang": "chi"
+      },
+      {
+        "path": "/Volumes/分类/科幻·奇幻/永恒国度的终焉/英繁/CD1英繁.srt",
+        "lang": "chi"
+      },
+      {
+        "path": "/Volumes/分类/科幻·奇幻/永恒国度的终焉/英文/Конец вечности CD1x2.srt",
+        "lang": "eng"
+      }
+    ],
+    "keep_source": false,
+    "keep_folder": true,
+    "ignore_leftovers": true,
+    "note": "science fiction cleanup/mux; keep CD folder in place",
+    "message": "completed in original folder; leftovers preserved; output=/Volumes/分类/科幻·奇幻/永恒国度的终焉/Конец_вечности_CD1x2.mkv"
+  },
+  {
+    "id": "scifi-eternity-cd2",
+    "status": "DONE_REVIEW",
+    "category": "cd",
+    "folder": "/Volumes/分类/科幻·奇幻/永恒国度的终焉",
+    "movie": "/Volumes/分类/科幻·奇幻/永恒国度的终焉/Конец_вечности_CD2x2.mkv",
+    "target": "/Volumes/分类/科幻·奇幻/永恒国度的终焉/Конец_вечности_CD2x2.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/分类/科幻·奇幻/永恒国度的终焉/簡體中文/簡體中文CD2.srt",
+        "lang": "chi"
+      },
+      {
+        "path": "/Volumes/分类/科幻·奇幻/永恒国度的终焉/繁體中文/繁體中文CD2.srt",
+        "lang": "chi"
+      },
+      {
+        "path": "/Volumes/分类/科幻·奇幻/永恒国度的终焉/英簡/CD2英簡.srt",
+        "lang": "chi"
+      },
+      {
+        "path": "/Volumes/分类/科幻·奇幻/永恒国度的终焉/英繁/CD2英繁.srt",
+        "lang": "chi"
+      },
+      {
+        "path": "/Volumes/分类/科幻·奇幻/永恒国度的终焉/英文/Конец вечности CD2x2.srt",
+        "lang": "eng"
+      }
+    ],
+    "keep_source": false,
+    "keep_folder": true,
+    "ignore_leftovers": true,
+    "note": "science fiction cleanup/mux; keep CD folder in place",
+    "message": "completed in original folder; leftovers preserved; output=/Volumes/分类/科幻·奇幻/永恒国度的终焉/Конец_вечности_CD2x2.mkv"
+  }
+]

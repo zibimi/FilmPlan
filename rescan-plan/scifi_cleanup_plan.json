@@ -1,0 +1,51 @@
+{
+  "generated": "2026-07-21 19:16:31",
+  "scope": "/Volumes/分类/科幻·奇幻",
+  "delete_empty_folders": [
+    "/Volumes/分类/科幻·奇幻/星战",
+    "/Volumes/分类/科幻·奇幻/银河漫游指南"
+  ],
+  "flatten_single_movie_folders": [
+    {
+      "folder": "/Volumes/分类/科幻·奇幻/Krakatit",
+      "movie": "/Volumes/分类/科幻·奇幻/Krakatit/Krakatit 1948 DVDRip cz.mp4",
+      "target": "/Volumes/分类/科幻·奇幻/Krakatit 1948 DVDRip cz.mp4"
+    },
+    {
+      "folder": "/Volumes/分类/科幻·奇幻/内地",
+      "movie": "/Volumes/分类/科幻·奇幻/内地/1929 - Le Bled [Jean Renoir].avi",
+      "target": "/Volumes/分类/科幻·奇幻/1929 - Le Bled [Jean Renoir].avi"
+    },
+    {
+      "folder": "/Volumes/分类/科幻·奇幻/歌声欢唱的树",
+      "movie": "/Volumes/分类/科幻·奇幻/歌声欢唱的树/The Singing Ringing Tree 1957.mp4",
+      "target": "/Volumes/分类/科幻·奇幻/The Singing Ringing Tree 1957.mp4"
+    },
+    {
+      "folder": "/Volumes/分类/科幻·奇幻/火星女王艾莉塔",
+      "movie": "/Volumes/分类/科幻·奇幻/火星女王艾莉塔/aelita.mp4",
+      "target": "/Volumes/分类/科幻·奇幻/aelita.mp4"
+    }
+  ],
+  "delete_verified_embedded_subtitles": [
+    "/Volumes/分类/科幻·奇幻/外星奇遇/Kin-Dza-Dza.(DVDRip,.DivX,.Rus).1.of.2.ShareReactor.EN.srt",
+    "/Volumes/分类/科幻·奇幻/外星奇遇/Kin-Dza-Dza.(DVDRip,.DivX,.Rus).2.of.2.ShareReactor.EN.srt"
+  ],
+  "remove_empty_subtitle_dirs_after_mux": [
+    "/Volumes/分类/科幻·奇幻/永恒国度的终焉/英繁",
+    "/Volumes/分类/科幻·奇幻/永恒国度的终焉/繁體中文",
+    "/Volumes/分类/科幻·奇幻/永恒国度的终焉/英文",
+    "/Volumes/分类/科幻·奇幻/永恒国度的终焉/簡體中文",
+    "/Volumes/分类/科幻·奇幻/永恒国度的终焉/英簡"
+  ],
+  "manual_review": [
+    {
+      "folder": "/Volumes/分类/科幻·奇幻/外星奇遇",
+      "message": "three movie files present; e1/e2 already have chi+eng embedded; external EN SRT can be cleaned, but Kin_Dza_Dza_GLs1.avi is preserved"
+    },
+    {
+      "folder": "/Volumes/分类/科幻·奇幻/浮生狂想曲",
+      "message": "main movie plus making-of/short film; no subtitles; preserved as multi/extras folder"
+    }
+  ]
+}
