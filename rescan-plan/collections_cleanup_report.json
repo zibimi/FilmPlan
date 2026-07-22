@@ -1,0 +1,60 @@
+{
+  "generated": "2026-07-21 19:29:15",
+  "scope": "/Volumes/分类/合集",
+  "mux_tasks": [],
+  "cleanup_actions": [],
+  "remaining_subtitle_files": [],
+  "note": "No external subtitle files found. Collection folders intentionally preserved, including single-title franchise folders.",
+  "folders": [
+    {
+      "folder": "/Volumes/分类/合集/007",
+      "movie_count": 17,
+      "subdir_count": 0,
+      "other_files": []
+    },
+    {
+      "folder": "/Volumes/分类/合集/AFI百年百部经典",
+      "movie_count": 9,
+      "subdir_count": 0,
+      "other_files": []
+    },
+    {
+      "folder": "/Volumes/分类/合集/星球大战",
+      "movie_count": 1,
+      "subdir_count": 0,
+      "other_files": []
+    },
+    {
+      "folder": "/Volumes/分类/合集/疾速追杀",
+      "movie_count": 5,
+      "subdir_count": 0,
+      "other_files": []
+    },
+    {
+      "folder": "/Volumes/分类/合集/碟中谍",
+      "movie_count": 8,
+      "subdir_count": 0,
+      "other_files": []
+    },
+    {
+      "folder": "/Volumes/分类/合集/蚂蚁",
+      "movie_count": 3,
+      "subdir_count": 0,
+      "other_files": [
+        "娄密，孤岛，2稿.docx"
+      ]
+    },
+    {
+      "folder": "/Volumes/分类/合集/要分类",
+      "movie_count": 166,
+      "subdir_count": 36,
+      "other_files": []
+    },
+    {
+      "folder": "/Volumes/分类/合集/铁血战士",
+      "movie_count": 1,
+      "subdir_count": 0,
+      "other_files": []
+    }
+  ]
+}
