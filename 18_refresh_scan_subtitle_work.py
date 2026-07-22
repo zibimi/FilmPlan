@@ -188,7 +188,7 @@ def remaining_regular_items(folder: Path, deleting: set[Path]) -> list[Path]:
     return items
 
 
-def scan() -> tuple[list[dict], list[dict], list[dict]]:
+def scan(roots: list[Path] | None = None, include_single: bool = False) -> tuple[list[dict], list[dict], list[dict]]:
     tasks: list[dict] = []
     cleanup: list[dict] = []
     review: list[dict] = []
@@ -196,7 +196,7 @@ def scan() -> tuple[list[dict], list[dict], list[dict]]:
     task_no = 1
     cleanup_no = 1
 
-    for root in ROOTS:
+    for root in roots or ROOTS:
         if not root.exists():
             review.append({"kind": "missing_root", "path": str(root)})
             continue
@@ -260,7 +260,7 @@ def scan() -> tuple[list[dict], list[dict], list[dict]]:
                     category = "multi"
                 elif any(s["path"].lower().endswith(".idx") for s in subs_payload):
                     category = "vobsub"
-                if category == "single":
+                if category == "single" and not include_single:
                     review.append({
                         "kind": "single_text_subtitle_skipped",
                         "folder": str(folder),
@@ -457,8 +457,21 @@ def apply_cleanup() -> None:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--apply", action="store_true", help="run mux queue and cleanup actions after scanning")
+    parser.add_argument("--root", action="append", help="scan only this root/category path; can be passed more than once")
+    parser.add_argument("--prefix", help="write queue/report files with this prefix under rescan-plan")
+    parser.add_argument("--include-single", action="store_true", help="include single movie folders with matched external subtitles")
     args = parser.parse_args()
-    tasks, cleanup, review = scan()
+    global QUEUE, CLEANUP, REPORT, RUN_LOG
+    if args.prefix:
+        safe_prefix = re.sub(r"[^0-9A-Za-z_.-]+", "_", args.prefix).strip("_")
+        if not safe_prefix:
+            raise SystemExit("--prefix produced an empty safe filename")
+        QUEUE = PLAN_DIR / f"{safe_prefix}_mux_queue.json"
+        CLEANUP = PLAN_DIR / f"{safe_prefix}_cleanup_actions.json"
+        REPORT = PLAN_DIR / f"{safe_prefix}_report.md"
+        RUN_LOG = WORKDIR / "logs" / f"{safe_prefix}-mux.log"
+    roots = [Path(p) for p in args.root] if args.root else None
+    tasks, cleanup, review = scan(roots, include_single=args.include_single)
     write_outputs(tasks, cleanup, review)
     print(f"report: {REPORT}")
     print(f"mux tasks: {len(tasks)}")
