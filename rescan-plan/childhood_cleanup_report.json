@@ -1,0 +1,86 @@
+{
+  "generated": "2026-07-21 17:50:45",
+  "scope": "/Volumes/分类/青春·儿童",
+  "mux_tasks": [],
+  "cleanup_actions": [
+    {
+      "path": "/Volumes/分类/青春·儿童/我们是你的朋友 We Are Your Friends",
+      "action": "remove_empty_folder",
+      "status": "DONE"
+    },
+    {
+      "path": "/Volumes/分类/青春·儿童/追凶",
+      "action": "remove_empty_folder",
+      "status": "DONE"
+    },
+    {
+      "path": "/Volumes/分类/青春·儿童/阵雨",
+      "action": "flatten_single_movie_folder",
+      "status": "DONE",
+      "output": "/Volumes/分类/青春·儿童/The Shower.avi"
+    }
+  ],
+  "manual_review": [
+    {
+      "kind": "subtitle_only_folder_manual_review",
+      "folder": "/Volumes/分类/青春·儿童/坏痞子",
+      "files": [
+        "rizz-bb-cd1.idx",
+        "rizz-bb-cd1.sub",
+        "rizz-bb-cd2.idx",
+        "rizz-bb-cd2.sub"
+      ],
+      "message": "idx/sub pairs found but no movie in folder; not cleaned automatically"
+    }
+  ],
+  "multi_movie_folders_left_in_place": [
+    {
+      "folder": "/Volumes/分类/青春·儿童/天堂的孩子",
+      "movie_count": 2,
+      "movies": [
+        "天堂的孩子.cd1.les_enfants_du_paradis_1_by_qukuleta.mkv",
+        "天堂的孩子.cd2.les_enfants_du_paradis_1_by_qukuleta.mkv"
+      ]
+    },
+    {
+      "folder": "/Volumes/分类/青春·儿童/没有我的日子",
+      "movie_count": 2,
+      "movies": [
+        "[没有我的日子].My.Life.Without.Me.2003.XviD.AC3.5.1CH.CD1-WAF.mkv",
+        "[没有我的日子].My.Life.Without.Me.2003.XviD.AC3.5.1CH.CD2-WAF.mkv"
+      ]
+    },
+    {
+      "folder": "/Volumes/分类/青春·儿童/狗脸的岁月",
+      "movie_count": 2,
+      "movies": [
+        "狗脸的岁月.Mitt.Liv.som.Hund.1985.D9.MiniSD-TLF.mkv",
+        "狗脸的岁月.导评花絮.HALFCD-TLF.mkv"
+      ]
+    },
+    {
+      "folder": "/Volumes/分类/青春·儿童/生命翻筋斗",
+      "movie_count": 2,
+      "movies": [
+        "[生命翻筋斗].Somersault.2004.DVDRiP.LIMITED.SMR.CD1.mkv",
+        "[生命翻筋斗].Somersault.2004.DVDRiP.LIMITED.SMR.CD2.mkv"
+      ]
+    },
+    {
+      "folder": "/Volumes/分类/青春·儿童/百万元与苦虫女",
+      "movie_count": 2,
+      "movies": [
+        "百万元与苦虫女.One.Million.Yen.and.the.Nigamushi.Woman.2008.日本.XTM.DVD-HALFCD2-cd1.mkv",
+        "百万元与苦虫女.One.Million.Yen.and.the.Nigamushi.Woman.2008.日本.XTM.DVD-HALFCD2-cd2.mkv"
+      ]
+    },
+    {
+      "folder": "/Volumes/分类/青春·儿童/鳄鱼波鞋走天涯",
+      "movie_count": 2,
+      "movies": [
+        "[鳄鱼波鞋走天涯].The.Cure.1995.DVDRip.DivX.5.1.AC3.2CH.CD1.mkv",
+        "[鳄鱼波鞋走天涯].The.Cure.1995.DVDRip.DivX.5.1.AC3.2CH.CD2.mkv"
+      ]
+    }
+  ]
+}
