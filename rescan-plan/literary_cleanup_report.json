@@ -1,0 +1,27 @@
+{
+  "generated": "2026-07-21 19:33:00",
+  "scope": "/Volumes/分类/名著改编",
+  "mux_status": [
+    {
+      "id": "literary-kafka-human-body",
+      "status": "DONE_REVIEW",
+      "category": "collection_single_match",
+      "folder": "/Volumes/分类/名著改编/卡夫卡电影作品集/人体",
+      "movie": "/Volumes/分类/名著改编/卡夫卡电影作品集/人体/Menschenkörper aka Human Body (2004).avi",
+      "target": "/Volumes/分类/名著改编/卡夫卡电影作品集/人体/Menschenkörper aka Human Body (2004).mkv",
+      "subtitles": [
+        {
+          "path": "/Volumes/分类/名著改编/卡夫卡电影作品集/人体/Menschenkoerper[GER].chs.srt",
+          "lang": "chi"
+        }
+      ],
+      "keep_source": false,
+      "keep_folder": true,
+      "ignore_leftovers": true,
+      "note": "Kafka collection folder preserved; only matched Human Body movie gets subtitle; Metamorfosis AVI preserved",
+      "message": "completed in original folder; leftovers preserved; output=/Volumes/分类/名著改编/卡夫卡电影作品集/人体/Menschenkörper aka Human Body (2004).mkv"
+    }
+  ],
+  "remaining_subtitle_files": [],
+  "note": "Kafka collection folders preserved; no external subtitle files remain."
+}
