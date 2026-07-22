@@ -1,0 +1,56 @@
+[
+  {
+    "id": "thriller-berlin-spy-cd1",
+    "status": "DONE_REVIEW",
+    "category": "cd_text_nested_subs",
+    "folder": "/Volumes/分类/惊悚·犯罪·动作/柏林谍影",
+    "movie": "/Volumes/分类/惊悚·犯罪·动作/柏林谍影/[柏林谍影].The.Spy.Who.Came.In.from.the.Cold.1965.DVDRip.XviD-PROMiSE.CD1.mkv",
+    "target": "/Volumes/分类/惊悚·犯罪·动作/柏林谍影/[柏林谍影].The.Spy.Who.Came.In.from.the.Cold.1965.DVDRip.XviD-PROMiSE.CD1.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/分类/惊悚·犯罪·动作/柏林谍影/07.26.04.The.Spy.Who.Came.In.from.the.Cold.1965.DVDRip.XviD-PROMiSE.CnEn.SUB.NTK/pme-spy-cd1.gb.srt",
+        "lang": "chi"
+      },
+      {
+        "path": "/Volumes/分类/惊悚·犯罪·动作/柏林谍影/07.26.04.The.Spy.Who.Came.In.from.the.Cold.1965.DVDRip.XviD-PROMiSE.CnEn.SUB.NTK/pme-spy-cd1.big5.srt",
+        "lang": "chi"
+      },
+      {
+        "path": "/Volumes/分类/惊悚·犯罪·动作/柏林谍影/07.26.04.The.Spy.Who.Came.In.from.the.Cold.1965.DVDRip.XviD-PROMiSE.CnEn.SUB.NTK/pme-spy-cd1.en.srt",
+        "lang": "eng"
+      }
+    ],
+    "keep_source": false,
+    "keep_folder": true,
+    "ignore_leftovers": true,
+    "note": "nested subtitle folder matched by CD token; keep movie folder in place",
+    "message": "completed in original folder; leftovers preserved; output=/Volumes/分类/惊悚·犯罪·动作/柏林谍影/[柏林谍影].The.Spy.Who.Came.In.from.the.Cold.1965.DVDRip.XviD-PROMiSE.CD1.mkv"
+  },
+  {
+    "id": "thriller-berlin-spy-cd2",
+    "status": "DONE_REVIEW",
+    "category": "cd_text_nested_subs",
+    "folder": "/Volumes/分类/惊悚·犯罪·动作/柏林谍影",
+    "movie": "/Volumes/分类/惊悚·犯罪·动作/柏林谍影/[柏林谍影].The.Spy.Who.Came.In.from.the.Cold.1965.DVDRip.XviD-PROMiSE.CD2.mkv",
+    "target": "/Volumes/分类/惊悚·犯罪·动作/柏林谍影/[柏林谍影].The.Spy.Who.Came.In.from.the.Cold.1965.DVDRip.XviD-PROMiSE.CD2.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/分类/惊悚·犯罪·动作/柏林谍影/07.26.04.The.Spy.Who.Came.In.from.the.Cold.1965.DVDRip.XviD-PROMiSE.CnEn.SUB.NTK/pme-spy-cd2.gb.srt",
+        "lang": "chi"
+      },
+      {
+        "path": "/Volumes/分类/惊悚·犯罪·动作/柏林谍影/07.26.04.The.Spy.Who.Came.In.from.the.Cold.1965.DVDRip.XviD-PROMiSE.CnEn.SUB.NTK/pme-spy-cd2.big5.srt",
+        "lang": "chi"
+      },
+      {
+        "path": "/Volumes/分类/惊悚·犯罪·动作/柏林谍影/07.26.04.The.Spy.Who.Came.In.from.the.Cold.1965.DVDRip.XviD-PROMiSE.CnEn.SUB.NTK/pme-spy-cd2.en.srt",
+        "lang": "eng"
+      }
+    ],
+    "keep_source": false,
+    "keep_folder": true,
+    "ignore_leftovers": true,
+    "note": "nested subtitle folder matched by CD token; keep movie folder in place",
+    "message": "completed in original folder; leftovers preserved; output=/Volumes/分类/惊悚·犯罪·动作/柏林谍影/[柏林谍影].The.Spy.Who.Came.In.from.the.Cold.1965.DVDRip.XviD-PROMiSE.CD2.mkv"
+  }
+]

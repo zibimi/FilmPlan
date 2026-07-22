@@ -1,0 +1,231 @@
+{
+  "generated": "2026-07-21 19:50:40",
+  "scope": "/Volumes/分类/惊悚·犯罪·动作",
+  "flatten_single_movie_folders": [
+    {
+      "folder": "/Volumes/分类/惊悚·犯罪·动作/夜车",
+      "movie": "/Volumes/分类/惊悚·犯罪·动作/夜车/Night.Train.1959.DVDRip.XviD-MOC.mkv",
+      "target": "/Volumes/分类/惊悚·犯罪·动作/Night.Train.1959.DVDRip.XviD-MOC.mkv"
+    },
+    {
+      "folder": "/Volumes/分类/惊悚·犯罪·动作/死不张扬离奇失魂事件",
+      "movie": "/Volumes/分类/惊悚·犯罪·动作/死不张扬离奇失魂事件/死不张扬离奇失魂事件.The.Quiet.Family.1998.DVDRip.x264.AC3-zKF.mkv",
+      "target": "/Volumes/分类/惊悚·犯罪·动作/死不张扬离奇失魂事件.The.Quiet.Family.1998.DVDRip.x264.AC3-zKF.mkv"
+    },
+    {
+      "folder": "/Volumes/分类/惊悚·犯罪·动作/警报",
+      "movie": "/Volumes/分类/惊悚·犯罪·动作/警报/Alarm_2008_DVDRip_Xvid_AC3_Freebee269_cd2.mkv",
+      "target": "/Volumes/分类/惊悚·犯罪·动作/Alarm_2008_DVDRip_Xvid_AC3_Freebee269_cd2.mkv"
+    },
+    {
+      "folder": "/Volumes/分类/惊悚·犯罪·动作/雨天下的迎神会",
+      "movie": "/Volumes/分类/惊悚·犯罪·动作/雨天下的迎神会/Seance_On_A_Wet_Afternoon_(Bryan_Forbes,_1964).mkv.mkv",
+      "target": "/Volumes/分类/惊悚·犯罪·动作/Seance_On_A_Wet_Afternoon_(Bryan_Forbes,_1964).mkv.mkv"
+    }
+  ],
+  "delete_empty_folders": [
+    "/Volumes/分类/惊悚·犯罪·动作/兄弟出头天",
+    "/Volumes/分类/惊悚·犯罪·动作/父亲的信徒",
+    "/Volumes/分类/惊悚·犯罪·动作/致命礼物"
+  ],
+  "manual_review": [
+    {
+      "folder": "/Volumes/分类/惊悚·犯罪·动作/人性",
+      "message": "two nested SRT files look like two parts but filenames have no CD token; skipped for manual review"
+    }
+  ],
+  "kept_folders": [
+    {
+      "folder": "/Volumes/分类/惊悚·犯罪·动作/一个好人",
+      "movie_count": 2,
+      "subdir_count": 0,
+      "other_count": 0
+    },
+    {
+      "folder": "/Volumes/分类/惊悚·犯罪·动作/一条名叫旺达的鱼",
+      "movie_count": 2,
+      "subdir_count": 0,
+      "other_count": 0
+    },
+    {
+      "folder": "/Volumes/分类/惊悚·犯罪·动作/三个邪恶的人",
+      "movie_count": 1,
+      "subdir_count": 1,
+      "other_count": 0
+    },
+    {
+      "folder": "/Volumes/分类/惊悚·犯罪·动作/不夜城",
+      "movie_count": 4,
+      "subdir_count": 0,
+      "other_count": 0
+    },
+    {
+      "folder": "/Volumes/分类/惊悚·犯罪·动作/刀锋冷",
+      "movie_count": 2,
+      "subdir_count": 0,
+      "other_count": 0
+    },
+    {
+      "folder": "/Volumes/分类/惊悚·犯罪·动作/刺杀据点",
+      "movie_count": 2,
+      "subdir_count": 0,
+      "other_count": 0
+    },
+    {
+      "folder": "/Volumes/分类/惊悚·犯罪·动作/夜夜春宵",
+      "movie_count": 1,
+      "subdir_count": 0,
+      "other_count": 1
+    },
+    {
+      "folder": "/Volumes/分类/惊悚·犯罪·动作/左轮枪",
+      "movie_count": 2,
+      "subdir_count": 0,
+      "other_count": 0
+    },
+    {
+      "folder": "/Volumes/分类/惊悚·犯罪·动作/布雷德利夫人探案",
+      "movie_count": 5,
+      "subdir_count": 0,
+      "other_count": 0
+    },
+    {
+      "folder": "/Volumes/分类/惊悚·犯罪·动作/开膛手的名单",
+      "movie_count": 2,
+      "subdir_count": 0,
+      "other_count": 0
+    },
+    {
+      "folder": "/Volumes/分类/惊悚·犯罪·动作/忠奸人",
+      "movie_count": 2,
+      "subdir_count": 0,
+      "other_count": 0
+    },
+    {
+      "folder": "/Volumes/分类/惊悚·犯罪·动作/暗金丑岛君",
+      "movie_count": 4,
+      "subdir_count": 0,
+      "other_count": 0
+    },
+    {
+      "folder": "/Volumes/分类/惊悚·犯罪·动作/末路狂奔",
+      "movie_count": 3,
+      "subdir_count": 0,
+      "other_count": 0
+    },
+    {
+      "folder": "/Volumes/分类/惊悚·犯罪·动作/格莫拉",
+      "movie_count": 2,
+      "subdir_count": 0,
+      "other_count": 0
+    },
+    {
+      "folder": "/Volumes/分类/惊悚·犯罪·动作/波洛探案集",
+      "movie_count": 11,
+      "subdir_count": 0,
+      "other_count": 0
+    },
+    {
+      "folder": "/Volumes/分类/惊悚·犯罪·动作/浪客剑心",
+      "movie_count": 3,
+      "subdir_count": 0,
+      "other_count": 0
+    },
+    {
+      "folder": "/Volumes/分类/惊悚·犯罪·动作/潘多拉魔盒",
+      "movie_count": 4,
+      "subdir_count": 0,
+      "other_count": 0
+    },
+    {
+      "folder": "/Volumes/分类/惊悚·犯罪·动作/灵魂狂欢节",
+      "movie_count": 3,
+      "subdir_count": 0,
+      "other_count": 0
+    },
+    {
+      "folder": "/Volumes/分类/惊悚·犯罪·动作/王牌对王牌",
+      "movie_count": 3,
+      "subdir_count": 0,
+      "other_count": 0
+    },
+    {
+      "folder": "/Volumes/分类/惊悚·犯罪·动作/维拉·德雷克",
+      "movie_count": 2,
+      "subdir_count": 0,
+      "other_count": 0
+    },
+    {
+      "folder": "/Volumes/分类/惊悚·犯罪·动作/自由意志",
+      "movie_count": 2,
+      "subdir_count": 0,
+      "other_count": 0
+    },
+    {
+      "folder": "/Volumes/分类/惊悚·犯罪·动作/致命的玛丽亚",
+      "movie_count": 2,
+      "subdir_count": 0,
+      "other_count": 0
+    },
+    {
+      "folder": "/Volumes/分类/惊悚·犯罪·动作/血色侦程",
+      "movie_count": 3,
+      "subdir_count": 0,
+      "other_count": 0
+    },
+    {
+      "folder": "/Volumes/分类/惊悚·犯罪·动作/警方热线110",
+      "movie_count": 3,
+      "subdir_count": 0,
+      "other_count": 0
+    },
+    {
+      "folder": "/Volumes/分类/惊悚·犯罪·动作/赤足天使",
+      "movie_count": 2,
+      "subdir_count": 0,
+      "other_count": 0
+    },
+    {
+      "folder": "/Volumes/分类/惊悚·犯罪·动作/跛豪",
+      "movie_count": 2,
+      "subdir_count": 0,
+      "other_count": 0
+    },
+    {
+      "folder": "/Volumes/分类/惊悚·犯罪·动作/迷雾中的她",
+      "movie_count": 2,
+      "subdir_count": 0,
+      "other_count": 0
+    },
+    {
+      "folder": "/Volumes/分类/惊悚·犯罪·动作/逍遥法外",
+      "movie_count": 2,
+      "subdir_count": 0,
+      "other_count": 0
+    },
+    {
+      "folder": "/Volumes/分类/惊悚·犯罪·动作/那一个晚上",
+      "movie_count": 6,
+      "subdir_count": 0,
+      "other_count": 0
+    },
+    {
+      "folder": "/Volumes/分类/惊悚·犯罪·动作/零",
+      "movie_count": 2,
+      "subdir_count": 0,
+      "other_count": 0
+    },
+    {
+      "folder": "/Volumes/分类/惊悚·犯罪·动作/预言者",
+      "movie_count": 2,
+      "subdir_count": 0,
+      "other_count": 0
+    },
+    {
+      "folder": "/Volumes/分类/惊悚·犯罪·动作/魔鬼警长地狱镇",
+      "movie_count": 2,
+      "subdir_count": 0,
+      "other_count": 0
+    }
+  ]
+}
