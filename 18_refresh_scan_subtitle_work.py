@@ -223,7 +223,8 @@ def scan(roots: list[Path] | None = None, include_single: bool = False) -> tuple
             has_parts = len({t for t in tokens if t}) >= 2
             all_movies_have_tokens = bool(movies) and all(tokens)
             duplicate_tokens = [token for token, count in Counter(t for t in tokens if t).items() if count > 1]
-            if duplicate_tokens:
+            has_external_subtitle_candidates = bool(text_subs or pairs or orphan_vob)
+            if duplicate_tokens and has_external_subtitle_candidates:
                 review.append({
                     "kind": "multi_duplicate_part_tokens_skipped",
                     "folder": str(folder),
