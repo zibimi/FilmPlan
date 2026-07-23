@@ -1,0 +1,40 @@
+[
+  {
+    "id": "biography-history-0001",
+    "status": "DONE_REVIEW",
+    "category": "cd",
+    "folder": "/Volumes/分类/传记·一段历史/阿尔卡特兹的养鸟人",
+    "movie": "/Volumes/分类/传记·一段历史/阿尔卡特兹的养鸟人/阿尔卡特兹的养鸟人Birdman_of_Alcatraz_(1962)_CD1.mkv",
+    "target": "/Volumes/分类/传记·一段历史/阿尔卡特兹的养鸟人/阿尔卡特兹的养鸟人Birdman_of_Alcatraz_(1962)_CD1.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/分类/传记·一段历史/阿尔卡特兹的养鸟人/阿尔卡特兹的养鸟人Birdman.Of.Alcatraz/阿尔卡特兹的养鸟人Birdman.Of.Alcatraz.1962.DVDRip.DivX.Cd1.简体.srt",
+        "lang": "chi"
+      }
+    ],
+    "keep_source": false,
+    "keep_folder": true,
+    "ignore_leftovers": true,
+    "note": "manual nested subtitle match",
+    "message": "completed in original folder; leftovers preserved; output=/Volumes/分类/传记·一段历史/阿尔卡特兹的养鸟人/阿尔卡特兹的养鸟人Birdman_of_Alcatraz_(1962)_CD1.mkv"
+  },
+  {
+    "id": "biography-history-0002",
+    "status": "DONE_REVIEW",
+    "category": "cd",
+    "folder": "/Volumes/分类/传记·一段历史/阿尔卡特兹的养鸟人",
+    "movie": "/Volumes/分类/传记·一段历史/阿尔卡特兹的养鸟人/Birdman of Alcatraz (1962) DVDRip (SiRiUs sHaRe) CD2.avi",
+    "target": "/Volumes/分类/传记·一段历史/阿尔卡特兹的养鸟人/Birdman of Alcatraz (1962) DVDRip (SiRiUs sHaRe) CD2.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/分类/传记·一段历史/阿尔卡特兹的养鸟人/阿尔卡特兹的养鸟人Birdman.Of.Alcatraz/阿尔卡特兹的养鸟人Birdman.Of.Alcatraz.1962.DVDRip.DivX.Cd2.简体.srt",
+        "lang": "chi"
+      }
+    ],
+    "keep_source": false,
+    "keep_folder": true,
+    "ignore_leftovers": true,
+    "note": "manual nested subtitle match",
+    "message": "completed in original folder; leftovers preserved; output=/Volumes/分类/传记·一段历史/阿尔卡特兹的养鸟人/Birdman of Alcatraz (1962) DVDRip (SiRiUs sHaRe) CD2.mkv"
+  }
+]
