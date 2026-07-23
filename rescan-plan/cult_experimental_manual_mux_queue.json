@@ -1,0 +1,61 @@
+[
+  {
+    "id": "cult-experimental-0001",
+    "status": "DONE_REVIEW",
+    "category": "cd",
+    "folder": "/Volumes/分类/CULT·实验/月亮上的人",
+    "movie": "/Volumes/分类/CULT·实验/月亮上的人/[月亮上的人].Man.On.The.Moon.DVDRip.XviD.AC3.CD1-iMC.mp4",
+    "target": "/Volumes/分类/CULT·实验/月亮上的人/[月亮上的人].Man.On.The.Moon.DVDRip.XviD.AC3.CD1-iMC.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/分类/CULT·实验/月亮上的人/[月亮上的人].Man.On.The.Moon.DVDRip.XviD.AC3.CD1-iMC.idx",
+        "sidecar": "/Volumes/分类/CULT·实验/月亮上的人/[月亮上的人].Man.On.The.Moon.1999.DVDRip.XviD.AC3.iNTERNAL.U-ART-CD1.sub",
+        "lang": "chi"
+      }
+    ],
+    "keep_source": false,
+    "keep_folder": true,
+    "ignore_leftovers": true,
+    "note": "manual VobSub CD1 match",
+    "message": "completed in original folder; leftovers preserved; output=/Volumes/分类/CULT·实验/月亮上的人/[月亮上的人].Man.On.The.Moon.DVDRip.XviD.AC3.CD1-iMC.mkv"
+  },
+  {
+    "id": "cult-experimental-0002",
+    "status": "DONE_REVIEW",
+    "category": "cd",
+    "folder": "/Volumes/分类/CULT·实验/月亮上的人",
+    "movie": "/Volumes/分类/CULT·实验/月亮上的人/[月亮上的人].Man.On.The.Moon.DVDRip.XviD.AC3.CD2-iMC.mp4",
+    "target": "/Volumes/分类/CULT·实验/月亮上的人/[月亮上的人].Man.On.The.Moon.DVDRip.XviD.AC3.CD2-iMC.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/分类/CULT·实验/月亮上的人/[月亮上的人].Man.On.The.Moon.DVDRip.XviD.AC3.CD2-iMC.idx",
+        "sidecar": "/Volumes/分类/CULT·实验/月亮上的人/[月亮上的人].Man.On.The.Moon.1999.DVDRip.XviD.AC3.iNTERNAL.U-ART-CD2.sub",
+        "lang": "chi"
+      }
+    ],
+    "keep_source": false,
+    "keep_folder": true,
+    "ignore_leftovers": true,
+    "note": "manual VobSub CD2 match",
+    "message": "completed in original folder; leftovers preserved; output=/Volumes/分类/CULT·实验/月亮上的人/[月亮上的人].Man.On.The.Moon.DVDRip.XviD.AC3.CD2-iMC.mkv"
+  },
+  {
+    "id": "cult-experimental-0003",
+    "status": "DONE",
+    "category": "single",
+    "folder": "/Volumes/分类/CULT·实验/莫雷尔的发明",
+    "movie": "/Volumes/分类/CULT·实验/莫雷尔的发明/莫雷尔的发明/Invenzione.di.Morel.1974.SMz.avi",
+    "target": "/Volumes/分类/CULT·实验/Invenzione.di.Morel.1974.SMz.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/分类/CULT·实验/莫雷尔的发明/莫雷尔的发明.srt",
+        "lang": "chi"
+      }
+    ],
+    "keep_source": false,
+    "keep_folder": false,
+    "ignore_leftovers": false,
+    "note": "manual parent subtitle with nested movie",
+    "message": "completed; output=/Volumes/分类/CULT·实验/Invenzione.di.Morel.1974.SMz.mkv"
+  }
+]
