@@ -1,0 +1,42 @@
+[
+  {
+    "id": "animation-0001",
+    "status": "DONE_REVIEW",
+    "category": "cd",
+    "folder": "/Volumes/分类/动画片/贪吃树",
+    "movie": "/Volumes/分类/动画片/贪吃树/[贪吃树].Little.Otik.2000.DVDRip.LYMDG-CD1.mkv",
+    "target": "/Volumes/分类/动画片/贪吃树/[贪吃树].Little.Otik.2000.DVDRip.LYMDG-CD1.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/分类/动画片/贪吃树/[贪吃树].Little.Otik.2000.DVDRip.LYMDG-CD1.idx",
+        "sidecar": "/Volumes/分类/动画片/贪吃树/lo-lymdg-cd1.sub",
+        "lang": "chi"
+      }
+    ],
+    "keep_source": false,
+    "keep_folder": true,
+    "ignore_leftovers": true,
+    "note": "manual VobSub CD1 match",
+    "message": "completed in original folder; leftovers preserved; output=/Volumes/分类/动画片/贪吃树/[贪吃树].Little.Otik.2000.DVDRip.LYMDG-CD1.mkv"
+  },
+  {
+    "id": "animation-0002",
+    "status": "DONE_REVIEW",
+    "category": "cd",
+    "folder": "/Volumes/分类/动画片/贪吃树",
+    "movie": "/Volumes/分类/动画片/贪吃树/[贪吃树].Little.Otik.2000.DVDRip.LYMDG-CD2.mkv",
+    "target": "/Volumes/分类/动画片/贪吃树/[贪吃树].Little.Otik.2000.DVDRip.LYMDG-CD2.mkv",
+    "subtitles": [
+      {
+        "path": "/Volumes/分类/动画片/贪吃树/[贪吃树].Little.Otik.2000.DVDRip.LYMDG-CD2.idx",
+        "sidecar": "/Volumes/分类/动画片/贪吃树/lo-lymdg-cd2.sub",
+        "lang": "chi"
+      }
+    ],
+    "keep_source": false,
+    "keep_folder": true,
+    "ignore_leftovers": true,
+    "note": "manual VobSub CD2 match",
+    "message": "completed in original folder; leftovers preserved; output=/Volumes/分类/动画片/贪吃树/[贪吃树].Little.Otik.2000.DVDRip.LYMDG-CD2.mkv"
+  }
+]
