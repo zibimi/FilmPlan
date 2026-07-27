@@ -169,6 +169,28 @@ QUEUE_FILE=/path/to/queue.tsv ./14_run_mux_clean_queue.sh
 
 ## Full Workflow
 
+## Split-File Movie Merge
+
+For movies split into `CD1/CD2`, `Part1/Part2`, `Disc1/Disc2`, `01/02`, or
+multi-part variants, use the conservative merge scripts under `scripts/`.
+
+The part-like merge runner is:
+
+```bash
+python3 scripts/merge_part_like_features.py
+```
+
+It scans `/Volumes/分类` and `/Volumes/导演们`, skips `#recycle`, verifies track
+compatibility and final duration, and only deletes original part files after the
+merged MKV can be read successfully.
+
+If the NAS volumes disappear, `scripts/remount_movie_volumes.sh` can ask macOS
+to reopen the SMB shares that were observed during the 2026-07-27 run.
+
+Latest run note:
+
+- `docs/PART_LIKE_MERGE_2026-07-27.md`
+
 ### 1. Scan Without Changing NAS Files
 
 ```bash
