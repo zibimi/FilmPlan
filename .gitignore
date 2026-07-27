@@ -5,6 +5,9 @@
 # Local logs and generated verification artifacts.
 logs/
 *.log
+bdmv-plan/
+part_like_feature_manifest_*.json
+scripts/
 
 # Downloaded or bundled binaries.
 tools/
