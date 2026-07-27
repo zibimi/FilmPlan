@@ -7,7 +7,12 @@ logs/
 *.log
 bdmv-plan/
 part_like_feature_manifest_*.json
-scripts/
+archive/
+rescan-plan/
+manual_approved_mux_queue.json
+remaining_mux_clean_queue*.tsv
+scripts/merge_cd_*.py
+scripts/repair_part_like_interruption.py
 
 # Downloaded or bundled binaries.
 tools/

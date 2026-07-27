@@ -79,22 +79,28 @@ The runner looks for MKVToolNix in these places:
 
 ```text
 .
-├── 14_run_mux_clean_queue.sh          # Runs the mux/verify/cleanup queue
-├── 15_rescan_remaining_subtitles.py   # Scans the library and writes audit files
-├── 16_prepare_remaining_mux_queue.py  # Moves subtitle-only subfolders and builds queue
+├── 14_run_mux_clean_queue.sh          # Legacy TSV queue runner
+├── 15_rescan_remaining_subtitles.py   # Legacy broad subtitle scanner
+├── 16_prepare_remaining_mux_queue.py  # Legacy TSV queue builder
+├── 17_run_manual_approved_mux.py      # Current JSON queue mux/verify runner
+├── 17_scan_bdmv_playlists.py          # BDMV playlist scanner
+├── 18_refresh_scan_subtitle_work.py   # Current category scanner/report generator
+├── FINAL_REPORT_20260722.md           # Current cleanup status summary
 ├── README.md
 ├── RUNBOOK_MUX_CLEAN.md
-├── remaining_mux_clean_queue.tsv      # Current queue
-├── rescan-plan/                       # Latest audit result
-├── docs/                              # Project notes and status snapshots
-└── archive/                           # Older scripts, queues, and reports
+├── docs/                              # Durable project notes
+└── scripts/                           # Supporting utilities
 ```
 
-Ignored local-only paths:
+Local-only generated paths are ignored by Git:
 
 - `logs/`
 - `tools/`
 - `downloads/`
+- `archive/`
+- `rescan-plan/`
+- `bdmv-plan/`
+- queue files such as `manual_approved_mux_queue.json` and `remaining_mux_clean_queue.tsv`
 - temporary MKV/media output
 
 ## Quick Start
