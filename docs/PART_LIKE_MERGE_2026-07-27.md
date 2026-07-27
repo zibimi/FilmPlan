@@ -42,3 +42,21 @@ Remaining manual review list:
 - `/Volumes/导演们/林赛·安德森` - track mismatch
 - `/Volumes/导演们/安东尼奥尼/中国` - track mismatch
 - `/Volumes/导演们/卢基诺·维斯康蒂/路德维希` - track mismatch
+
+Follow-up risky merge pass:
+- The remaining track-mismatch cases were probed manually.
+- A risky merge output keeps original part files and uses the suffix `.risky-merge.mkv`.
+- These outputs passed read/duration validation but still need playback spot checks because source dimensions or frame metadata differ.
+
+Risky merge outputs created:
+- `/Volumes/分类/纪录/世纪中国/China.A.Century.of.Revolution..DVDrip.XviD.risky-merge.mkv`
+- `/Volumes/导演们/法斯宾德/女人三部曲/维洛妮卡佛丝/维洛妮卡佛丝.Die.Sehnsucht.der.Veronika.risky-merge.mkv`
+- `/Volumes/导演们/林赛·安德森/幸运儿O.Lucky.Man.1973.risky-merge.mkv`
+- `/Volumes/导演们/安东尼奥尼/中国/中国.Chung.Kuo-Cina..1972.D5.MiniSD-TLF.risky-merge.mkv`
+- `/Volumes/导演们/卢基诺·维斯康蒂/路德维希/路德维希.Ludwig..1972.GER.D9.EngSub.MiniSD-TLF.risky-merge.mkv`
+
+Still not merged:
+- `/Volumes/分类/短篇集/台北异想` - numbering is not sequential and appears mixed.
+- `/Volumes/分类/短篇集/坏小子` - mkvmerge rejected append because video width changes from 320 to 384.
+- `/Volumes/导演们/让·雷诺阿/艾琳娜和她的男人们` - subtitle track count differs across parts.
+- `/Volumes/导演们/阿贝尔·冈斯/(1923)铁路的白蔷薇 La roue` - mkvmerge rejected append because video width differs, 716 vs 710.
