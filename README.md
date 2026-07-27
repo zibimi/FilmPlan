@@ -103,6 +103,98 @@ Local-only generated paths are ignored by Git:
 - queue files such as `manual_approved_mux_queue.json` and `remaining_mux_clean_queue.tsv`
 - temporary MKV/media output
 
+## Which Script Should I Use?
+
+Use this table first. Most mistakes in this project come from running an old
+scanner for a new task, or running a destructive step before reviewing the
+generated queue.
+
+| Situation | Use | What it does | Writes to NAS? |
+|---|---|---|---|
+| Scan one category for subtitle work | `python3 18_refresh_scan_subtitle_work.py --root <path> --prefix <name> --include-single` | Finds mux tasks, cleanup-only actions, and review items; writes JSON queues and Markdown reports under `rescan-plan/` | No |
+| Scan and immediately run safe subtitle tasks for one category | `python3 18_refresh_scan_subtitle_work.py --root <path> --prefix <name> --include-single --apply` | Runs the scan, then calls `17_run_manual_approved_mux.py` and applies cleanup actions | Yes |
+| Run an already approved JSON mux queue | `MUX_QUEUE=<queue.json> python3 17_run_manual_approved_mux.py` | Muxes subtitles, verifies output, updates queue status | Yes |
+| Inspect a Blu-ray/BDMV disc folder | `python3 17_scan_bdmv_playlists.py <disc-folder>` | Classifies playlists as feature/extras/duplicates/review and writes a remux plan | No |
+| Merge split feature files such as `Part1/Part2`, `Disc1/Disc2`, `01/02` | `python3 scripts/merge_part_like_features.py --write-manifest <manifest.json>` first, then `--manifest <manifest.json> --execute` | Finds and merges split movie files after track/duration verification | Manifest: No; execute: Yes |
+| Remount NAS volumes after SMB disappears | `./scripts/remount_movie_volumes.sh` | Opens the previously observed SMB shares in Finder/macOS | No media changes |
+| Use old TSV subtitle queue workflow | `15_rescan_remaining_subtitles.py`, `16_prepare_remaining_mux_queue.py`, `14_run_mux_clean_queue.sh` | Legacy broad scanner/queue/runner kept for old queues | Depends on `DRY_RUN` |
+
+Recommended default today:
+
+```bash
+python3 18_refresh_scan_subtitle_work.py \
+  --root /Volumes/分类/某个分类 \
+  --prefix some_category \
+  --include-single
+```
+
+Review the generated files under `rescan-plan/`. Only add `--apply` after the
+queue and review items look right.
+
+## Current Subtitle Workflow
+
+For normal subtitle muxing, prefer the newer JSON workflow:
+
+### 1. Scan One Category Without Changing NAS Files
+
+```bash
+python3 18_refresh_scan_subtitle_work.py \
+  --root /Volumes/分类/科幻·奇幻 \
+  --prefix scifi \
+  --include-single
+```
+
+This creates local-only files under `rescan-plan/`:
+
+- `<prefix>_mux_queue.json`
+- `<prefix>_cleanup_actions.json`
+- `<prefix>_report.md`
+
+### 2. Review The Report
+
+Open:
+
+```text
+rescan-plan/<prefix>_report.md
+```
+
+Check:
+
+- `Mux Tasks`: items the script thinks are safe to process
+- `Cleanup Actions`: cleanup-only moves/deletes after safety checks
+- `Review Items`: ambiguous cases that should not be automated yet
+
+### 3. Run The Category If It Looks Right
+
+```bash
+python3 18_refresh_scan_subtitle_work.py \
+  --root /Volumes/分类/科幻·奇幻 \
+  --prefix scifi \
+  --include-single \
+  --apply
+```
+
+`--apply` runs the generated mux queue and applies cleanup actions. It still
+verifies outputs before deleting source movie/subtitle files.
+
+### 4. Run A Manually Approved Queue
+
+Use this when you manually create or edit a queue JSON, especially for nested
+subtitle folders or CD1/CD2 cases:
+
+```bash
+MUX_QUEUE=/Users/milou/Movies/FilmSubTitlePlan/rescan-plan/manual_case_queue.json \
+MUX_RUN_LOG=/Users/milou/Movies/FilmSubTitlePlan/logs/manual-case.log \
+python3 17_run_manual_approved_mux.py
+```
+
+The runner updates each task status in the queue:
+
+- `PENDING`: ready to process
+- `DONE`: output verified and cleanup completed
+- `DONE_REVIEW`: output created, but source files or leftovers were kept for manual review
+- `FAILED`: failed safely; source files were kept
+
 ## Quick Start
 
 Clone the repository:
@@ -127,10 +219,20 @@ ls /Volumes/导演们 /Volumes/分类
 Check that MKVToolNix is available:
 
 ```bash
-./14_run_mux_clean_queue.sh
+/Users/milou/Documents/电影整理计划/tools/MKVToolNix.app/Contents/MacOS/mkvmerge --version
 ```
 
-With the default `DRY_RUN=1`, this command should only print what it would do.
+Then run a no-write category scan:
+
+```bash
+python3 18_refresh_scan_subtitle_work.py \
+  --root /Volumes/分类/科幻·奇幻 \
+  --prefix smoke_test \
+  --include-single
+```
+
+The scan should not modify NAS media files. It should only write local report and
+queue files under `rescan-plan/`.
 
 If MKVToolNix is not in `PATH`, either place `MKVToolNix.app` under:
 
@@ -143,37 +245,40 @@ or pass explicit tool paths:
 ```bash
 MKVMERGE=/path/to/mkvmerge \
 MKVEXTRACT=/path/to/mkvextract \
-./14_run_mux_clean_queue.sh
+python3 17_run_manual_approved_mux.py
 ```
 
-## Configuration
+## Current Configuration
 
-The scanner defaults to:
-
-```text
-/Volumes/导演们
-/Volumes/分类
-```
-
-Override roots with a newline-separated `ROOTS` value:
+For `18_refresh_scan_subtitle_work.py`:
 
 ```bash
-ROOTS=$'/Volumes/导演们\n/Volumes/分类' DRY_RUN=1 ./15_rescan_remaining_subtitles.py
+python3 18_refresh_scan_subtitle_work.py \
+  --root /Volumes/分类/科幻·奇幻 \
+  --prefix scifi \
+  --include-single
 ```
 
-The runner defaults to:
+- `--root`: category or root to scan. Can be repeated.
+- `--prefix`: filename prefix for generated queue/report files.
+- `--include-single`: include single-movie folders with external subtitles.
+- `--apply`: execute generated queue and cleanup actions after scanning.
 
-```text
-remaining_mux_clean_queue.tsv
-```
-
-Override it with `QUEUE_FILE`:
+For `17_run_manual_approved_mux.py`:
 
 ```bash
-QUEUE_FILE=/path/to/queue.tsv ./14_run_mux_clean_queue.sh
+MUX_QUEUE=/path/to/queue.json \
+MUX_RUN_LOG=/path/to/run.log \
+python3 17_run_manual_approved_mux.py
 ```
 
-## Full Workflow
+- `MUX_QUEUE`: JSON queue to execute.
+- `MUX_RUN_LOG`: log path.
+- `MKVMERGE`: optional override for `mkvmerge`.
+- `MKVEXTRACT`: optional override for `mkvextract`.
+
+The old TSV workflow uses `ROOTS`, `DRY_RUN`, and `QUEUE_FILE`; see the legacy
+section below.
 
 ## Split-File Movie Merge
 
@@ -196,6 +301,12 @@ to reopen the SMB shares that were observed during the 2026-07-27 run.
 Latest run note:
 
 - `docs/PART_LIKE_MERGE_2026-07-27.md`
+
+## Legacy TSV Subtitle Workflow
+
+The older 14/15/16 workflow is still kept because some old local queue files
+were generated with it. For new work, use `18_refresh_scan_subtitle_work.py`
+and `17_run_manual_approved_mux.py` instead.
 
 ### 1. Scan Without Changing NAS Files
 
@@ -280,7 +391,7 @@ Common statuses:
 
 ## Supported Subtitle Inputs
 
-Automatic queue:
+Current JSON workflow:
 
 - `.srt`
 - `.ass`
@@ -294,7 +405,7 @@ Manual review:
 - `.smi`
 - unmatched `.sub`
 - mixed multi-movie folders
-- multi-CD layouts
+- CD/multi-part layouts without clear part tokens
 - folders with target MKV already present
 - folders with extras or ambiguous side files
 
