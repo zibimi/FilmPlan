@@ -5,6 +5,11 @@ Mac with movies stored on a NAS. It scans movie folders, finds external
 subtitles, muxes them into MKV files as soft subtitles, verifies the result, and
 only then cleans up the old loose files.
 
+The repository also includes a reusable Codex skill at
+`skills/nas-film-curator`. It captures the current naming, metadata research,
+director-folder, multipart, archive, classification, JSON tracking, and safe
+NAS synchronization rules developed while organizing this library.
+
 The project was built for this library layout:
 
 - `/Volumes/导演们`
@@ -89,7 +94,8 @@ The runner looks for MKVToolNix in these places:
 ├── README.md
 ├── RUNBOOK_MUX_CLEAN.md
 ├── docs/                              # Durable project notes
-└── scripts/                           # Supporting utilities
+├── scripts/                           # Supporting utilities
+└── skills/nas-film-curator/           # Reusable NAS film-curation skill
 ```
 
 Local-only generated paths are ignored by Git:

@@ -1,0 +1,6 @@
+interface:
+  display_name: "NAS 电影整理"
+  short_description: "安全扫描、查证、规范并同步 NAS 电影资料库文件"
+  default_prompt: "Use $nas-film-curator to inspect and safely organize /Volumes/导演们 using the current naming rules."
+policy:
+  allow_implicit_invocation: true
