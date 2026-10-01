@@ -64,6 +64,24 @@ The user currently wants `/Volumes/分类/动画片/动画大师` and
 `/Volumes/分类/短篇集` left unchanged unless they explicitly reopen those
 folders.
 
+## Series And Documentary Episodes
+
+Use this shape when a folder is one series rather than a multipart feature:
+
+```text
+中文系列名.Foreign.Series.Title.年份.S01E01.可选集标题.ext
+```
+
+- Use two-digit season and episode numbers.
+- Keep known episode titles after `SxxExx`; normalize their spaces and
+  punctuation without discarding useful Chinese or foreign titles.
+- Missing episodes remain missing. Do not renumber later episodes or create a
+  placeholder file.
+- When the user requests Traditional-to-Simplified normalization, rename and
+  verify the files first, then rename the containing folder without clobbering.
+- A user-confirmed completed series may be locked as `done_episode`; an
+  intentionally untouched series may be locked as `skip_user`.
+
 ## Format And Container Detection
 
 - Scan common movie containers plus `.f4v`, `.ogg`/Theora, and `.dat` VCD files.
