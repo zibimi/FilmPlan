@@ -80,6 +80,13 @@ def is_excluded(path, root):
 def classify(path, existing):
     suffix = path.suffix.lower()
     stem = path.stem
+    override = existing.get("review_override", {})
+    if override.get("locked"):
+        return (
+            existing.get("kind", "video"),
+            override.get("issues", existing.get("issues", [])),
+            override["disposition"],
+        )
     if suffix in SUBTITLE_EXTS:
         return "subtitle", ["related_subtitle"], "related"
     if suffix == ".dat":

@@ -48,6 +48,12 @@ Statuses:
 - `ignore`: unrelated ordinary file;
 - `conflict`/`failed`: stop and do not retry blindly.
 
+When a human or a completed research pass has conclusively classified an item,
+store a locked `review_override` with its disposition, issues, reason, and review
+time. A refresh may update the live path, size, and mtime, but must not replace
+that conclusion with filename heuristics. Remove or revise the override only
+after a new review changes the conclusion.
+
 ## Validation
 
 Before execution verify mount, snapshot membership, current source existence, target absence, unique sources/targets, authorized-root containment, companion/multipart integrity, and `problem_count = 0`.
