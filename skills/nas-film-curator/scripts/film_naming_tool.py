@@ -86,7 +86,7 @@ DEFAULT_ROOT = Path("/Volumes/看")
 DIRECTORS_ROOT = Path("/Volumes/导演们")
 DEFAULT_OUTPUT_DIR = Path(os.environ.get("MOVIE_TOOL_OUTPUT_DIR", "/Users/milou/Movies/FilmNamingPlan"))
 DEFAULT_EXCLUDES = {"剧", "#recycle"}
-VIDEO_EXTS = {".mkv", ".mp4", ".avi", ".rm", ".rmvb", ".mpeg", ".mpg", ".mkv1", ".mov", ".m4v", ".wmv", ".flv", ".ts", ".webm"}
+VIDEO_EXTS = {".mkv", ".mp4", ".avi", ".rm", ".rmvb", ".mpeg", ".mpg", ".mkv1", ".mov", ".m4v", ".wmv", ".flv", ".ts", ".webm", ".f4v", ".ogg", ".ogv", ".dat"}
 SUBTITLE_EXTS = {".srt", ".ass", ".ssa"}
 SUBTITLE_ARCHIVE_EXTS = SUBTITLE_EXTS | {".sub", ".idx"}
 SUPPORTED_EXTS = VIDEO_EXTS | SUBTITLE_EXTS
@@ -917,6 +917,13 @@ def json_default_path(name: str) -> Path:
 
 def file_kind(path: Path) -> str:
     suffix = path.suffix.lower()
+    if suffix == ".ogg":
+        try:
+            with path.open("rb") as handle:
+                head = handle.read(65536)
+        except OSError:
+            return "other"
+        return "video" if head.startswith(b"OggS") and b"theora" in head.lower() else "other"
     if suffix in VIDEO_EXTS:
         return "video"
     if suffix in SUBTITLE_ARCHIVE_EXTS:
@@ -1006,6 +1013,15 @@ def analyze_video_item(item: dict, items_by_parent: dict[str, list[dict]]) -> di
     status = "review"
     category = "needs_review"
     proposed_path = item.get("proposed_path")
+
+    if item.get("suffix") == ".dat":
+        item["status"] = "skip"
+        item["category"] = "skip_vcd_structure"
+        item["issues"] = ["DAT/VCD 结构需整组检查"]
+        item["notes"] = ["不要按普通单片机械改名；先确认 VCD 分集或光盘结构"]
+        item["proposed_path"] = None
+        item["source"] = "analyze-json"
+        return item
 
     if DIRECTOR_SINGLE_SKIP_RE.search(stem) or any(DIRECTOR_SINGLE_SKIP_RE.search(part) for part in item.get("relative_path", "").split("/")):
         issues.append("疑似花絮/资料片/访谈/预告")
@@ -1151,10 +1167,16 @@ def cmd_apply_json(args) -> None:
     if not args.execute:
         print("dry-run only; add --execute to rename files")
         return
+    failures = []
     for src, dst in planned:
         dst.parent.mkdir(parents=True, exist_ok=True)
-        src.rename(dst)
-    print(f"renamed={len(planned)}")
+        before_size = src.stat().st_size
+        result = subprocess.run(["/bin/mv", "-n", str(src), str(dst)], check=False)
+        if result.returncode != 0 or src.exists() or not dst.is_file() or dst.stat().st_size != before_size:
+            failures.append({"source": str(src), "target": str(dst), "returncode": result.returncode})
+    print(f"renamed={len(planned) - len(failures)} failed={len(failures)}")
+    if failures:
+        print(json.dumps(failures, ensure_ascii=False, indent=2))
 
 
 def cmd_validate_plan(args) -> None:

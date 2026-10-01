@@ -31,6 +31,13 @@ Flag a normal single feature when it lacks a reliable available Chinese title, f
 
 Do not apply this strict test unchanged to series episodes, collections, short-film anthologies, extras, concerts, stage recordings, or archival material.
 
+## Format And Container Detection
+
+- Scan common movie containers plus `.f4v`, `.ogg`/Theora, and `.dat` VCD files.
+- For extensionless or suspicious files, inspect the file signature or probe the container before classifying it as non-video. The extension is evidence, not proof.
+- Treat DAT/VCD, DVD `VIDEO_TS`, BDMV, episodes, and intentional `CD1/CD2` or `Part1/Part2` structures as grouped media. Report the structure instead of forcing every component into the standalone-film pattern.
+- Lossless remuxing changes the container only. Verify streams and duration before deleting the old container, and keep the original when verification fails.
+
 ## Remainder Preservation
 
 After `中文名.外文名.年份`, retain meaningful tokens such as source, resolution, codec, edition, restoration, broadcaster, language, and subtitle-group information. Preserve `CD1`, `Part1`, or episode markers only when intentionally retaining multipart media.

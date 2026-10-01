@@ -10,6 +10,12 @@ The repository also includes a reusable Codex skill at
 director-folder, multipart, archive, classification, JSON tracking, and safe
 NAS synchronization rules developed while organizing this library.
 
+The current tracker synchronizer is
+`skills/nas-film-curator/scripts/sync_live_tracker.py`. It compares the live
+mounted library with the single active JSON tracker before old `done` statuses
+are trusted. It recognizes F4V, OGG/Theora, DAT/VCD, and common video signatures
+when extensions are missing or abnormal.
+
 The project was built for this library layout:
 
 - `/Volumes/导演们`
@@ -117,12 +123,13 @@ generated queue.
 
 | Situation | Use | What it does | Writes to NAS? |
 |---|---|---|---|
+| Refresh the active `/Volumes/分类` tracker from live paths | `python3 skills/nas-film-curator/scripts/sync_live_tracker.py` then add `--execute` | Reports path drift, then refreshes the existing JSON while preserving history | No media changes; `--execute` writes the local tracker |
 | Scan one category for subtitle work | `python3 18_refresh_scan_subtitle_work.py --root <path> --prefix <name> --include-single` | Finds mux tasks, cleanup-only actions, and review items; writes JSON queues and Markdown reports under `rescan-plan/` | No |
 | Scan and immediately run safe subtitle tasks for one category | `python3 18_refresh_scan_subtitle_work.py --root <path> --prefix <name> --include-single --apply` | Runs the scan, then calls `17_run_manual_approved_mux.py` and applies cleanup actions | Yes |
 | Run an already approved JSON mux queue | `MUX_QUEUE=<queue.json> python3 17_run_manual_approved_mux.py` | Muxes subtitles, verifies output, updates queue status | Yes |
 | Inspect a Blu-ray/BDMV disc folder | `python3 17_scan_bdmv_playlists.py <disc-folder>` | Classifies playlists as feature/extras/duplicates/review and writes a remux plan | No |
 | Merge split feature files such as `Part1/Part2`, `Disc1/Disc2`, `01/02` | `python3 scripts/merge_part_like_features.py --write-manifest <manifest.json>` first, then `--manifest <manifest.json> --execute` | Finds and merges split movie files after track/duration verification | Manifest: No; execute: Yes |
-| Remount NAS volumes after SMB disappears | `./scripts/remount_movie_volumes.sh` | Opens the previously observed SMB shares in Finder/macOS | No media changes |
+| Remount NAS volumes after SMB disappears | `./scripts/remount_movie_volumes.sh` | Mounts any missing movie shares through Finder/macOS | No media changes |
 | Use old TSV subtitle queue workflow | `15_rescan_remaining_subtitles.py`, `16_prepare_remaining_mux_queue.py`, `14_run_mux_clean_queue.sh` | Legacy broad scanner/queue/runner kept for old queues | Depends on `DRY_RUN` |
 
 Recommended default today:
@@ -301,8 +308,13 @@ It scans `/Volumes/分类` and `/Volumes/导演们`, skips `#recycle`, verifies 
 compatibility and final duration, and only deletes original part files after the
 merged MKV can be read successfully.
 
-If the NAS volumes disappear, `scripts/remount_movie_volumes.sh` can ask macOS
-to reopen the SMB shares that were observed during the 2026-07-27 run.
+If the NAS volumes disappear, `scripts/remount_movie_volumes.sh` asks macOS to
+reopen only the missing SMB shares. The installed LaunchAgent
+`com.zibimi.mount-movie-nas` runs this check at login and every five minutes.
+Its executable copy lives under `~/Library/Application Support/FilmPlan/`
+because macOS does not allow a background LaunchAgent to execute the source
+script directly from the protected Documents folder. The maintained source
+remains in this repository.
 
 Latest run note:
 

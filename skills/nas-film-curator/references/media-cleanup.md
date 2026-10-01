@@ -26,6 +26,8 @@
 ## Multipart Features
 
 - Detect A/B, CD, Disc, Part, Pt, D1/D2, numbered adjacent features, and episodes before ordinary naming.
+- Do not confuse release tags such as `D5` and `D9` with multipart numbering. Bare `D1`/`D2` needs director/resource context before it is treated as a split.
+- Treat VCD `.dat`, DVD `VIDEO_TS`, and BDMV as disc/episode structures unless inspection proves the file is an ordinary standalone feature.
 - Keep groups out of the rename plan and add every full path to `导演们_多段资源清单.json`.
 - Do not merge based on names alone. Verify codec, dimensions, frame rate, streams, duration, ordering, and shared identity.
 - The common preference is later replacement with a complete source; preserve existing segments until a separate merge/replacement task is authorized.

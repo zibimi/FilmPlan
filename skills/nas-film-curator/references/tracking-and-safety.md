@@ -12,6 +12,14 @@ Keep durable planning data outside the NAS media tree, currently under `/Users/m
 
 Write disposable scans, previews, and validation output to `/tmp`. Do not create a permanent JSON for every pass.
 
+For the active `/Volumes/分类` workflow, the maintained tracker is currently:
+
+```text
+/Users/milou/Documents/电影整理计划/分类审阅草案/每日命名扫描.json
+```
+
+Refresh this file in place rather than creating another permanent scan. Preserve execution history, research metadata, and the earliest known `original_path`, but replace stale path membership with the current mounted filesystem.
+
 ## Plan Record
 
 ```json
@@ -43,6 +51,13 @@ Statuses:
 ## Validation
 
 Before execution verify mount, snapshot membership, current source existence, target absence, unique sources/targets, authorized-root containment, companion/multipart integrity, and `problem_count = 0`.
+
+Before trusting tracker status, also verify:
+
+- tracked count equals the current in-scope path count;
+- `live_not_tracked = 0` and `tracked_not_live = 0` after an intentional refresh;
+- extensions include F4V, OGG/Theora, DAT/VCD, and content-detected video with missing or abnormal extensions;
+- `done` is not inferred merely from a previous review action.
 
 ## Execution
 

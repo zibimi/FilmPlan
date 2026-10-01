@@ -12,6 +12,8 @@ Organize the mounted movie library without losing source identity or confusing a
 - Treat `/Volumes/导演们` as the default root when the request concerns directors. Never silently broaden to another `/Volumes` share.
 - Confirm that the requested root is mounted before scanning. An unavailable root is an error, not an empty library.
 - Prefer one snapshot followed by local JSON analysis; avoid repeatedly traversing the NAS.
+- Treat the live filesystem as truth. A historical `done` status proves only that one recorded path was reviewed at that time; it never proves the current library is complete.
+- Before resuming from JSON, reconcile live paths against tracked paths and report both `live_not_tracked` and `tracked_not_live`.
 - Research ambiguous metadata proactively. Do not hand ordinary lookup work back to the user.
 - A parent folder is normally a search clue, not title evidence. The director-layout exceptions are defined in [references/director-layout.md](references/director-layout.md).
 - Before a NAS mutation, verify the source still exists, the target does not exist, and the proposal is authorized by the current request. Use `mv -n` or equivalent no-clobber behavior.
@@ -22,7 +24,7 @@ Organize the mounted movie library without losing source identity or confusing a
 
 1. Read the relevant references below.
 2. Confirm mount and scope; exclude `#recycle` and user-designated skip trees.
-3. Reuse a current snapshot when possible. Refresh once if the physical library has changed materially.
+3. Reuse a current snapshot only when its path set still matches the mounted library. Refresh once when files were added, removed, renamed, moved, or newly recognized by an expanded extension list.
 4. Analyze locally and classify each item as `done`, `planned`, `review`, `skip`, `related`, or `ignore`.
 5. Separate normal single films from multipart/episode resources, extras, collections, subtitles, and archives before researching names.
 6. Research unresolved single films using [references/metadata-research.md](references/metadata-research.md).
@@ -37,6 +39,7 @@ Read [references/media-cleanup.md](references/media-cleanup.md) only for subtitl
 ## Tooling
 
 The bundled [scripts/film_naming_tool.py](scripts/film_naming_tool.py) is the current local helper. Its persistent state defaults to `/Users/milou/Movies/FilmNamingPlan`.
+Use [scripts/sync_live_tracker.py](scripts/sync_live_tracker.py) to reconcile the active `/Volumes/分类` tracker with the live NAS without modifying media files.
 
 Typical director workflow:
 
@@ -47,6 +50,9 @@ python3 scripts/film_naming_tool.py validate-plan
 python3 scripts/film_naming_tool.py apply-json
 python3 scripts/film_naming_tool.py apply-json --execute
 python3 scripts/film_naming_tool.py plan-status
+python3 scripts/sync_live_tracker.py
+python3 scripts/sync_live_tracker.py --execute
 ```
 
 Do not run `--execute` merely because the command exists. The current user request must authorize the proposed filesystem changes.
+For `sync_live_tracker.py`, `--execute` writes only the local JSON tracker; it never renames, moves, or deletes NAS media.
