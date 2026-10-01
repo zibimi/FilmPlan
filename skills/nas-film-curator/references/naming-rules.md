@@ -31,6 +31,39 @@ Flag a normal single feature when it lacks a reliable available Chinese title, f
 
 Do not apply this strict test unchanged to series episodes, collections, short-film anthologies, extras, concerts, stage recordings, or archival material.
 
+## Curated Short-Film Collections
+
+Numbered archival collections may use a collection-specific schema after the
+collection identity and embedded credits have been verified. Remove sequence
+numbers, decorative brackets, studio labels, and spaces, but do not force the
+ordinary feature-film schema onto every short.
+
+- For entries shaped like `number director - title`, use
+  `Title.Director.Year.ext`.
+- For entries shaped like `number title (director, year)`, use
+  `Title.Director.Year.ext`.
+- Use a reliable Chinese title when an established source supplies one;
+  otherwise retain the official foreign/original title. Do not invent a Chinese
+  translation merely to satisfy the ordinary-film rule.
+- For the Tezuka animation collection, use
+  `中文名.Official.English.Title.Year.ext` when the official English title is
+  available.
+- Keep genuine `Extras` items unchanged or classify them as extras.
+- A completed collection item should receive a locked tracker override such as
+  `done_special_collection`, so later generic filename heuristics do not reopen
+  it.
+
+Current user-reviewed exceptions under `/Volumes/分类`:
+
+- `/Volumes/分类/动画片/1950-1990 南斯拉夫实验映画`
+- `/Volumes/分类/动画片/东德卡通短片选1975-1990`
+- `/Volumes/分类/动画片/动画的世纪·100部作品`
+- `/Volumes/分类/动画片/导演和大厂/手塚治虫.动画集`
+
+The user currently wants `/Volumes/分类/动画片/动画大师` and
+`/Volumes/分类/短篇集` left unchanged unless they explicitly reopen those
+folders.
+
 ## Format And Container Detection
 
 - Scan common movie containers plus `.f4v`, `.ogg`/Theora, and `.dat` VCD files.
