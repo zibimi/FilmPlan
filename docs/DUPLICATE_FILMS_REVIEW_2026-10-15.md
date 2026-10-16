@@ -1,1286 +1,841 @@
-# 分类与导演们：重复影片清理及当前剩余清单
+# 分类与导演们：内部重复清理结果
 
-更新日期：2026-10-16（America/Los_Angeles）。路径复核完成时间：2026-10-16T12:01:23.210452-07:00。本文件替换初次只读审阅；下列“已执行”均有逐项日志和回读记录，“剩余候选”尚未删除。
+更新日期：2026-10-16（America/Los_Angeles）。最终路径核验时间：2026-10-16T13:52:07.156184-07:00。本轮以用户手动整理后的全新扫描为基准，清理两个大文件夹内部的重复；没有按旧报告盲目执行。
 
-## 已完成的清理与归位
+## 本轮已完成
 
-原则：先比较文件体积、文件名中的明确质量标记及 MKV 格式，保留较好版本；条件接近时优先保留导演们。较好版本原在分类时，移到被替换影片原来的导演目录，保留较好版本文件名。体积相差不超过 15% 视为接近；质量线索冲突、剪辑不同、身份存疑时暂缓。质量判断依据用户指定的文件线索，并非逐片画面评测。
+- 处理 **95 部作品、96 个同版本分组**，删除 **100 个**重复或较差视频，逻辑文件大小合计 **123.70 GiB**。
+- 分类删除 **64 个**；导演们删除 **36 个**。
+- 已将保留版本归档移动 **28 个**：分类内 **25 个**，导演库内 **3 个**。全部为同一共享目录内部移动，无跨共享复制、无覆盖。
+- 每项执行前核对大小、修改时间及保留视频容器头和尾部可读性；移动前后核对首尾数据摘要。执行后核验删除路径不存在、最终保留文件大小和修改时间一致。没有整片解码或画面评测。
+- 最终目录成员与预期一致；无失败、无意外缺失或新增。字幕、附件、分集、分段和特殊版本不随普通视频副本删除；本轮归档视频未发现同名外挂字幕需要移动。文件逻辑大小不代表NAS实际释放空间。
 
-- 已删除重复或较差视频 **86 个**：分类 **71 个**、导演们 **15 个**。删除文件逻辑大小合计 **185.19 GiB**；实际释放空间受 NAS 回收站及快照影响。
-- 已将分类中的较好版本 **15 个、46.78 GiB** 移回对应导演目录。首项做整文件 SHA-256，其余做覆盖全部字节的分块 SHA-256；全数校验一致后才删除分类源文件。
-- 已逐项确认：86 个删除路径不存在、保留副本状态正常；15 个归位源路径不存在、目标大小和修改时间符合记录。无覆盖、无媒体删除失败。字幕、附件及目录未作清理；15 个归位源视频旁未发现同名外挂字幕。
-- 初次清单另有 12 个分类旧路径，在本轮清理之前就已不存在，未计入这 86 项。
+## 选择与归档规则
 
-## 当前剩余范围
+体积明显更大优先；15%以内视为接近，按MKV/MP4 > AVI > RMVB比较，再比较字节大小。特殊版本/分段/资料保留。 体积与格式优劣直接冲突时保留两份待复核。
 
-| 范围 | 候选组数 |
-|---|---:|
-| 两库之间 | 22 |
-| 分类内部 | 62 |
-| 导演们内部 | 7 |
+分类选择依据在线类型资料和剧情梗概，落入现有目录体系。华语或华人文化题材沿用华语世界优先规则；动画、短篇集、系列、导演子目录在适用时保留。只有剧情时阅读梗概并选择明确的家庭、宗教、体育等主题；无法细分的使用现有故事类。下面每部分类影片均附核对来源，归档位置是本次采用的主位置。
 
-当前按扩展名识别到分类 4,226 个、导演们 3,947 个媒体文件。扩展名包含 DAT/VCD 等，不等于电影部数；忽略隐藏目录、回收站和系统索引。目录枚举及候选路径复核错误均为 0。
+## 当前还需要判断的内部候选
 
-这些分组按不同文件夹筛选，包含短片、多版本等资源；同一文件夹内的其他版本可能未计入。未做全库逐字节查重，无年份、异译名或光盘流文件仍可能漏检。候选不能直接作为删除清单。
+本轮保留 **11 组**真正需再核对的内部候选。其中体积与格式冲突 **6 组**；其余涉及剪辑、声轨或异常小文件。另有 **13 组**不同短片、不同版本或正片附加资料已明确保留，不应算作多余副本。分集、分段和合集粗筛误报另行排除。
 
-## 剩余两库之间：22 组
+### 千禧曼波（2001）
 
-### 1. 另一个女人（1988）
+资料列119分钟与DVD101分钟，需核对实际时长区分剪辑
 
-暂留原因：体积、格式或质量标记相互冲突。
+- `/Volumes/分类/华语世界/台湾/侯孝贤/千禧曼波.Millenium.Mambo.2001.D9.MiniSD-TLF.mkv` — 0.69 GiB
+- `/Volumes/分类/华语世界/台湾/侯孝贤/千禧曼波.Millennium.Mambo.2001.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv` — 8.92 GiB
 
-- `/Volumes/分类/故事/另一个女人.Another.Woman.1988.rmvb` — 0.87 GiB
-- `/Volumes/导演们/伍迪·艾伦/另一个女人.Another.Woman.1988.mkv` — 0.30 GiB
+### 午后的迷惘（1943）
 
-### 2. 哥伦布传1492（1992）
-
-暂留原因：体积、格式或质量标记相互冲突。
-
-- `/Volumes/分类/传记·一段历史/哥伦布传.1492.Conquest.of.Paradise.1992.rmvb` — 1.68 GiB
-- `/Volumes/导演们/雷德利·斯科特/1492.征服天堂.1492.Conquest.of.Paradise.1992.BD.2Audio.MiniSD-TLF.mkv` — 0.98 GiB
-
-### 3. 夜车（1959）
-
-暂留原因：外文片名不完全一致，暂缓身份核对。
-
-- `/Volumes/分类/惊悚·犯罪·动作/夜车.Night.Train.1959.DVDRip.XviD-MOC.mkv` — 0.36 GiB
-- `/Volumes/导演们/耶尔齐·卡瓦莱罗维奇/夜车.Pociag.1959.DVDRip.XviD-MOC.mkv` — 0.68 GiB
-
-### 4. 失衡生活（1983）
-
-暂留原因：归位后分类仍留有另一份视频，本次未额外删除，待按质量规则复核。
-
-- `/Volumes/导演们/高佛雷·雷吉奥/失衡生活.Koyaanisqatsi.1983.HDTV.MiniSD-TLF.mkv` — 0.54 GiB
-- `/Volumes/分类/纪录/机械生活.Koyaanisqatsi.1983.DVD-Rip.Divx.720x416.Reggio.&amp.Philip.Glass.mkv` — 0.33 GiB
-
-### 5. 弗朗德勒（2006）
-
-暂留原因：外文片名不完全一致，暂缓身份核对。
-
-- `/Volumes/分类/传记·一段历史/弗朗德勒.Flandres.2006.rmvb` — 0.43 GiB
-- `/Volumes/导演们/布鲁诺·杜蒙/弗朗德勒.Flanders.2006.rmvb` — 0.43 GiB
-
-### 6. 怪谈（1964）
-
-暂留原因：剪辑或特殊版本标记，保留待核对。
-
-- `/Volumes/分类/恐怖/怪谈.Kwaidan.未剪切版.1964.DVDrip.HALFCD.NOWYS.双面伊人.mkv` — 0.71 GiB
-- `/Volumes/导演们/小林正树/怪谈.Kwaidan.1964.BluRay.CC.2Audio.MiniHD-TLF.mkv` — 2.26 GiB
-
-### 7. 恋人曲（1974）
-
-暂留原因：外文片名不完全一致，暂缓身份核对。
-
-- `/Volumes/分类/喜剧/恋人曲.A.Lovers.Romance.1974.X264.mp4` — 1.37 GiB
-- `/Volumes/导演们/安德烈·康查洛夫斯基/恋人曲.Romanca.O.Zakochanych.1974.X264.mp4` — 1.37 GiB
-
-### 8. 恐怖角（1962）
-
-暂留原因：导演归属或文件身份存疑。
-
-- `/Volumes/分类/惊悚·犯罪·动作/恐怖角.Cape.Fear.1962.DVDRip.X264.MiniSD-TLF.mkv` — 0.68 GiB
-- `/Volumes/导演们/马丁·斯科塞斯/恐怖角.Cape.Fear.1962.BD.MiniSD-TLF.mkv` — 0.78 GiB
-
-### 9. 末路狂奔（1996）
-
-暂留原因：体积、格式或质量标记相互冲突。
-
-- `/Volumes/分类/惊悚·犯罪·动作/末路狂奔/末路狂奔.Pusher.1996.BD.MiniSD-TLF.mkv` — 0.77 GiB
-- `/Volumes/导演们/尼古拉斯·温丁·雷弗恩/末路狂奔.Pusher.1996.720p.BluRay.x264.Chs-Phoenix.mp4` — 1.68 GiB
-
-### 10. 末路狂奔2（2004）
-
-暂留原因：体积、格式或质量标记相互冲突。
-
-- `/Volumes/分类/惊悚·犯罪·动作/末路狂奔/末路狂奔2.Pusher.II.2004.BD.MiniSD-TLF.mkv` — 0.78 GiB
-- `/Volumes/导演们/尼古拉斯·温丁·雷弗恩/末路狂奔2.Pusher.II.2004.mp4` — 1.97 GiB
-
-### 11. 末路狂奔3（2005）
-
-暂留原因：外文片名不完全一致，暂缓身份核对。
-
-- `/Volumes/分类/惊悚·犯罪·动作/末路狂奔/末路狂奔3.Pusher.III.2005.BD.MiniSD-TLF.mkv` — 0.86 GiB
-- `/Volumes/导演们/尼古拉斯·温丁·雷弗恩/末路狂奔3.Pusher.3.2005.720p.BluRay.x264.Chs-Phoenix.mp4` — 1.59 GiB
-
-### 12. 狗脸的岁月（1985）
-
-暂留原因：外文片名不完全一致，暂缓身份核对。
-
-- `/Volumes/分类/青春·儿童/狗脸的岁月/狗脸的岁月.Mitt.Liv.som.Hund.1985.D9.MiniSD-TLF.mkv` — 0.75 GiB
-- `/Volumes/导演们/拉斯·霍尔斯道姆/狗脸的岁月.My.Life.as.a.Dog.1985.CC.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv` — 8.58 GiB
-
-### 13. 疾走天堂（2002）
-
-暂留原因：导演归属或文件身份存疑。
-
-- `/Volumes/分类/惊悚·犯罪·动作/疾走天堂.Heaven.2002.BD.MiniSD-TLF.mkv` — 0.85 GiB
-- `/Volumes/导演们/克日什托夫·基耶斯洛夫斯基/天堂.Heaven.2002.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv` — 4.48 GiB
-
-### 14. 真情难诉（1924）
-
-暂留原因：外文片名不完全一致，暂缓身份核对。
-
-- `/Volumes/分类/故事/真情难诉.Harold.Llyod.Girl.Shy.1924.mkv` — 0.42 GiB
-- `/Volumes/导演们/哈罗德·劳埃德/真情难诉.Girl.Shy.1924.mkv` — 0.54 GiB
-
-### 15. 花（2011）
-
-暂留原因：导演归属或文件身份存疑。
-
-- `/Volumes/分类/华语世界/中国大陆/导演们/娄烨/花.Love.and.Bruises.2011.D9.MiniSD-TLF.mkv` — 1.09 GiB
-- `/Volumes/导演们/彼得·格林纳威/花.Love.and.Bruises.2011.french.novembre.multi.720p.bluray.dts.x264-bix.avi` — 0.68 GiB
-
-### 16. 苦恋（1965）
-
-暂留原因：异常小文件。
-
-- `/Volumes/分类/喜剧/苦恋.The.Loved.One.1965.mkv` — 0.00 GiB
-- `/Volumes/导演们/托尼·理查德森/苦恋.The.Loved.One.1965.mkv` — 0.47 GiB
-
-### 17. 蓝天使（1930）
-
-暂留原因：外文片名不完全一致，暂缓身份核对。
-
-- `/Volumes/分类/喜剧/蓝天使.Der.blaue.Engel.1930.BD.German.MiniSD-TLF.mkv` — 0.83 GiB
-- `/Volumes/导演们/玛琳·黛德丽[演员]/蓝天使.The.Blue.Angel.1930.DVDrip.by.galmuchet.avi` — 0.66 GiB
-
-### 18. 警察形容词（2009）
-
-暂留原因：外文片名不完全一致，暂缓身份核对。
-
-- `/Volumes/分类/惊悚·犯罪·动作/警察·形容词.Police.Adjective.2009.DVD-RMVB-人人影视.rmvb` — 0.51 GiB
-- `/Volumes/导演们/柯内流·波蓝波宇/警察.形容词.Politist.Adjectiv.2009.DVDRip.x264-mafalda.mkv` — 1.87 GiB
-
-### 19. 贪吃树（2000）
-
-暂留原因：外文片名不完全一致，暂缓身份核对。
-
-- `/Volumes/分类/动画片/贪吃树.Little.Otik.2000.DVDRip.LYMDG.mkv` — 0.55 GiB
-- `/Volumes/导演们/杨·史云梅耶/贪吃树.Otesánek.2000.D5.MiniSD-TLF.mkv` — 0.95 GiB
-
-### 20. 赫鲁斯塔廖夫开车（1998）
-
-暂留原因：体积、格式或质量标记相互冲突。
-
-- `/Volumes/分类/喜剧/赫鲁斯塔廖夫.开车.Khrustalyov.My.Car.1998.avi` — 1.32 GiB
-- `/Volumes/导演们/阿列克谢·日尔曼/哈鲁斯坦洛夫.开车！.Khrustalyov.My.Car.1998.苏联.Aleksei.German.mkv` — 0.76 GiB
-
-### 21. 足迹（2007）
-
-暂留原因：导演归属或文件身份存疑。
-
-- `/Volumes/分类/惊悚·犯罪·动作/足迹.Sleuth.2007.BD.2Audio.MiniSD-TLF.mkv` — 0.62 GiB
-- `/Volumes/导演们/约瑟夫·L·曼凯维奇/足迹.Sleuth.2007.BD.2Audio.MiniSD-TLF.mkv` — 0.62 GiB
-
-### 22. 野孩子（1970）
-
-暂留原因：外文片名不完全一致，暂缓身份核对。
-
-- `/Volumes/分类/青春·儿童/野孩子.The.Wild.Child.1970.D5.MiniSD-TLF.mkv` — 0.56 GiB
-- `/Volumes/导演们/弗朗索瓦·特吕弗/野孩子.L.enfant.sauvage.1970.mp4` — 0.31 GiB
-
-## 剩余分类内部：62 组
-
-### 1. 不夜城（1948）
-
-片名、外文名、年份一致；尚未执行库内清理。
-
-- `/Volumes/分类/黑色电影/不夜城.The.Naked.City.1948.mkv` — 0.44 GiB
-- `/Volumes/分类/惊悚·犯罪·动作/不夜城/不夜城.The.Naked.City.1948.D9.MiniSD-TLF.mkv` — 0.68 GiB
-
-### 2. 与我同行（1944）
-
-片名、外文名、年份一致；尚未执行库内清理。
-
-- `/Volumes/分类/故事/与我同行.Going.My.Way.1944.720p.WEB-DL.MiniSD-TLF.mkv` — 0.68 GiB
-- `/Volumes/分类/喜剧/与我同行.Going.My.Way.1944.Shout.Factory.BluRay.720p.x264.AC3.iNT-TLF.mkv` — 3.12 GiB
-
-### 3. 关于格伦古尔德的三十二部短片（1993）
-
-片名或外文名及年份一致，待核对译名；尚未执行库内清理。
-
-- `/Volumes/分类/短篇集/关于格伦古尔德的三十二部短片.Thirty.Two.Short.Films.About.Glenn.Gould.1993.mkv` — 0.36 GiB
-- `/Volumes/分类/音乐/古尔德的32个短片.Thirty.Two.Short.Films.About.Glenn.Gould.1993.CC.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv` — 5.72 GiB
-
-### 4. 冒一切风险的阶级（1960）
-
-片名或外文名及年份一致，待核对译名；尚未执行库内清理。
-
-- `/Volumes/分类/故事/冒一切风险的阶级.The.Big.Risk.1960.avi` — 0.98 GiB
-- `/Volumes/分类/惊悚·犯罪·动作/冒一切风险的阶级.Classe.Tous.Risques.1960.D9.MiniSD-TLF.mkv` — 0.77 GiB
-
-### 5. 午后的迷惘（1943）
-
-片名、外文名、年份一致；尚未执行库内清理。
+含附加资料、特殊音轨或剪辑，不作为普通副本删除
 
 - `/Volumes/分类/CULT·实验/午后的迷惘.Meshes.of.the.Afternoon.1943.720p.BluRay.SILENT.x264-NCmt.mkv` — 0.85 GiB
 - `/Volumes/分类/短篇集/午后的迷惘.Meshes.Of.The.Afternoon.1943.D9.MiniSD-TLF.mkv` — 0.10 GiB
 
-### 6. 午宴之歌（2010）
+### 电影往事（2004）
 
-片名、外文名、年份一致；尚未执行库内清理。
-
-- `/Volumes/分类/爱情/午宴之歌.The.Song.of.Lunch.2010.WEB-DL.MiniSD-TLF.mkv` — 0.23 GiB
-- `/Volumes/分类/故事/午宴之歌.The.Song.of.Lunch.2010.mkv` — 0.18 GiB
-
-### 7. 听到涛声（1993）
-
-片名、外文名、年份一致；尚未执行库内清理。
-
-- `/Volumes/分类/动画片/听到涛声.Ocean.Waves.1993.BD.2Audio.MiniSD-TLF.mkv` — 0.53 GiB
-- `/Volumes/分类/动画片/导演和大厂/吉卜力/听到涛声.Ocean.Waves.1993.BD.1920x1036.HEVC-10bit.OPUS.ASSx2.mkv` — 9.78 GiB
-
-### 8. 告别昨日（1979）
-
-片名或外文名及年份一致，待核对译名；尚未执行库内清理。
-
-- `/Volumes/分类/体育/告别昨日.Breaking.Away.1979.DVD2Rip.x264-AeroHut.mkv` — 0.67 GiB
-- `/Volumes/分类/喜剧/突破.Breaking.Away.1979-AeroHut.mkv` — 0.67 GiB
-
-### 9. 夜夜春宵（1944）
-
-片名、外文名、年份一致；尚未执行库内清理。
-
-- `/Volumes/分类/故事/夜夜春宵.A.Canterbury.Tale.1944.DVDRip.XviD-DiMENSiON.mkv` — 0.48 GiB
-- `/Volumes/分类/惊悚·犯罪·动作/夜夜春宵.A.Canterbury.Tale.1944.D9.MiniSD-TLF.with-commentary.mkv` — 0.97 GiB
-
-### 10. 夜车（2007）
-
-片名、外文名、年份一致；尚未执行库内清理。
-
-- `/Volumes/分类/华语世界/中国大陆/导演们/刁亦男/夜车.Night.Train.2007.中国.XTM.DVD-HALFCD.mkv` — 0.31 GiB
-- `/Volumes/分类/故事/夜车.Night.Train.2007.中国.XTM.DVD-HALFCD.mkv` — 0.31 GiB
-
-### 11. 大市民（1990）
-
-片名、外文名、年份一致；尚未执行库内清理。
-
-- `/Volumes/分类/喜剧/大市民.Metropolitan.1990.CC.BDRip.X264.iNT-TLF.mkv` — 2.73 GiB
-- `/Volumes/分类/青春·儿童/大市民.Metropolitan.1990.mkv` — 0.38 GiB
-
-### 12. 天书奇谭（1983）
-
-片名、外文名、年份一致；尚未执行库内清理。
-
-- `/Volumes/分类/华语世界/中国大陆/天书奇谭.The.Legend.of.Sealed.Book.1983.UHD.BluRay.2160p.x265.10bit.HDR.DTS.iNT-TLF.mkv` — 6.90 GiB
-- `/Volumes/分类/动画片/天书奇谭.The.Legend.of.Sealed.Book.1983.DVD9.x264.AAC.miniSD-TLF.mkv` — 0.50 GiB
-
-### 13. 天云山传奇（1981）
-
-片名、外文名、年份一致；尚未执行库内清理。
-
-- `/Volumes/分类/华语世界/中国大陆/天云山传奇.Legend.of.Tianyun.Monutain.1981.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv` — 6.34 GiB
-- `/Volumes/分类/华语世界/中国大陆/导演们/谢晋/天云山传奇.Legend.of.Tianyun.Monutain.1981.BluRay.1080p.x265.10bit.AC3-TLF.mkv` — 7.84 GiB
-
-### 14. 女巫（1922）
-
-片名或外文名及年份一致，待核对译名；尚未执行库内清理。
-
-- `/Volumes/分类/CULT·实验/女巫.Haexan.1922.D9.MiniSD-TLF.mkv` — 0.79 GiB
-- `/Volumes/分类/CULT·实验/女巫.Witchcraft.Through.The.Ages.1922.68年重编版.D5.MiniSD-TLF.mkv` — 0.52 GiB
-- `/Volumes/分类/恐怖/女巫.Haxan.1922.CC.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv` — 7.64 GiB
-
-### 15. 山水情（1988）
-
-片名或外文名及年份一致，待核对译名；尚未执行库内清理。
-
-- `/Volumes/分类/动画片/动画的世纪·100部作品/山水情.Te.Wei.1988.avi` — 0.19 GiB
-- `/Volumes/分类/动画片/动画短片/山水情.Feeling.from.Mountain.and.Water.1988.flv` — 0.04 GiB
-
-### 16. 岁月的童话（1991）
-
-片名、外文名、年份一致；尚未执行库内清理。
-
-- `/Volumes/分类/动画片/导演和大厂/吉卜力/岁月的童话.Only.Yesterday.1991.BD.1920x1036.HEVC-10bit.OPUS.ASSx2.mkv` — 10.09 GiB
-- `/Volumes/分类/故事/岁月的童话.Only.Yesterday.1991.DVD.X264.2Audio.AAC.HALFCD-NORM.mkv` — 0.50 GiB
-- `/Volumes/分类/青春·儿童/岁月的童话.Only.Yesterday.1991.rmvb` — 0.51 GiB
-
-### 17. 幽灵世界（2001）
-
-片名、外文名、年份一致；尚未执行库内清理。
-
-- `/Volumes/分类/科幻·奇幻/幽灵世界.Ghost.World.2001.rmvb` — 0.54 GiB
-- `/Volumes/分类/青春·儿童/幽灵世界.Ghost.World.2001.HDTV.MiniSD-TLF.mkv` — 0.81 GiB
-
-### 18. 弗兰兹卡夫卡（1992）
-
-片名或外文名及年份一致，待核对译名；尚未执行库内清理。
-
-- `/Volumes/分类/动画片/动画的世纪·100部作品/弗兰兹·卡夫卡.Franz.Kafka.Piotr.Dumala.1992.DVDRip.XviD-CiNEMAGROTESQUE.avi` — 0.18 GiB
-- `/Volumes/分类/名著改编/卡夫卡电影作品集/弗兰兹·卡夫卡/弗兰兹·卡夫卡.Franz.Kafka.1992.DVDRip.XviD-CiNEMAGROTESQUE.avi` — 0.18 GiB
-
-### 19. 情迷六月花（1990）
-
-片名、外文名、年份一致；尚未执行库内清理。
-
-- `/Volumes/分类/传记·一段历史/情迷六月花.Henry.&.June.1990.D9.MiniSD-TLF.mkv` — 0.88 GiB
-- `/Volumes/分类/情色/情迷六月花.Henry.&.June.1990.BD.MiniSD-TLF.mkv` — 1.90 GiB
-
-### 20. 抢劫装甲车（1951）
-
-片名或外文名及年份一致，待核对译名；尚未执行库内清理。
-
-- `/Volumes/分类/喜剧/抢劫装甲车.The.Lavender.Hill.Mob.1951.BD.MiniSD-TLF.mkv` — 0.60 GiB
-- `/Volumes/分类/惊悚·犯罪·动作/拉凡德山的暴徒.The.Lavender.Hill.Mob.1951.DVDRip.X264.AAC.HALFCD-NORM.Christian.mkv` — 0.29 GiB
-
-### 21. 攻壳机动队2无罪（2004）
-
-片名、外文名、年份一致；尚未执行库内清理。
-
-- `/Volumes/分类/动画片/攻壳机动队2.无罪.Ghost.in.the.Shell.2.Innocence.2004.x264.10bit.1920x1036.FLAC.6.1.mkv` — 5.27 GiB
-- `/Volumes/分类/动画片/攻壳机动队/攻壳机动队2-无罪.Ghost.In.The.Shell.2.Innocence.2004.BD.MiniSD-TLF.mkv` — 0.63 GiB
-
-### 22. 无名（2023）
-
-片名、外文名、年份一致；尚未执行库内清理。
-
-- `/Volumes/分类/华语世界/中国大陆/无名.Hidden.Blade.2023.BD.MiniSD-TLF.mkv` — 0.66 GiB
-- `/Volumes/分类/华语世界/中国大陆/导演们/程耳/无名.Hidden.Blade.2023.KOR.BluRay.1080p.HEVC.10bit.MiniFHD.mkv` — 8.06 GiB
-
-### 23. 日烦夜烦（2001）
-
-片名、外文名、年份一致；尚未执行库内清理。
-
-- `/Volumes/分类/恐怖/日烦夜烦.Trouble.Every.Day.2001.avi` — 0.68 GiB
-- `/Volumes/分类/音乐/日烦夜烦.Trouble.Every.Day.2001.avi` — 0.68 GiB
-
-### 24. 最后的舞者（2009）
-
-片名、外文名、年份一致；尚未执行库内清理。
-
-- `/Volumes/分类/传记·一段历史/最后的舞者.Mao.s.Last.Dancer.2009.rmvb` — 0.48 GiB
-- `/Volumes/分类/故事/最后的舞者.Maos.Last.Dancer.2009.BD.MiniSD-TLF.mkv` — 0.92 GiB
-
-### 25. 月亮上的男人（1999）
-
-片名、外文名、年份一致；尚未执行库内清理。
-
-- `/Volumes/分类/传记·一段历史/月亮上的男人.Man.On.The.Moon.1999.BD.MiniSD-TLF.mkv` — 0.88 GiB
-- `/Volumes/分类/CULT·实验/月亮上的男人.Man.On.The.Moon.1999.DVDRip.XviD.AC3.mkv` — 0.44 GiB
-- `/Volumes/分类/喜剧/月亮上的男人.Man.On.The.Moon.1999.BD.2Audio.MiniSD-TLF.mkv` — 0.93 GiB
-
-### 26. 朱莉亚（1977）
-
-片名、外文名、年份一致；尚未执行库内清理。
-
-- `/Volumes/分类/传记·一段历史/朱莉亚.Julia.1977.DVDRip.XviD-LOOK.mkv` — 0.53 GiB
-- `/Volumes/分类/故事/朱莉亚.Julia.1977.BluRay.720p.x264.AC3.iNT-TLF.mkv` — 2.34 GiB
-
-### 27. 杂耍班（1925）
-
-片名或外文名及年份一致，待核对译名；尚未执行库内清理。
-
-- `/Volumes/分类/故事/杂耍班.Dupont.Variete.1925.mkv` — 0.30 GiB
-- `/Volumes/分类/喜剧/杂耍班.Variete.1925.BD.German.MiniSD-TLF.mkv` — 0.81 GiB
-
-### 28. 枪疯（1950）
-
-片名或外文名及年份一致，待核对译名；尚未执行库内清理。
-
-- `/Volumes/分类/黑色电影/枪疯.Gun.Crazy.AKA.Deadly.Is.the.Female.1950.D5.2Audio.MiniSD-TLF.mkv` — 0.64 GiB
-- `/Volumes/分类/黑色电影/枪疯.Gun.Crazy.1950.mkv` — 0.82 GiB
-- `/Volumes/分类/惊悚·犯罪·动作/枪疯.Gun.Crazy.AKA.Deadly.Is.the.Female.1950.BD.2Audio.MiniSD-TLF.mkv` — 0.73 GiB
-
-### 29. 桃色交易（1993）
-
-片名、外文名、年份一致；尚未执行库内清理。
-
-- `/Volumes/分类/爱情/桃色交易.Indecent.Proposal.1993.REMASTERED.1080p.BluRay.x265.10bit.DTS.MultiAudio-TLF.mkv` — 10.00 GiB
-- `/Volumes/分类/歌舞/桃色交易.Indecent.Proposal.1993.REMASTERED.1080p.BluRay.x265.10bit.DTS.MultiAudio-TLF.mkv` — 10.00 GiB
-
-### 30. 棋王（1991）
-
-片名、外文名、年份一致；尚未执行库内清理。
-
-- `/Volumes/分类/华语世界/香港/导演们/徐克/棋王.King.of.Chess.1991.1080p.WEBRip.CHS-HAN@CHAOSPACE.mp4` — 2.51 GiB
-- `/Volumes/分类/惊悚·犯罪·动作/棋王.King.Of.Chess.1991.DVD.X264.2Audio.AAC.HALFCD-NORM.mkv` — 0.42 GiB
-
-### 31. 死吻（1955）
-
-片名、外文名、年份一致；尚未执行库内清理。
-
-- `/Volumes/分类/黑色电影/死吻.Kiss.Me.Deadly.1955.DVDRip.by.Galmuchet.avi` — 0.98 GiB
-- `/Volumes/分类/惊悚·犯罪·动作/死吻.Kiss.Me.Deadly.1955.BD.CC.MiniSD-TLF.mkv` — 0.84 GiB
-
-### 32. 深夜止步（1975）
-
-片名、外文名、年份一致；尚未执行库内清理。
-
-- `/Volumes/分类/恐怖/深夜止步.Deep.Red.1975.英语音轨.mp4` — 0.06 GiB
-- `/Volumes/分类/惊悚·犯罪·动作/深夜止步.Deep.Red.1975.DC.BDRip.480p.AC3.2Audio.x264-CHD.mkv` — 2.05 GiB
-
-### 33. 火之谜（2023）
-
-片名、外文名、年份一致；尚未执行库内清理。
-
-- `/Volumes/分类/故事/火之谜.Riddle.of.Fire.2023.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv` — 7.64 GiB
-- `/Volumes/分类/青春·儿童/火之谜.Riddle.of.Fire.2023.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv` — 7.64 GiB
-
-### 34. 爸妈不在家（2013）
-
-片名、外文名、年份一致；尚未执行库内清理。
-
-- `/Volumes/分类/华语世界/东南亚/陈哲艺/爸妈不在家.Ilo.Ilo.2013.BDRip.X264.iNT-TLF.mkv` — 2.73 GiB
-- `/Volumes/分类/故事/爸妈不在家.Ilo.Ilo.2013.rmvb` — 1.05 GiB
-
-### 35. 牧马人（1982）
-
-片名、外文名、年份一致；尚未执行库内清理。
-
-- `/Volumes/分类/华语世界/中国大陆/牧马人.The.Herdsman.1982.BluRay.1080p.x265.10bit.AC3-TLF.mkv` — 7.24 GiB
-- `/Volumes/分类/华语世界/中国大陆/导演们/谢晋/牧马人.The.Herdsman.1982.1080p.BluRay.x265.10bit.LPCM2.0-ParkHD.mkv` — 14.98 GiB
-
-### 36. 狐狸与我（2007）
-
-片名或外文名及年份一致，待核对译名；尚未执行库内清理。
-
-- `/Volumes/分类/故事/狐狸与我.The.Fox.And.The.Child.2007.BD.2Audio.MiniSD-TLF.mkv` — 0.64 GiB
-- `/Volumes/分类/青春·儿童/狐狸与孩子.The.Fox.and.the.Child.2007.rmvb` — 0.45 GiB
-
-### 37. 电影往事（2004）
-
-片名或外文名及年份一致，待核对译名；尚未执行库内清理。
+含异常小文件，需要先核对是否为有效媒体
 
 - `/Volumes/分类/华语世界/中国大陆/电影往事.Electric.Shadows.2004.D5.MiniSD-TLF.mkv` — 0.74 GiB
 - `/Volumes/分类/华语世界/欧美华人/梦影童年.Electric.Shadows.2004.D5.HALFCD-TLF.mkv` — 0.00 GiB
 
-### 38. 畸型人（1932）
+### 砂之女（1964）
 
-片名或外文名及年份一致，待核对译名；尚未执行库内清理。
-
-- `/Volumes/分类/CULT·实验/畸型人.Freaks.1932.D9.MiniSD-TLF.mkv` — 0.45 GiB
-- `/Volumes/分类/黑色电影/畸形人.Freaks.1932.Freaks.1932.avi` — 0.71 GiB
-
-### 39. 登楼叹（2021）
-
-片名、外文名、年份一致；尚未执行库内清理。
-
-- `/Volumes/分类/华语世界/欧美华人/登楼叹.Ascension.2021.mp4` — 1.96 GiB
-- `/Volumes/分类/华语世界/禁/登楼叹.Ascension.2021.mp4` — 1.96 GiB
-
-### 40. 砂之女（1964）
-
-片名或外文名及年份一致，待核对译名；尚未执行库内清理。
+存在明确不同剪辑/黑白版标记
 
 - `/Volumes/分类/CULT·实验/砂之女.Woman.In.The.Dunes.D.C.1964.D9.MiniSD-TLF.mkv` — 0.94 GiB
 - `/Volumes/分类/惊悚·犯罪·动作/砂之女.Woman.In.The.Dunes.1964.BluRay.1080p.LPCM1.0.x265.10bit-DreamHD.mkv` — 9.08 GiB
 
-### 41. 稀有出口圣诞传说（2010）
+### 闪灵（1980）
 
-片名、外文名、年份一致；尚未执行库内清理。
+存在明确不同剪辑/黑白版标记
 
-- `/Volumes/分类/科幻·奇幻/稀有出口.圣诞传说.Rare.Exports.A.Christmas.Tale.2010.双语字幕.HR-HDTV.AC3.1024X576.x264-人人影视制作.mkv` — 1.26 GiB
-- `/Volumes/分类/喜剧/稀有出口.圣诞传说.Rare.Exports.A.Christmas.Tale.2010.法国.DVD-HALFCD2.mp4` — 0.27 GiB
+- `/Volumes/导演们/斯坦利·库布里克/闪灵/闪灵.The.Shining.1980.2160p.iTunes.WEB-DL.DD5.1.DV.HDR.H.265-BATWEB.mkv` — 25.40 GiB
+- `/Volumes/导演们/斯坦利·库布里克/闪灵/闪灵.The.Shining.1980.REMASTERED.US.DC.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv` — 8.59 GiB
 
-### 42. 突变第三型（1982）
+### 丑闻笔记（2006）
 
-片名或外文名及年份一致，待核对译名；尚未执行库内清理。
+较大文件为AVI/RMVB，另一份为更优容器MKV：体积与格式偏好冲突，暂留两份
 
-- `/Volumes/分类/科幻·奇幻/突变第三型.The.Thing.1982.BDRip.MiniSD-TLF.mkv` — 0.72 GiB
-- `/Volumes/分类/怪兽/怪形.The.Thing.1982.REMASTERED.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv` — 7.27 GiB
+- `/Volumes/分类/惊悚·犯罪·动作/丑闻笔记.Notes.on.a.Scandal.2006.rmvb` — 0.97 GiB
+- `/Volumes/分类/惊悚·犯罪·动作/丑闻笔记.Notes.On.A.Scandal.2006.BD.2Audio.MiniSD-TLF.mkv` — 0.73 GiB
 
-### 43. 第三个人（1949）
+### 四十五周年45（2015）
 
-片名或外文名及年份一致，待核对译名；尚未执行库内清理。
+较大文件为AVI/RMVB，另一份为更优容器MKV：体积与格式偏好冲突，暂留两份
 
-- `/Volumes/分类/黑色电影/第三个人.The.Third.Man.1949.mkv` — 0.64 GiB
-- `/Volumes/分类/惊悚·犯罪·动作/第三人.The.Third.Man.1949.双语字幕.HR-HDTV.AC3.768X576.x264-人人影视制作.mkv` — 1.61 GiB
+- `/Volumes/分类/爱情/45周年.45.Years.2015.rmvb` — 0.97 GiB
+- `/Volumes/分类/爱情/四十五周年.45.Years.2015.LIMITED.BD.MiniSD-TLF.mkv` — 0.68 GiB
 
-### 44. 罗小黑战记2（2025）
+### 我们仍未知道那天所看见的花的名字剧场版（2013）
 
-片名或外文名及年份一致，待核对译名；尚未执行库内清理。
+较大文件为AVI/RMVB，另一份为更优容器MKV：体积与格式偏好冲突，暂留两份
 
-- `/Volumes/分类/华语世界/中国大陆/罗小黑战记2.The.Legend.of.Hei.2.2025.BluRay.1080p.x265.10bit.EAC3.iNT-TLF.mkv` — 2.56 GiB
-- `/Volumes/分类/动画片/罗小黑战记2.The.Legend.of.Hei.Ⅱ.2025.1080p.WEB-DL.H264.AAC-OurTV.mp4` — 5.92 GiB
+- `/Volumes/分类/动画片/未闻花名.Anohana.the.Movie.The.Flower.We.Saw.That.Day.2013.rmvb` — 1.05 GiB
+- `/Volumes/分类/动画片/我们仍未知道那天所看见的花的名字.剧场版.Anohana.The.Movie.The.Flower.We.Saw.That.Day.2013.BD.MiniSD-TLF.mkv` — 0.55 GiB
 
-### 45. 老井（1986）
+### 死吻（1955）
 
-片名、外文名、年份一致；尚未执行库内清理。
+较大文件为AVI/RMVB，另一份为更优容器MKV：体积与格式偏好冲突，暂留两份
 
-- `/Volumes/分类/华语世界/中国大陆/20世纪老电影/80/老井.Old.Well.1986.Bluray.1080p.LPCM1.0.x265.10bit-DreamHD.mkv` — 11.82 GiB
-- `/Volumes/分类/华语世界/中国大陆/导演们/吴天明/老井.Old.Well.1986.WEB-DL.MiniHD-TLF.mkv` — 2.38 GiB
+- `/Volumes/分类/黑色电影/死吻.Kiss.Me.Deadly.1955.DVDRip.by.Galmuchet.avi` — 0.98 GiB
+- `/Volumes/分类/惊悚·犯罪·动作/死吻.Kiss.Me.Deadly.1955.BD.CC.MiniSD-TLF.mkv` — 0.84 GiB
 
-### 46. 肉体的恶魔（1986）
+### 畸型人（1932）
 
-片名、外文名、年份一致；尚未执行库内清理。
+较大文件为AVI/RMVB，另一份为更优容器MKV：体积与格式偏好冲突，暂留两份
 
-- `/Volumes/分类/CULT·实验/肉体的恶魔.Devil.In.The.Flesh.1986.DVDRip.XviD.mp4` — 0.45 GiB
-- `/Volumes/分类/爱情/肉体的恶魔.Devil.in.the.Flesh.1986.REMASTERED.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv` — 9.13 GiB
+- `/Volumes/分类/黑色电影/畸形人.Freaks.1932.Freaks.1932.avi` — 0.71 GiB
+- `/Volumes/分类/CULT·实验/畸型人.Freaks.1932.D9.MiniSD-TLF.mkv` — 0.45 GiB
 
-### 47. 芙蓉镇（1986）
+### 上帝愤怒的人（1981）
 
-片名、外文名、年份一致；尚未执行库内清理。
+较大文件为AVI/RMVB，另一份为更优容器MKV：体积与格式偏好冲突，暂留两份
 
-- `/Volumes/分类/华语世界/中国大陆/导演们/谢晋/芙蓉镇.Hibiscus.Town.1986.BDRip.X264.iNT-TLF.mkv` — 2.99 GiB
-- `/Volumes/分类/华语世界/中国大陆/导演们/谢晋/芙蓉镇/芙蓉镇‎.Hibiscus.Town.1986.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv` — 13.98 GiB
+- `/Volumes/导演们/沃纳·赫尔佐格/上帝愤怒的人.Gods.Angry.Man.1981.avi` — 0.34 GiB
+- `/Volumes/导演们/沃纳·赫尔佐格/上帝愤怒的人.Gods.Angry.Man.1981.mkv` — 0.17 GiB
 
-### 48. 苏菲的抉择（1982）
+## 明确保留的特殊资源
 
-片名、外文名、年份一致；尚未执行库内清理。
+- **Louis Aimé Augustin Le Prince - 1988 - Roundhay Garden Scene.mp4（1988）**：不同早期短片，误报，不应合并。
+- **刺客聂隐娘（2015）**：明确不同剪辑、呈现或解说版本，继续保留。
+- **吴清源（2006）**：正片与附加资料，不按普通重复删除。
+- **深夜止步（1975）**：正片与附加资料，不按普通重复删除。
+- **金刚狼3（2017）**：明确不同剪辑、呈现或解说版本，继续保留。
+- **两生花（1991）**：正片与附加资料，不按普通重复删除。
+- **大学新生（1925）**：完整正片与解说音轨版，分别保留。
+- **敲诈配音版（1929）**：明确不同剪辑、呈现或解说版本，继续保留。
+- **残酷的游戏（1983）**：正片与附加资料，不按普通重复删除。
+- **追随（1998）**：明确不同剪辑、呈现或解说版本，继续保留。
+- **闹鬼（1920）**：明确不同剪辑、呈现或解说版本，继续保留。
+- **飞毛腿（1928）**：明确不同剪辑、呈现或解说版本，继续保留。
+- **饲养乌鸦（1976）**：正片与附加资料，不按普通重复删除。
 
-- `/Volumes/分类/爱情/苏菲的抉择.Sophies.Choice.1982.BluRay.1080p.x265.10bit.DTS-TLF.mkv` — 12.08 GiB
-- `/Volumes/分类/爱情/苏菲的抉择.Sophie's.Choice.1982.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv` — 9.49 GiB
-- `/Volumes/分类/故事/苏菲的抉择.Sophie's.Choice.1982.US.DVD.X264.2Audio.AAC.HALFCD-NOWYS.mmla.mkv` — 0.61 GiB
+《女巫》1922原版与1968年重编版分别去重后，各保留一份；两种版本互不替代。
 
-### 49. 蓝色构图（1935）
+## 尚存跨库候选：3 组
 
-片名或外文名及年份一致，待核对译名；尚未执行库内清理。
+本轮按请求处理库内重复，下列跨库身份或导演归属问题未扩展执行。
 
-- `/Volumes/分类/动画片/蓝色构图.Komposition.in.blau.Oskar.Fischinger,.1935.avi` — 0.04 GiB
-- `/Volumes/分类/动画片/动画的世纪·100部作品/Komposition.in.blau.Oskar.Fischinger.1935.avi` — 0.04 GiB
+### 疾走天堂（2002）
 
-### 50. 蝴蝶（2002）
+- `/Volumes/分类/惊悚·犯罪·动作/疾走天堂.Heaven.2002.BD.MiniSD-TLF.mkv` — 0.85 GiB
+- `/Volumes/导演们/克日什托夫·基耶斯洛夫斯基/天堂.Heaven.2002.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv` — 4.48 GiB
 
-片名或外文名及年份一致，待核对译名；尚未执行库内清理。
+### 花（2011）
 
-- `/Volumes/分类/喜剧/蝴蝶.The.Butterfly.2002.flv` — 0.01 GiB
-- `/Volumes/分类/青春·儿童/蝴蝶.Le.Papilion.2002.D9.2Audio.MiniSD-TLF.mkv` — 0.54 GiB
+- `/Volumes/分类/华语世界/中国大陆/导演们/娄烨/花.Love.and.Bruises.2011.D9.MiniSD-TLF.mkv` — 1.09 GiB
+- `/Volumes/导演们/彼得·格林纳威/花.Love.and.Bruises.2011.french.novembre.multi.720p.bluray.dts.x264-bix.avi` — 0.68 GiB
 
-### 51. 血与黑蕾丝（1964）
+### 蓝天使（1930）
 
-片名、外文名、年份一致；尚未执行库内清理。
+- `/Volumes/分类/喜剧/蓝天使.Der.blaue.Engel.1930.BD.German.MiniSD-TLF.mkv` — 0.83 GiB
+- `/Volumes/导演们/玛琳·黛德丽[演员]/蓝天使.The.Blue.Angel.1930.DVDrip.by.galmuchet.avi` — 0.66 GiB
 
-- `/Volumes/分类/黑色电影/血与黑蕾丝.Blood.And.Black.Lace.1964.D9.MiniSD-TLF.mkv` — 0.75 GiB
-- `/Volumes/分类/惊悚·犯罪·动作/血与黑蕾丝.blood.and.black.lace.1964.d9.minisd-tlf.mkv` — 0.75 GiB
+## 本轮逐项执行记录
 
-### 52. 血光鬼影夺命刀（1973）
+### /Volumes/分类
 
-片名或外文名及年份一致，待核对译名；尚未执行库内清理。
+#### internal-002 修女艾达（2013，普通正片）
 
-- `/Volumes/分类/恐怖/血光鬼影夺命刀.Dont.Look.Now.1973.BD.MiniSD-TLF.mkv` — 0.81 GiB
-- `/Volumes/分类/惊悚·犯罪·动作/威尼斯疑魂.Don't.Look.Now.1973.CC.BD.MiniSD-TLF.mkv` — 1.21 GiB
+- 最终保留：`/Volumes/分类/宗教/修女艾达.Ida.2013.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv` — 6.33 GiB
+- 已删除：`/Volumes/分类/宗教/修女艾达.Ida.2013.BD.MiniSD-TLF.mkv` — 0.96 GiB
+- 归档依据：修女誓愿、信仰与身世是故事核心，保留宗教题材类
+- [类型或身份资料](https://www.imdb.com/title/tt2718492/)
 
-### 53. 进出口（2007）
+#### internal-003 借着雨点说爱你（2004，普通正片）
 
-片名、外文名、年份一致；尚未执行库内清理。
+- 最终保留：`/Volumes/分类/爱情/借着雨点说爱你.Be.with.You.2004.BD.MiniSD-TLF.mkv` — 0.67 GiB
+- 移出原位置：`/Volumes/分类/科幻·奇幻/借着雨点说爱你.Be.with.You.2004.BD.MiniSD-TLF.mkv`
+- 已删除：`/Volumes/分类/科幻·奇幻/大约在雨季.Be.with.You.2004.rmvb` — 0.63 GiB
+- 归档依据：IMDb剧情/奇幻/爱情；爱情为核心，采用爱情类
+- [类型或身份资料](https://www.imdb.com/title/tt0442268/)
 
-- `/Volumes/分类/CULT·实验/进出口.Import.Export.2007.BD.MiniSD-TLF.mkv` — 1.05 GiB
-- `/Volumes/分类/情色/进出口.Import.Export.2007.BluRay.720p.x264.AC3.iNT-TLF.mkv` — 3.32 GiB
+#### internal-004 华盛顿城堡的圣徒（1993，普通正片）
 
-### 54. 逍遥法外（2002）
+- 最终保留：`/Volumes/分类/故事/华盛顿城堡的圣徒.The.Saint.of.Fort.Washington.1993.D5.MiniSD-TLF.mkv` — 0.52 GiB
+- 已删除：`/Volumes/分类/故事/燃烧华盛顿.The.Saint.of.Fort.Washington.1993.mkv` — 0.36 GiB
+- 归档依据：IMDb心理剧情/剧情，流浪者生活题材，保留故事兜底
+- [类型或身份资料](https://www.imdb.com/title/tt0108026)
 
-片名、外文名、年份一致；尚未执行库内清理。
+#### internal-005 吉尔达（1946，普通正片）
 
-- `/Volumes/分类/传记·一段历史/逍遥法外.Catch.Me.If.You.Can.2002.DVDRip.2Audio.HALFCD-NOWYS.netshow.mkv` — 0.55 GiB
-- `/Volumes/分类/惊悚·犯罪·动作/逍遥法外.Catch.Me.If.You.Can.2002.DVD-RMVB.mkv` — 0.59 GiB
+- 最终保留：`/Volumes/分类/黑色电影/吉尔达.Gilda.1946.BD.MiniSD-TLF.mkv` — 1.36 GiB
+- 已删除：`/Volumes/分类/黑色电影/吉尔达.Gilda.1946.avi` — 0.66 GiB
+- 归档依据：IMDb Film Noir，Criterion亦认定黑色电影
+- [类型或身份资料](https://www.imdb.com/title/tt0038559)
+- [类型或身份资料](https://www.criterion.com/films/27909-gilda)
 
-### 55. 遗情（2009）
+#### internal-007 女巫（1922，1922原版）
+
+- 最终保留：`/Volumes/分类/恐怖/女巫.Haxan.1922.CC.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv` — 7.64 GiB
+- 已删除：`/Volumes/分类/CULT·实验/女巫.Haexan.1922.D9.MiniSD-TLF.mkv` — 0.79 GiB
+- 归档依据：Criterion证实1922原版及1968年76分钟重编版为不同版本；分别去重，重编版必须保留一份
+- [类型或身份资料](https://www.criterion.com/films/352-haxan)
+- [类型或身份资料](https://www.criterion.com/current/posts/6634-haxan-let-her-suffering-begin)
 
-片名、外文名、年份一致；尚未执行库内清理。
+#### internal-008 女巫（1922，1968重编版）
+
+- 最终保留：`/Volumes/分类/恐怖/女巫.Witchcraft.Through.The.Ages.1922.68年重编版.D5.MiniSD-TLF.mkv` — 0.52 GiB
+- 已删除：`/Volumes/分类/CULT·实验/女巫.Witchcraft.Through.The.Ages.1922.68年重编版.D5.MiniSD-TLF.mkv` — 0.52 GiB
+- 归档依据：Criterion证实1922原版及1968年76分钟重编版为不同版本；分别去重，重编版必须保留一份
+- [类型或身份资料](https://www.criterion.com/films/352-haxan)
+- [类型或身份资料](https://www.criterion.com/current/posts/6634-haxan-let-her-suffering-begin)
 
-- `/Volumes/分类/华语世界/东南亚/遗情.woman.on.fire.looks.for.water.2009.woo.ming.jin.dvdrip.x264.ac3.2ch.allzine.mkv` — 1.09 GiB
-- `/Volumes/分类/爱情/遗情.woman.on.fire.looks.for.water.2009.woo.ming.jin.dvdrip.x264.ac3.2ch.allzine.mkv` — 1.09 GiB
+#### internal-009 尼罗河上的惨案（1978，普通正片）
+
+- 最终保留：`/Volumes/分类/惊悚·犯罪·动作/尼罗河上的惨案.Death.on.the.Nile.1978.BD.2Audio.MiniSD-TLF.mkv` — 1.29 GiB
+- 已删除：`/Volumes/分类/惊悚·犯罪·动作/译制经典尼罗河上的惨案.Death.on.the.Nile.1978.DVDrip.X264.2Audio.AAC.HALFCD-NORMTEAM.hoson.mkv` — 0.49 GiB
+- 归档依据：IMDb犯罪/悬疑推理
+- [类型或身份资料](https://www.imdb.com/title/tt0077413/)
 
-### 56. 邮差总按两次铃（1946）
+#### internal-010 岁月的童话（1991，普通正片）
 
-片名、外文名、年份一致；尚未执行库内清理。
+- 最终保留：`/Volumes/分类/动画片/导演和大厂/吉卜力/岁月的童话.Only.Yesterday.1991.BD.1920x1036.HEVC-10bit.OPUS.ASSx2.mkv` — 10.09 GiB
+- 已删除：`/Volumes/分类/故事/岁月的童话.Only.Yesterday.1991.DVD.X264.2Audio.AAC.HALFCD-NORM.mkv` — 0.50 GiB
+- 已删除：`/Volumes/分类/青春·儿童/岁月的童话.Only.Yesterday.1991.rmvb` — 0.51 GiB
+- 归档依据：动画长片；保留原吉卜力子目录
+- [类型或身份资料](https://www.imdb.com/title/tt0102587/)
+- [类型或身份资料](https://www.douban.com/doulist/148800689/?playable=0&sort=seq&start=100&sub_type=)
 
-- `/Volumes/分类/黑色电影/邮差总按两次铃.The.Postman.Always.Rings.Twice.1946.mkv` — 1.36 GiB
-- `/Volumes/分类/惊悚·犯罪·动作/邮差总按两次铃.The.Postman.Always.Rings.Twice.1946.BD.MiniSD-TLF.mkv` — 0.84 GiB
+#### internal-011 幽灵世界（2001，普通正片）
+
+- 最终保留：`/Volumes/分类/喜剧/幽灵世界.Ghost.World.2001.HDTV.MiniSD-TLF.mkv` — 0.81 GiB
+- 移出原位置：`/Volumes/分类/青春·儿童/幽灵世界.Ghost.World.2001.HDTV.MiniSD-TLF.mkv`
+- 已删除：`/Volumes/分类/科幻·奇幻/幽灵世界.Ghost.World.2001.rmvb` — 0.54 GiB
+- 归档依据：IMDb Comedy/Drama，成长题材黑色喜剧，采用喜剧主类
+- [类型或身份资料](https://www.imdb.com/title/tt0162346/)
 
-### 57. 野花（2000）
+#### internal-012 弗兰兹卡夫卡（1992，普通正片）
+
+- 最终保留：`/Volumes/分类/动画片/动画的世纪·100部作品/弗兰兹·卡夫卡.Franz.Kafka.Piotr.Dumala.1992.DVDRip.XviD-CiNEMAGROTESQUE.avi` — 0.18 GiB
+- 已删除：`/Volumes/分类/名著改编/卡夫卡电影作品集/弗兰兹·卡夫卡/弗兰兹·卡夫卡.Franz.Kafka.1992.DVDRip.XviD-CiNEMAGROTESQUE.avi` — 0.18 GiB
+- 归档依据：波兰文化机构确认Dumala的动画短片；资料记1991，原文件记1992，本轮不改名
+- [类型或身份资料](https://culture.pl/pl/dzielo/franz-kafka)
 
-片名或外文名及年份一致，待核对译名；尚未执行库内清理。
+#### internal-013 情迷六月花（1990，普通正片）
 
-- `/Volumes/分类/CULT·实验/野花.Kytice.2000.DVDRip.DivX.CZ-BiOGRa.mp4` — 0.31 GiB
-- `/Volumes/分类/短篇集/野花.wild.flowers.2000.d5.minisd-tlf.mkv` — 0.72 GiB
+- 最终保留：`/Volumes/分类/情色/情迷六月花.Henry.&.June.1990.BD.MiniSD-TLF.mkv` — 1.90 GiB
+- 已删除：`/Volumes/分类/传记·一段历史/情迷六月花.Henry.&.June.1990.D9.MiniSD-TLF.mkv` — 0.88 GiB
+- 归档依据：豆瓣剧情/传记/情色，采用更具体的情色分类
+- [类型或身份资料](https://www.douban.com/doulist/1691871/)
+- [类型或身份资料](https://www.imdb.com/title/tt0099762/fullcredits/)
 
-### 58. 野蛮人入侵（2021）
+#### internal-015 抢劫装甲车（1951，普通正片）
 
-片名、外文名、年份一致；尚未执行库内清理。
+- 最终保留：`/Volumes/分类/喜剧/抢劫装甲车.The.Lavender.Hill.Mob.1951.BD.MiniSD-TLF.mkv` — 0.60 GiB
+- 已删除：`/Volumes/分类/惊悚·犯罪·动作/拉凡德山的暴徒.The.Lavender.Hill.Mob.1951.DVDRip.X264.AAC.HALFCD-NORM.Christian.mkv` — 0.29 GiB
+- 归档依据：IMDb喜剧/犯罪，Ealing劫案喜剧
+- [类型或身份资料](https://www.imdb.com/title/tt0044829/)
+- [类型或身份资料](https://player.bfi.org.uk/rentals/film/watch-the-lavender-hill-mob-1951-online)
 
-- `/Volumes/分类/华语世界/东南亚/野蛮人入侵.Barbarian.Invasion.2021.1080p.NF.WEB-DL.DDP5.1.x264.mkv` — 6.31 GiB
-- `/Volumes/分类/喜剧/野蛮人入侵.Barbarian.Invasion.2021.mkv` — 0.34 GiB
+#### internal-016 攻壳机动队2无罪（2004，普通正片）
 
-### 59. 铁血战士杀戮之地（2025）
+- 最终保留：`/Volumes/分类/动画片/攻壳机动队/攻壳机动队2.无罪.Ghost.in.the.Shell.2.Innocence.2004.x264.10bit.1920x1036.FLAC.6.1.mkv` — 5.27 GiB
+- 移出原位置：`/Volumes/分类/动画片/攻壳机动队2.无罪.Ghost.in.the.Shell.2.Innocence.2004.x264.10bit.1920x1036.FLAC.6.1.mkv`
+- 已删除：`/Volumes/分类/动画片/攻壳机动队/攻壳机动队2-无罪.Ghost.In.The.Shell.2.Innocence.2004.BD.MiniSD-TLF.mkv` — 0.63 GiB
+- 归档依据：IMDb日本动画/科幻，保留已存在的攻壳机动队系列目录
+- [类型或身份资料](https://www.imdb.com/title/tt0347246/)
 
-片名、外文名、年份一致；尚未执行库内清理。
+#### internal-017 无名（2023，普通正片）
 
-- `/Volumes/分类/科幻·奇幻/铁血战士.杀戮之地.Predator.Badlands.2025.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv` — 3.07 GiB
-- `/Volumes/分类/合集/铁血战士/铁血战士.杀戮之地.Predator.Badlands.2025.WEB-DL.MiniSD-TLF.mkv` — 0.53 GiB
+- 最终保留：`/Volumes/分类/华语世界/中国大陆/导演们/程耳/无名.Hidden.Blade.2023.KOR.BluRay.1080p.HEVC.10bit.MiniFHD.mkv` — 8.06 GiB
+- 已删除：`/Volumes/分类/华语世界/中国大陆/无名.Hidden.Blade.2023.BD.MiniSD-TLF.mkv` — 0.66 GiB
+- 归档依据：豆瓣中国大陆悬疑历史剧情；两份均为BD来源，保留程耳导演子目录
+- [类型或身份资料](https://movie.douban.com/subject/35372742/)
 
-### 60. 雄狮少年2（2024）
+#### internal-018 日烦夜烦（2001，普通正片）
 
-片名、外文名、年份一致；尚未执行库内清理。
+- 最终保留：`/Volumes/分类/恐怖/日烦夜烦.Trouble.Every.Day.2001.avi` — 0.68 GiB
+- 已删除：`/Volumes/分类/音乐/日烦夜烦.Trouble.Every.Day.2001.avi` — 0.68 GiB
+- 归档依据：IMDb剧情/恐怖/惊悚，不是音乐片
+- [类型或身份资料](https://www.imdb.com/title/tt0204700/)
 
-- `/Volumes/分类/华语世界/中国大陆/雄狮少年2.I.Am.What.I.Am.2.2024.mp4` — 4.06 GiB
-- `/Volumes/分类/动画片/雄狮少年2.I.Am.What.I.Am.2.2024.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv` — 4.14 GiB
+#### internal-019 最后的舞者（2009，普通正片）
 
-### 61. 香魂女（1993）
+- 最终保留：`/Volumes/分类/华语世界/欧美华人/最后的舞者.Maos.Last.Dancer.2009.BD.MiniSD-TLF.mkv` — 0.92 GiB
+- 移出原位置：`/Volumes/分类/故事/最后的舞者.Maos.Last.Dancer.2009.BD.MiniSD-TLF.mkv`
+- 已删除：`/Volumes/分类/传记·一段历史/最后的舞者.Mao.s.Last.Dancer.2009.rmvb` — 0.48 GiB
+- 归档依据：李存信生平传记；中英双语、华人移民文化题材，按华语世界既有优先规则归入欧美华人
+- [类型或身份资料](https://www.imdb.com/title/tt1071812/)
 
-片名或外文名及年份一致，待核对译名；尚未执行库内清理。
+#### internal-020 月亮上的男人（1999，普通正片）
 
-- `/Volumes/分类/华语世界/中国大陆/20世纪老电影/90/香魂女.Woman.Sesame.Oil.Maker.1993.rmvb` — 0.32 GiB
-- `/Volumes/分类/故事/香魂女.Women.from.the.Lake.of.Scented.Souls.1993.rmvb` — 0.32 GiB
+- 最终保留：`/Volumes/分类/传记·一段历史/月亮上的男人.Man.On.The.Moon.1999.BD.2Audio.MiniSD-TLF.mkv` — 0.93 GiB
+- 移出原位置：`/Volumes/分类/喜剧/月亮上的男人.Man.On.The.Moon.1999.BD.2Audio.MiniSD-TLF.mkv`
+- 已删除：`/Volumes/分类/传记·一段历史/月亮上的男人.Man.On.The.Moon.1999.BD.MiniSD-TLF.mkv` — 0.88 GiB
+- 已删除：`/Volumes/分类/CULT·实验/月亮上的男人.Man.On.The.Moon.1999.DVDRip.XviD.AC3.mkv` — 0.44 GiB
+- 归档依据：安迪考夫曼生平传记喜剧，采用传记主类
+- [类型或身份资料](https://www.imdb.com/title/tt0125664/)
+- [类型或身份资料](https://www.universalpicturesathome.com/movies/man-on-the-moon)
 
-### 62. 高中课堂（2008）
+#### internal-021 朱莉亚（1977，普通正片）
 
-片名或外文名及年份一致，待核对译名；尚未执行库内清理。
+- 最终保留：`/Volumes/分类/传记·一段历史/朱莉亚.Julia.1977.BluRay.720p.x264.AC3.iNT-TLF.mkv` — 2.34 GiB
+- 移出原位置：`/Volumes/分类/故事/朱莉亚.Julia.1977.BluRay.720p.x264.AC3.iNT-TLF.mkv`
+- 已删除：`/Volumes/分类/传记·一段历史/朱莉亚.Julia.1977.DVDRip.XviD-LOOK.mkv` — 0.53 GiB
+- 归档依据：Lillian Hellman回忆改编的历史剧情，保留既有传记归属
+- [类型或身份资料](https://www.imdb.com/title/tt0076245/)
 
-- `/Volumes/分类/故事/高中课堂.Entre.Les.Murs.2008.FRENCH.DVDRip.XviD-ZANBiC.mkv` — 0.48 GiB
-- `/Volumes/分类/青春·儿童/墙壁之间.Entre.les.murs.2008.720p.BluRay.x264-CtrlHD.mkv` — 4.37 GiB
+#### internal-022 杀人者（1946，普通正片）
 
-## 剩余导演们内部：7 组
+- 最终保留：`/Volumes/分类/黑色电影/绣巾蒙面盗.The.Killers.1946.BD.MiniSD-TLF.mkv` — 0.98 GiB
+- 已删除：`/Volumes/分类/黑色电影/杀人者.The.Killers.1946.D9.MiniSD-TLF.mkv` — 0.80 GiB
+- 归档依据：Criterion确认The Killers为Robert Siodmak黑色电影
+- [类型或身份资料](https://www.criterion.com/films/724-the-killers)
 
-### 1. 你知道你的楼梯很漂亮（1986）
+#### internal-023 杂耍班（1925，普通正片）
 
-片名、外文名、年份一致；尚未执行库内清理。
+- 最终保留：`/Volumes/分类/爱情/杂耍班.Variete.1925.BD.German.MiniSD-TLF.mkv` — 0.81 GiB
+- 移出原位置：`/Volumes/分类/喜剧/杂耍班.Variete.1925.BD.German.MiniSD-TLF.mkv`
+- 已删除：`/Volumes/分类/故事/杂耍班.Dupont.Variete.1925.mkv` — 0.30 GiB
+- 归档依据：Dupont导演，爱情嫉妒悲剧；IMDb Crime/Drama/Romance，非喜剧
+- [类型或身份资料](https://www.imdb.com/es/title/tt0016481/)
+- [类型或身份资料](https://catalogue.bnf.fr/ark%3A/12148/cb14661599h)
 
-- `/Volumes/导演们/阿涅斯·瓦尔达/你知道.你的楼梯很漂亮.T.as.de.beaux.escaliers.tu.sais.1986.mkv` — 0.02 GiB
-- `/Volumes/导演们/伊莎贝尔·阿佳妮作品集[演员]/你知道.你的楼梯很漂亮.T.as.de.beaux.escaliers.tu.sais.1986.mkv` — 0.01 GiB
+#### internal-024 枪疯（1950，普通正片）
 
-### 2. 卢瓦河谷的木鞋匠（1956）
+- 最终保留：`/Volumes/分类/黑色电影/枪疯.Gun.Crazy.1950.mkv` — 0.82 GiB
+- 已删除：`/Volumes/分类/黑色电影/枪疯.Gun.Crazy.AKA.Deadly.Is.the.Female.1950.D5.2Audio.MiniSD-TLF.mkv` — 0.64 GiB
+- 已删除：`/Volumes/分类/惊悚·犯罪·动作/枪疯.Gun.Crazy.AKA.Deadly.Is.the.Female.1950.BD.2Audio.MiniSD-TLF.mkv` — 0.73 GiB
+- 归档依据：同名Gun Crazy与AKA Deadly Is the Female，经典黑色犯罪片
+- [类型或身份资料](https://www.imdb.com/title/tt0042530/plotsummary/)
+- [类型或身份资料](https://www.imdb.com/name/nm0197982/)
 
-片名、外文名、年份一致；尚未执行库内清理。
+#### internal-025 树（2010，普通正片）
 
-- `/Volumes/导演们/阿涅斯·瓦尔达/南特的雅克德米/卢瓦河谷的木鞋匠.Le.Sabotier.du.Val.de.Loire.1956.D9.MiniSD-TLF.mkv` — 0.21 GiB
-- `/Volumes/导演们/雅克·德米/卢瓦河谷的木鞋匠.Le.sabotier.du.Val.de.Loire.1956.mkv` — 0.09 GiB
+- 最终保留：`/Volumes/分类/家庭/树.The.Tree.2010.BD.MiniSD-TLF.mkv` — 0.75 GiB
+- 移出原位置：`/Volumes/分类/故事/树.The.Tree.2010.BD.MiniSD-TLF.mkv`
+- 已删除：`/Volumes/分类/故事/树上的父亲.The.Tree.2010.rmvb` — 0.39 GiB
+- 归档依据：IMDb剧情概要为丧父后母女及家庭生活，采用家庭题材
+- [类型或身份资料](https://www.imdb.com/title/tt1496005/plotsummary/)
 
-### 3. 奥菲斯（1950）
+#### internal-026 桃色交易（1993，普通正片）
 
-片名或外文名及年份一致，待核对译名；尚未执行库内清理。
+- 最终保留：`/Volumes/分类/爱情/桃色交易.Indecent.Proposal.1993.REMASTERED.1080p.BluRay.x265.10bit.DTS.MultiAudio-TLF.mkv` — 10.00 GiB
+- 已删除：`/Volumes/分类/歌舞/桃色交易.Indecent.Proposal.1993.REMASTERED.1080p.BluRay.x265.10bit.DTS.MultiAudio-TLF.mkv` — 10.00 GiB
+- 归档依据：IMDb Drama/Romance，婚姻与情感题材
+- [类型或身份资料](https://www.imdb.com/title/tt0107211)
 
-- `/Volumes/导演们/让·谷克多/奥菲斯/奥菲斯.Orphée.1950.D9.MiniSD-TLF.mkv` — 0.74 GiB
-- `/Volumes/导演们/让·谷克多/奥菲斯的遗嘱/俄耳甫斯.Orphée.1950.BD.CC.MiniSD-TLF.mkv` — 0.84 GiB
+#### internal-027 棋王（1991，普通正片）
 
-### 4. 寻找小津（1985）
+- 最终保留：`/Volumes/分类/华语世界/香港/导演们/徐克/棋王.King.of.Chess.1991.1080p.WEBRip.CHS-HAN@CHAOSPACE.mp4` — 2.51 GiB
+- 已删除：`/Volumes/分类/惊悚·犯罪·动作/棋王.King.Of.Chess.1991.DVD.X264.2Audio.AAC.HALFCD-NORM.mkv` — 0.42 GiB
+- 归档依据：IMDb中国香港华语剧情，保留原有导演子目录
+- [类型或身份资料](https://www.imdb.com/title/tt0095450/)
+- [类型或身份资料](https://en.wikipedia.org/wiki/King_of_Chess_(1991_film))
 
-片名、外文名、年份一致；尚未执行库内清理。
+#### internal-029 漫长夏日（1966，普通正片）
 
-- `/Volumes/导演们/小津安二郎/寻找小津.Tokyo-Ga.1985.mkv` — 0.36 GiB
-- `/Volumes/导演们/维姆·文德斯/寻找小津.Tokyo.Ga.1985.REMASTERED.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv` — 8.94 GiB
+- 最终保留：`/Volumes/分类/体育/无尽之夏.The.Endless.Summer.1966.BluRay.a720.x264.DD51.MySiLU.mkv` — 2.05 GiB
+- 移出原位置：`/Volumes/分类/纪录/无尽之夏.The.Endless.Summer.1966.BluRay.a720.x264.DD51.MySiLU.mkv`
+- 已删除：`/Volumes/分类/纪录/漫长夏日.The.Endless.Summer.1966.BD.MiniSD-TLF.mkv` — 0.68 GiB
+- 归档依据：IMDb Sports Documentary，冲浪运动纪录片，采用体育题材
+- [类型或身份资料](https://www.imdb.com/title/tt0060371)
 
-### 5. 玩火（1975）
+#### internal-030 火之谜（2023，普通正片）
 
-片名、外文名、年份一致；尚未执行库内清理。
+- 最终保留：`/Volumes/分类/冒险·灾难/火之谜.Riddle.of.Fire.2023.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv` — 7.64 GiB
+- 移出原位置：`/Volumes/分类/故事/火之谜.Riddle.of.Fire.2023.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv`
+- 已删除：`/Volumes/分类/青春·儿童/火之谜.Riddle.of.Fire.2023.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv` — 7.64 GiB
+- 归档依据：IMDb Adventure/Fantasy，儿童林间冒险故事，采用既有冒险分类
+- [类型或身份资料](https://www.imdb.com/title/tt7575046/)
 
-- `/Volumes/导演们/阿兰·罗布-格里耶/玩火.Le.Jeu.avec.le.feu.1975.mkv` — 1.45 GiB
-- `/Volumes/导演们/阿兰·罗布-格里耶/玩火/玩火.Le.Jeu.avec.le.feu.1975.D9.EngSub.MiniSD-TLF.mkv` — 1.68 GiB
+#### internal-031 爱到天堂（1945，普通正片）
 
-### 6. 长夜漫漫路迢迢（1962）
+- 最终保留：`/Volumes/分类/黑色电影/爱到天堂.Leave.Her.to.Heaven.1945.CC.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv` — 4.28 GiB
+- 已删除：`/Volumes/分类/黑色电影/狂恋.Leave.Her.to.Heaven.1945.mkv` — 0.46 GiB
+- 归档依据：IMDb Film Noir，Criterion亦确认黑色电影
+- [类型或身份资料](https://www.imdb.com/title/tt0037865)
+- [类型或身份资料](https://www.criterion.com/films/29602-leave-her-to-heaven)
 
-片名、外文名、年份一致；尚未执行库内清理。
+#### internal-032 爸妈不在家（2013，普通正片）
 
-- `/Volumes/导演们/奥逊·威尔斯/长夜漫漫路迢迢.Long.Days.Journey.Into.Night.1962.BD.MiniSD-TLF.mkv` — 1.29 GiB
-- `/Volumes/导演们/西德尼·吕美特/长夜漫漫路迢迢.Long.Days.Journey.into.Night.1962.mkv` — 0.66 GiB
+- 最终保留：`/Volumes/分类/华语世界/东南亚/陈哲艺/爸妈不在家.Ilo.Ilo.2013.BDRip.X264.iNT-TLF.mkv` — 2.73 GiB
+- 已删除：`/Volumes/分类/故事/爸妈不在家.Ilo.Ilo.2013.rmvb` — 1.05 GiB
+- 归档依据：新加坡华语家庭剧情，保留原陈哲艺子目录
+- [类型或身份资料](https://www.imdb.com/title/tt2901736/)
 
-### 7. 麦当劳桥上的未婚妻（1961）
+#### internal-033 牧马人（1982，普通正片）
 
-片名或外文名及年份一致，待核对译名；尚未执行库内清理。
+- 最终保留：`/Volumes/分类/华语世界/中国大陆/导演们/谢晋/牧马人.The.Herdsman.1982.1080p.BluRay.x265.10bit.LPCM2.0-ParkHD.mkv` — 14.98 GiB
+- 已删除：`/Volumes/分类/华语世界/中国大陆/牧马人.The.Herdsman.1982.BluRay.1080p.x265.10bit.AC3-TLF.mkv` — 7.24 GiB
+- 归档依据：豆瓣中国大陆剧情/爱情，保留谢晋导演子目录
+- [类型或身份资料](https://movie.douban.com/subject/1308038/comments?status=P)
 
-- `/Volumes/导演们/阿涅斯·瓦尔达/麦当劳桥上的未婚妻.Les.fiances.du.pont.Mac.Donald.1961.mkv` — 0.02 GiB
-- `/Volumes/导演们/阿涅斯·瓦尔达/小心太阳眼镜/小心太阳眼镜.Les.fiances.du.pont.Mac.Donald.1961.mkv` — 0.03 GiB
+#### internal-034 牯岭街少年杀人事件（1991，普通正片）
 
-## 15 个较好版本的归位记录
+- 最终保留：`/Volumes/分类/华语世界/台湾/杨德昌/牯岭街少年杀人事件.A.Brighter.Summer.Day.1991.BD.CC.2Audio.MiniSD&MiniHD-TLF/牯岭街少年杀人事件.A.Brighter.Summer.Day.1991.BD.CC.2Audio.MiniHD-TLF.mkv` — 3.93 GiB
+- 已删除：`/Volumes/分类/华语世界/台湾/杨德昌/牯岭街少年杀人事件.A.Brighter.Summer.Day.1991.BD.CC.2Audio.MiniSD&MiniHD-TLF/牯岭街少年杀人事件.A.Brighter.Summer.Day.1991.BD.CC.2Audio.MiniSD-TLF.mkv` — 2.62 GiB
+- 归档依据：台湾华语剧情，现杨德昌电影子目录内，保留较好版本位置
+- [类型或身份资料](https://www.imdb.com/title/tt0101985/)
+- [类型或身份资料](https://www.criterion.com/films/28596-a-brighter-summer-day)
 
-### 1. 乱世忠魂
+#### internal-035 狐狸与我（2007，普通正片）
 
-- 移出：`/Volumes/分类/战争/乱世忠魂.From.Here.to.Eternity.1953.BD.MiniSD-TLF.mkv`
-- 当前保留：`/Volumes/导演们/弗雷德·金尼曼/乱世忠魂.From.Here.to.Eternity.1953.BD.MiniSD-TLF.mkv` — 1.44 GiB
-- 状态：归位完成、完整覆盖 SHA-256 校验一致。
+- 最终保留：`/Volumes/分类/青春·儿童/狐狸与我.The.Fox.And.The.Child.2007.BD.2Audio.MiniSD-TLF.mkv` — 0.64 GiB
+- 移出原位置：`/Volumes/分类/故事/狐狸与我.The.Fox.And.The.Child.2007.BD.2Audio.MiniSD-TLF.mkv`
+- 已删除：`/Volumes/分类/青春·儿童/狐狸与孩子.The.Fox.and.the.Child.2007.rmvb` — 0.45 GiB
+- 归档依据：IMDb动物冒险/剧情/家庭，女孩与狐狸的故事
+- [类型或身份资料](https://www.imdb.com/title/tt0756648/)
 
-### 2. 乱世英豪
+#### internal-036 玛德莲堕落少女（2002，普通正片）
 
-- 移出：`/Volumes/分类/故事/乱世英豪.Marketa.Lazarova.1967.BD.MiniSD-TLF.mkv`
-- 当前保留：`/Volumes/导演们/法兰提塞·维拉席/乱世英豪.Marketa.Lazarova.1967.BD.MiniSD-TLF.mkv` — 1.22 GiB
-- 状态：归位完成、完整覆盖 SHA-256 校验一致。
+- 最终保留：`/Volumes/分类/宗教/玛德莲堕落少女.The.Magdalene.Sisters.2002.WEB-DL.MiniSD-TLF.mkv` — 1.31 GiB
+- 移出原位置：`/Volumes/分类/故事/玛德莲堕落少女.The.Magdalene.Sisters.2002.WEB-DL.MiniSD-TLF.mkv`
+- 已删除：`/Volumes/分类/故事/青楼姊妹花.The.Magdalene.Sisters.2002.mkv` — 0.94 GiB
+- 归档依据：IMDb剧情概要为教会收容所内女性受压迫，采用宗教题材
+- [类型或身份资料](https://www.imdb.com/title/tt0318411)
 
-### 3. 亚历山大涅夫斯基
+#### internal-038 登楼叹（2021，普通正片）
 
-- 移出：`/Volumes/分类/战争/亚历山大.涅夫斯基.Alexander.Nevsky.1938.mkv`
-- 当前保留：`/Volumes/导演们/谢尔盖·爱森斯坦/亚历山大.涅夫斯基.Alexander.Nevsky.1938.mkv` — 1.43 GiB
-- 状态：归位完成、完整覆盖 SHA-256 校验一致。
+- 最终保留：`/Volumes/分类/华语世界/欧美华人/登楼叹.Ascension.2021.mp4` — 1.96 GiB
+- 已删除：`/Volumes/分类/华语世界/禁/登楼叹.Ascension.2021.mp4` — 1.96 GiB
+- 归档依据：Tribeca确认美国制作、汉语纪录片，按华语文化优先保留欧美华人类
+- [类型或身份资料](https://tribecafilm.com/festival/archive/ascension-2021)
+- [类型或身份资料](https://www.imdb.com/title/tt14505430/)
 
-### 4. 勾魂摄魄
+#### internal-039 神奇星球（1973，普通正片）
 
-- 移出：`/Volumes/分类/短篇集/勾魂摄魄.Spirits.of.the.Dead.1968.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv`
-- 当前保留：`/Volumes/导演们/路易·马勒/勾魂摄魄.Spirits.of.the.Dead.1968.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv` — 11.56 GiB
-- 状态：归位完成、完整覆盖 SHA-256 校验一致。
+- 最终保留：`/Volumes/分类/动画片/奇幻星球.Fantastic.Planet.1973.480p.bdrip.x264.ac3-CHD.mkv` — 1.36 GiB
+- 已删除：`/Volumes/分类/动画片/神奇星球.Fantastic.Planet.1973.BD.MiniSD-TLF.mkv` — 0.53 GiB
+- 归档依据：IMDb Animation/Sci-Fi，Criterion确认为动画电影
+- [类型或身份资料](https://www.imdb.com/title/tt0070544)
+- [类型或身份资料](https://www.criterion.com/films/28636)
 
-### 5. 唐祖凡尼
+#### internal-040 稀有出口圣诞传说（2010，普通正片）
 
-- 移出：`/Volumes/分类/音乐/唐祖凡尼.Don.Giovanni.1979.FRE.BD.EngSub.10bit.AC3.MiniSD-TLF.mkv`
-- 当前保留：`/Volumes/导演们/约瑟夫·罗西/唐祖凡尼.Don.Giovanni.1979.FRE.BD.EngSub.10bit.AC3.MiniSD-TLF.mkv` — 2.49 GiB
-- 状态：归位完成、完整覆盖 SHA-256 校验一致。
+- 最终保留：`/Volumes/分类/恐怖/稀有出口.圣诞传说.Rare.Exports.A.Christmas.Tale.2010.双语字幕.HR-HDTV.AC3.1024X576.x264-人人影视制作.mkv` — 1.26 GiB
+- 移出原位置：`/Volumes/分类/科幻·奇幻/稀有出口.圣诞传说.Rare.Exports.A.Christmas.Tale.2010.双语字幕.HR-HDTV.AC3.1024X576.x264-人人影视制作.mkv`
+- 已删除：`/Volumes/分类/喜剧/稀有出口.圣诞传说.Rare.Exports.A.Christmas.Tale.2010.法国.DVD-HALFCD2.mp4` — 0.27 GiB
+- 归档依据：奇幻恐怖题材，非普通喜剧
+- [类型或身份资料](https://www.imdb.com/title/tt1401143/)
 
-### 6. 大都会传奇
+#### internal-041 突变第三型（1982，普通正片）
 
-- 移出：`/Volumes/分类/短篇集/大都会传奇.New.York.Stories.1989.BD.MiniSD-TLF.mkv`
-- 当前保留：`/Volumes/导演们/伍迪·艾伦/大都会传奇.New.York.Stories.1989.BD.MiniSD-TLF.mkv` — 0.92 GiB
-- 状态：归位完成、完整覆盖 SHA-256 校验一致。
+- 最终保留：`/Volumes/分类/怪兽/怪形.The.Thing.1982.REMASTERED.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv` — 7.27 GiB
+- 已删除：`/Volumes/分类/科幻·奇幻/突变第三型.The.Thing.1982.BDRip.MiniSD-TLF.mkv` — 0.72 GiB
+- 归档依据：IMDb明确Monster Horror/Body Horror，采用现有怪兽类
+- [类型或身份资料](https://www.imdb.com/title/tt0084787/)
 
-### 7. 失衡生活
+#### internal-042 第三个人（1949，普通正片）
 
-- 移出：`/Volumes/分类/纪录/失衡生活.Koyaanisqatsi.1983.HDTV.MiniSD-TLF.mkv`
-- 当前保留：`/Volumes/导演们/高佛雷·雷吉奥/失衡生活.Koyaanisqatsi.1983.HDTV.MiniSD-TLF.mkv` — 0.54 GiB
-- 状态：归位完成、完整覆盖 SHA-256 校验一致。
+- 最终保留：`/Volumes/分类/黑色电影/第三人.The.Third.Man.1949.双语字幕.HR-HDTV.AC3.768X576.x264-人人影视制作.mkv` — 1.61 GiB
+- 移出原位置：`/Volumes/分类/惊悚·犯罪·动作/第三人.The.Third.Man.1949.双语字幕.HR-HDTV.AC3.768X576.x264-人人影视制作.mkv`
+- 已删除：`/Volumes/分类/黑色电影/第三个人.The.Third.Man.1949.mkv` — 0.64 GiB
+- 归档依据：IMDb明确Film Noir
+- [类型或身份资料](https://www.imdb.com/title/tt0041959/)
 
-### 8. 尼斯印象
+#### internal-043 罗小黑战记2（2025，普通正片）
 
-- 移出：`/Volumes/分类/短篇集/尼斯印象.A.propos.de.Nice.1930.BD.CC.MiniSD-TLF.mkv`
-- 当前保留：`/Volumes/导演们/让·维果/尼斯印象.A.propos.de.Nice.1930.BD.CC.MiniSD-TLF.mkv` — 0.33 GiB
-- 状态：归位完成、完整覆盖 SHA-256 校验一致。
+- 最终保留：`/Volumes/分类/华语世界/中国大陆/罗小黑战记2.The.Legend.of.Hei.Ⅱ.2025.1080p.WEB-DL.H264.AAC-OurTV.mp4` — 5.92 GiB
+- 移出原位置：`/Volumes/分类/动画片/罗小黑战记2.The.Legend.of.Hei.Ⅱ.2025.1080p.WEB-DL.H264.AAC-OurTV.mp4`
+- 已删除：`/Volumes/分类/华语世界/中国大陆/罗小黑战记2.The.Legend.of.Hei.2.2025.BluRay.1080p.x265.10bit.EAC3.iNT-TLF.mkv` — 2.56 GiB
+- 归档依据：国产动画/奇幻/冒险，按华语世界既有地域优先规则集中到中国大陆
+- [类型或身份资料](https://movie.douban.com/coming?sequence=)
 
-### 9. 我嫁了个怪人
+#### internal-044 老井（1986，普通正片）
 
-- 移出：`/Volumes/分类/动画片/我嫁了个怪人.I.Married.A.Strange.Person.1997.D5.MiniSD-TLF.mkv`
-- 当前保留：`/Volumes/导演们/比尔·普莱姆顿 & 罗伯特·克鲁伯/我嫁了个怪人.I.Married.A.Strange.Person.1997.D5.MiniSD-TLF.mkv` — 0.62 GiB
-- 状态：归位完成、完整覆盖 SHA-256 校验一致。
+- 最终保留：`/Volumes/分类/华语世界/中国大陆/导演们/吴天明/老井.Old.Well.1986.Bluray.1080p.LPCM1.0.x265.10bit-DreamHD.mkv` — 11.82 GiB
+- 移出原位置：`/Volumes/分类/华语世界/中国大陆/20世纪老电影/80/老井.Old.Well.1986.Bluray.1080p.LPCM1.0.x265.10bit-DreamHD.mkv`
+- 已删除：`/Volumes/分类/华语世界/中国大陆/导演们/吴天明/老井.Old.Well.1986.WEB-DL.MiniHD-TLF.mkv` — 2.38 GiB
+- 归档依据：IMDb中国大陆剧情/爱情、吴天明导演；资料记1987，原文件1986，本轮不改名
+- [类型或身份资料](https://www.imdb.com/title/tt0091377/)
 
-### 10. 斯托斯特姆桥
+#### internal-045 肉体的恶魔（1986，普通正片）
 
-- 移出：`/Volumes/分类/短篇集/斯托斯特姆桥.Storstrømsbroen.1950.ChEn-Douban.mkv`
-- 当前保留：`/Volumes/导演们/卡尔·西奥多·德莱叶/短片/斯托斯特姆桥.Storstrømsbroen.1950.ChEn-Douban.mkv` — 0.09 GiB
-- 状态：归位完成、完整覆盖 SHA-256 校验一致。
+- 最终保留：`/Volumes/分类/爱情/肉体的恶魔.Devil.in.the.Flesh.1986.REMASTERED.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv` — 9.13 GiB
+- 已删除：`/Volumes/分类/CULT·实验/肉体的恶魔.Devil.In.The.Flesh.1986.DVDRip.XviD.mp4` — 0.45 GiB
+- 归档依据：IMDb Drama/Romance，采用爱情主类
+- [类型或身份资料](https://www.imdb.com/title/tt0090944/)
 
-### 11. 有机体的秘密
+#### internal-046 芙蓉镇（1986，普通正片）
 
-- 移出：`/Volumes/分类/CULT·实验/有机体的秘密.WR.Mysteries.of.the.Organism.1971.mkv`
-- 当前保留：`/Volumes/导演们/杜尚·马卡维耶夫/有机体的秘密.WR.Mysteries.of.the.Organism.1971.mkv` — 1.16 GiB
-- 状态：归位完成、完整覆盖 SHA-256 校验一致。
+- 最终保留：`/Volumes/分类/华语世界/中国大陆/导演们/谢晋/芙蓉镇/芙蓉镇‎.Hibiscus.Town.1986.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv` — 13.98 GiB
+- 已删除：`/Volumes/分类/华语世界/中国大陆/导演们/谢晋/芙蓉镇.Hibiscus.Town.1986.BDRip.X264.iNT-TLF.mkv` — 2.99 GiB
+- 归档依据：IMDb中国大陆剧情/历史/爱情，保留谢晋电影文件夹，不动旁边Extras
+- [类型或身份资料](https://www.imdb.com/title/tt0087301/maindetails)
 
-### 12. 杀人游戏
+#### internal-047 芭贝特的盛宴（1987，普通正片）
 
-- 移出：`/Volumes/分类/CULT·实验/杀人游戏.Branded.to.Kill.1967.BD.CC.MiniSD-TLF.mkv`
-- 当前保留：`/Volumes/导演们/铃木清顺/杀人游戏.Branded.to.Kill.1967.BD.CC.MiniSD-TLF.mkv` — 0.53 GiB
-- 状态：归位完成、完整覆盖 SHA-256 校验一致。
+- 最终保留：`/Volumes/分类/宗教/巴贝特之宴.Babette.s.Feast.1987.D5.MiniSD-TLF.mkv` — 0.67 GiB
+- 移出原位置：`/Volumes/分类/故事/巴贝特之宴.Babette.s.Feast.1987.D5.MiniSD-TLF.mkv`
+- 已删除：`/Volumes/分类/故事/芭贝特的盛宴.Babette's.Feast.1987.BD.MiniSD-TLF.mkv` — 0.57 GiB
+- 归档依据：IMDb剧情与宗教社区、牧师家庭为核心设定，采用宗教题材
+- [类型或身份资料](https://www.imdb.com/title/tt0092603/)
 
-### 13. 梦旅人
+#### internal-048 苏菲的抉择（1982，普通正片）
 
-- 移出：`/Volumes/分类/青春·儿童/梦旅人.Picnic.1996.BD.MiniSD-TLF.mkv`
-- 当前保留：`/Volumes/导演们/岩井俊二/梦旅人.Picnic.1996.BD.MiniSD-TLF.mkv` — 0.60 GiB
-- 状态：归位完成、完整覆盖 SHA-256 校验一致。
+- 最终保留：`/Volumes/分类/爱情/苏菲的抉择.Sophies.Choice.1982.BluRay.1080p.x265.10bit.DTS-TLF.mkv` — 12.08 GiB
+- 已删除：`/Volumes/分类/爱情/苏菲的抉择.Sophie's.Choice.1982.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv` — 9.49 GiB
+- 已删除：`/Volumes/分类/故事/苏菲的抉择.Sophie's.Choice.1982.US.DVD.X264.2Audio.AAC.HALFCD-NOWYS.mmla.mkv` — 0.61 GiB
+- 归档依据：IMDb Drama/Romance，保留爱情主类
+- [类型或身份资料](https://www.imdb.com/fr/title/tt0084707/)
 
-### 14. 正午
+#### internal-049 蓝色构图（1935，普通正片）
 
-- 移出：`/Volumes/分类/西部/正午.High.Noon.1952.2160p.UHD.BluRay.x265.10bit.DV.DTS-HD.MA.2.0-SONYHD.mkv`
-- 当前保留：`/Volumes/导演们/弗雷德·金尼曼/正午.High.Noon.1952.2160p.UHD.BluRay.x265.10bit.DV.DTS-HD.MA.2.0-SONYHD.mkv` — 18.83 GiB
-- 状态：归位完成、完整覆盖 SHA-256 校验一致。
+- 最终保留：`/Volumes/分类/动画片/动画的世纪·100部作品/Komposition.in.blau.Oskar.Fischinger.1935.avi` — 0.04 GiB
+- 已删除：`/Volumes/分类/动画片/蓝色构图.Komposition.in.blau.Oskar.Fischinger,.1935.avi` — 0.04 GiB
+- 归档依据：IMDb抽象定格动画短片，保留原动画选集子目录
+- [类型或身份资料](https://www.imdb.com/title/tt0026580/)
 
-### 15. 诚如神之所说
+#### internal-050 蝴蝶（2002，普通正片）
 
-- 移出：`/Volumes/分类/动漫改真/诚如神之所说.As.the.Gods.Will.2014.BD1080P.X264.AAC.Japanese.CHS.Mp4Ba.mp4`
-- 当前保留：`/Volumes/导演们/三池崇史/诚如神之所说.As.the.Gods.Will.2014.BD1080P.X264.AAC.Japanese.CHS.Mp4Ba.mp4` — 5.02 GiB
-- 状态：归位完成、完整覆盖 SHA-256 校验一致。
+- 最终保留：`/Volumes/分类/青春·儿童/蝴蝶.Le.Papilion.2002.D9.2Audio.MiniSD-TLF.mkv` — 0.54 GiB
+- 已删除：`/Volumes/分类/喜剧/蝴蝶.The.Butterfly.2002.flv` — 0.01 GiB
+- 归档依据：IMDb冒险/喜剧/剧情，儿童与老人的山间旅程，保留青春儿童主题归属
+- [类型或身份资料](https://www.imdb.com/title/tt0329485/)
 
-## 86 项删除记录及最终保留位置
+#### internal-051 血与黑蕾丝（1964，普通正片）
 
-### quality-001 乱世忠魂（1953）
+- 最终保留：`/Volumes/分类/恐怖/血与黑蕾丝.Blood.And.Black.Lace.1964.D9.MiniSD-TLF.mkv` — 0.75 GiB
+- 移出原位置：`/Volumes/分类/黑色电影/血与黑蕾丝.Blood.And.Black.Lace.1964.D9.MiniSD-TLF.mkv`
+- 已删除：`/Volumes/分类/惊悚·犯罪·动作/血与黑蕾丝.blood.and.black.lace.1964.d9.minisd-tlf.mkv` — 0.75 GiB
+- 归档依据：意大利Giallo恐怖/悬疑犯罪片
+- [类型或身份资料](https://www.imdb.com/video/vi414908697/)
+- [类型或身份资料](https://www.imdb.com/title/tt0058567/plotsummary/)
 
-- 已删除：`/Volumes/导演们/弗雷德·金尼曼/乱世忠魂.From.Here.to.Eternity.1953.mkv`
-- 当前保留：`/Volumes/导演们/弗雷德·金尼曼/乱世忠魂.From.Here.to.Eternity.1953.BD.MiniSD-TLF.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
+#### internal-052 血光鬼影夺命刀（1973，普通正片）
 
-### quality-002 乱世英豪（1967）
+- 最终保留：`/Volumes/分类/恐怖/威尼斯疑魂.Don't.Look.Now.1973.CC.BD.MiniSD-TLF.mkv` — 1.21 GiB
+- 移出原位置：`/Volumes/分类/惊悚·犯罪·动作/威尼斯疑魂.Don't.Look.Now.1973.CC.BD.MiniSD-TLF.mkv`
+- 已删除：`/Volumes/分类/恐怖/血光鬼影夺命刀.Dont.Look.Now.1973.BD.MiniSD-TLF.mkv` — 0.81 GiB
+- 归档依据：IMDb明确Horror/心理恐怖
+- [类型或身份资料](https://www.imdb.com/title/tt0069995/)
 
-- 已删除：`/Volumes/导演们/法兰提塞·维拉席/乱世英豪.Marketa.Lazarova.1967.DVDRip.XviD-MESS.mkv`
-- 当前保留：`/Volumes/导演们/法兰提塞·维拉席/乱世英豪.Marketa.Lazarova.1967.BD.MiniSD-TLF.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
+#### internal-053 袒露（2026，普通正片）
 
-### quality-003 亚历山大涅夫斯基（1938）
+- 最终保留：`/Volumes/分类/故事/袒露.Truly.Naked.2026.1080p.中文字幕.mp4` — 8.76 GiB
+- 移出原位置：`/Volumes/分类/情色/袒露.Truly.Naked.2026.1080p.中文字幕.mp4`
+- 已删除：`/Volumes/分类/情色/袒露.Truly.Naked.2026.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv` — 4.14 GiB
+- 归档依据：IMDb Drama，成长与家庭关系题材，未被标为情色类型，采用故事类
+- [类型或身份资料](https://www.imdb.com/title/tt8760666)
 
-- 已删除：`/Volumes/导演们/谢尔盖·爱森斯坦/亚历山大.涅夫斯基.Alexander.Nevsky.1938.avi`
-- 当前保留：`/Volumes/导演们/谢尔盖·爱森斯坦/亚历山大.涅夫斯基.Alexander.Nevsky.1938.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
+#### internal-054 进出口（2007，普通正片）
 
-### quality-004 亡命驾驶（2011）
+- 最终保留：`/Volumes/分类/故事/进出口.Import.Export.2007.BluRay.720p.x264.AC3.iNT-TLF.mkv` — 3.32 GiB
+- 移出原位置：`/Volumes/分类/情色/进出口.Import.Export.2007.BluRay.720p.x264.AC3.iNT-TLF.mkv`
+- 已删除：`/Volumes/分类/CULT·实验/进出口.Import.Export.2007.BD.MiniSD-TLF.mkv` — 1.05 GiB
+- 归档依据：IMDb只有心理剧情，移民与劳工生活；剧情兜底，非情色主类
+- [类型或身份资料](https://www.imdb.com/title/tt0459102/)
+- [类型或身份资料](https://cineuropa.org/en/film/74057/)
 
-- 已删除：`/Volumes/分类/惊悚·犯罪·动作/亡命驾驶.Drive.2011.V2.Bluray.2160p.DTS-HDMA5.1.DoVi.HDR.x265.10bit-DreamHD.mkv`
-- 当前保留：`/Volumes/导演们/尼古拉斯·温丁·雷弗恩/亡命驾驶.Drive.2011.V2.Bluray.2160p.DTS-HDMA5.1.DoVi.HDR.x265.10bit-DreamHD.mkv`
-- 依据：同等质量优先导演们。
+#### internal-055 逍遥法外（2002，普通正片）
 
-### quality-005 人情纸风船（1937）
+- 最终保留：`/Volumes/分类/传记·一段历史/逍遥法外.Catch.Me.If.You.Can.2002.DVD-RMVB.mkv` — 0.59 GiB
+- 移出原位置：`/Volumes/分类/惊悚·犯罪·动作/逍遥法外.Catch.Me.If.You.Can.2002.DVD-RMVB.mkv`
+- 已删除：`/Volumes/分类/传记·一段历史/逍遥法外.Catch.Me.If.You.Can.2002.DVDRip.2Audio.HALFCD-NOWYS.netshow.mkv` — 0.55 GiB
+- 归档依据：IMDb Biography/Crime，采用已有传记类
+- [类型或身份资料](https://www.imdb.com/title/tt0264464/)
 
-- 已删除：`/Volumes/分类/故事/人情纸风船.Humanity.and.Paper.Balloons.1937.D5.HalfCD-TLF.mkv`
-- 当前保留：`/Volumes/导演们/山中贞雄/人情纸风船.Humanity.And.Paper.Balloons.1937.WEB-DL.MiniSD-TLF.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
+#### internal-056 遗情（2009，普通正片）
 
-### quality-006 人类之子（2006）
+- 最终保留：`/Volumes/分类/华语世界/东南亚/遗情.woman.on.fire.looks.for.water.2009.woo.ming.jin.dvdrip.x264.ac3.2ch.allzine.mkv` — 1.09 GiB
+- 已删除：`/Volumes/分类/爱情/遗情.woman.on.fire.looks.for.water.2009.woo.ming.jin.dvdrip.x264.ac3.2ch.allzine.mkv` — 1.09 GiB
+- 归档依据：马来西亚华语剧情；IMDb确认Woo Ming Jin与原文片名
+- [类型或身份资料](https://www.imdb.com/title/tt1493296/)
 
-- 已删除：`/Volumes/分类/科幻·奇幻/人类之子.Children.of.Men.2006.HDRip.MiniSD-TLF.mkv`
-- 当前保留：`/Volumes/导演们/阿方索·卡隆/人类之子.Children.Of.Men.2006.BD.2Audio.MiniSD-TLF.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
+#### internal-057 邮差总按两次铃（1946，普通正片）
 
-### quality-007 传信人（1970）
+- 最终保留：`/Volumes/分类/黑色电影/邮差总按两次铃.The.Postman.Always.Rings.Twice.1946.mkv` — 1.36 GiB
+- 已删除：`/Volumes/分类/惊悚·犯罪·动作/邮差总按两次铃.The.Postman.Always.Rings.Twice.1946.BD.MiniSD-TLF.mkv` — 0.84 GiB
+- 归档依据：IMDb明确Film Noir
+- [类型或身份资料](https://www.imdb.com/title/tt0038854/)
 
-- 已删除：`/Volumes/分类/爱情/传信人.The.Go-Between.1970.avi`
-- 当前保留：`/Volumes/导演们/约瑟夫·罗西/幽情密使/幽情密使.The.Go.Between.1970.HDRip.push.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
+#### internal-058 野花（2000，普通正片）
 
-### quality-008 传染病（2011）
+- 最终保留：`/Volumes/分类/短篇集/野花.wild.flowers.2000.d5.minisd-tlf.mkv` — 0.72 GiB
+- 已删除：`/Volumes/分类/CULT·实验/野花.Kytice.2000.DVDRip.DivX.CZ-BiOGRa.mp4` — 0.31 GiB
+- 归档依据：七个捷克民间故事组成的恐怖奇幻短篇集，保留形式分类
+- [类型或身份资料](https://www.imdb.com/pt/title/tt0239102/)
 
-- 已删除：`/Volumes/分类/科幻·奇幻/传染病.Contagion.2011.rmvb`
-- 当前保留：`/Volumes/导演们/史蒂文·索德伯格/传染病.Contagion.2011.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
+#### internal-059 野蛮人入侵（2021，普通正片）
 
-### quality-009 伸冤记（1956）
+- 最终保留：`/Volumes/分类/华语世界/东南亚/野蛮人入侵.Barbarian.Invasion.2021.1080p.NF.WEB-DL.DDP5.1.x264.mkv` — 6.31 GiB
+- 已删除：`/Volumes/分类/喜剧/野蛮人入侵.Barbarian.Invasion.2021.mkv` — 0.34 GiB
+- 归档依据：马来西亚华语动作剧情；原喜剧位置不合适
+- [类型或身份资料](https://www.imdb.com/title/tt14760842/)
 
-- 已删除：`/Volumes/分类/黑色电影/伸冤记.The.Wrong.Man.1956.WS.DVDRip.XviD-FRAGMENT.mkv`
-- 当前保留：`/Volumes/导演们/阿尔弗雷德·希区柯克/伸冤记.The.Wrong.Man.1956.BD.MiniSD-TLF.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
+#### internal-060 铁血战士杀戮之地（2025，普通正片）
 
-### quality-010 公路之王（1976）
+- 最终保留：`/Volumes/分类/合集/铁血战士/铁血战士.杀戮之地.Predator.Badlands.2025.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv` — 3.07 GiB
+- 移出原位置：`/Volumes/分类/科幻·奇幻/铁血战士.杀戮之地.Predator.Badlands.2025.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv`
+- 已删除：`/Volumes/分类/合集/铁血战士/铁血战士.杀戮之地.Predator.Badlands.2025.WEB-DL.MiniSD-TLF.mkv` — 0.53 GiB
+- 归档依据：IMDb科幻/动作/冒险；保留现有铁血战士系列组织，将较好版本归入系列目录
+- [类型或身份资料](https://www.imdb.com/title/tt31227572)
 
-- 已删除：`/Volumes/分类/公路/公路之王.Kings.of.the.Road.1976.BD.CC.MiniHD-TLF.mkv`
-- 当前保留：`/Volumes/导演们/维姆·文德斯/公路之王.Kings.of.the.Road.1976.REMASTERED.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
+#### internal-061 雄狮少年2（2024，普通正片）
 
-### quality-011 再不相见（1959）
+- 最终保留：`/Volumes/分类/华语世界/中国大陆/雄狮少年2.I.Am.What.I.Am.2.2024.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv` — 4.14 GiB
+- 移出原位置：`/Volumes/分类/动画片/雄狮少年2.I.Am.What.I.Am.2.2024.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv`
+- 已删除：`/Volumes/分类/华语世界/中国大陆/雄狮少年2.I.Am.What.I.Am.2.2024.mp4` — 4.06 GiB
+- 归档依据：豆瓣喜剧/动作/动画；按华语世界既有地域优先规则集中到中国大陆
+- [类型或身份资料](https://movie.douban.com/subject/35883131/)
+- [类型或身份资料](https://www.imdb.com/title/tt32439604/releaseinfo/)
 
-- 已删除：`/Volumes/分类/短篇集/再不相见.Segodnya.Uvolneniya.Ne.Budet.1959.DVDRip.XviD.DivXForever.rmvb`
-- 当前保留：`/Volumes/导演们/安德烈·塔尔科夫斯基/今天不离去.Segodnya.Uvolneniya.Ne.Budet.1959.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
+#### internal-062 香魂女（1993，普通正片）
 
-### quality-012 勾魂摄魄（1968）
+- 最终保留：`/Volumes/分类/华语世界/中国大陆/20世纪老电影/90/香魂女.Woman.Sesame.Oil.Maker.1993.rmvb` — 0.32 GiB
+- 已删除：`/Volumes/分类/故事/香魂女.Women.from.the.Lake.of.Scented.Souls.1993.rmvb` — 0.32 GiB
+- 归档依据：IMDb与发行方确认谢飞、中国普通话剧情；两种英文名指同片，保留已有年代目录
+- [类型或身份资料](https://www.imdb.com/title/tt0108608/)
+- [类型或身份资料](https://films.yilisoo.com/index.php/woman-sesame-oil-maker/)
 
-- 已删除：`/Volumes/导演们/路易·马勒/勾魂慑魄.Spirits.of.the.Dead.1968.rmvb`
-- 当前保留：`/Volumes/导演们/路易·马勒/勾魂摄魄.Spirits.of.the.Dead.1968.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
+#### internal-063 驯马手莫兰特（1980，普通正片）
 
-### quality-013 卑微的人生（1997）
+- 最终保留：`/Volumes/分类/战争/驯马手莫兰特.Breaker.Morant.1980.CC.BD.HEVC.10bit.MiniHD-TLF.mkv` — 3.39 GiB
+- 已删除：`/Volumes/分类/战争/烈血焚城.Breaker.Morant.1980.BDRip.X264.iNT-TLF.A165F64E.mkv` — 1.37 GiB
+- 归档依据：Criterion确认布尔战争期间军法审判故事，保留战争题材
+- [类型或身份资料](https://www.criterion.com/films/27766-breaker-morant)
 
-- 已删除：`/Volumes/分类/纪录/卑微的人生.A.Humble.Life.1997.mkv`
-- 当前保留：`/Volumes/导演们/亚历山大·索科洛夫/卑微的人生.A.Humble.Life.1997.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
+#### internal-064 高中课堂（2008，普通正片）
 
-### quality-014 卡夫卡传（1991）
+- 最终保留：`/Volumes/分类/青春·儿童/墙壁之间.Entre.les.murs.2008.720p.BluRay.x264-CtrlHD.mkv` — 4.37 GiB
+- 已删除：`/Volumes/分类/故事/高中课堂.Entre.Les.Murs.2008.FRENCH.DVDRip.XviD-ZANBiC.mkv` — 0.48 GiB
+- 归档依据：IMDb剧情概要为巴黎青少年班级的一个学年，采用既有青春校园主题类
+- [类型或身份资料](https://www.imdb.com/title/tt1068646/plotsummary/)
 
-- 已删除：`/Volumes/分类/传记·一段历史/卡夫卡传.Kafka.1991.DVDRip.DivX-QiX.mkv`
-- 当前保留：`/Volumes/导演们/史蒂文·索德伯格/卡夫卡.Kafka.1991.D5.MiniSD-TLF.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
+#### internal-065 魔光血影（1960，普通正片）
 
-### quality-015 变局（2012）
+- 最终保留：`/Volumes/分类/恐怖/偷窥狂.Peeping.Tom.1960.CC.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv` — 10.81 GiB
+- 移出原位置：`/Volumes/分类/惊悚·犯罪·动作/偷窥狂.Peeping.Tom.1960.CC.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv`
+- 已删除：`/Volumes/分类/惊悚·犯罪·动作/魔光血影.Peeping.Tom.1960.D9.MiniSD-TLF.mkv` — 0.73 GiB
+- 归档依据：IMDb Horror/Thriller，Criterion亦确认心理恐怖
+- [类型或身份资料](https://www.imdb.com/title/tt0054167/)
+- [类型或身份资料](https://www.criterion.com/films/235-peeping-tom)
 
-- 已删除：`/Volumes/分类/政法委/变局.Game.Change.2012.HDTV.MiniSD-TLF.mkv`
-- 当前保留：`/Volumes/导演们/杰伊·罗奇/变局.Game.Change.2012.BD.MiniSD-TLF.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
+### /Volumes/导演们
 
-### quality-016 启示录（2006）
+#### internal-066 一诺千金（1996，普通正片）
 
-- 已删除：`/Volumes/分类/传记·一段历史/启示录.Apocalypto.2006.BDRip.2Audio.miniSD-TLF.mkv`
-- 当前保留：`/Volumes/导演们/梅尔·吉布森/启示.Apocalypto.2006.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
+- 最终保留：`/Volumes/导演们/达内兄弟/一诺千金/一诺千金.La.promesse.1996.CC.BDRip.X264.iNT-TLF.mkv` — 2.34 GiB
+- 已删除：`/Volumes/导演们/达内兄弟/一诺千金/一诺千金.La.Promesse.1996.DVDRip.DivX-QiX.mkv` — 0.35 GiB
+- 归档依据：导演库内保留较好版本及其现有位置
 
-### quality-017 唐祖凡尼（1979）
+#### internal-067 万尼亚在42街口（1994，普通正片）
 
-- 已删除：`/Volumes/导演们/约瑟夫·罗西/唐璜.Don.Giovanni.1979.iTALiAN.BDRip.XviD-TRL.mkv`
-- 当前保留：`/Volumes/导演们/约瑟夫·罗西/唐祖凡尼.Don.Giovanni.1979.FRE.BD.EngSub.10bit.AC3.MiniSD-TLF.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
+- 最终保留：`/Volumes/导演们/路易·马勒/万尼亚在42街口.Vanya.On.42nd.Street.1994.CC.Bluray.x264-10bit.MiniHD-TLF.mkv` — 1.42 GiB
+- 已删除：`/Volumes/导演们/路易·马勒/泛雅在42街.Vanya.on.42nd.Street.1994.rmvb` — 1.19 GiB
+- 归档依据：导演库内保留较好版本及其现有位置
 
-### quality-018 喝彩（2015）
+#### internal-069 不伦之恋（1981，普通正片）
 
-- 已删除：`/Volumes/分类/传记·一段历史/喝彩.Aferim.2015.BD.MiniSD-TLF.mkv`
-- 当前保留：`/Volumes/导演们/拉杜·裘德/喝彩.Aferim.2015.BD.MiniSD-TLF.mkv`
-- 依据：同等质量优先导演们。
+- 最终保留：`/Volumes/导演们/贝特朗·布里叶/不伦之恋.Beau.Pere.1981.D5.MiniSD-TLF.mkv` — 0.81 GiB
+- 已删除：`/Volumes/导演们/贝特朗·布里叶/不伦之恋.Beau-pere.1981.DVDRip.DivX.Fr.mkv` — 0.46 GiB
+- 归档依据：导演库内保留较好版本及其现有位置
 
-### quality-019 基督最后的诱惑（1988）
+#### internal-070 与君别（1933，普通正片）
 
-- 已删除：`/Volumes/分类/科幻·奇幻/基督最后的诱惑.The.Last.Temptation.of.Christ.1988.BD.CC.MiniSD-TLF.mkv`
-- 当前保留：`/Volumes/导演们/马丁·斯科塞斯/基督最后的诱惑.The.Last.Temptation.of.Christ.1988.BD.CC.MiniSD-TLF.mkv`
-- 依据：同等质量优先导演们。
+- 最终保留：`/Volumes/导演们/成濑巳喜男/与君别.Apart.from.You.1933.avi` — 1.22 GiB
+- 已删除：`/Volumes/导演们/成濑巳喜男/除了你.Apart.from.You.1933.avi` — 1.22 GiB
+- 归档依据：导演库内保留较好版本及其现有位置
 
-### quality-020 大卫戈尔的一生（2003）
+#### internal-071 东风（1970，普通正片）
 
-- 已删除：`/Volumes/分类/惊悚·犯罪·动作/大卫·戈尔的一生.The.Life.of.David.Gale.2003.BD.MiniSD-TLF.mkv`
-- 当前保留：`/Volumes/导演们/艾伦·帕克/大卫·戈尔的一生.The.Life.of.David.Gale.2003.BD.MiniSD-TLF.mkv`
-- 依据：同等质量优先导演们。
+- 最终保留：`/Volumes/导演们/让·吕克.戈达尔/东风.Le.Vent.D'est.1970.BD.EngSub.MiniSD-TLF.mkv` — 0.79 GiB
+- 已删除：`/Volumes/导演们/让·吕克.戈达尔/东风.Groupe.Dziga.Vertov.-.Le.vent.d'est.1970.mkv` — 0.34 GiB
+- 归档依据：导演库内保留较好版本及其现有位置
+- [类型或身份资料](https://www.imdb.com/title/tt0065173/)
 
-### quality-021 大地儿女（1965）
+#### internal-072 乡愁（1983，普通正片）
 
-- 已删除：`/Volumes/分类/华语世界/香港/导演们/胡金铨/大地儿女.Sons.of.Good.Earth.1965.REMASTERED.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv`
-- 当前保留：`/Volumes/导演们/胡金铨/大地儿女.Sons.of.Good.Earth.1965.REMASTERED.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv`
-- 依据：同等质量优先导演们。
+- 最终保留：`/Volumes/导演们/安德烈·塔尔科夫斯基/乡愁.Nostalghia.1983.REMASTERED.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv` — 13.79 GiB
+- 已删除：`/Volumes/导演们/安德烈·塔尔科夫斯基/乡愁.Nostalghia.1983.mkv` — 0.61 GiB
+- 归档依据：导演库内保留较好版本及其现有位置
 
-### quality-022 大都会传奇（1989）
+#### internal-073 乱世儿女（1975，普通正片）
 
-- 已删除：`/Volumes/导演们/伍迪·艾伦/纽约故事.New.York.Stories.1989.D5.MiniSD-TLF.mkv`
-- 当前保留：`/Volumes/导演们/伍迪·艾伦/大都会传奇.New.York.Stories.1989.BD.MiniSD-TLF.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
+- 最终保留：`/Volumes/导演们/斯坦利·库布里克/巴里.林登.Barry.Lyndon.1975.CC.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv` — 15.46 GiB
+- 已删除：`/Volumes/导演们/斯坦利·库布里克/乱世儿女.Barry.Lyndon.1975.HDTV.MiniSD-TLF.mkv` — 1.18 GiB
+- 归档依据：导演库内保留较好版本及其现有位置
 
-### quality-023 天堂之日（1978）
+#### internal-074 伸冤记（1956，普通正片）
 
-- 已删除：`/Volumes/分类/故事/天堂之日.Days.of.Heaven.1978.mkv`
-- 当前保留：`/Volumes/导演们/泰伦斯·马力克/天堂之日.Days.of.Heaven.1978.双语字幕.HR-HDTV.AC3.1024X576.x264-人人影视制作.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
+- 最终保留：`/Volumes/导演们/阿尔弗雷德·希区柯克/伸冤记.The.Wrong.Man.1956.BD.MiniSD-TLF.mkv` — 2.18 GiB
+- 已删除：`/Volumes/导演们/阿尔弗雷德·希区柯克/伸冤记.The.Wrong.Man.1956.HDTV.MiniSD-TLF.mkv` — 0.79 GiB
+- 归档依据：导演库内保留较好版本及其现有位置
 
-### quality-024 失衡生活（1983）
+#### internal-075 你知道你的楼梯很漂亮（1986，普通正片）
 
-- 已删除：`/Volumes/导演们/高佛雷·雷吉奥/机械世界.Koyaanisqatsi.1983.DVD-Rip.Divx.720x416.(Reggio.&amp.Philip.Glass).mkv`
-- 当前保留：`/Volumes/导演们/高佛雷·雷吉奥/失衡生活.Koyaanisqatsi.1983.HDTV.MiniSD-TLF.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
+- 最终保留：`/Volumes/导演们/阿涅斯·瓦尔达/你知道.你的楼梯很漂亮.T.as.de.beaux.escaliers.tu.sais.1986.mkv` — 0.02 GiB
+- 已删除：`/Volumes/导演们/伊莎贝尔·阿佳妮作品集[演员]/你知道.你的楼梯很漂亮.T.as.de.beaux.escaliers.tu.sais.1986.mkv` — 0.01 GiB
+- 归档依据：导演库内保留较好版本及其现有位置
 
-### quality-025 好人寥寥（1992）
+#### internal-076 八月狂想曲（1991，普通正片）
 
-- 已删除：`/Volumes/分类/惊悚·犯罪·动作/好人寥寥.A.Few.Good.Men.1992.BD.MiniHD-TLF.mkv`
-- 当前保留：`/Volumes/导演们/罗伯·莱纳/好人寥寥.A.Few.Good.Men.1992.BD.MiniHD-TLF.mkv`
-- 依据：同等质量优先导演们。
+- 最终保留：`/Volumes/导演们/黑泽明/留芳颂.Rhapsody.in.August.1991.mkv` — 0.88 GiB
+- 已删除：`/Volumes/导演们/黑泽明/八月狂想曲.Rhapsody.in.August.1991.D5.MiniSD-TLF.mkv` — 0.67 GiB
+- 归档依据：导演库内保留较好版本及其现有位置
 
-### quality-026 妈咪（2014）
+#### internal-077 冷酷祭典（1995，普通正片）
 
-- 已删除：`/Volumes/分类/故事/妈咪.Mommy.2014.BD.MiniSD-TLF.mkv`
-- 当前保留：`/Volumes/导演们/泽维尔·多兰/妈咪.Mommy.2014.BluRay.1080p.x265.10bit.DDP5.1-MiniHD.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
+- 最终保留：`/Volumes/导演们/克劳德·夏布洛尔/冷酷祭典.La.Ceremonie.1995.BD.MiniSD-TLF(1).mkv` — 0.65 GiB
+- 已删除：`/Volumes/导演们/克劳德·夏布洛尔/仪式.La.Ceremonie.1995.mkv` — 0.37 GiB
+- 归档依据：导演库内保留较好版本及其现有位置
 
-### quality-027 孤星血泪（1946）
+#### internal-078 单车少年（2011，普通正片）
 
-- 已删除：`/Volumes/分类/爱情/孤星血泪.Great.Expectations.1946.BD.MiniSD-TLF.mkv`
-- 当前保留：`/Volumes/导演们/大卫·里恩/孤星血泪.Great.Expectations.1946.BDRip.x.mkv`
-- 依据：同等质量优先导演们。
+- 最终保留：`/Volumes/导演们/达内兄弟/单车少年.The.Kid.with.a.Bike.2011.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv` — 4.40 GiB
+- 已删除：`/Volumes/导演们/达内兄弟/单车少年.The.Kid.with.a.Bike.2011.rmvb` — 0.33 GiB
+- 归档依据：导演库内保留较好版本及其现有位置
 
-### quality-028 安赫利卡奇事（2010）
+#### internal-079 卢瓦河谷的木鞋匠（1956，普通正片）
 
-- 已删除：`/Volumes/分类/故事/安赫利卡奇事.The.Strange.Case.of.Angelica.2010.rmvb`
-- 当前保留：`/Volumes/导演们/曼努埃尔·德·奥利维拉/安吉里卡奇遇.The.Strange.Case.of.Angelica.2010.BDRip.X264.iNT-TLF.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
+- 最终保留：`/Volumes/导演们/雅克·德米/卢瓦河谷的木鞋匠.Le.Sabotier.du.Val.de.Loire.1956.D9.MiniSD-TLF.mkv` — 0.21 GiB
+- 移出原位置：`/Volumes/导演们/阿涅斯·瓦尔达/南特的雅克德米/卢瓦河谷的木鞋匠.Le.Sabotier.du.Val.de.Loire.1956.D9.MiniSD-TLF.mkv`
+- 已删除：`/Volumes/导演们/雅克·德米/卢瓦河谷的木鞋匠.Le.sabotier.du.Val.de.Loire.1956.mkv` — 0.09 GiB
+- 归档依据：依据导演署名把较好版本归回对应导演/影片目录
+- [类型或身份资料](https://cine-tamaris.fr/jacques-demy/le-sabotier-du-val-de-loire-1955/)
 
-### quality-029 尼斯印象（1930）
+#### internal-080 坏血（1986，普通正片）
 
-- 已删除：`/Volumes/导演们/让·维果/尼斯的景象.A.Propos.De.Nice.1930.A.Propos.De.Nice.avi`
-- 当前保留：`/Volumes/导演们/让·维果/尼斯印象.A.propos.de.Nice.1930.BD.CC.MiniSD-TLF.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
+- 最终保留：`/Volumes/导演们/莱奥·卡拉克斯/坏血.Mauvais.Sang.1986.D9.MiniSD-TLF.mkv` — 0.84 GiB
+- 已删除：`/Volumes/导演们/莱奥·卡拉克斯/坏血.Bad.Blood.1986.INTERNAL.DVDRip.XviD-RiZZ.CN.mkv` — 0.44 GiB
+- 归档依据：导演库内保留较好版本及其现有位置
+- [类型或身份资料](https://www.imdb.com/title/tt0091497/)
 
-### quality-030 局内人（2006）
+#### internal-081 天涯沦落两心知（1991，普通正片）
 
-- 已删除：`/Volumes/分类/惊悚·犯罪·动作/局内人.Inside.Man.2006.rmvb`
-- 当前保留：`/Volumes/导演们/斯派克·李/局内人.Inside.Man.2006.BD-R.1.40G.中英双字.迅雷.BT.rmvb`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
+- 最终保留：`/Volumes/导演们/吉列姆/天涯沦落两心知.The.Fisher.King.1991.BD.MiniSD-TLF.mkv` — 1.02 GiB
+- 已删除：`/Volumes/导演们/吉列姆/渔王.The.Fisher.King.1991.avi` — 0.93 GiB
+- 归档依据：导演库内保留较好版本及其现有位置
 
-### quality-031 年少轻狂（1993）
+#### internal-082 奥菲斯（1950，普通正片）
 
-- 已删除：`/Volumes/分类/青春·儿童/年少轻狂.Dazed.and.Confused.1993.rmvb`
-- 当前保留：`/Volumes/导演们/理查德·林克莱特/年少轻狂.Dazed.and.Confused.1993.CC.BD.MiniSD-TLF.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
+- 最终保留：`/Volumes/导演们/让·谷克多/奥菲斯/俄耳甫斯.Orphée.1950.BD.CC.MiniSD-TLF.mkv` — 0.84 GiB
+- 移出原位置：`/Volumes/导演们/让·谷克多/奥菲斯的遗嘱/俄耳甫斯.Orphée.1950.BD.CC.MiniSD-TLF.mkv`
+- 已删除：`/Volumes/导演们/让·谷克多/奥菲斯/奥菲斯.Orphée.1950.D9.MiniSD-TLF.mkv` — 0.74 GiB
+- 归档依据：依据导演署名把较好版本归回对应导演/影片目录
+- [类型或身份资料](https://www.criterion.com/films/610-orpheus)
 
-### quality-032 当哈利遇到莎莉（1989）
+#### internal-083 对话（1974，普通正片）
 
-- 已删除：`/Volumes/分类/爱情/当哈利遇到莎莉.When.Harry.Met.Sally.1989.2160p.UHD.BluRay.x265.10bit.DV.DTS-HD.MA.5.1.2Audio-SONYHD.mkv`
-- 当前保留：`/Volumes/导演们/罗伯·莱纳/当哈利遇到莎莉.When.Harry.Met.Sally.1989.2160p.UHD.BluRay.x265.10bit.DV.DTS-HD.MA.5.1.2Audio-SONYHD.mkv`
-- 依据：同等质量优先导演们。
+- 最终保留：`/Volumes/导演们/弗朗西斯·福特·科波拉/对话.The.Conversation.1974.HDTV.MiniSD-TLF.mkv` — 0.72 GiB
+- 已删除：`/Volumes/导演们/弗朗西斯·福特·科波拉/窃听大阴谋.The.Conversation.1974.DVD.2Auido.NOWYS.双面伊人.mkv` — 0.56 GiB
+- 归档依据：导演库内保留较好版本及其现有位置
 
-### quality-033 彗星美人（1950）
+#### internal-084 寻找小津（1985，普通正片）
 
-- 已删除：`/Volumes/分类/传记·一段历史/彗星美人.All.About.Eve.1950.D9.MiniSD-TLF.mkv`
-- 当前保留：`/Volumes/导演们/约瑟夫·L·曼凯维奇/彗星美人.All.About.Eve.1950.D9.MiniSD-TLF.mkv`
-- 依据：同等质量优先导演们。
+- 最终保留：`/Volumes/导演们/维姆·文德斯/寻找小津.Tokyo.Ga.1985.REMASTERED.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv` — 8.94 GiB
+- 已删除：`/Volumes/导演们/小津安二郎/寻找小津.Tokyo-Ga.1985.mkv` — 0.36 GiB
+- 归档依据：导演库内保留较好版本及其现有位置
 
-### quality-034 忠烈图（1974）
+#### internal-085 影子大亨（1994，普通正片）
 
-- 已删除：`/Volumes/分类/华语世界/香港/导演们/胡金铨/忠烈图.The.Valiant.Ones.1974.UHD.BluRay.2160p.x265.10bit.HDR.FLAC.iNT-TLF.mkv`
-- 当前保留：`/Volumes/导演们/胡金铨/忠烈图.The.Valiant.Ones.1974.UHD.BluRay.2160p.x265.10bit.HDR.FLAC.iNT-TLF.mkv`
-- 依据：同等质量优先导演们。
+- 最终保留：`/Volumes/导演们/科恩兄弟/金钱帝国.The.Hudsucker.Proxy.1994.D9.MiniSD-TLF.mkv` — 0.69 GiB
+- 已删除：`/Volumes/导演们/科恩兄弟/影子大亨.The.Hudsucker.Proxy.1994.美国.mkv` — 0.38 GiB
+- 归档依据：导演库内保留较好版本及其现有位置
 
-### quality-035 忠犬八公的故事（2009）
+#### internal-086 待嫁女儿心（1969，普通正片）
 
-- 已删除：`/Volumes/分类/故事/忠犬八公的故事.Hachiko.A.Dog's.Story.2009.BD.MiniSD-TLF.mkv`
-- 当前保留：`/Volumes/导演们/拉斯·霍尔斯道姆/忠犬八公的故事.Hachiko.A.Dog's.Story.2009.BD.MiniSD-TLF.mkv`
-- 依据：同等质量优先导演们。
+- 最终保留：`/Volumes/导演们/罗伯特·奥尔特曼/待嫁女儿心.That.Cold.Day.in.the.Park.1969.1080p.BluRay.H264.AAC-RARBG.mkv` — 2.04 GiB
+- 已删除：`/Volumes/导演们/罗伯特·奥尔特曼/待嫁女儿心.That.Cold.Day.in.the.Park.1969.BD.MiniSD-TLF.mkv` — 0.83 GiB
+- 归档依据：导演库内保留较好版本及其现有位置
 
-### quality-036 怒火风暴（1993）
+#### internal-087 我雇了一名合约杀手（1990，普通正片）
 
-- 已删除：`/Volumes/分类/惊悚·犯罪·动作/怒火风暴.Falling.Down.1993.BD.HALFCD-TLF.mkv`
-- 当前保留：`/Volumes/导演们/乔·舒马赫/城市英雄.Falling.Down.1993.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
+- 最终保留：`/Volumes/导演们/阿基·考里斯马基/我雇了一名合约杀手.I.Hired.a.Contract.Killer.1990.mkv` — 0.51 GiB
+- 已删除：`/Volumes/导演们/阿基·考里斯马基/我聘请了职业杀手.I.Hired.a.Contract.Killer.1990.mkv` — 0.29 GiB
+- 归档依据：导演库内保留较好版本及其现有位置
 
-### quality-037 我嫁了个怪人（1997）
+#### internal-088 无耻混蛋（2009，普通正片）
 
-- 已删除：`/Volumes/导演们/比尔·普莱姆顿 & 罗伯特·克鲁伯/我嫁了个怪蜀黍.I.Married.a.Strange.Person.1997.DVDrip.by.Galmuchet.mkv`
-- 当前保留：`/Volumes/导演们/比尔·普莱姆顿 & 罗伯特·克鲁伯/我嫁了个怪人.I.Married.A.Strange.Person.1997.D5.MiniSD-TLF.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
+- 最终保留：`/Volumes/导演们/昆汀·塔伦蒂诺/无耻混蛋.Inglourious.Basterds.2009.UHD.BluRay.2160p.2Audio.DTS-HD.MA.5.1.x265.10bit.HDR-ALT.mkv` — 26.53 GiB
+- 已删除：`/Volumes/导演们/昆汀·塔伦蒂诺/无耻混蛋.Inglourious.Basterds.2009.rmvb` — 0.60 GiB
+- 归档依据：导演库内保留较好版本及其现有位置
 
-### quality-038 我的朋友伊万拉布辛（1984）
+#### internal-089 暗堡里的三恶人（1958，普通正片）
 
-- 已删除：`/Volumes/分类/故事/我的朋友伊万.拉布辛.My.Friend.Ivan.Lapshin.1984.avi`
-- 当前保留：`/Volumes/导演们/阿列克谢·日尔曼/我的朋友伊万·拉布辛.My.Friend.Ivan.Lapshin.1984.苏联.Aleksei.German.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
+- 最终保留：`/Volumes/导演们/黑泽明/战国英豪.The.Hidden.Fortress.1958.D9.Min.mkv` — 0.88 GiB
+- 已删除：`/Volumes/导演们/黑泽明/暗堡里的三恶人.The.Hidden.Fortress.1958.BD.MiniSD-TLF.mkv` — 0.84 GiB
+- 归档依据：导演库内保留较好版本及其现有位置
 
-### quality-039 战争（2025）
+#### internal-090 月球旅行记彩色版（1902，普通正片）
 
-- 已删除：`/Volumes/分类/战争/战·争.Warfare.2025.2160p.WEB-DL.DDP5.1.Atmos.H265-華堅馮力士原创中字.mkv`
-- 当前保留：`/Volumes/导演们/亚历克斯·加兰/战争.Warfare.2025.USA.BluRay.Remux.UHD.DoVi.HDR10.2160p.Atmos.TrueHD7.1-CHD.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
+- 最终保留：`/Volumes/导演们/乔治·梅里爱/月球旅行记.彩色版.A.Trip.to.the.Moon.1902.REMASTERED.Colorized.BluRay.1080p.x265.10bit.AC3.MultiAudio.iNT-TLF.mkv` — 0.93 GiB
+- 已删除：`/Volumes/导演们/乔治·梅里爱/月球旅行记.A.Trip.to.the.Moon.1902.REMASTERED.Colorized.BluRay.1080p.x265.10bit.AC3.MultiAudio.iNT-TLF.mkv` — 0.93 GiB
+- 归档依据：导演库内保留较好版本及其现有位置
 
-### quality-040 房间里的女人（1983）
+#### internal-091 柏蒂娜的苦泪（1972，普通正片）
 
-- 已删除：`/Volumes/分类/短篇集/房间里的女人.The.Woman.in.the.Room.1983.mkv`
-- 当前保留：`/Volumes/导演们/弗兰克·德拉邦特/房间里的女人.The.Woman.in.the.Room.1983.mkv`
-- 依据：同等质量优先导演们。
+- 最终保留：`/Volumes/导演们/法斯宾德/柏蒂娜的苦泪.The.Bitter.Tears.of.Petra.von.Kant.1972.CC.BD.MiniSD-TLF.mkv` — 1.16 GiB
+- 已删除：`/Volumes/导演们/法斯宾德/柏蒂娜的苦泪.Die.bitteren.Tranen.der.Petra.von.Kant.1972.D9.2Audio.MiniSD-TLF.mkv` — 0.71 GiB
+- 归档依据：导演库内保留较好版本及其现有位置
+- [类型或身份资料](https://www.imdb.com/title/tt0068278/)
 
-### quality-041 拯救大兵瑞恩（1998）
+#### internal-092 满城风雨（1974，普通正片）
 
-- 已删除：`/Volumes/分类/战争/拯救大兵瑞恩.Saving.Private.Ryan.1998.BD1080P.X264.2Audio.AAC.HALFCD-NORM.mkv`
-- 当前保留：`/Volumes/导演们/史蒂文·斯皮尔伯格/拯救大兵瑞恩.Saving.Private.Ryan.1998.BD1080P.X264.2Audio.AAC.HALFCD-NORM.mkv`
-- 依据：同等质量优先导演们。
+- 最终保留：`/Volumes/导演们/比利·怀尔德/满城风雨/满城风雨.The.Front.Page.1974.DVDRip.XviD-SAPHiRE.mkv` — 0.42 GiB
+- 已删除：`/Volumes/导演们/比利·怀尔德/满城风雨/满城风雨.The.Front.Page.1974.DVDRip.XviD-SAPHiRE.mp4` — 0.41 GiB
+- 归档依据：导演库内保留较好版本及其现有位置
 
-### quality-042 摇滚万万岁（1984）
+#### internal-093 爱在黎明破晓前（1995，普通正片）
 
-- 已删除：`/Volumes/分类/音乐/摇滚万万岁.This.Is.Spinal.Tap.1984.mkv`
-- 当前保留：`/Volumes/导演们/罗伯·莱纳/摇滚万万岁.This.Is.Spinal.Tap.1984.CC.1080p.BluRay.x265.10bit.DTS-QuickIO.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
+- 最终保留：`/Volumes/导演们/理查德·林克莱特/爱在黎明破晓前.Before.Sunrise.1995.CC.BD.2Audio.MiniSD-TLF.mkv` — 0.80 GiB
+- 已删除：`/Volumes/导演们/理查德·林克莱特/爱在黎明破晓前.Before.Sunrise.1995.mkv` — 0.45 GiB
+- 归档依据：导演库内保留较好版本及其现有位置
 
-### quality-043 收藏家（1965）
+#### internal-094 玩火（1975，普通正片）
 
-- 已删除：`/Volumes/分类/科幻·奇幻/收藏家.The.Collector.1965.DVDRip.XviD-PARTICLE.mkv`
-- 当前保留：`/Volumes/导演们/威廉·惠勒/收藏家.The.Collector.1965.BD.MiniSD-TLF.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
+- 最终保留：`/Volumes/导演们/阿兰·罗布-格里耶/玩火/玩火.Le.Jeu.avec.le.feu.1975.D9.EngSub.MiniSD-TLF.mkv` — 1.68 GiB
+- 已删除：`/Volumes/导演们/阿兰·罗布-格里耶/玩火.Le.Jeu.avec.le.feu.1975.mkv` — 1.45 GiB
+- 归档依据：导演库内保留较好版本及其现有位置
 
-### quality-044 改编剧本（2002）
+#### internal-095 简单挽歌（1990，普通正片）
 
-- 已删除：`/Volumes/分类/故事/改编剧本.Adaptation.2002.HDRip.2Audio.HALFCD-NOWYS.mmla.mkv`
-- 当前保留：`/Volumes/导演们/斯派克·琼斯/改编剧本.Adaptation.2002.BD.MiniSD-TLF.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
+- 最终保留：`/Volumes/导演们/亚历山大·索科洛夫/简单挽歌.A.Simple.Elegy.1990.avi` — 0.22 GiB
+- 已删除：`/Volumes/导演们/亚历山大·索科洛夫/简单挽歌.Prostaya.elegiya.Elegia.Semplice.1990.avi` — 0.14 GiB
+- 归档依据：导演库内保留较好版本及其现有位置
+- [类型或身份资料](https://sokurov.spb.ru/isle_en/documentaries.html?num=59)
 
-### quality-045 斯托斯特姆桥（1950）
+#### internal-096 赤裸裸（1993，普通正片）
 
-- 已删除：`/Volumes/导演们/卡尔·西奥多·德莱叶/短片/斯托斯特姆桥.Storstrømsbroen.1950.mkv`
-- 当前保留：`/Volumes/导演们/卡尔·西奥多·德莱叶/短片/斯托斯特姆桥.Storstrømsbroen.1950.ChEn-Douban.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
+- 最终保留：`/Volumes/导演们/迈克·李/赤裸裸.Naked.1993.D9.MiniSD-TLF.mkv` — 1.00 GiB
+- 已删除：`/Volumes/导演们/迈克·李/赤裸裸.Naked.1993.BD.MiniSD-TLF.mkv` — 0.98 GiB
+- 归档依据：导演库内保留较好版本及其现有位置
 
-### quality-046 无忧无虑（2008）
+#### internal-097 远方（2002，普通正片）
 
-- 已删除：`/Volumes/分类/喜剧/无忧无虑.Happy.Go.Lucky.2008.DVD-RMVB.mkv`
-- 当前保留：`/Volumes/导演们/迈克·李/无忧无虑.Happy.Go.Lucky.2008.BD.MiniSD-TLF.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
+- 最终保留：`/Volumes/导演们/努里·比格·锡兰/远方.Distant.2002.1080p.BluRay.x265.10bit.DTS-SONYHD.mkv` — 8.52 GiB
+- 已删除：`/Volumes/导演们/努里·比格·锡兰/乌扎克.Distant.2002.土耳其.XTM.DVD-HALFCD2.mkv` — 0.36 GiB
+- 归档依据：导演库内保留较好版本及其现有位置
 
-### quality-047 最后安全（1923）
+#### internal-098 银色性男女（1993，普通正片）
 
-- 已删除：`/Volumes/分类/喜剧/最后安全.Safety.Last.1923.mkv`
-- 当前保留：`/Volumes/导演们/哈罗德·劳埃德/最后安全.Safety.Last.1923.mkv`
-- 依据：同等质量优先导演们。
+- 最终保留：`/Volumes/导演们/罗伯特·奥尔特曼/银色.性.男女.Short.Cuts.1993.DVDrip.XviD.AC3.iNT-alaundo.mkv` — 2.05 GiB
+- 已删除：`/Volumes/导演们/罗伯特·奥尔特曼/人生交叉点.Short.Cuts.1993.CC.BD.MiniSD-TLF.mkv` — 0.91 GiB
+- 归档依据：导演库内保留较好版本及其现有位置
 
-### quality-048 月球旅行记彩色版（1902）
+#### internal-099 长夜漫漫路迢迢（1962，普通正片）
 
-- 已删除：`/Volumes/分类/科幻·奇幻/月球旅行记.彩色版.A.Trip.to.the.Moon.1902.REMASTERED.Colorized.BluRay.1080p.x265.10bit.AC3.MultiAudio.iNT-TLF.mkv`
-- 当前保留：`/Volumes/导演们/乔治·梅里爱/月球旅行记.彩色版.A.Trip.to.the.Moon.1902.REMASTERED.Colorized.BluRay.1080p.x265.10bit.AC3.MultiAudio.iNT-TLF.mkv`
-- 依据：同等质量优先导演们。
+- 最终保留：`/Volumes/导演们/西德尼·吕美特/长夜漫漫路迢迢.Long.Days.Journey.Into.Night.1962.BD.MiniSD-TLF.mkv` — 1.29 GiB
+- 移出原位置：`/Volumes/导演们/奥逊·威尔斯/长夜漫漫路迢迢.Long.Days.Journey.Into.Night.1962.BD.MiniSD-TLF.mkv`
+- 已删除：`/Volumes/导演们/西德尼·吕美特/长夜漫漫路迢迢.Long.Days.Journey.into.Night.1962.mkv` — 0.66 GiB
+- 归档依据：依据导演署名把较好版本归回对应导演/影片目录
+- [类型或身份资料](https://www.festival-cannes.com/en/f/long-day-s-journey-into-night/)
 
-### quality-049 有机体的秘密（1971）
+#### internal-100 雪国列车（2013，普通正片）
 
-- 已删除：`/Volumes/导演们/杜尚·马卡维耶夫/有机体的秘密.WR-Mysteries.of.the.Organism.1971.D9.MiniSD-TLF.mkv`
-- 当前保留：`/Volumes/导演们/杜尚·马卡维耶夫/有机体的秘密.WR.Mysteries.of.the.Organism.1971.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
+- 最终保留：`/Volumes/导演们/奉俊昊/雪国列车.Snowpiercer.2013.2160p.UHD.Blu-ray.HEVC.Atmos.TrueHD7.1-DiY@HDHome.mkv` — 76.99 GiB
+- 已删除：`/Volumes/导演们/奉俊昊/雪国列车.Snowpiercer.2013.BluRay.1080p.DTS-HDMA7.1.x265.10bit-DreamHD.mkv` — 12.16 GiB
+- 归档依据：导演库内保留较好版本及其现有位置
 
-### quality-050 末世纪暴潮（1995）
+#### internal-101 面孔（1958，普通正片）
 
-- 已删除：`/Volumes/分类/科幻·奇幻/末世纪暴潮.Strange.Days.1995.BD.MiniSD-TLF.mkv`
-- 当前保留：`/Volumes/导演们/凯瑟琳·毕格罗/末世纪暴潮.Strange.Days.1995.BD.2Audio.MiniSD-TLF.mkv`
-- 依据：同等质量优先导演们。
+- 最终保留：`/Volumes/导演们/英格玛·伯格曼/面孔.The.Magician.1958.CC.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv` — 8.21 GiB
+- 已删除：`/Volumes/导演们/英格玛·伯格曼/魔术师.The.Magician.1958.720p.Bluray.X264-DIMENSION.mkv` — 4.37 GiB
+- 归档依据：导演库内保留较好版本及其现有位置
 
-### quality-051 末路狂花（1991）
+#### internal-102 麦当劳桥上的未婚妻（1961，普通正片）
 
-- 已删除：`/Volumes/分类/公路/末路狂花.Thelma.and.Louise.1991.mkv`
-- 当前保留：`/Volumes/导演们/雷德利·斯科特/末路狂花.Thelma.And.Louise.1991.CC.2160p.UHD.BluRay.x265.10bit.DV.DTS-HD.MA.5.1.2Audio-SONYHD.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
+- 最终保留：`/Volumes/导演们/阿涅斯·瓦尔达/小心太阳眼镜/小心太阳眼镜.Les.fiances.du.pont.Mac.Donald.1961.mkv` — 0.03 GiB
+- 已删除：`/Volumes/导演们/阿涅斯·瓦尔达/麦当劳桥上的未婚妻.Les.fiances.du.pont.Mac.Donald.1961.mkv` — 0.02 GiB
+- 归档依据：导演库内保留较好版本及其现有位置
 
-### quality-052 杀人游戏（1967）
+## 历史与核验范围
 
-- 已删除：`/Volumes/导演们/铃木清顺/杀手烙印.Branded.to.Kill.1967.D5.MiniSD-.mkv`
-- 当前保留：`/Volumes/导演们/铃木清顺/杀人游戏.Branded.to.Kill.1967.BD.CC.MiniSD-TLF.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
+上轮跨库清理已删除86个视频，并把15个较好版本移回对应导演目录；详细历史见本仓库提交 `6b246fb` 及本地执行日志。此后用户继续手动整理，本轮重新扫描相对旧快照新增8个路径、缺失40个路径，这些不是本轮100项删除的执行结果。
 
-### quality-053 杀出个黎明（1996）
-
-- 已删除：`/Volumes/分类/惊悚·犯罪·动作/杀出个黎明.From.Dusk.till.Dawn.1996.rmvb`
-- 当前保留：`/Volumes/导演们/罗伯特·罗德里格兹/杀出个黎明.From.Dusk.Till.Dawn.1996.rmvb`
-- 依据：同等质量优先导演们。
-
-### quality-054 杀手悲歌（1992）
-
-- 已删除：`/Volumes/分类/惊悚·犯罪·动作/杀手悲歌.El.Mariachi.1992.Dvdrip.Xvid.Mp3-NewMov.mkv`
-- 当前保留：`/Volumes/导演们/罗伯特·罗德里格兹/杀手悲歌.El.Mariachi.1992.Dvdrip.Xvid.Mp3-NewMov.mkv`
-- 依据：同等质量优先导演们。
-
-### quality-055 梦旅人（1996）
-
-- 已删除：`/Volumes/导演们/岩井俊二/梦旅人.picnic.1996.D5.TLF.mkv`
-- 当前保留：`/Volumes/导演们/岩井俊二/梦旅人.Picnic.1996.BD.MiniSD-TLF.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
-
-### quality-056 梦醒人生（2001）
-
-- 已删除：`/Volumes/分类/动画片/梦醒人生.Waking.Life.2001.美国.DVD-HALFCD2.mkv`
-- 当前保留：`/Volumes/导演们/理查德·林克莱特/半梦半醒的人生.Waking.Life.2001.BD.4Audio.MiniSD-TLF.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
-
-### quality-057 正午（1952）
-
-- 已删除：`/Volumes/导演们/弗雷德·金尼曼/正午.High.Noon.1952.rmvb`
-- 当前保留：`/Volumes/导演们/弗雷德·金尼曼/正午.High.Noon.1952.2160p.UHD.BluRay.x265.10bit.DV.DTS-HD.MA.2.0-SONYHD.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
-
-### quality-058 没有过去的人（2002）
-
-- 已删除：`/Volumes/分类/故事/没有过去的人.The.Man.Without.a.Past.2002.rmvb`
-- 当前保留：`/Volumes/导演们/阿基·考里斯马基/没有过去的男人.The.Man.Without.a.Past.2002.rmvb`
-- 依据：同等质量优先导演们。
-
-### quality-059 爆裂鼓手（2014）
-
-- 已删除：`/Volumes/分类/音乐/爆裂鼓手.Whiplash.2014.BD1280高清中英双字.rmvb`
-- 当前保留：`/Volumes/导演们/达米恩·查泽雷/爆裂鼓手.Whiplash.2014.BD1280高清中英双字.rmvb`
-- 依据：同等质量优先导演们。
-
-### quality-060 爱丁顿（2025）
-
-- 已删除：`/Volumes/分类/政法委/爱丁顿.Eddington.2025.1080p.MAX.WEB-DL.DDP5.1.H.264.mp4`
-- 当前保留：`/Volumes/导演们/阿里·艾斯特/爱丁顿.Eddington.2025.2160p.AMZN.WEB-DL.DDP5.1.Atmos.H.265-BYNDR.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
-
-### quality-061 爱乐之城（2016）
-
-- 已删除：`/Volumes/分类/歌舞/爱乐之城.La.La.Land.2016.BluRay.1080p.x264.AC3.TriAudio-TLF.mkv`
-- 当前保留：`/Volumes/导演们/达米恩·查泽雷/爱乐之城.La.La.Land.2016.V2.Bluray.2160p.TrueHD7.1.HDR.x265.10bit-DreamHD.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
-
-### quality-062 玛戈王后（1954）
-
-- 已删除：`/Volumes/分类/传记·一段历史/玛戈王后.La.Reine.Margot.1954.vhsrip.avi`
-- 当前保留：`/Volumes/导演们/阿贝尔·冈斯/玛戈王后.La.Reine.Margot.1954.vhsrip.avi`
-- 依据：同等质量优先导演们。
-
-### quality-063 电影人生（2001）
-
-- 已删除：`/Volumes/分类/故事/电影人生.The.Majestic.2001.HDTV.HALFCD-TLF.mkv`
-- 当前保留：`/Volumes/导演们/弗兰克·德拉邦特/电影人生.The.Majestic.2001.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
-
-### quality-064 男人的争斗（1955）
-
-- 已删除：`/Volumes/分类/黑色电影/男人的争斗.Rififi.1955.2Audio.D9.MiniSD-.mkv`
-- 当前保留：`/Volumes/导演们/朱尔斯·达辛/男人的斗争.Rififi.1955.CC.BDRip.X264.iNT-TLF.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
-
-### quality-065 疯狂的麦克斯3（1985）
-
-- 已删除：`/Volumes/分类/科幻·奇幻/疯狂的麦克斯3.Mad.Max.Beyond.Thunderdome.1985.BD.MiniSD-TLF.mkv`
-- 当前保留：`/Volumes/导演们/乔治·米勒/疯狂的麦克斯3.Mad.Max.Beyond.Thunderdome.1985.BD.MiniSD-TLF.mkv`
-- 依据：同等质量优先导演们。
-
-### quality-066 皮囊之下（2013）
-
-- 已删除：`/Volumes/分类/科幻·奇幻/皮囊之下.Under.the.Skin.2013.rmvb`
-- 当前保留：`/Volumes/导演们/乔纳森·格雷泽/皮囊之下.Under.The.Skin.2013.双语字幕.HR-HDTV.AC3.1024X554.x264.V2.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
-
-### quality-067 神秘马戏团（2005）
-
-- 已删除：`/Volumes/分类/恐怖/神秘马戏团.Strange.Circus.2005.rmvb`
-- 当前保留：`/Volumes/导演们/园子温/神秘马戏团.Strange.Circus.2005.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
-
-### quality-068 积木人生（1982）
-
-- 已删除：`/Volumes/分类/CULT·实验/积木人生.The.Prefab.People.1982.repack.dvdrip.xvid-fico.mp4`
-- 当前保留：`/Volumes/导演们/贝拉·塔尔/积木人生.The.Prefab.People.1982.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
-
-### quality-069 精神病院（2002）
-
-- 已删除：`/Volumes/分类/故事/精神病院,Dom.durakov.2002.DVDRip.avi`
-- 当前保留：`/Volumes/导演们/安德烈·康查洛夫斯基/精神病院.Dom.durakov.2002.DVDRip.avi`
-- 依据：同等质量优先导演们。
-
-### quality-070 精英部队2大敌当前（2010）
-
-- 已删除：`/Volumes/分类/惊悚·犯罪·动作/精英部队2.大敌当前.Elite.Squad.The.Enemy.Within.2010.rmvb`
-- 当前保留：`/Volumes/导演们/何塞·帕迪里亚/精英部队2.大敌当前.Elite.Squad.The.Enemy.Within.2010.rmvb`
-- 依据：同等质量优先导演们。
-
-### quality-071 红菱艳（1948）
-
-- 已删除：`/Volumes/分类/故事/红菱艳.The.Red.Shoes.1948.mkv`
-- 当前保留：`/Volumes/导演们/迈克尔·鲍威尔/红菱艳.The.Red.Shoes.1948.mkv`
-- 依据：同等质量优先导演们。
-
-### quality-072 维拉德雷克（2004）
-
-- 已删除：`/Volumes/分类/惊悚·犯罪·动作/维拉·德雷克.Vera.Drake.2004.LiMiTED.DVDRip.XviD-FTS.mkv`
-- 当前保留：`/Volumes/导演们/迈克·李/维拉德雷克.Vera.Drake.2004.D9.MiniSD-TLF.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
-
-### quality-073 肖申克的救赎（1994）
-
-- 已删除：`/Volumes/分类/惊悚·犯罪·动作/肖申克的救赎.The.Shawshank.Redemption.1994.REMASTERED.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv`
-- 当前保留：`/Volumes/导演们/弗兰克·德拉邦特/肖申克的救赎.The.Shawshank.Redemption.1994.REMASTERED.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv`
-- 依据：同等质量优先导演们。
-
-### quality-074 花与爱丽丝杀人事件（2015）
-
-- 已删除：`/Volumes/分类/动画片/花与爱丽丝杀人事件.The.Murder.Case.of.Hana.&.Alice.2015.BD.HEVC.MiniSD-TLF.mkv`
-- 当前保留：`/Volumes/导演们/岩井俊二/花与爱丽丝杀人事件.The.Murder.Case.of.Hana.&.Alice.2015.BD.HEVC.MiniSD-TLF.mkv`
-- 依据：同等质量优先导演们。
-
-### quality-075 角斗士（2000）
-
-- 已删除：`/Volumes/分类/传记·一段历史/角斗士.Gladiator.2000.BDRip.MiniSD-TLF.mkv`
-- 当前保留：`/Volumes/导演们/雷德利·斯科特/角斗士.Gladiator.2000.BDRip.MiniSD-TLF.mkv`
-- 依据：同等质量优先导演们。
-
-### quality-076 诚如神之所说（2014）
-
-- 已删除：`/Volumes/导演们/三池崇史/诚如神之所说.As.the.Gods.Will.2014.rmvb`
-- 当前保留：`/Volumes/导演们/三池崇史/诚如神之所说.As.the.Gods.Will.2014.BD1080P.X264.AAC.Japanese.CHS.Mp4Ba.mp4`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
-
-### quality-077 贝隆夫人（1996）
-
-- 已删除：`/Volumes/分类/传记·一段历史/贝隆夫人.Evita.1996.BD.MiniSD-TLF.mkv`
-- 当前保留：`/Volumes/导演们/艾伦·帕克/贝隆夫人.Evita.1996.15th.BDRip.X264-YXY.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
-
-### quality-078 这不是一部电影（2011）
-
-- 已删除：`/Volumes/分类/纪录/这不是一部电影.This.Is.Not.a.Film.2011.D5.EngSUB.MiniSD-TLF.mkv`
-- 当前保留：`/Volumes/导演们/贾法·帕纳西/这不是一部电影.This.Is.Not.a.Film.2011.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
-
-### quality-079 迷墙（1982）
-
-- 已删除：`/Volumes/分类/音乐/迷墙.Pink.Floyd.The.Wall.1982.HDTV.MINISD-TLF.mkv`
-- 当前保留：`/Volumes/导演们/艾伦·帕克/迷墙.Pink.Floyd.The.Wall.1982.HDTV.MINISD-TLF.mkv`
-- 依据：同等质量优先导演们。
-
-### quality-080 迷雾（2007）
-
-- 已删除：`/Volumes/分类/科幻·奇幻/迷雾.The.Mist.2007.mkv`
-- 当前保留：`/Volumes/导演们/弗兰克·德拉邦特/迷雾.The.Mist.2007.mkv`
-- 依据：同等质量优先导演们。
-
-### quality-081 透纳先生（2014）
-
-- 已删除：`/Volumes/分类/传记·一段历史/透纳先生.Mr.Turner.2014.BD.MiniSD-TLF.mkv`
-- 当前保留：`/Volumes/导演们/迈克·李/透纳先生.Mr.Turner.2014.BluRay.1080p.x265.10bit.AC3.iNT-TLF.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
-
-### quality-082 遗传厄运（2018）
-
-- 已删除：`/Volumes/分类/恐怖/遗传厄运.Hereditary.2018.V2.Bluray.2160p.DTS-HDMA5.1.DoVi.HDR.x265.10bit-NukeHD.mkv`
-- 当前保留：`/Volumes/导演们/阿里·艾斯特/遗传厄运.Hereditary.2018.V2.Bluray.2160p.DTS-HDMA5.1.DoVi.HDR.x265.10bit-NukeHD.mkv`
-- 依据：同等质量优先导演们。
-
-### quality-083 隐秘（2006）
-
-- 已删除：`/Volumes/分类/惊悚·犯罪·动作/隐秘.La.sconosciuta.2006.BD.MiniSD-TLF.mkv`
-- 当前保留：`/Volumes/导演们/朱塞佩·托纳多雷/隐秘.La.sconosciuta.2006.BD.3Audio.MiniSD-TLF.mkv`
-- 依据：同等质量优先导演们。
-
-### quality-084 零点地带（1959）
-
-- 已删除：`/Volumes/分类/战争/零点地带.Kapo.1959.D9.MiniSD-TLF.mkv`
-- 当前保留：`/Volumes/导演们/吉洛·彭泰科沃/零点地带.Kapo.1959.D9.MiniSD-TLF.mkv`
-- 依据：同等质量优先导演们。
-
-### quality-085 非洲女王号（1951）
-
-- 已删除：`/Volumes/分类/战争/非洲女王号.The.African.Queen.1951.BDRip.MiniSD-TLF.mkv`
-- 当前保留：`/Volumes/导演们/约翰.休斯顿/非洲女王号.The.African.Queen.1951.BD.2Audio.MiniSD-TLF.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
-
-### quality-086 鸢之恋（1978）
-
-- 已删除：`/Volumes/分类/爱情/鸢之恋-Furimukeba.ai.1978.D5.HALFCD-TLF.mkv`
-- 当前保留：`/Volumes/导演们/山口百惠[演员]/鸢之恋.Furimukeba.ai.1978.BD.MiniSD-TLF.mkv`
-- 依据：按体积、质量标记及MKV偏好保留占优版本。
-
-## 排除与保留的特殊资源
-
-《亡命大煞星》(1972) 的 The Getaway 与 Junior Bonner、《杀手》(1956) 的 The Killers 与 The Killing、《黑雨》(1989) 的 Black Rain 与 Kuroi ame、《米尔克/牛奶》(2008) 等存在片名或身份冲突，未作为普通同片副本处理。《卡尔·梅》(1974) 的 Part1/Part2，以及《玩家马布斯博士》(1922) 的 115 分钟版与 271 分钟修复分段版继续保留。花絮、访谈和解说资料不作为普通正片重复删除。
+当前按扩展名识别的媒体文件：分类 4,129 个，导演们 3,912 个；文件数包含短片、分集和光盘流，不等于电影部数。忽略隐藏目录、回收站和系统索引。无年份、译名完全不同或光盘结构中的同片仍可能漏检。原始粗筛不会直接变成删除清单。
