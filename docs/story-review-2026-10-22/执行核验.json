@@ -1,0 +1,40 @@
+{
+  "execution_result": {
+    "plan_sha256": "49098162c612bad28b306e263d81804f3f9a9ce58b38a99553f594fd647e8065",
+    "executed_this_run": 199,
+    "already_done_before_run": 0,
+    "verified_total": 199,
+    "skipped": 258,
+    "conflicts": 0,
+    "failed": 0
+  },
+  "post_verification": {
+    "original_files": 467,
+    "moved_files": 204,
+    "remaining_files": 263,
+    "actual_story_files": 263,
+    "errors": [],
+    "movie_move_actions": 199,
+    "destinations": {
+      "家庭": 42,
+      "体育": 5,
+      "爱情": 18,
+      "惊悚": 1,
+      "公路": 14,
+      "传记": 11,
+      "儿童": 15,
+      "纪录": 1,
+      "青春": 18,
+      "名著改编": 36,
+      "宗教": 8,
+      "政法委": 17,
+      "战争": 3,
+      "灾难": 2,
+      "犯罪": 2,
+      "一段历史": 1,
+      "歌舞": 2,
+      "音乐": 2,
+      "喜剧": 1
+    }
+  }
+}
