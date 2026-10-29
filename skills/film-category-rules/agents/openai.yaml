@@ -1,0 +1,4 @@
+interface:
+  display_name: "电影分类规则"
+  short_description: "按个人收藏规则审阅36类电影，核实身份与题材，生成可复核分类计划"
+  default_prompt: "使用 $film-category-rules 审阅指定电影目录，按已确认规则生成归类预览，并单列真正需要我定夺的边界。"
