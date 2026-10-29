@@ -34,6 +34,8 @@ Organize the mounted movie library without losing source identity or confusing a
 
 For ordinary naming, read [references/naming-rules.md](references/naming-rules.md). For `/Volumes/导演们`, also read [references/director-layout.md](references/director-layout.md). Before any write, read [references/tracking-and-safety.md](references/tracking-and-safety.md).
 
+For genre, theme, and style classification, use the companion [film-category-rules](../film-category-rules/SKILL.md) ([English](../film-category-rules/SKILL.en.md)); this skill supplies naming and NAS handling, not a competing category policy.
+
 Read [references/media-cleanup.md](references/media-cleanup.md) only for subtitles, images, archives, extras, or multipart media. Read [references/category-routing.md](references/category-routing.md) only under `/Volumes/分类`.
 
 ## Tooling
